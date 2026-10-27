@@ -18,6 +18,7 @@ class CTETQuestionGenerator {
     this.ATTEMPTED_PREFIX = 'ctet_daily_attempted_';
     this.LIFETIME_ATTEMPTED_KEY = 'ctet_lifetime_attempted_v1';
     this.CUSTOM_BANK_KEY = 'ctet_custom_bank_v2';
+    this.EVICTED_KEY = 'ctet_evicted_ids_v1';
 
     this.initCustomBank();
   }
@@ -25,14 +26,23 @@ class CTETQuestionGenerator {
   initCustomBank() {
     if (typeof window === 'undefined' || !window.CTET_PAPER2_BANK) return;
     try {
+      const evicted = new Set(JSON.parse(localStorage.getItem(this.EVICTED_KEY) || '[]'));
       const custom = JSON.parse(localStorage.getItem(this.CUSTOM_BANK_KEY) || '{}');
-      Object.keys(custom).forEach(secKey => {
-        if (Array.isArray(custom[secKey]) && window.CTET_PAPER2_BANK[secKey]) {
-          custom[secKey].forEach(q => {
-            if (!window.CTET_PAPER2_BANK[secKey].some(existing => existing.id === q.id)) {
-              window.CTET_PAPER2_BANK[secKey].push(q);
-            }
-          });
+
+      Object.keys(window.CTET_PAPER2_BANK).forEach(secKey => {
+        if (Array.isArray(window.CTET_PAPER2_BANK[secKey])) {
+          // 1. Evict retired questions so storage remains constant
+          if (evicted.size > 0) {
+            window.CTET_PAPER2_BANK[secKey] = window.CTET_PAPER2_BANK[secKey].filter(q => !evicted.has(q.id));
+          }
+          // 2. Append custom replacements
+          if (Array.isArray(custom[secKey])) {
+            custom[secKey].forEach(q => {
+              if (!window.CTET_PAPER2_BANK[secKey].some(existing => existing.id === q.id)) {
+                window.CTET_PAPER2_BANK[secKey].push(q);
+              }
+            });
+          }
         }
       });
     } catch (e) {
@@ -248,10 +258,11 @@ class CTETQuestionGenerator {
   }
 
   /**
-   * REPLENISH STORAGE: Generates new questions via Gemini AI and saves them directly
-   * into persistent browser DB/storage so users can practice without live token burning.
+   * REPLENISH STORAGE WITH STRICT FIFO REPLACEMENT:
+   * Generates new questions via Gemini AI and replaces the oldest N questions in the bank,
+   * keeping the storage footprint and pool size strictly constant (no bloat on device).
    */
-  async replenishStorageWithGemini(apiKey, sectionKey = 'social_studies', count = 10) {
+  async replenishStorageWithGemini(apiKey, sectionKey = 'social_studies', count = 10, onProgress = null) {
     if (!apiKey) throw new Error('Gemini API key is required');
 
     const sectionNames = {
@@ -264,8 +275,26 @@ class CTETQuestionGenerator {
 
     const sectionLabel = sectionNames[sectionKey] || 'Social Studies / Social Science';
 
-    const prompt = `You are a senior CBSE CTET Paper 2 examination creator.
-Generate exactly ${count} completely new, authentic multiple-choice questions aligned with CTET Paper 2 (Classes VI-VIII).
+    // Break count into manageable chunks of up to 15 questions to avoid Gemini token limit truncation
+    const chunkSize = 15;
+    const chunks = [];
+    let remaining = count;
+    while (remaining > 0) {
+      const take = Math.min(remaining, chunkSize);
+      chunks.push(take);
+      remaining -= take;
+    }
+
+    const allGenerated = [];
+
+    for (let cIdx = 0; cIdx < chunks.length; cIdx++) {
+      const chunkCount = chunks[cIdx];
+      if (onProgress) {
+        onProgress(`Synthesizing batch ${cIdx + 1}/${chunks.length} (${allGenerated.length}/${count} questions)...`);
+      }
+
+      const prompt = `You are a senior CBSE CTET Paper 2 examination creator.
+Generate exactly ${chunkCount} completely new, authentic multiple-choice questions aligned with CTET Paper 2 (Classes VI-VIII).
 Section: ${sectionLabel}.
 
 Rules:
@@ -278,7 +307,7 @@ Rules:
 STRICT JSON schema:
 [
   {
-    "id": "custom_${sectionKey}_${Date.now()}_1",
+    "id": "custom_${sectionKey}_${Date.now()}_${cIdx + 1}",
     "section": "${sectionLabel}",
     "subject": "${sectionLabel}",
     "question_en": "Question in English...",
@@ -290,82 +319,116 @@ STRICT JSON schema:
 ]
 Do not output markdown codeblocks. Output valid, raw JSON only.`;
 
-    const modelsToTry = ['gemini-3.8-flash', 'gemini-2.5-flash', 'gemini-1.5-flash'];
-    let lastError = null;
+      const modelsToTry = ['gemini-3.8-flash', 'gemini-2.5-flash', 'gemini-1.5-flash'];
+      let chunkSuccess = false;
+      let lastError = null;
 
-    for (const model of modelsToTry) {
-      try {
-        const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
-
-        const response = await fetch(endpoint, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: {
-              temperature: 0.7,
-              responseMimeType: 'application/json'
-            }
-          })
-        });
-
-        if (!response.ok) {
-          const err = await response.json();
-          const msg = err.error?.message || `HTTP ${response.status}`;
-          if (msg.includes('no longer available') || msg.includes('not found') || response.status === 404) {
-            lastError = new Error(msg);
-            continue;
-          }
-          throw new Error(msg);
-        }
-
-        const data = await response.json();
-        const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text;
-        if (!rawText) throw new Error('No question content received from Gemini');
-
-        let newQuestions = [];
+      for (const model of modelsToTry) {
         try {
-          newQuestions = JSON.parse(rawText);
-        } catch (e) {
-          const cleaned = rawText.replace(/```json/g, '').replace(/```/g, '').trim();
-          newQuestions = JSON.parse(cleaned);
-        }
+          const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
-        if (!Array.isArray(newQuestions) || !newQuestions.length) {
-          throw new Error('Invalid questions structure generated');
-        }
+          const response = await fetch(endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              contents: [{ parts: [{ text: prompt }] }],
+              generationConfig: {
+                temperature: 0.7,
+                responseMimeType: 'application/json'
+              }
+            })
+          });
 
-        // Store into persistent custom bank in localStorage
-        const customBank = JSON.parse(localStorage.getItem(this.CUSTOM_BANK_KEY) || '{}');
-        if (!customBank[sectionKey]) customBank[sectionKey] = [];
-
-        newQuestions.forEach((q, idx) => {
-          q.id = `custom_${sectionKey}_${Date.now()}_${idx + 1}`;
-          customBank[sectionKey].push(q);
-          if (window.CTET_PAPER2_BANK && window.CTET_PAPER2_BANK[sectionKey]) {
-            window.CTET_PAPER2_BANK[sectionKey].push(q);
+          if (!response.ok) {
+            const err = await response.json();
+            const msg = err.error?.message || `HTTP ${response.status}`;
+            if (msg.includes('no longer available') || msg.includes('not found') || response.status === 404) {
+              lastError = new Error(msg);
+              continue;
+            }
+            throw new Error(msg);
           }
-        });
 
-        localStorage.setItem(this.CUSTOM_BANK_KEY, JSON.stringify(customBank));
+          const data = await response.json();
+          const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+          if (!rawText) throw new Error('No question content received from Gemini');
 
-        const totalInBank = this.getCoverageStats().totalQuestions;
-        return {
-          addedCount: newQuestions.length,
-          sectionKey: sectionKey,
-          sectionLabel: sectionLabel,
-          newTotalPool: totalInBank
-        };
+          let newQuestions = [];
+          try {
+            newQuestions = JSON.parse(rawText);
+          } catch (e) {
+            const cleaned = rawText.replace(/```json/g, '').replace(/```/g, '').trim();
+            newQuestions = JSON.parse(cleaned);
+          }
 
-      } catch (err) {
-        lastError = err;
-        if (!err.message.includes('no longer available') && !err.message.includes('not found')) {
-          throw err;
+          if (Array.isArray(newQuestions) && newQuestions.length) {
+            allGenerated.push(...newQuestions);
+            chunkSuccess = true;
+            break;
+          }
+        } catch (err) {
+          lastError = err;
+          if (!err.message.includes('no longer available') && !err.message.includes('not found')) {
+            throw err;
+          }
         }
+      }
+
+      if (!chunkSuccess) {
+        throw lastError || new Error(`Failed to generate questions chunk ${cIdx + 1}`);
       }
     }
 
-    throw lastError || new Error('Failed to replenish question bank with available Gemini models');
+    if (!allGenerated.length) {
+      throw new Error('No valid questions generated');
+    }
+
+    // =========================================================================
+    // ROLLING FIFO REPLACEMENT (Keeps device storage and pool size strictly constant)
+    // If adding N questions, remove the oldest N questions from the section!
+    // =========================================================================
+    const targetPool = (window.CTET_PAPER2_BANK && window.CTET_PAPER2_BANK[sectionKey]) || [];
+    const numToReplace = Math.min(allGenerated.length, targetPool.length);
+
+    // 1. Evict oldest numToReplace questions from the beginning of the pool (FIFO)
+    const evictedQuestions = targetPool.splice(0, numToReplace);
+    const evictedIds = evictedQuestions.map(q => q.id);
+
+    // 2. Persist evicted IDs so storage does not retain stale questions on reload
+    const allEvicted = new Set(JSON.parse(localStorage.getItem(this.EVICTED_KEY) || '[]'));
+    evictedIds.forEach(id => allEvicted.add(id));
+    localStorage.setItem(this.EVICTED_KEY, JSON.stringify([...allEvicted]));
+
+    // 3. Clean evicted IDs from lifetime and daily attempted trackers
+    const lifetime = this.getLifetimeAttemptedIds();
+    evictedIds.forEach(id => lifetime.delete(id));
+    localStorage.setItem(this.LIFETIME_ATTEMPTED_KEY, JSON.stringify([...lifetime]));
+
+    const daily = this.getAttemptedIdsToday();
+    evictedIds.forEach(id => daily.delete(id));
+    localStorage.setItem(this.getTodayKey(), JSON.stringify([...daily]));
+
+    // 4. Append the fresh new questions to the end of the pool
+    const customBank = JSON.parse(localStorage.getItem(this.CUSTOM_BANK_KEY) || '{}');
+    if (!customBank[sectionKey]) customBank[sectionKey] = [];
+    customBank[sectionKey] = customBank[sectionKey].filter(q => !allEvicted.has(q.id));
+
+    allGenerated.forEach((q, idx) => {
+      q.id = `custom_${sectionKey}_${Date.now()}_${idx + 1}`;
+      customBank[sectionKey].push(q);
+      targetPool.push(q);
+    });
+
+    localStorage.setItem(this.CUSTOM_BANK_KEY, JSON.stringify(customBank));
+
+    const totalInBank = this.getCoverageStats().totalQuestions;
+    return {
+      addedCount: allGenerated.length,
+      evictedCount: evictedQuestions.length,
+      sectionKey: sectionKey,
+      sectionLabel: sectionLabel,
+      constantPoolSize: totalInBank
+    };
   }
 
   shuffleArray(arr) {

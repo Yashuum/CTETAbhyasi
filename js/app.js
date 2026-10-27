@@ -827,7 +827,7 @@
     }
   }
 
-  // AI Bank Storage Replenisher (Stores in DB, NO Live Quiz, Saves Tokens!)
+  // AI Bank Storage Replenisher (Rolling FIFO Replacement - Zero Extra Storage)
   async function handleReplenishBank() {
     const key = el.apiKeyInput.value.trim();
     if (!key) {
@@ -839,14 +839,21 @@
     const sectionKey = el.replenishSectionSelect.value;
     const count = parseInt(el.replenishCountSelect.value, 10) || 10;
 
-    el.genStatus.textContent = `🤖 Asking Gemini 3.8 Flash to synthesize ${count} new questions into storage...`;
+    el.genStatus.textContent = `🤖 Asking Gemini 3.8 Flash to synthesize ${count} new questions...`;
     el.btnReplenishBank.disabled = true;
 
     try {
-      const res = await window.ctetGenerator.replenishStorageWithGemini(key, sectionKey, count);
+      const res = await window.ctetGenerator.replenishStorageWithGemini(
+        key, 
+        sectionKey, 
+        count, 
+        (progressMsg) => {
+          el.genStatus.textContent = `🤖 ${progressMsg}`;
+        }
+      );
       
-      el.genStatus.textContent = `✅ Successfully added ${res.addedCount} questions into ${res.sectionLabel}! Total bank in storage is now ${res.newTotalPool} questions.`;
-      showToast(`📥 Saved ${res.addedCount} new questions into storage!`);
+      el.genStatus.textContent = `✅ Replaced ${res.evictedCount} oldest questions with ${res.addedCount} fresh questions in ${res.sectionLabel}! Pool size remains steady at ${res.constantPoolSize} questions (zero extra space used).`;
+      showToast(`🔄 Replaced ${res.addedCount} questions in storage!`);
       
       updateCoverageUI();
 

@@ -118,11 +118,11 @@
         </div>
       </div>
 
-      <!-- AI Question Bank Replenisher (Stores in DB, NO Live Quiz, Saves Tokens!) -->
+      <!-- AI Question Bank Replenisher (FIFO Rolling Replacement - Zero Device Bloat) -->
       <div id="replenish-section" class="control-card">
         <div class="control-title">
-          <span>🔄 AI Question Bank Replenisher</span>
-          <span style="font-size:11px; color:var(--sf); font-weight:700;">Storage Update</span>
+          <span>🔄 AI Question Replenisher</span>
+          <span style="font-size:11px; color:#38BDF8; font-weight:700;">Zero Extra Storage</span>
         </div>
         <div class="ai-controls">
           <div class="api-key-row">
@@ -140,12 +140,16 @@
             <select id="replenish-count-select" style="flex:1; padding:8px 10px; border-radius:8px; border:1.5px solid var(--bd); background:var(--bg); color:var(--tx); font-size:12px; outline:none;">
               <option value="10">10 Qs</option>
               <option value="20">20 Qs</option>
-              <option value="30">30 Qs</option>
+              <option value="50">50 Qs</option>
+              <option value="100">100 Qs</option>
             </select>
           </div>
           <button id="btn-replenish-bank" class="btn-generate">
-            📥 Generate & Inject Fresh Questions into Storage
+            🔄 Replace with Fresh Questions (Constant Bank Size)
           </button>
+          <div style="font-size:11px; color:var(--mt); line-height:1.4;">
+            💡 <em>Rolling Replacement:</em> Adding N questions automatically removes the oldest N practiced questions. Storage space remains strictly constant.
+          </div>
           <div id="ai-gen-status" style="font-size: 11px; color: var(--mt); min-height: 14px;"></div>
         </div>
       </div>
