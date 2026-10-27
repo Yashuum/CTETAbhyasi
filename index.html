@@ -103,7 +103,7 @@
       </div>
     </section>
 
-    <!-- Controls: AI Storage Replenisher (FIFO Rolling Replacement - Zero Device Bloat) -->
+    <!-- Controls: AI Storage Replenisher -->
     <div class="control-bar">
       <!-- Social Science Stream Highlights Card -->
       <div class="control-card">
@@ -315,10 +315,10 @@
       </div>
 
       <div style="display: flex; gap: 10px;">
-        <button id="btn-cancel-countdown" class="btn-cbt btn-clear" style="flex: 1; border-color: #EF4444; color: #EF4444;">
+        <button id="btn-cancel-countdown" class="btn-cbt btn-clear" onclick="window.cancelTestCountdown && window.cancelTestCountdown()" style="flex: 1; border-color: #EF4444; color: #EF4444;" type="button">
           ✕ Cancel Test
         </button>
-        <button id="btn-fast-launch" class="btn-cbt btn-save-next" style="flex: 1;">
+        <button id="btn-fast-launch" class="btn-cbt btn-save-next" onclick="window.fastLaunchExam && window.fastLaunchExam()" style="flex: 1;" type="button">
           Start Now ▶
         </button>
       </div>
@@ -338,13 +338,20 @@
         <h2 id="exam-paper-title">CTET Paper 2 (Social Science) Mock Test</h2>
         <p id="exam-paper-meta">150 Questions • 150 Minutes • 1 Mark Each</p>
       </div>
-      <div class="exam-timer-wrap">
+      <div class="exam-topbar-actions">
+        <!-- Palette Toggle (Particularly Useful for Tablets & Mobiles) -->
+        <button id="btn-toggle-palette" class="btn-palette-toggle" onclick="window.togglePalette && window.togglePalette()" title="View Question Palette" type="button">
+          <span>📊</span> <span id="pal-btn-text">Palette (150)</span>
+        </button>
         <!-- Fullscreen Toggle Button -->
-        <button id="btn-fullscreen" class="btn-fullscreen-toggle" title="Toggle Fullscreen">
+        <button id="btn-fullscreen" class="btn-fullscreen-toggle" onclick="window.toggleFullscreen && window.toggleFullscreen()" title="Toggle Fullscreen" type="button">
           <span id="fs-icon">⛶</span> <span id="fs-text">Fullscreen</span>
         </button>
-        <div style="font-size: 12px; font-weight: 700; color: var(--mt);">Time Left:</div>
-        <div id="timer-display" class="timer-box">150:00</div>
+        <!-- Digital Timer -->
+        <div class="timer-wrap-box">
+          <span class="timer-lbl">Time Left:</span>
+          <span id="timer-display" class="timer-box">150:00</span>
+        </div>
       </div>
     </div>
 
@@ -352,6 +359,9 @@
     <div id="section-tabs" class="exam-section-tabs">
       <!-- Injected dynamically: CDP, Social Studies, Language I, Language II -->
     </div>
+
+    <!-- Backdrop for Drawer Palette on Tablets/Mobile -->
+    <div id="palette-backdrop" class="palette-backdrop" onclick="window.togglePalette && window.togglePalette(false)"></div>
 
     <!-- Exam Body: Question + Sidebar Palette -->
     <div class="exam-body">
@@ -361,7 +371,7 @@
           <div id="q-number-badge" class="q-number-badge">Question 1 / 150</div>
           <div class="q-tools">
             <span class="q-badge-hindi">🇮🇳 Hindi Medium</span>
-            <span class="q-marks-badge">+1.0 / -0.0</span>
+            <span id="q-marks-badge" class="q-marks-badge">+1.0 / -0.0</span>
           </div>
         </div>
 
@@ -373,14 +383,22 @@
           </div>
         </div>
 
-        <!-- Options List (In Hindi) -->
+        <!-- Options List (In Hindi, 100% visible on tablets without scrolling) -->
         <div id="options-list" class="options-list">
           <!-- Dynamically populated options A, B, C, D in Hindi -->
         </div>
       </div>
 
-      <!-- Palette Sidebar -->
+      <!-- Palette Sidebar (Side Column on Desktop, Slide-in Drawer on Tablets/Mobile) -->
       <aside id="palette-sidebar" class="palette-sidebar">
+        <!-- Palette Header (with close button for tablets/mobile) -->
+        <div class="palette-header">
+          <div style="font-weight: 800; font-size: 14px; display: flex; align-items: center; gap: 6px; color: #F8FAFC;">
+            <span>📊</span> Question Palette (150)
+          </div>
+          <button id="btn-close-palette" class="btn-close-palette" onclick="window.togglePalette && window.togglePalette(false)" title="Close Palette" type="button">✕</button>
+        </div>
+
         <!-- Palette Legend (In English) -->
         <div class="palette-legend">
           <div class="legend-item"><span class="legend-dot dot-ans"></span> Answered</div>
@@ -399,16 +417,16 @@
       </aside>
     </div>
 
-    <!-- Exam Bottom Action Bar (In English) -->
+    <!-- Exam Bottom Action Bar (In English, with Guaranteed Click Handlers) -->
     <footer class="exam-footer">
       <div class="footer-left">
-        <button id="btn-mark-review" class="btn-cbt btn-mark">Mark for Review</button>
-        <button id="btn-clear" class="btn-cbt btn-clear">Clear Response</button>
+        <button id="btn-mark-review" class="btn-cbt btn-mark" onclick="window.onMarkForReview && window.onMarkForReview()" type="button">Mark for Review</button>
+        <button id="btn-clear" class="btn-cbt btn-clear" onclick="window.onClearResponse && window.onClearResponse()" type="button">Clear Response</button>
       </div>
       <div class="footer-right">
-        <button id="btn-prev" class="btn-cbt btn-prev">◀ Previous</button>
-        <button id="btn-save-next" class="btn-cbt btn-save-next">Save & Next ▶</button>
-        <button id="btn-submit-exam" class="btn-cbt btn-submit">Submit Exam</button>
+        <button id="btn-prev" class="btn-cbt btn-prev" onclick="window.onPrevQuestion && window.onPrevQuestion()" type="button">◀ Previous</button>
+        <button id="btn-save-next" class="btn-cbt btn-save-next" onclick="window.onSaveAndNext && window.onSaveAndNext()" type="button">Save & Next ▶</button>
+        <button id="btn-submit-exam" class="btn-cbt btn-submit" onclick="window.showSubmitModal && window.showSubmitModal()" type="button">Submit Exam 🚀</button>
       </div>
     </footer>
   </section>
@@ -441,8 +459,8 @@
       </div>
 
       <div style="display:flex; justify-content:flex-end; gap:10px;">
-        <button id="btn-cancel-submit" class="btn-cbt btn-clear">Resume Test</button>
-        <button id="btn-confirm-submit" class="btn-cbt btn-submit">Yes, Submit Now</button>
+        <button id="btn-cancel-submit" class="btn-cbt btn-clear" onclick="window.cancelSubmitModal && window.cancelSubmitModal()" type="button">Resume Test</button>
+        <button id="btn-confirm-submit" class="btn-cbt btn-submit" onclick="window.confirmSubmitExam && window.confirmSubmitExam()" type="button">Yes, Submit Now</button>
       </div>
     </div>
   </div>
@@ -505,7 +523,7 @@
         <div style="font-family: var(--font-h); font-size: 18px; font-weight: 800;">
           Detailed Solutions & Pedagogical Explanations
         </div>
-        <button id="btn-back-home" class="btn-start">◀ Back to Dashboard</button>
+        <button id="btn-back-home" class="btn-start" onclick="window.backToHome && window.backToHome()" type="button">◀ Back to Dashboard</button>
       </div>
 
       <div id="solutions-container">

@@ -3,12 +3,15 @@
  * 
  * Includes:
  * - Exclusively Tailored for CTET Paper 2 (Social Science Stream)
+ * - Dual-Layer Button Click Reliability (inline onclick + programmatic listeners)
+ * - Cross-Device Fullscreen (Native Fullscreen API + Zero-Latency Simulated Mode)
+ * - Slide-in Question Palette Drawer (prevents vertical scrolling on tablets & phones)
+ * - Compact Zero-Scroll Question & Options Layout
  * - Screen Wake Lock API (keeps device screen awake only during active test)
  * - Persistent Candidate Name Locking & 3D Welcome Screen
  * - Pre-Test Countdown Modal with Safe Cancel Button
  * - Last 5 Attempts Dashboard with Subject-Wise Breakdown
  * - Exam Refresh Lock & Crash Recovery (restores mid-exam on reload)
- * - Expand Fullscreen Toggle (Desktop, Tablet & Mobile)
  * - 100% Hindi Medium Question & Option Presentation on Exam Screen
  * - Clean English UI Shell, Topbar, Palette & Navigation
  * - 5-State Question Palette & Real-Time Warning Timer
@@ -20,6 +23,7 @@
 
   // Application State
   let state = {
+    isInitialized: false,
     currentStream: 'social_studies', // Exclusively Social Studies
     currentTest: null,
     currentIndex: 0,
@@ -38,109 +42,119 @@
   // Screen Wake Lock Sentinel
   let wakeLockSentinel = null;
 
-  // DOM Elements
-  const el = {
+  // DOM Elements Cache
+  const el = {};
+
+  function cacheDomElements() {
     // Screens
-    landingScreen: document.getElementById('landing-screen'),
-    examScreen: document.getElementById('exam-screen'),
-    resultScreen: document.getElementById('result-screen'),
+    el.landingScreen = document.getElementById('landing-screen');
+    el.examScreen = document.getElementById('exam-screen');
+    el.resultScreen = document.getElementById('result-screen');
 
     // Name & Greetings
-    namePromptModal: document.getElementById('name-prompt-modal'),
-    candidateNameInput: document.getElementById('candidate-name-input'),
-    btnSaveName: document.getElementById('btn-save-name'),
-    greeting3dModal: document.getElementById('greeting-3d-modal'),
-    greeting3dName: document.getElementById('greeting-3d-name'),
-    btnDismiss3d: document.getElementById('btn-dismiss-3d'),
-    userGreetingDisplay: document.getElementById('user-greeting-display'),
-    userNameSpan: document.getElementById('user-name-span'),
-    btnEditName: document.getElementById('btn-edit-name'),
+    el.namePromptModal = document.getElementById('name-prompt-modal');
+    el.candidateNameInput = document.getElementById('candidate-name-input');
+    el.btnSaveName = document.getElementById('btn-save-name');
+    el.greeting3dModal = document.getElementById('greeting-3d-modal');
+    el.greeting3dName = document.getElementById('greeting-3d-name');
+    el.btnDismiss3d = document.getElementById('btn-dismiss-3d');
+    el.userGreetingDisplay = document.getElementById('user-greeting-display');
+    el.userNameSpan = document.getElementById('user-name-span');
+    el.btnEditName = document.getElementById('btn-edit-name');
 
     // Theme Toggle
-    themeToggle: document.getElementById('theme-toggle'),
+    el.themeToggle = document.getElementById('theme-toggle');
 
     // Pre-test countdown modal
-    countdownModal: document.getElementById('countdown-modal'),
-    cdNum: document.getElementById('cd-num'),
-    cdTestTitle: document.getElementById('cd-test-title'),
-    cdTestMeta: document.getElementById('cd-test-meta'),
-    btnCancelCountdown: document.getElementById('btn-cancel-countdown'),
-    btnFastLaunch: document.getElementById('btn-fast-launch'),
+    el.countdownModal = document.getElementById('countdown-modal');
+    el.cdNum = document.getElementById('cd-num');
+    el.cdTestTitle = document.getElementById('cd-test-title');
+    el.cdTestMeta = document.getElementById('cd-test-meta');
+    el.btnCancelCountdown = document.getElementById('btn-cancel-countdown');
+    el.btnFastLaunch = document.getElementById('btn-fast-launch');
 
     // Attempts History
-    attemptsContainer: document.getElementById('recent-attempts-list'),
-    emptyAttemptsMsg: document.getElementById('empty-attempts-msg'),
+    el.attemptsContainer = document.getElementById('recent-attempts-list');
+    el.emptyAttemptsMsg = document.getElementById('empty-attempts-msg');
 
     // Coverage Dashboard
-    coveragePct: document.getElementById('coverage-percentage'),
-    coverageBar: document.getElementById('coverage-progress-bar'),
-    covCdp: document.getElementById('cov-cdp'),
-    covSst: document.getElementById('cov-sst'),
-    covHi: document.getElementById('cov-hi'),
-    covEn: document.getElementById('cov-en'),
-    covAlertBox: document.getElementById('coverage-alert-box'),
-    covAlertText: document.getElementById('coverage-alert-text'),
-    btnScrollReplenish: document.getElementById('btn-scroll-replenish'),
+    el.coveragePct = document.getElementById('coverage-percentage');
+    el.coverageBar = document.getElementById('coverage-progress-bar');
+    el.covCdp = document.getElementById('cov-cdp');
+    el.covSst = document.getElementById('cov-sst');
+    el.covHi = document.getElementById('cov-hi');
+    el.covEn = document.getElementById('cov-en');
+    el.covAlertBox = document.getElementById('coverage-alert-box');
+    el.covAlertText = document.getElementById('coverage-alert-text');
+    el.btnScrollReplenish = document.getElementById('btn-scroll-replenish');
 
     // AI Replenisher Controls
-    apiKeyInput: document.getElementById('gemini-api-key'),
-    saveKeyBtn: document.getElementById('btn-save-key'),
-    replenishSectionSelect: document.getElementById('replenish-section-select'),
-    replenishCountSelect: document.getElementById('replenish-count-select'),
-    btnReplenishBank: document.getElementById('btn-replenish-bank'),
-    genStatus: document.getElementById('ai-gen-status'),
+    el.apiKeyInput = document.getElementById('gemini-api-key');
+    el.saveKeyBtn = document.getElementById('btn-save-key');
+    el.replenishSectionSelect = document.getElementById('replenish-section-select');
+    el.replenishCountSelect = document.getElementById('replenish-count-select');
+    el.btnReplenishBank = document.getElementById('btn-replenish-bank');
+    el.genStatus = document.getElementById('ai-gen-status');
 
     // Exam Top Bar
-    examPaperTitle: document.getElementById('exam-paper-title'),
-    examPaperMeta: document.getElementById('exam-paper-meta'),
-    timerDisplay: document.getElementById('timer-display'),
-    sectionTabsContainer: document.getElementById('section-tabs'),
-    btnFullscreen: document.getElementById('btn-fullscreen'),
-    fsIcon: document.getElementById('fs-icon'),
-    fsText: document.getElementById('fs-text'),
+    el.examPaperTitle = document.getElementById('exam-paper-title');
+    el.examPaperMeta = document.getElementById('exam-paper-meta');
+    el.timerDisplay = document.getElementById('timer-display');
+    el.sectionTabsContainer = document.getElementById('section-tabs');
+    el.btnFullscreen = document.getElementById('btn-fullscreen');
+    el.fsIcon = document.getElementById('fs-icon');
+    el.fsText = document.getElementById('fs-text');
+    el.btnTogglePalette = document.getElementById('btn-toggle-palette');
 
     // Question Area
-    qNumberBadge: document.getElementById('q-number-badge'),
-    qMarksBadge: document.getElementById('q-marks-badge'),
-    qTextEn: document.getElementById('q-text-en'),
-    qTextHi: document.getElementById('q-text-hi'),
-    optionsList: document.getElementById('options-list'),
+    el.qNumberBadge = document.getElementById('q-number-badge');
+    el.qMarksBadge = document.getElementById('q-marks-badge');
+    el.qTextEn = document.getElementById('q-text-en');
+    el.qTextHi = document.getElementById('q-text-hi');
+    el.optionsList = document.getElementById('options-list');
 
     // Palette
-    paletteGrid: document.getElementById('palette-grid'),
+    el.paletteSidebar = document.getElementById('palette-sidebar');
+    el.paletteGrid = document.getElementById('palette-grid');
+    el.paletteBackdrop = document.getElementById('palette-backdrop');
+    el.btnClosePalette = document.getElementById('btn-close-palette');
 
     // Exam Footer Actions
-    btnSaveNext: document.getElementById('btn-save-next'),
-    btnMarkReview: document.getElementById('btn-mark-review'),
-    btnClear: document.getElementById('btn-clear'),
-    btnPrev: document.getElementById('btn-prev'),
-    btnSubmit: document.getElementById('btn-submit-exam'),
+    el.btnSaveNext = document.getElementById('btn-save-next');
+    el.btnMarkReview = document.getElementById('btn-mark-review');
+    el.btnClear = document.getElementById('btn-clear');
+    el.btnPrev = document.getElementById('btn-prev');
+    el.btnSubmit = document.getElementById('btn-submit-exam');
 
     // Submit Modal
-    submitModal: document.getElementById('submit-modal'),
-    modalAnswered: document.getElementById('modal-answered'),
-    modalNotAnswered: document.getElementById('modal-not-answered'),
-    modalMarked: document.getElementById('modal-marked'),
-    modalNotVisited: document.getElementById('modal-not-visited'),
-    btnConfirmSubmit: document.getElementById('btn-confirm-submit'),
-    btnCancelSubmit: document.getElementById('btn-cancel-submit'),
+    el.submitModal = document.getElementById('submit-modal');
+    el.modalAnswered = document.getElementById('modal-answered');
+    el.modalNotAnswered = document.getElementById('modal-not-answered');
+    el.modalMarked = document.getElementById('modal-marked');
+    el.modalNotVisited = document.getElementById('modal-not-visited');
+    el.btnConfirmSubmit = document.getElementById('btn-confirm-submit');
+    el.btnCancelSubmit = document.getElementById('btn-cancel-submit');
 
     // Results Dashboard
-    resScore: document.getElementById('res-score'),
-    resTotal: document.getElementById('res-total'),
-    resAccuracy: document.getElementById('res-accuracy'),
-    resTimeTaken: document.getElementById('res-time-taken'),
-    resSectionBreakdown: document.getElementById('res-section-breakdown'),
-    solutionsContainer: document.getElementById('solutions-container'),
-    btnBackHome: document.getElementById('btn-back-home'),
-    toast: document.getElementById('toast')
-  };
+    el.resScore = document.getElementById('res-score');
+    el.resTotal = document.getElementById('res-total');
+    el.resAccuracy = document.getElementById('res-accuracy');
+    el.resTimeTaken = document.getElementById('res-time-taken');
+    el.resSectionBreakdown = document.getElementById('res-section-breakdown');
+    el.solutionsContainer = document.getElementById('solutions-container');
+    el.btnBackHome = document.getElementById('btn-back-home');
+    el.toast = document.getElementById('toast');
+  }
 
   // Active Exam Session Key for Refresh Lock & Crash Recovery
   const ACTIVE_SESSION_KEY = 'ctet_active_exam_session_v1';
 
-  // Initialize Application
+  // Initialize Application (Guaranteed Safe Multi-Entry)
   function init() {
+    if (state.isInitialized) return;
+    state.isInitialized = true;
+
+    cacheDomElements();
     setupTheme();
     loadCandidateName();
     setupEventListeners();
@@ -157,9 +171,7 @@
   // Screen Wake Lock API (Keep Screen Awake during Test)
   // ==========================================
   async function requestWakeLock() {
-    if (!('wakeLock' in navigator)) {
-      return;
-    }
+    if (!('wakeLock' in navigator)) return;
     try {
       if (wakeLockSentinel === null && state.inExam) {
         wakeLockSentinel = await navigator.wakeLock.request('screen');
@@ -168,7 +180,7 @@
         });
       }
     } catch (err) {
-      console.warn('Screen Wake Lock request notice:', err.name, err.message);
+      console.warn('Screen Wake Lock notice:', err.name, err.message);
     }
   }
 
@@ -192,37 +204,76 @@
   }
 
   // ==========================================
-  // Fullscreen Management
+  // Cross-Device Fullscreen (Native + Fallback Simulated Mode)
   // ==========================================
   function toggleFullscreen() {
-    const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement);
-    if (!isFs) {
-      const docEl = document.documentElement;
-      if (docEl.requestFullscreen) {
-        docEl.requestFullscreen().catch(() => {});
-      } else if (docEl.webkitRequestFullscreen) {
-        docEl.webkitRequestFullscreen();
-      } else if (docEl.mozRequestFullScreen) {
-        docEl.mozRequestFullScreen();
-      } else if (docEl.msRequestFullscreen) {
-        docEl.msRequestFullscreen();
-      }
+    const docEl = document.documentElement;
+    const isNativeFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement);
+    const isSimulatedFs = document.body.classList.contains('simulated-fullscreen');
+
+    if (isNativeFs || isSimulatedFs) {
+      // Exit fullscreen
+      try {
+        if (document.exitFullscreen) {
+          document.exitFullscreen().catch(() => {});
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      } catch (e) {}
+
+      document.body.classList.remove('simulated-fullscreen');
+      updateFullscreenBtn(false);
+      showToast('Exited Fullscreen mode');
     } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen().catch(() => {});
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-      } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
+      // Enter fullscreen
+      let requested = false;
+      try {
+        if (docEl.requestFullscreen) {
+          docEl.requestFullscreen().then(() => {
+            updateFullscreenBtn(true);
+          }).catch(() => {
+            enableSimulatedFullscreen();
+          });
+          requested = true;
+        } else if (docEl.webkitRequestFullscreen) {
+          docEl.webkitRequestFullscreen();
+          updateFullscreenBtn(true);
+          requested = true;
+        } else if (docEl.mozRequestFullScreen) {
+          docEl.mozRequestFullScreen();
+          updateFullscreenBtn(true);
+          requested = true;
+        } else if (docEl.msRequestFullscreen) {
+          docEl.msRequestFullscreen();
+          updateFullscreenBtn(true);
+          requested = true;
+        }
+      } catch (err) {
+        console.warn('Native fullscreen error, falling back:', err);
+      }
+
+      if (!requested) {
+        enableSimulatedFullscreen();
       }
     }
-    setTimeout(updateFullscreenBtn, 150);
   }
 
-  function updateFullscreenBtn() {
-    const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement);
+  function enableSimulatedFullscreen() {
+    document.body.classList.add('simulated-fullscreen');
+    window.scrollTo(0, 1);
+    updateFullscreenBtn(true);
+    showToast('⛶ Expanded Screen Mode Active');
+  }
+
+  function updateFullscreenBtn(forceState) {
+    const isFs = typeof forceState === 'boolean' 
+      ? forceState 
+      : !!(document.fullscreenElement || document.webkitFullscreenElement || document.body.classList.contains('simulated-fullscreen'));
+    
     if (el.fsIcon && el.fsText) {
       if (isFs) {
         el.fsIcon.textContent = '🗗';
@@ -233,6 +284,22 @@
         el.fsText.textContent = 'Fullscreen';
         if (el.btnFullscreen) el.btnFullscreen.title = 'Enter Fullscreen';
       }
+    }
+  }
+
+  // ==========================================
+  // Question Palette Drawer Management (Tablets & Mobile)
+  // ==========================================
+  function togglePalette(forceState) {
+    if (!el.examScreen) return;
+    if (typeof forceState === 'boolean') {
+      if (forceState) {
+        el.examScreen.classList.add('palette-open');
+      } else {
+        el.examScreen.classList.remove('palette-open');
+      }
+    } else {
+      el.examScreen.classList.toggle('palette-open');
     }
   }
 
@@ -286,12 +353,12 @@
       state.currentStream = 'social_studies';
 
       // Setup Exam Top Bar
-      el.examPaperTitle.textContent = state.currentTest.title;
-      el.examPaperMeta.textContent = `${state.currentTest.totalQuestions} Questions • ${state.currentTest.duration} Minutes • 1 Mark Each`;
+      if (el.examPaperTitle) el.examPaperTitle.textContent = state.currentTest.title;
+      if (el.examPaperMeta) el.examPaperMeta.textContent = `${state.currentTest.totalQuestions} Questions • ${state.currentTest.duration} Minutes • 1 Mark Each`;
 
       // Hide landing and activate exam screen directly
-      el.landingScreen.style.display = 'none';
-      el.examScreen.classList.add('active');
+      if (el.landingScreen) el.landingScreen.style.display = 'none';
+      if (el.examScreen) el.examScreen.classList.add('active');
 
       // Rebuild tabs, palette and render question
       buildSectionTabs();
@@ -314,6 +381,7 @@
 
   // Dark Mode is Default
   function setupTheme() {
+    if (!el.themeToggle) return;
     const isLight = localStorage.getItem('ctet_light_mode') === '1';
     if (isLight) {
       document.body.classList.add('light-mode');
@@ -340,22 +408,29 @@
     } else {
       // First time launch -> prompt name
       setTimeout(() => {
-        el.namePromptModal.classList.add('active');
-        el.candidateNameInput.focus();
+        if (el.namePromptModal) {
+          el.namePromptModal.classList.add('active');
+          if (el.candidateNameInput) el.candidateNameInput.focus();
+        }
       }, 400);
     }
 
     // Load saved API key if any
-    const savedKey = window.ctetGenerator.getSavedApiKey();
-    if (savedKey) el.apiKeyInput.value = savedKey;
+    if (window.ctetGenerator) {
+      const savedKey = window.ctetGenerator.getSavedApiKey();
+      if (savedKey && el.apiKeyInput) el.apiKeyInput.value = savedKey;
+    }
   }
 
   function renderCandidateGreeting() {
-    el.userNameSpan.textContent = state.candidateName;
-    el.userGreetingDisplay.style.display = 'inline-flex';
+    if (el.userNameSpan && state.candidateName) {
+      el.userNameSpan.textContent = state.candidateName;
+      if (el.userGreetingDisplay) el.userGreetingDisplay.style.display = 'inline-flex';
+    }
   }
 
   function promptSaveName() {
+    if (!el.candidateNameInput) return;
     const name = el.candidateNameInput.value.trim();
     if (!name) {
       alert('Please enter your full name to personalize your CTET Paper 2 portal.');
@@ -363,39 +438,49 @@
     }
     state.candidateName = name;
     localStorage.setItem('ctet_candidate_name', name);
-    el.namePromptModal.classList.remove('active');
+    if (el.namePromptModal) el.namePromptModal.classList.remove('active');
     renderCandidateGreeting();
 
     // Trigger 3D Greeting Modal
-    el.greeting3dName.textContent = name;
-    el.greeting3dModal.classList.add('active');
+    if (el.greeting3dName) el.greeting3dName.textContent = name;
+    if (el.greeting3dModal) el.greeting3dModal.classList.add('active');
   }
 
-  // Setup Event Listeners
+  // Setup Event Listeners (Dual Registration: addEventListener + inline onclick backups)
   function setupEventListeners() {
     // Name save
-    el.btnSaveName.addEventListener('click', promptSaveName);
-    el.candidateNameInput.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') promptSaveName();
-    });
-    el.btnDismiss3d.addEventListener('click', () => {
-      el.greeting3dModal.classList.remove('active');
-    });
-    el.btnEditName.addEventListener('click', () => {
-      el.candidateNameInput.value = state.candidateName;
-      el.namePromptModal.classList.add('active');
-      el.candidateNameInput.focus();
-    });
+    if (el.btnSaveName) el.btnSaveName.addEventListener('click', promptSaveName);
+    if (el.candidateNameInput) {
+      el.candidateNameInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') promptSaveName();
+      });
+    }
+    if (el.btnDismiss3d) {
+      el.btnDismiss3d.addEventListener('click', () => {
+        if (el.greeting3dModal) el.greeting3dModal.classList.remove('active');
+      });
+    }
+    if (el.btnEditName) {
+      el.btnEditName.addEventListener('click', () => {
+        if (el.candidateNameInput) el.candidateNameInput.value = state.candidateName;
+        if (el.namePromptModal) {
+          el.namePromptModal.classList.add('active');
+          if (el.candidateNameInput) el.candidateNameInput.focus();
+        }
+      });
+    }
 
     // Save API key
-    el.saveKeyBtn.addEventListener('click', () => {
-      const val = el.apiKeyInput.value.trim();
-      window.ctetGenerator.saveApiKey(val);
-      showToast(val ? '✅ Gemini API Key saved!' : 'API Key cleared.');
-    });
+    if (el.saveKeyBtn) {
+      el.saveKeyBtn.addEventListener('click', () => {
+        const val = el.apiKeyInput ? el.apiKeyInput.value.trim() : '';
+        if (window.ctetGenerator) window.ctetGenerator.saveApiKey(val);
+        showToast(val ? '✅ Gemini API Key saved!' : 'API Key cleared.');
+      });
+    }
 
     // AI Storage Replenisher
-    el.btnReplenishBank.addEventListener('click', handleReplenishBank);
+    if (el.btnReplenishBank) el.btnReplenishBank.addEventListener('click', handleReplenishBank);
     if (el.btnScrollReplenish) {
       el.btnScrollReplenish.addEventListener('click', () => {
         const target = document.getElementById('replenish-section');
@@ -404,43 +489,62 @@
     }
 
     // Pre-test Countdown modal buttons
-    el.btnCancelCountdown.addEventListener('click', cancelTestCountdown);
-    el.btnFastLaunch.addEventListener('click', () => {
-      clearInterval(state.cdTimer);
-      el.countdownModal.classList.remove('active');
-      launchExam(state.pendingTestPaper);
-    });
+    if (el.btnCancelCountdown) el.btnCancelCountdown.addEventListener('click', cancelTestCountdown);
+    if (el.btnFastLaunch) el.btnFastLaunch.addEventListener('click', fastLaunchExam);
 
     // Fullscreen Toggle Buttons & Change Events
     if (el.btnFullscreen) {
       el.btnFullscreen.addEventListener('click', toggleFullscreen);
     }
-    document.addEventListener('fullscreenchange', updateFullscreenBtn);
-    document.addEventListener('webkitfullscreenchange', updateFullscreenBtn);
-    document.addEventListener('mozfullscreenchange', updateFullscreenBtn);
-    document.addEventListener('MSFullscreenChange', updateFullscreenBtn);
+    document.addEventListener('fullscreenchange', () => updateFullscreenBtn());
+    document.addEventListener('webkitfullscreenchange', () => updateFullscreenBtn());
+    document.addEventListener('mozfullscreenchange', () => updateFullscreenBtn());
+    document.addEventListener('MSFullscreenChange', () => updateFullscreenBtn());
 
-    // Exam navigation
-    el.btnSaveNext.addEventListener('click', onSaveAndNext);
-    el.btnMarkReview.addEventListener('click', onMarkForReview);
-    el.btnClear.addEventListener('click', onClearResponse);
-    el.btnPrev.addEventListener('click', onPrevQuestion);
-    el.btnSubmit.addEventListener('click', showSubmitModal);
+    // Palette Drawer Toggles
+    if (el.btnTogglePalette) el.btnTogglePalette.addEventListener('click', () => togglePalette());
+    if (el.btnClosePalette) el.btnClosePalette.addEventListener('click', () => togglePalette(false));
+    if (el.paletteBackdrop) el.paletteBackdrop.addEventListener('click', () => togglePalette(false));
 
-    // Submit Modal
-    el.btnCancelSubmit.addEventListener('click', () => el.submitModal.classList.remove('active'));
-    el.btnConfirmSubmit.addEventListener('click', () => {
-      el.submitModal.classList.remove('active');
-      finalizeTest();
-    });
+    // Exam footer navigation buttons
+    if (el.btnSaveNext) el.btnSaveNext.addEventListener('click', onSaveAndNext);
+    if (el.btnMarkReview) el.btnMarkReview.addEventListener('click', onMarkForReview);
+    if (el.btnClear) el.btnClear.addEventListener('click', onClearResponse);
+    if (el.btnPrev) el.btnPrev.addEventListener('click', onPrevQuestion);
+    if (el.btnSubmit) el.btnSubmit.addEventListener('click', showSubmitModal);
+
+    // Submit Modal buttons
+    if (el.btnCancelSubmit) el.btnCancelSubmit.addEventListener('click', cancelSubmitModal);
+    if (el.btnConfirmSubmit) el.btnConfirmSubmit.addEventListener('click', confirmSubmitExam);
 
     // Back to Home from Results
-    el.btnBackHome.addEventListener('click', () => {
-      releaseWakeLock();
-      el.resultScreen.classList.remove('active');
-      el.landingScreen.style.display = 'block';
-      loadRecentAttempts();
-      updateCoverageUI();
+    if (el.btnBackHome) el.btnBackHome.addEventListener('click', backToHome);
+
+    // Keyboard Shortcuts for desktop/laptop power users
+    document.addEventListener('keydown', (e) => {
+      if (!state.inExam || el.submitModal?.classList.contains('active')) return;
+      if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+
+      if (e.key === 'ArrowRight' || e.key === 'Enter') {
+        onSaveAndNext();
+      } else if (e.key === 'ArrowLeft') {
+        onPrevQuestion();
+      } else if (e.key === ' ' || e.key === 'm' || e.key === 'M') {
+        onMarkForReview();
+      } else if (['1', '2', '3', '4'].includes(e.key)) {
+        const optIdx = parseInt(e.key, 10) - 1;
+        state.answers[state.currentIndex] = optIdx;
+        renderCurrentQuestion();
+        updatePaletteItem(state.currentIndex);
+        persistActiveSession();
+      } else if (['a', 'b', 'c', 'd', 'A', 'B', 'C', 'D'].includes(e.key)) {
+        const charCode = e.key.toUpperCase().charCodeAt(0);
+        const optIdx = charCode - 65;
+        state.answers[state.currentIndex] = optIdx;
+        renderCurrentQuestion();
+        updatePaletteItem(state.currentIndex);
+        persistActiveSession();
+      }
     });
   }
 
@@ -458,8 +562,10 @@
 
   // Global launcher with 5-second countdown & cancel protection
   window.startMockTest = async function (mode) {
-    showToast('⏳ Fetching unique, unattempted CTET Social Science questions...');
+    init(); // Ensure initialization
+    showToast('⏳ Assembling CTET Social Science paper...');
     try {
+      if (!window.ctetGenerator) throw new Error('Generator engine not initialized');
       const testPaper = await window.ctetGenerator.fetchPaper('social_studies', mode);
       state.pendingTestPaper = testPaper;
       openPreTestCountdown(testPaper);
@@ -470,6 +576,7 @@
 
   // Pre-test countdown modal
   function openPreTestCountdown(testPaper) {
+    if (!el.countdownModal) return;
     el.cdTestTitle.textContent = testPaper.title;
     el.cdTestMeta.textContent = `${testPaper.totalQuestions} Questions • ${testPaper.duration} Minutes • Social Science`;
 
@@ -496,17 +603,26 @@
     }, 1000);
   }
 
+  function fastLaunchExam() {
+    clearInterval(state.cdTimer);
+    if (el.countdownModal) el.countdownModal.classList.remove('active');
+    if (state.pendingTestPaper) {
+      launchExam(state.pendingTestPaper);
+    }
+  }
+
   function cancelTestCountdown() {
     clearInterval(state.cdTimer);
     state.pendingTestPaper = null;
     clearActiveSession();
     releaseWakeLock();
-    el.countdownModal.classList.remove('active');
+    if (el.countdownModal) el.countdownModal.classList.remove('active');
     showToast('Test cancelled. No attempt recorded.');
   }
 
   // Launch Exam Environment
   function launchExam(testPaper) {
+    init(); // Guard
     state.inExam = true;
     state.currentTest = testPaper;
     state.currentIndex = 0;
@@ -516,12 +632,15 @@
     state.timeRemaining = testPaper.duration * 60;
 
     // Populate Top Bar (In English)
-    el.examPaperTitle.textContent = testPaper.title;
-    el.examPaperMeta.textContent = `${testPaper.totalQuestions} Questions • ${testPaper.duration} Minutes • 1 Mark Each`;
+    if (el.examPaperTitle) el.examPaperTitle.textContent = testPaper.title;
+    if (el.examPaperMeta) el.examPaperMeta.textContent = `${testPaper.totalQuestions} Questions • ${testPaper.duration} Minutes • 1 Mark Each`;
 
     // Switch Screens
-    el.landingScreen.style.display = 'none';
-    el.examScreen.classList.add('active');
+    if (el.landingScreen) el.landingScreen.style.display = 'none';
+    if (el.examScreen) {
+      el.examScreen.classList.add('active');
+      el.examScreen.classList.remove('palette-open');
+    }
 
     // Acquire Screen Wake Lock so screen never goes to sleep during exam
     requestWakeLock();
@@ -561,6 +680,7 @@
   }
 
   function updateTimerDisplay() {
+    if (!el.timerDisplay) return;
     const mins = Math.floor(state.timeRemaining / 60);
     const secs = state.timeRemaining % 60;
     el.timerDisplay.textContent = 
@@ -575,6 +695,7 @@
 
   // Section Tabs
   function buildSectionTabs() {
+    if (!el.sectionTabsContainer || !state.currentTest) return;
     const questions = state.currentTest.questions;
     const sections = [...new Set(questions.map(q => q.section))];
 
@@ -583,6 +704,7 @@
       const count = questions.filter(q => q.section === sec).length;
       const tab = document.createElement('button');
       tab.className = `sec-tab ${idx === 0 ? 'active' : ''}`;
+      tab.type = 'button';
       tab.innerHTML = `${sec} <span class="count">${count}</span>`;
       tab.addEventListener('click', () => {
         const firstSecIdx = questions.findIndex(q => q.section === sec);
@@ -595,6 +717,7 @@
   }
 
   function updateActiveSectionTab() {
+    if (!el.sectionTabsContainer || !state.currentTest) return;
     const curQ = state.currentTest.questions[state.currentIndex];
     if (!curQ) return;
     const tabs = el.sectionTabsContainer.querySelectorAll('.sec-tab');
@@ -609,13 +732,16 @@
 
   // Render Question (Question text & options in Hindi medium)
   function renderCurrentQuestion() {
+    if (!state.currentTest || !state.currentTest.questions) return;
     const q = state.currentTest.questions[state.currentIndex];
     if (!q) return;
 
     state.visited[state.currentIndex] = true;
 
     // English label for badge
-    el.qNumberBadge.textContent = `Question ${state.currentIndex + 1} of ${state.currentTest.totalQuestions}`;
+    if (el.qNumberBadge) {
+      el.qNumberBadge.textContent = `Question ${state.currentIndex + 1} of ${state.currentTest.totalQuestions}`;
+    }
     
     // Question text in Hindi
     if (el.qTextHi) {
@@ -628,28 +754,30 @@
     }
 
     // Render Options in Hindi
-    el.optionsList.innerHTML = '';
-    const selectedAns = state.answers[state.currentIndex];
+    if (el.optionsList) {
+      el.optionsList.innerHTML = '';
+      const selectedAns = state.answers[state.currentIndex];
 
-    (q.options || []).forEach((optText, optIdx) => {
-      const optItem = document.createElement('div');
-      optItem.className = `option-item ${selectedAns === optIdx ? 'selected' : ''}`;
-      
-      const charCode = String.fromCharCode(65 + optIdx);
-      optItem.innerHTML = `
-        <div class="option-key">${charCode}</div>
-        <div class="option-text">${optText}</div>
-      `;
+      (q.options || []).forEach((optText, optIdx) => {
+        const optItem = document.createElement('div');
+        optItem.className = `option-item ${selectedAns === optIdx ? 'selected' : ''}`;
+        
+        const charCode = String.fromCharCode(65 + optIdx);
+        optItem.innerHTML = `
+          <div class="option-key">${charCode}</div>
+          <div class="option-text">${optText}</div>
+        `;
 
-      optItem.addEventListener('click', () => {
-        state.answers[state.currentIndex] = optIdx;
-        renderCurrentQuestion();
-        updatePaletteItem(state.currentIndex);
-        persistActiveSession();
+        optItem.addEventListener('click', () => {
+          state.answers[state.currentIndex] = optIdx;
+          renderCurrentQuestion();
+          updatePaletteItem(state.currentIndex);
+          persistActiveSession();
+        });
+
+        el.optionsList.appendChild(optItem);
       });
-
-      el.optionsList.appendChild(optItem);
-    });
+    }
 
     updateActiveSectionTab();
     renderPalette();
@@ -658,19 +786,26 @@
 
   // Question Palette Logic
   function renderPalette() {
+    if (!el.paletteGrid || !state.currentTest) return;
     el.paletteGrid.innerHTML = '';
     const total = state.currentTest.questions.length;
 
     for (let i = 0; i < total; i++) {
       const btn = document.createElement('button');
       btn.className = `pal-btn ${getPaletteStatusClass(i)} ${i === state.currentIndex ? 'current' : ''}`;
+      btn.type = 'button';
       btn.textContent = i + 1;
-      btn.addEventListener('click', () => jumpToQuestion(i));
+      btn.addEventListener('click', () => {
+        jumpToQuestion(i);
+        // Auto-close palette drawer on mobile/tablet when question selected
+        togglePalette(false);
+      });
       el.paletteGrid.appendChild(btn);
     }
   }
 
   function updatePaletteItem(idx) {
+    if (!el.paletteGrid) return;
     const btns = el.paletteGrid.children;
     if (btns[idx]) {
       btns[idx].className = `pal-btn ${getPaletteStatusClass(idx)} ${idx === state.currentIndex ? 'current' : ''}`;
@@ -738,6 +873,7 @@
 
   // Submit Modal
   function showSubmitModal() {
+    if (!state.currentTest || !el.submitModal) return;
     const total = state.currentTest.totalQuestions;
     let ansCount = 0;
     let markedCount = 0;
@@ -751,12 +887,21 @@
 
     const notAnsCount = total - ansCount - notVisitedCount;
 
-    el.modalAnswered.textContent = ansCount;
-    el.modalNotAnswered.textContent = Math.max(0, notAnsCount);
-    el.modalMarked.textContent = markedCount;
-    el.modalNotVisited.textContent = notVisitedCount;
+    if (el.modalAnswered) el.modalAnswered.textContent = ansCount;
+    if (el.modalNotAnswered) el.modalNotAnswered.textContent = Math.max(0, notAnsCount);
+    if (el.modalMarked) el.modalMarked.textContent = markedCount;
+    if (el.modalNotVisited) el.modalNotVisited.textContent = notVisitedCount;
 
     el.submitModal.classList.add('active');
+  }
+
+  function cancelSubmitModal() {
+    if (el.submitModal) el.submitModal.classList.remove('active');
+  }
+
+  function confirmSubmitExam() {
+    if (el.submitModal) el.submitModal.classList.remove('active');
+    finalizeTest();
   }
 
   // Finalize & Calculate Results
@@ -765,7 +910,7 @@
     clearActiveSession();
     releaseWakeLock(); // Release screen wake lock
     clearInterval(state.timerInterval);
-    el.examScreen.classList.remove('active');
+    if (el.examScreen) el.examScreen.classList.remove('active');
 
     const questions = state.currentTest.questions;
     let score = 0;
@@ -805,23 +950,25 @@
     const secsTaken = timeSpentSeconds % 60;
 
     // Render Results
-    el.resScore.textContent = score;
-    el.resTotal.textContent = totalQ;
-    el.resAccuracy.textContent = accuracy + '%';
-    el.resTimeTaken.textContent = `${minsTaken}m ${secsTaken}s`;
+    if (el.resScore) el.resScore.textContent = score;
+    if (el.resTotal) el.resTotal.textContent = totalQ;
+    if (el.resAccuracy) el.resAccuracy.textContent = accuracy + '%';
+    if (el.resTimeTaken) el.resTimeTaken.textContent = `${minsTaken}m ${secsTaken}s`;
 
     // Render Section Breakdown
-    el.resSectionBreakdown.innerHTML = '';
-    Object.keys(sectionStats).forEach(secName => {
-      const stat = sectionStats[secName];
-      const secRow = document.createElement('div');
-      secRow.style.cssText = 'display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--bd);font-size:13px;';
-      secRow.innerHTML = `
-        <span style="font-weight:700">${secName}</span>
-        <span>${stat.correct} / ${stat.total} (${Math.round((stat.correct/stat.total)*100)}%)</span>
-      `;
-      el.resSectionBreakdown.appendChild(secRow);
-    });
+    if (el.resSectionBreakdown) {
+      el.resSectionBreakdown.innerHTML = '';
+      Object.keys(sectionStats).forEach(secName => {
+        const stat = sectionStats[secName];
+        const secRow = document.createElement('div');
+        secRow.style.cssText = 'display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--bd);font-size:13px;';
+        secRow.innerHTML = `
+          <span style="font-weight:700">${secName}</span>
+          <span>${stat.correct} / ${stat.total} (${Math.round((stat.correct/stat.total)*100)}%)</span>
+        `;
+        el.resSectionBreakdown.appendChild(secRow);
+      });
+    }
 
     // Render Chart
     renderResultChart(correct, wrong, unattempted);
@@ -843,7 +990,7 @@
     // Update Question Bank Coverage
     updateCoverageUI();
 
-    el.resultScreen.classList.add('active');
+    if (el.resultScreen) el.resultScreen.classList.add('active');
   }
 
   // Save Attempt to localStorage (Max 5 items)
@@ -863,6 +1010,8 @@
   function loadRecentAttempts() {
     try {
       const attempts = JSON.parse(localStorage.getItem('ctet_attempts_v2') || '[]');
+      if (!el.attemptsContainer || !el.emptyAttemptsMsg) return;
+
       if (!attempts.length) {
         el.attemptsContainer.innerHTML = '';
         el.emptyAttemptsMsg.style.display = 'block';
@@ -930,7 +1079,7 @@
         labels: ['Correct', 'Incorrect', 'Unattempted'],
         datasets: [{
           data: [correct, wrong, unattempted],
-          backgroundColor: ['#138808', '#EF4444', '#64748B'],
+          backgroundColor: ['#10B981', '#EF4444', '#64748B'],
           borderWidth: 2,
           borderColor: '#141B26'
         }]
@@ -947,6 +1096,7 @@
 
   // Render Solutions Review (Hindi Questions & Explanations)
   function renderSolutionsReview(questions) {
+    if (!el.solutionsContainer) return;
     el.solutionsContainer.innerHTML = '';
 
     questions.forEach((q, idx) => {
@@ -994,31 +1144,34 @@
 
   // Update Question Bank Coverage UI (Social Science Pool)
   function updateCoverageUI() {
-    if (!window.ctetGenerator) return;
+    if (!window.ctetGenerator || !el.coveragePct || !el.coverageBar) return;
     const stats = window.ctetGenerator.getCoverageStats();
 
     el.coveragePct.textContent = stats.percentage + '%';
     el.coverageBar.style.width = stats.percentage + '%';
 
     const sub = stats.subjectStats;
-    if (sub.cdp) el.covCdp.textContent = `${sub.cdp.attempted}/${sub.cdp.total} (${sub.cdp.percentage}%)`;
-    if (sub.social_studies) el.covSst.textContent = `${sub.social_studies.attempted}/${sub.social_studies.total} (${sub.social_studies.percentage}%)`;
-    if (sub.language_hindi) el.covHi.textContent = `${sub.language_hindi.attempted}/${sub.language_hindi.total} (${sub.language_hindi.percentage}%)`;
-    if (sub.language_english) el.covEn.textContent = `${sub.language_english.attempted}/${sub.language_english.total} (${sub.language_english.percentage}%)`;
+    if (sub.cdp && el.covCdp) el.covCdp.textContent = `${sub.cdp.attempted}/${sub.cdp.total} (${sub.cdp.percentage}%)`;
+    if (sub.social_studies && el.covSst) el.covSst.textContent = `${sub.social_studies.attempted}/${sub.social_studies.total} (${sub.social_studies.percentage}%)`;
+    if (sub.language_hindi && el.covHi) el.covHi.textContent = `${sub.language_hindi.attempted}/${sub.language_hindi.total} (${sub.language_hindi.percentage}%)`;
+    if (sub.language_english && el.covEn) el.covEn.textContent = `${sub.language_english.attempted}/${sub.language_english.total} (${sub.language_english.percentage}%)`;
 
-    if (stats.percentage >= 70) {
-      el.covAlertBox.style.display = 'flex';
-      el.covAlertText.innerHTML = `🏆 <strong>Outstanding Coverage!</strong> You have practiced <strong>${stats.percentage}%</strong> (${stats.attemptedCount} / ${stats.totalQuestions}) of the entire Social Science question bank.`;
-    } else if (stats.percentage >= 30) {
-      el.covAlertBox.style.display = 'flex';
-      el.covAlertText.innerHTML = `💪 <strong>Strong Progress!</strong> You have covered <strong>${stats.percentage}%</strong> (${stats.attemptedCount} / ${stats.totalQuestions}) of the question bank.`;
-    } else {
-      el.covAlertBox.style.display = 'none';
+    if (el.covAlertBox && el.covAlertText) {
+      if (stats.percentage >= 70) {
+        el.covAlertBox.style.display = 'flex';
+        el.covAlertText.innerHTML = `🏆 <strong>Outstanding Coverage!</strong> You have practiced <strong>${stats.percentage}%</strong> (${stats.attemptedCount} / ${stats.totalQuestions}) of the entire Social Science question bank.`;
+      } else if (stats.percentage >= 30) {
+        el.covAlertBox.style.display = 'flex';
+        el.covAlertText.innerHTML = `💪 <strong>Strong Progress!</strong> You have covered <strong>${stats.percentage}%</strong> (${stats.attemptedCount} / ${stats.totalQuestions}) of the question bank.`;
+      } else {
+        el.covAlertBox.style.display = 'none';
+      }
     }
   }
 
   // AI Bank Storage Replenisher (Rolling FIFO Replacement - Zero Extra Storage)
   async function handleReplenishBank() {
+    if (!el.apiKeyInput) return;
     const key = el.apiKeyInput.value.trim();
     if (!key) {
       alert('Please enter your Gemini API key in the field to replenish questions.');
@@ -1026,11 +1179,11 @@
       return;
     }
 
-    const sectionKey = el.replenishSectionSelect.value;
-    const count = parseInt(el.replenishCountSelect.value, 10) || 10;
+    const sectionKey = el.replenishSectionSelect ? el.replenishSectionSelect.value : 'social_studies';
+    const count = el.replenishCountSelect ? parseInt(el.replenishCountSelect.value, 10) : 10;
 
-    el.genStatus.textContent = `🤖 Asking Gemini 3.8 Flash to synthesize ${count} new questions...`;
-    el.btnReplenishBank.disabled = true;
+    if (el.genStatus) el.genStatus.textContent = `🤖 Asking Gemini 3.8 Flash to synthesize ${count} new questions...`;
+    if (el.btnReplenishBank) el.btnReplenishBank.disabled = true;
 
     try {
       const res = await window.ctetGenerator.replenishStorageWithGemini(
@@ -1038,31 +1191,61 @@
         sectionKey, 
         count, 
         (progressMsg) => {
-          el.genStatus.textContent = `🤖 ${progressMsg}`;
+          if (el.genStatus) el.genStatus.textContent = `🤖 ${progressMsg}`;
         }
       );
       
-      el.genStatus.textContent = `✅ Replaced ${res.evictedCount} oldest questions with ${res.addedCount} fresh questions in ${res.sectionLabel}! Pool size remains steady at ${res.constantPoolSize} questions (zero extra space used).`;
+      if (el.genStatus) el.genStatus.textContent = `✅ Replaced ${res.evictedCount} oldest questions with ${res.addedCount} fresh questions in ${res.sectionLabel}! Pool size remains steady at ${res.constantPoolSize} questions (zero extra space used).`;
       showToast(`🔄 Replaced ${res.addedCount} questions in storage!`);
       
       updateCoverageUI();
 
     } catch (err) {
-      el.genStatus.textContent = '❌ Replenishment error: ' + err.message;
+      if (el.genStatus) el.genStatus.textContent = '❌ Replenishment error: ' + err.message;
     } finally {
-      el.btnReplenishBank.disabled = false;
+      if (el.btnReplenishBank) el.btnReplenishBank.disabled = false;
     }
+  }
+
+  function backToHome() {
+    releaseWakeLock();
+    if (el.resultScreen) el.resultScreen.classList.remove('active');
+    if (el.landingScreen) el.landingScreen.style.display = 'block';
+    loadRecentAttempts();
+    updateCoverageUI();
   }
 
   // Toast Notification
   function showToast(msg) {
+    if (!el.toast) return;
     el.toast.textContent = msg;
     el.toast.style.display = 'block';
     setTimeout(() => {
-      el.toast.style.display = 'none';
+      if (el.toast) el.toast.style.display = 'none';
     }, 3500);
   }
 
-  // Run on load
-  document.addEventListener('DOMContentLoaded', init);
+  // ==========================================
+  // EXPOSE GLOBAL HANDLERS FOR UNBREAKABLE INLINE CLICK FALLBACKS
+  // ==========================================
+  window.onSaveAndNext = onSaveAndNext;
+  window.onMarkForReview = onMarkForReview;
+  window.onClearResponse = onClearResponse;
+  window.onPrevQuestion = onPrevQuestion;
+  window.showSubmitModal = showSubmitModal;
+  window.cancelSubmitModal = cancelSubmitModal;
+  window.confirmSubmitExam = confirmSubmitExam;
+  window.fastLaunchExam = fastLaunchExam;
+  window.cancelTestCountdown = cancelTestCountdown;
+  window.toggleFullscreen = toggleFullscreen;
+  window.togglePalette = togglePalette;
+  window.backToHome = backToHome;
+  window.jumpToQuestion = jumpToQuestion;
+
+  // Safe Multi-Environment Bootloader
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 })();
