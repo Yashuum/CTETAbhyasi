@@ -785,7 +785,7 @@
       return;
     }
 
-    el.genStatus.textContent = '🤖 Calling Gemini 2.0 Flash to synthesize authentic CTET questions...';
+    el.genStatus.textContent = '🤖 Calling Gemini 3.8 Flash to synthesize authentic CTET questions...';
     el.generateBtn.disabled = true;
 
     try {

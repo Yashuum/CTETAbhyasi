@@ -191,37 +191,56 @@ Respond with STRICT JSON format matching this schema:
 ]
 Do NOT wrap in markdown code blocks. Output valid raw JSON only.`;
 
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+    const modelsToTry = ['gemini-3.8-flash', 'gemini-2.5-flash', 'gemini-1.5-flash'];
+    let lastError = null;
 
-    const response = await fetch(endpoint, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: {
-          temperature: 0.7,
-          responseMimeType: 'application/json'
+    for (const model of modelsToTry) {
+      try {
+        const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: {
+              temperature: 0.7,
+              responseMimeType: 'application/json'
+            }
+          })
+        });
+
+        if (!response.ok) {
+          const err = await response.json();
+          const msg = err.error?.message || `HTTP ${response.status}`;
+          // If model is deprecated or not found, try next model in fallback list
+          if (msg.includes('no longer available') || msg.includes('not found') || response.status === 404) {
+            lastError = new Error(msg);
+            continue;
+          }
+          throw new Error(msg);
         }
-      })
-    });
 
-    if (!response.ok) {
-      const err = await response.json();
-      throw new Error(err.error?.message || 'Failed to generate questions from Gemini');
+        const data = await response.json();
+        const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (!rawText) throw new Error('No question content received from Gemini');
+
+        try {
+          return JSON.parse(rawText);
+        } catch (e) {
+          const cleaned = rawText.replace(/```json/g, '').replace(/```/g, '').trim();
+          return JSON.parse(cleaned);
+        }
+      } catch (err) {
+        lastError = err;
+        // If not a model availability error, throw immediately
+        if (!err.message.includes('no longer available') && !err.message.includes('not found')) {
+          throw err;
+        }
+      }
     }
 
-    const data = await response.json();
-    const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text;
-    if (!rawText) throw new Error('No question content received from Gemini');
-
-    try {
-      const parsedQuestions = JSON.parse(rawText);
-      return parsedQuestions;
-    } catch (e) {
-      const cleaned = rawText.replace(/```json/g, '').replace(/```/g, '').trim();
-      const parsed = JSON.parse(cleaned);
-      return parsed;
-    }
+    throw lastError || new Error('Failed to generate questions with available Gemini models');
   }
 
   shuffleArray(arr) {

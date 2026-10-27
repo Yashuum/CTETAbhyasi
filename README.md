@@ -77,7 +77,7 @@ The portal comes with 2,800+ verified questions ready to play offline out of the
    * Click **"Save"**. The key is stored locally in your browser's `localStorage` (`ctet_gemini_api_key`) and never transmitted to any third-party server.
 3. **Generate Unseen Questions**:
    * Click **"⚡ Generate Fresh Questions with AI"**.
-   * The portal will query Google's `gemini-2.0-flash` model using structured JSON schemas, validate the output, and immediately launch an AI-generated quiz!
+   * The portal will query Google's `gemini-3.8-flash` model using structured JSON schemas, validate the output, and immediately launch an AI-generated quiz!
 
 ---
 
