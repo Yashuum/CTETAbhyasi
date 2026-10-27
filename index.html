@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>CTET Abhyasi 2.0 – CTET Paper 2 Mock Test Portal</title>
+  <meta name="description" content="AI-Powered Practice Mock Test Portal for CTET Paper 2 with 2800+ questions, automated deduplication, and authentic CBT exam simulation." />
+  
+  <!-- Google Fonts & Chart.js -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="brand-wrap">
+      <div class="brand-logo">📖</div>
+      <div class="brand-text">
+        <h1>CTET <span>Abhyasi 2.0</span></h1>
+        <p>Paper 2 (Elementary Stage VI–VIII) • 2,800+ Question Engine</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <!-- Locked Candidate Greeting -->
+      <div id="user-greeting-display" class="user-greeting-chip" style="display: none;">
+        <span>👋 <strong id="user-name-span">Candidate</strong></span>
+        <button id="btn-edit-name" style="background:none; border:none; color:inherit; cursor:pointer; font-size:12px;" title="Edit Name">✏️</button>
+      </div>
+      <button id="theme-toggle" class="btn-icon">☀️ Light</button>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       SCREEN 1: LANDING & PRACTICE PORTAL
+       ========================================== -->
+  <main id="landing-screen" class="container">
+    
+    <!-- Hero Banner (Background Text: YASH) -->
+    <section class="hero-card">
+      <div class="hero-text">
+        <h2>Ace CTET Paper 2 with <em>Automated Mock Tests</em></h2>
+        <p>
+          Simulate the real CBSE/CTET Computer-Based Test (150 Mins, 150 Questions).
+          Questions are automatically fetched from a 2,800+ verified master bank with zero duplicate questions in the same test or across multiple attempts today.
+        </p>
+        <div class="hero-badges">
+          <span class="badge-tag highlight">2,800+ Verified Questions</span>
+          <span class="badge-tag">Zero-Duplicate Daily Engine</span>
+          <span class="badge-tag">Elementary Stage (Classes 6–8)</span>
+          <span class="badge-tag">NEP 2020 Aligned</span>
+          <span class="badge-tag">Bilingual (English / Hindi)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Controls: Stream Selector (Default: Social Studies) & AI Engine -->
+    <div class="control-bar">
+      <!-- Stream Switcher -->
+      <div class="control-card">
+        <div class="control-title">
+          <span>🎯 Select Your Teaching Stream</span>
+          <span style="font-size:11px; color:#38BDF8; font-weight:700;">Default: SST</span>
+        </div>
+        <div class="stream-picker">
+          <button id="stream-sst" class="stream-btn active">
+            🌍 Social Studies / Science<br/>
+            <small style="opacity:0.75; font-size:10px;">History • Geography • Civics • Pedagogy (60 Qs)</small>
+          </button>
+          <button id="stream-math" class="stream-btn">
+            📐 Mathematics & Science<br/>
+            <small style="opacity:0.75; font-size:10px;">Maths (30 Qs) • Science (30 Qs)</small>
+          </button>
+        </div>
+        <div class="stream-info-pill">
+          💡 <strong>Why this choice matters:</strong> CTET Paper 2 candidates pick either Social Studies (for SST teachers) or Math & Science (for Science/Math teachers). All 60 middle-section questions are generated strictly according to your selected stream.
+        </div>
+      </div>
+
+      <!-- AI Question Synthesizer (Gemini Integration) -->
+      <div class="control-card">
+        <div class="control-title">
+          <span>🤖 Gemini AI Live Question Generator</span>
+          <span style="font-size:11px; color:var(--sf); font-weight:700;">Optional</span>
+        </div>
+        <div class="ai-controls">
+          <div class="api-key-row">
+            <input type="password" id="gemini-api-key" placeholder="Enter Gemini API Key (optional)" />
+            <button id="btn-save-key" class="btn-icon">Save</button>
+          </div>
+          <button id="btn-ai-generate" class="btn-generate">
+            ⚡ Generate Fresh Questions with AI
+          </button>
+          <div id="ai-gen-status" style="font-size: 11px; color: var(--mt); min-height: 14px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent 5 Attempts History with Subject Breakdown -->
+    <section class="history-section">
+      <div class="history-header">
+        <div class="history-title">
+          <span>📊 Last 5 Mock Test Attempts & Subject Scorecards</span>
+        </div>
+      </div>
+      <div id="empty-attempts-msg" style="text-align: center; color: var(--mt); font-size: 13px; padding: 18px 0;">
+        No attempts recorded yet on this browser. Start a mock test below to track your performance!
+      </div>
+      <div id="recent-attempts-list" class="attempts-container">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
+    <!-- Mock Papers List -->
+    <div class="section-heading">
+      <span>Available Mock Papers for <span id="stream-display-title" style="color:var(--sf)">Social Studies / Social Science</span></span>
+    </div>
+
+    <div class="cards-grid">
+      <!-- Card 1: Full Mock Exam -->
+      <div class="test-card active-stream">
+        <div>
+          <div class="card-top">
+            <span class="card-tag">Full 150-Q Exam</span>
+            <span style="font-size: 11px; color: var(--mt); font-weight: 700;">150 Marks</span>
+          </div>
+          <div class="card-title">CTET Paper 2 Comprehensive Mock Test</div>
+          <div class="card-desc">
+            Official format covering CDP (30 Qs), Stream Subject (60 Qs), Language I Hindi (30 Qs), and Language II English (30 Qs).
+          </div>
+          <div class="card-meta">
+            <span>⏱️ 150 Minutes</span>
+            <span>📝 150 MCQs</span>
+            <span>🌐 Bilingual</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="score-badge">Official Format</span>
+          <button class="btn-start" onclick="startMockTest('full')">▶ Start Full Mock</button>
+        </div>
+      </div>
+
+      <!-- Card 2: Rapid Sprint -->
+      <div class="test-card">
+        <div>
+          <div class="card-top">
+            <span class="card-tag">Rapid Sprint</span>
+            <span style="font-size: 11px; color: var(--mt); font-weight: 700;">High Yield</span>
+          </div>
+          <div class="card-title">Subject & Pedagogy Rapid Power Test</div>
+          <div class="card-desc">
+            Quick 45-minute timed sprint featuring mixed questions from CDP (10), Stream Content (15), and Language Pedagogy (10).
+          </div>
+          <div class="card-meta">
+            <span>⏱️ 45 Minutes</span>
+            <span>📝 35 MCQs</span>
+            <span>⚡ Speed Drill</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="score-badge">Instant Evaluation</span>
+          <button class="btn-start" onclick="startMockTest('sprint')">▶ Start Sprint</button>
+        </div>
+      </div>
+
+      <!-- Card 3: CDP Special -->
+      <div class="test-card">
+        <div>
+          <div class="card-top">
+            <span class="card-tag">Core CDP</span>
+            <span style="font-size: 11px; color: var(--mt); font-weight: 700;">30 Marks</span>
+          </div>
+          <div class="card-title">Child Development & Pedagogy Intensive</div>
+          <div class="card-desc">
+            Targeted 30-question drill focused on Piaget, Vygotsky, Kohlberg, Gardner, Inclusive Education, and NEP 2020.
+          </div>
+          <div class="card-meta">
+            <span>⏱️ 30 Minutes</span>
+            <span>📝 30 MCQs</span>
+            <span>🎯 100% Pedagogy</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="score-badge">Foundational</span>
+          <button class="btn-start" onclick="startMockTest('cdp')">▶ Start CDP Drill</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================
+       MODAL 1: FIRST-TIME CANDIDATE NAME PROMPT
+       ========================================== -->
+  <div id="name-prompt-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-title">👋 Welcome to CTET Abhyasi 2.0</div>
+      <p style="font-size: 13px; color: var(--mt); margin-bottom: 16px; line-height: 1.5;">
+        Please enter your candidate name. This will be locked on this browser so all your mock attempts, scorecards, and reports are personalized to you. No password or login required!
+      </p>
+      <div style="margin-bottom: 18px;">
+        <input 
+          type="text" 
+          id="candidate-name-input" 
+          placeholder="Enter your full name (e.g. Yash Sharma)" 
+          style="width: 100%; padding: 12px 14px; border-radius: 8px; border: 1.5px solid var(--bd); background: var(--bg); color: var(--tx); font-size: 14px; outline: none;" 
+        />
+      </div>
+      <div style="display:flex; justify-content: flex-end;">
+        <button id="btn-save-name" class="btn-generate" style="width: 100%;">Save Name & Get Started ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL 2: 3D GREETING LOADING SCREEN
+       ========================================== -->
+  <div id="greeting-3d-modal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 440px;">
+      <div class="greeting-3d-wrap">
+        <div class="greeting-3d-card">
+          <div class="greeting-3d-icon">🎓</div>
+          <div id="greeting-3d-name" class="greeting-3d-name">Candidate</div>
+          <div class="greeting-3d-subtitle">
+            Welcome to your personalized CTET Paper 2 Preparation Workspace!
+          </div>
+        </div>
+      </div>
+      <p style="font-size: 12px; color: var(--mt); text-align: center; margin-bottom: 16px;">
+        ✅ Your device profile is locked and ready. All 2,800+ authentic questions and your recent 5 scorecard histories will be preserved here.
+      </p>
+      <button id="btn-dismiss-3d" class="btn-generate" style="width: 100%;">Continue to Dashboard 🚀</button>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL 3: PRE-TEST COUNTDOWN & CANCEL
+       ========================================== -->
+  <div id="countdown-modal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 420px; text-align: center;">
+      <div class="modal-title" style="margin-bottom: 4px;">🚀 Preparing Your CTET Paper...</div>
+      <p style="font-size: 12px; color: var(--mt);">Double-checking questions to ensure zero duplicates today.</p>
+
+      <div class="countdown-container">
+        <div class="cd-ring-wrap">
+          <div class="cd-ring-circle"></div>
+          <div id="cd-num" class="cd-number">5</div>
+        </div>
+        <div id="cd-test-title" style="font-weight: 800; font-size: 15px; margin-bottom: 4px;">CTET Paper 2 Full Mock</div>
+        <div id="cd-test-meta" style="font-size: 12px; color: var(--mt); margin-bottom: 18px;">150 Questions • 150 Minutes</div>
+      </div>
+
+      <div style="display: flex; gap: 10px;">
+        <button id="btn-cancel-countdown" class="btn-cbt btn-clear" style="flex: 1; border-color: #EF4444; color: #EF4444;">
+          ✕ Cancel Test
+        </button>
+        <button id="btn-fast-launch" class="btn-cbt btn-save-next" style="flex: 1;">
+          Start Now ▶
+        </button>
+      </div>
+      <small style="display:block; margin-top:10px; font-size:11px; color:var(--mt);">
+        Clicked by mistake? Click "Cancel Test" to stop without recording any score.
+      </small>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       SCREEN 2: FULL CBT EXAM ENVIRONMENT
+       ========================================== -->
+  <section id="exam-screen">
+    <!-- Top Bar -->
+    <div class="exam-topbar">
+      <div class="exam-paper-info">
+        <h2 id="exam-paper-title">CTET Paper 2 Mock Test</h2>
+        <p id="exam-paper-meta">150 Questions • 150 Minutes</p>
+      </div>
+      <div class="exam-timer-wrap">
+        <div style="font-size: 12px; font-weight: 700; color: var(--mt);">Time Remaining:</div>
+        <div id="timer-display" class="timer-box">150:00</div>
+      </div>
+    </div>
+
+    <!-- Section Tabs -->
+    <div id="section-tabs" class="exam-section-tabs">
+      <!-- Injected dynamically: CDP, SST / Math-Sci, Language I, Language II -->
+    </div>
+
+    <!-- Exam Body: Question + Sidebar Palette -->
+    <div class="exam-body">
+      <!-- Main Question Container -->
+      <div class="question-container">
+        <div class="q-header">
+          <div id="q-number-badge" class="q-number-badge">Question 1</div>
+          <div class="q-tools">
+            <button id="lang-toggle-btn" class="lang-toggle-btn">🌐 Hindi: ON</button>
+            <span class="q-marks-badge">+1.0 / -0.0</span>
+          </div>
+        </div>
+
+        <div class="q-content">
+          <div class="q-bilingual-block">
+            <div id="q-text-en" style="font-weight: 600;">Question text in English will load here...</div>
+            <div id="q-text-hi" class="q-text-hi">हिंदी अनुवाद यहाँ दिखाई देगा...</div>
+          </div>
+        </div>
+
+        <!-- Options List -->
+        <div id="options-list" class="options-list">
+          <!-- Dynamically populated options A, B, C, D -->
+        </div>
+      </div>
+
+      <!-- Palette Sidebar -->
+      <aside class="palette-sidebar">
+        <!-- Palette Legend -->
+        <div class="palette-legend">
+          <div class="legend-item"><span class="legend-dot dot-ans"></span> Answered</div>
+          <div class="legend-item"><span class="legend-dot dot-no"></span> Not Answered</div>
+          <div class="legend-item"><span class="legend-dot dot-mk"></span> Review</div>
+          <div class="legend-item"><span class="legend-dot dot-mka"></span> Ans & Marked</div>
+          <div class="legend-item"><span class="legend-dot dot-nv"></span> Not Visited</div>
+        </div>
+
+        <!-- Palette Grid -->
+        <div class="palette-grid-wrap">
+          <div id="palette-grid" class="palette-grid">
+            <!-- 1 to N Question buttons -->
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Exam Bottom Action Bar -->
+    <footer class="exam-footer">
+      <div class="footer-left">
+        <button id="btn-mark-review" class="btn-cbt btn-mark">Mark for Review & Next</button>
+        <button id="btn-clear" class="btn-cbt btn-clear">Clear Response</button>
+      </div>
+      <div class="footer-right">
+        <button id="btn-prev" class="btn-cbt btn-prev">◀ Previous</button>
+        <button id="btn-save-next" class="btn-cbt btn-save-next">Save & Next ▶</button>
+        <button id="btn-submit-exam" class="btn-cbt btn-submit">Submit Test</button>
+      </div>
+    </footer>
+  </section>
+
+  <!-- Submit Confirmation Modal -->
+  <div id="submit-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-title">📋 Confirm Test Submission</div>
+      <p style="font-size: 13px; color: var(--mt);">
+        Are you sure you want to complete and submit your mock test? Here is your question attempt summary:
+      </p>
+
+      <div class="summary-stats-grid">
+        <div class="summary-stat-box">
+          <span class="label">Answered</span>
+          <span id="modal-answered" class="val" style="color: var(--gn);">0</span>
+        </div>
+        <div class="summary-stat-box">
+          <span class="label">Not Answered</span>
+          <span id="modal-not-answered" class="val" style="color: var(--c-no);">0</span>
+        </div>
+        <div class="summary-stat-box">
+          <span class="label">Marked for Review</span>
+          <span id="modal-marked" class="val" style="color: var(--pur);">0</span>
+        </div>
+        <div class="summary-stat-box">
+          <span class="label">Not Visited</span>
+          <span id="modal-not-visited" class="val" style="color: var(--c-nv);">0</span>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:flex-end; gap:10px;">
+        <button id="btn-cancel-submit" class="btn-cbt btn-clear">Resume Test</button>
+        <button id="btn-confirm-submit" class="btn-cbt btn-submit">Yes, Submit Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       SCREEN 3: RESULTS & ANALYTICS DASHBOARD
+       ========================================== -->
+  <section id="result-screen" class="container">
+    <div class="scorecard-banner">
+      <div class="banner-left">
+        <h2>Exam Result & Scorecard</h2>
+        <p style="color: #BAE6FD; font-size: 13px; margin-top: 4px;">Subject-wise performance analysis & pedagogical feedback</p>
+      </div>
+      <div style="text-align: right;">
+        <div class="banner-score-big">
+          <span id="res-score">0</span><span> / </span><span id="res-total">0</span>
+        </div>
+        <div style="font-size: 12px; color: #CBD5E1; font-weight: 600;">Total Score</div>
+      </div>
+    </div>
+
+    <!-- Analytics Cards -->
+    <div class="analytics-grid">
+      <!-- Accuracy Card -->
+      <div class="analytics-card">
+        <div style="font-size: 12px; font-weight: 700; color: var(--mt); margin-bottom: 6px;">ACCURACY</div>
+        <div id="res-accuracy" style="font-size: 32px; font-weight: 800; color: #38BDF8; font-family: var(--font-h);">0%</div>
+        <p style="font-size: 12px; color: var(--mt); margin-top: 4px;">Percentage of attempted questions marked correctly</p>
+      </div>
+
+      <!-- Time Taken Card -->
+      <div class="analytics-card">
+        <div style="font-size: 12px; font-weight: 700; color: var(--mt); margin-bottom: 6px;">TIME TAKEN</div>
+        <div id="res-time-taken" style="font-size: 32px; font-weight: 800; color: var(--gn); font-family: var(--font-h);">0m 0s</div>
+        <p style="font-size: 12px; color: var(--mt); margin-top: 4px;">Total time utilized during the mock test</p>
+      </div>
+
+      <!-- Doughnut Chart -->
+      <div class="analytics-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div style="font-size: 12px; font-weight: 700; color: var(--mt); margin-bottom: 10px; width: 100%;">ATTEMPT OVERVIEW</div>
+        <div style="max-width: 170px; max-height: 170px; width: 100%;">
+          <canvas id="results-doughnut-chart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Wise Breakdown -->
+    <div class="analytics-card" style="margin-bottom: 24px;">
+      <div style="font-family: var(--font-h); font-size: 16px; font-weight: 800; margin-bottom: 12px;">
+        Section-Wise Performance Breakdown
+      </div>
+      <div id="res-section-breakdown">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+
+    <!-- Question Solutions & Explanations -->
+    <div class="solutions-section">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px; flex-wrap:wrap; gap:10px;">
+        <div style="font-family: var(--font-h); font-size: 18px; font-weight: 800;">
+          Detailed Solutions & Pedagogical Explanations
+        </div>
+        <button id="btn-back-home" class="btn-start">◀ Back to Dashboard</button>
+      </div>
+
+      <div id="solutions-container">
+        <!-- Rendered solution cards with answer explanations -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Toast -->
+  <div id="toast" class="toast-notice"></div>
+
+  <!-- Scripts -->
+  <script src="js/ctet-bank.js"></script>
+  <script src="js/generator.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
