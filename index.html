@@ -54,10 +54,19 @@
           <span class="badge-tag">Zero-Duplicate Daily Engine</span>
           <span class="badge-tag">Elementary Stage (Classes 6–8)</span>
           <span class="badge-tag">NEP 2020 Aligned</span>
-          <span class="badge-tag">Bilingual (English / Hindi)</span>
+          <span class="badge-tag">🇮🇳 100% हिंदी माध्यम</span>
         </div>
       </div>
     </section>
+
+    <!-- Hindi Medium Notice Banner -->
+    <div class="lang-notice-banner">
+      <div class="lang-notice-icon">📢</div>
+      <div class="lang-notice-content">
+        <strong>महत्वपूर्ण सूचना:</strong> वर्तमान में यह CTET मॉक टेस्ट पोर्टल विशेष रूप से <strong>हिंदी माध्यम (Hindi Medium)</strong> के विद्यार्थियों के लिए तैयार किया गया है। सभी प्रश्न, विकल्प और व्याख्याएं पूर्णतः हिंदी में उपलब्ध हैं।
+        <span class="lang-notice-sub">Note: We are actively developing the complete English version and it will be updated soon!</span>
+      </div>
+    </div>
 
     <!-- Question Bank Coverage & Mastery Dashboard -->
     <section class="coverage-card">
@@ -330,10 +339,14 @@
     <div class="exam-topbar">
       <div class="exam-paper-info">
         <h2 id="exam-paper-title">CTET Paper 2 Mock Test</h2>
-        <p id="exam-paper-meta">150 Questions • 150 Minutes</p>
+        <p id="exam-paper-meta">150 प्रश्न • 150 मिनट</p>
       </div>
       <div class="exam-timer-wrap">
-        <div style="font-size: 12px; font-weight: 700; color: var(--mt);">Time Remaining:</div>
+        <!-- Fullscreen Toggle Button -->
+        <button id="btn-fullscreen" class="btn-fullscreen-toggle" title="पूर्ण स्क्रीन में बदलें">
+          <span id="fs-icon">⛶</span> <span id="fs-text">पूर्ण स्क्रीन</span>
+        </button>
+        <div style="font-size: 12px; font-weight: 700; color: var(--mt);">शेष समय:</div>
         <div id="timer-display" class="timer-box">150:00</div>
       </div>
     </div>
@@ -348,35 +361,35 @@
       <!-- Main Question Container -->
       <div class="question-container">
         <div class="q-header">
-          <div id="q-number-badge" class="q-number-badge">Question 1</div>
+          <div id="q-number-badge" class="q-number-badge">प्रश्न 1 / 150</div>
           <div class="q-tools">
-            <button id="lang-toggle-btn" class="lang-toggle-btn">🌐 Hindi: ON</button>
+            <span class="q-badge-hindi">🇮🇳 हिंदी माध्यम</span>
             <span class="q-marks-badge">+1.0 / -0.0</span>
           </div>
         </div>
 
         <div class="q-content">
           <div class="q-bilingual-block">
-            <div id="q-text-en" style="font-weight: 600;">Question text in English will load here...</div>
-            <div id="q-text-hi" class="q-text-hi">हिंदी अनुवाद यहाँ दिखाई देगा...</div>
+            <div id="q-text-hi" class="q-primary-text">प्रश्न लोड हो रहा है...</div>
+            <div id="q-text-en" style="font-size: 12px; color: var(--mt); display: none;"></div>
           </div>
         </div>
 
-        <!-- Options List -->
+        <!-- Options List (In Hindi) -->
         <div id="options-list" class="options-list">
           <!-- Dynamically populated options A, B, C, D -->
         </div>
       </div>
 
       <!-- Palette Sidebar -->
-      <aside class="palette-sidebar">
+      <aside id="palette-sidebar" class="palette-sidebar">
         <!-- Palette Legend -->
         <div class="palette-legend">
-          <div class="legend-item"><span class="legend-dot dot-ans"></span> Answered</div>
-          <div class="legend-item"><span class="legend-dot dot-no"></span> Not Answered</div>
-          <div class="legend-item"><span class="legend-dot dot-mk"></span> Review</div>
-          <div class="legend-item"><span class="legend-dot dot-mka"></span> Ans & Marked</div>
-          <div class="legend-item"><span class="legend-dot dot-nv"></span> Not Visited</div>
+          <div class="legend-item"><span class="legend-dot dot-ans"></span> उत्तर दिया</div>
+          <div class="legend-item"><span class="legend-dot dot-no"></span> अनुत्तरित</div>
+          <div class="legend-item"><span class="legend-dot dot-mk"></span> समीक्षा हेतु</div>
+          <div class="legend-item"><span class="legend-dot dot-mka"></span> उत्तर + समीक्षा</div>
+          <div class="legend-item"><span class="legend-dot dot-nv"></span> नहीं देखा</div>
         </div>
 
         <!-- Palette Grid -->
@@ -391,13 +404,13 @@
     <!-- Exam Bottom Action Bar -->
     <footer class="exam-footer">
       <div class="footer-left">
-        <button id="btn-mark-review" class="btn-cbt btn-mark">Mark for Review & Next</button>
-        <button id="btn-clear" class="btn-cbt btn-clear">Clear Response</button>
+        <button id="btn-mark-review" class="btn-cbt btn-mark">समीक्षा हेतु चिह्नित करें (Review)</button>
+        <button id="btn-clear" class="btn-cbt btn-clear">उत्तर साफ़ करें (Clear)</button>
       </div>
       <div class="footer-right">
-        <button id="btn-prev" class="btn-cbt btn-prev">◀ Previous</button>
-        <button id="btn-save-next" class="btn-cbt btn-save-next">Save & Next ▶</button>
-        <button id="btn-submit-exam" class="btn-cbt btn-submit">Submit Test</button>
+        <button id="btn-prev" class="btn-cbt btn-prev">◀ पिछला (Prev)</button>
+        <button id="btn-save-next" class="btn-cbt btn-save-next">सेव और अगला ▶ (Save & Next)</button>
+        <button id="btn-submit-exam" class="btn-cbt btn-submit">सबमिट करें (Submit)</button>
       </div>
     </footer>
   </section>

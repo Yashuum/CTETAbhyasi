@@ -147,6 +147,41 @@ header.app-header {
   color: var(--bl);
 }
 
+/* Notice Banner for Hindi Medium */
+.lang-notice-banner {
+  background: linear-gradient(135deg, rgba(255, 107, 0, 0.15), rgba(0, 87, 168, 0.22));
+  border: 1.5px solid rgba(255, 107, 0, 0.5);
+  border-radius: var(--radius);
+  padding: 16px 22px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: var(--sh);
+}
+
+.lang-notice-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.lang-notice-content {
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+.lang-notice-content strong {
+  color: var(--sf);
+}
+
+.lang-notice-sub {
+  display: block;
+  font-size: 11.5px;
+  color: #94A3B8;
+  margin-top: 5px;
+  font-style: italic;
+}
+
 /* Container */
 .container {
   max-width: 1200px;
@@ -648,17 +683,62 @@ header.app-header {
   display: none;
   flex-direction: column;
   height: 100vh;
+  height: 100dvh;
   background: var(--bg);
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
+  inset: 0;
+  width: 100%;
   z-index: 500;
   overflow: hidden;
+  overscroll-behavior: none;
 }
 
 #exam-screen.active {
   display: flex;
+}
+
+/* Fullscreen Toggle Button */
+.btn-fullscreen-toggle {
+  background: rgba(56, 189, 248, 0.12);
+  border: 1.5px solid rgba(56, 189, 248, 0.4);
+  color: #38BDF8;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-fullscreen-toggle:hover {
+  background: #38BDF8;
+  color: #0A1628;
+}
+
+/* Primary Hindi Question */
+.q-primary-text {
+  font-size: 16.5px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: var(--tx);
+  margin-bottom: 12px;
+}
+
+.q-badge-hindi {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--sf);
+  background: rgba(255, 107, 0, 0.12);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 107, 0, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 /* Exam Top Bar */
@@ -1324,8 +1404,17 @@ header.app-header {
   100% { transform: translateY(0); opacity: 1; }
 }
 
-/* Mobile & Tablet Optimizations */
+/* Mobile & Tablet Optimizations - Screen Cutting & Button Protection */
 @media (max-width: 900px) {
+  #exam-screen {
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    z-index: 500;
+  }
   .hero-card {
     padding: 24px 20px;
   }
@@ -1334,23 +1423,113 @@ header.app-header {
     bottom: -15px;
     right: -10px;
   }
+  .exam-topbar {
+    padding: 8px 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .exam-section-tabs {
+    flex-shrink: 0;
+  }
   .exam-body {
     flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .question-container {
+    padding: 14px 14px 20px;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .palette-sidebar {
     width: 100%;
-    height: 190px;
+    max-height: 140px;
+    height: auto;
     border-left: none;
     border-top: 1.5px solid var(--bd);
+    flex-shrink: 0;
+    overflow-y: auto;
   }
   .palette-grid {
     grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+  }
+  .pal-btn {
+    font-size: 11px;
+    padding: 6px 2px;
   }
   .exam-footer {
-    padding: 10px 14px;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    flex-shrink: 0;
+    padding: 10px 12px;
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+    background: var(--surface);
+    border-top: 1.5px solid var(--bd);
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-left, .footer-right {
+    display: flex;
+    gap: 6px;
   }
   .btn-cbt {
-    padding: 8px 12px;
-    font-size: 12px;
+    padding: 9px 10px;
+    font-size: 11px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .exam-topbar {
+    padding: 6px 10px;
+  }
+  .exam-paper-info h2 {
+    font-size: 14px;
+  }
+  .btn-fullscreen-toggle {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+  .timer-box {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+  .q-primary-text {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .palette-sidebar {
+    max-height: 115px;
+  }
+  .palette-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .exam-footer {
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 10px;
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+  }
+  .footer-left, .footer-right {
+    width: 100%;
+    display: flex;
+    gap: 6px;
+  }
+  .footer-left .btn-cbt, .footer-right .btn-cbt {
+    flex: 1;
+    min-width: 0;
+    padding: 9px 4px;
+    text-align: center;
+    justify-content: center;
+    font-size: 10.5px;
+    font-weight: 700;
   }
 }

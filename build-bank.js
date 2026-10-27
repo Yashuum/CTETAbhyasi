@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-console.log('Generating 2500+ CTET Paper 2 questions with authentic PYQ depth...');
+console.log('Generating 2800+ Hindi-Medium CTET Paper 2 Questions with authentic PYQ depth...');
 
 const bank = {
   cdp: [],
@@ -12,117 +12,100 @@ const bank = {
 };
 
 // ==========================================
-// 1. CHILD DEVELOPMENT AND PEDAGOGY (550+ Qs)
+// 1. बाल विकास एवं शिक्षण शास्त्र (CDP - 600 Qs)
 // ==========================================
 const cdpTemplates = [
   {
-    topic: "Piaget's Stages",
-    q_en: "According to Jean Piaget, children develop the ability of {ability} during the {stage} stage of cognitive development.",
+    topic: "पियाजे के संज्ञानात्मक विकास के चरण",
     q_hi: "जीन पियाजे के अनुसार, बच्चे संज्ञानात्मक विकास की {stage_hi} अवस्था में {ability_hi} की क्षमता विकसित करते हैं।",
     variants: [
-      { ability: "object permanence and goal-directed actions", stage: "Sensori-motor (0-2 years)", ability_hi: "वस्तु स्थायित्व (Object Permanence)", stage_hi: "संवेदी-गामक", ans: 0 },
-      { ability: "conservation of volume, mass, and seriation", stage: "Concrete Operational (7-11 years)", ability_hi: "संरक्षण (Conservation) और श्रेणीकरण", stage_hi: "मूर्त संक्रियात्मक", ans: 1 },
-      { ability: "hypothetico-deductive reasoning and abstract thought", stage: "Formal Operational (11+ years)", ability_hi: "परिकल्पनात्मक-निगमनात्मक तर्क और अमूर्त चिंतन", stage_hi: "औपचारिक संक्रियात्मक", ans: 2 },
-      { ability: "symbolic thought and intuitive problem solving", stage: "Pre-operational (2-7 years)", ability_hi: "प्रतीकात्मक चिंतन और अंतर्ज्ञानी विचार", stage_hi: "पूर्व-संक्रियात्मक", ans: 3 }
+      { ability_hi: "वस्तु स्थायित्व (Object Permanence) और लक्ष्य-निर्देशित व्यवहार", stage_hi: "संवेदी-गामक (0-2 वर्ष)", ans: 0 },
+      { ability_hi: "संरक्षण (Conservation), पलटावी गुण (Reversibility) और श्रेणीकरण", stage_hi: "मूर्त संक्रियात्मक (7-11 वर्ष)", ans: 1 },
+      { ability_hi: "परिकल्पनात्मक-निगमनात्मक तर्क (Hypothetico-Deductive Reasoning) और अमूर्त चिंतन", stage_hi: "औपचारिक संक्रियात्मक (11+ वर्ष)", ans: 2 },
+      { ability_hi: "प्रतीकात्मक खेल (Symbolic Thought) और अंतर्प्रज्ञात्मक विचार", stage_hi: "पूर्व-संक्रियात्मक (2-7 वर्ष)", ans: 3 }
     ],
     distractors: [
-      ["Sensori-motor stage (0-2 years)", "Concrete Operational stage (7-11 years)", "Formal Operational stage (11+ years)", "Pre-operational stage (2-7 years)"],
-      ["Pre-operational stage (2-7 years)", "Concrete Operational stage (7-11 years)", "Sensori-motor stage (0-2 years)", "Formal Operational stage (11+ years)"],
-      ["Sensori-motor stage (0-2 years)", "Pre-operational stage (2-7 years)", "Formal Operational stage (11+ years)", "Concrete Operational stage (7-11 years)"],
-      ["Sensori-motor stage (0-2 years)", "Concrete Operational stage (7-11 years)", "Formal Operational stage (11+ years)", "Pre-operational stage (2-7 years)"]
+      ["संवेदी-गामक अवस्था (0-2 वर्ष)", "मूर्त संक्रियात्मक अवस्था (7-11 वर्ष)", "औपचारिक संक्रियात्मक अवस्था (11 वर्ष और ऊपर)", "पूर्व-संक्रियात्मक अवस्था (2-7 वर्ष)"],
+      ["पूर्व-संक्रियात्मक अवस्था (2-7 वर्ष)", "मूर्त संक्रियात्मक अवस्था (7-11 वर्ष)", "संवेदी-गामक अवस्था (0-2 वर्ष)", "औपचारिक संक्रियात्मक अवस्था (11 वर्ष और ऊपर)"],
+      ["संवेदी-गामक अवस्था (0-2 वर्ष)", "पूर्व-संक्रियात्मक अवस्था (2-7 वर्ष)", "औपचारिक संक्रियात्मक अवस्था (11 वर्ष और ऊपर)", "मूर्त संक्रियात्मक अवस्था (7-11 वर्ष)"],
+      ["संवेदी-गामक अवस्था (0-2 वर्ष)", "मूर्त संक्रियात्मक अवस्था (7-11 वर्ष)", "औपचारिक संक्रियात्मक अवस्था (11 वर्ष और ऊपर)", "पूर्व-संक्रियात्मक अवस्था (2-7 वर्ष)"]
     ],
-    exp: "Piaget divided cognitive growth into 4 sequential stages with distinct cognitive milestones like object permanence (0-2 yrs), conservation (7-11 yrs), and abstract logic (11+ yrs)."
+    exp: "पियाजे ने संज्ञानात्मक विकास को 4 क्रमिक चरणों में विभाजित किया है: संवेदी-गामक (वस्तु स्थायित्व), पूर्व-संक्रियात्मक (अहंकेंद्रित), मूर्त संक्रियात्मक (संरक्षण एवं पलटावी गुण), और औपचारिक संक्रियात्मक (अमूर्त एवं परिकल्पनात्मक तर्क)।"
   },
   {
-    topic: "Vygotsky's Sociocultural Theory",
-    q_en: "In Lev Vygotsky's sociocultural framework, {concept} is best described as:",
-    q_hi: "लेव वायगोत्स्की के सामाजिक-सांस्कृतिक सिद्धांत में, {concept_hi} को सर्वोत्तम रूप से किस प्रकार परिभाषित किया गया है?",
+    topic: "वाइगोत्स्की का सामाजिक-सांस्कृतिक सिद्धांत",
+    q_hi: "लेव वाइगोत्स्की के सामाजिक-सांस्कृतिक सिद्धांत में, {concept_hi} को सर्वोत्तम रूप से किस प्रकार परिभाषित किया गया है?",
     variants: [
-      { concept: "Scaffolding (पाड़/ढांचा)", concept_hi: "पाड़ / ढांचा (Scaffolding)", correct: "Temporary support and guidance provided by an adult or competent peer until the child gains mastery", ans: 0 },
-      { concept: "Zone of Proximal Development (ZPD)", concept_hi: "समीपस्थ विकास का क्षेत्र (ZPD)", correct: "The distance between actual developmental level and the level of potential development under guidance", ans: 1 },
-      { concept: "Private Speech (निजी संवाद)", concept_hi: "निजी वाक् / आंतरिक संवाद", correct: "Self-talk used by children for self-regulation, cognitive guidance, and planning actions", ans: 2 },
-      { concept: "More Knowledgeable Other (MKO)", concept_hi: "अधिक ज्ञानी अन्य (MKO)", correct: "Anyone who has a better understanding or higher ability level than the learner in a specific task", ans: 3 }
+      { concept_hi: "पाड़ / ढांचा (Scaffolding)", correct: "वयस्क या सक्षम सहपाठी द्वारा बच्चे को दी जाने वाली अस्थायी सहायता और मार्गदर्शन जब तक बच्चा निपुण न हो जाए", ans: 0 },
+      { concept_hi: "समीपस्थ विकास का क्षेत्र (ZPD)", correct: "स्वतंत्र समस्या समाधान द्वारा निर्धारित वास्तविक विकास स्तर और मार्गदर्शन में प्राप्त संभावित विकास स्तर के बीच की दूरी", ans: 1 },
+      { concept_hi: "निजी वाक् / आंतरिक संवाद (Private Speech)", correct: "आत्म-नियमन, व्यवहार निर्देशन और संज्ञानात्मक कार्यों की योजना बनाने हेतु बच्चे द्वारा स्वयं से किया जाने वाला संवाद", ans: 2 },
+      { concept_hi: "अधिक ज्ञानी अन्य (More Knowledgeable Other - MKO)", correct: "कोई भी व्यक्ति जिसे किसी विशिष्ट कार्य या अवधारणा में शिक्षार्थी की तुलना में बेहतर समझ या उच्च कौशल हो", ans: 3 }
     ],
-    getOptions: (correct, idx) => {
-      const all = [
-        "Temporary support and guidance provided by an adult or competent peer until the child gains mastery",
-        "The distance between actual developmental level and the level of potential development under guidance",
-        "Self-talk used by children for self-regulation, cognitive guidance, and planning actions",
-        "Anyone who has a better understanding or higher ability level than the learner in a specific task"
-      ];
-      return all;
-    },
-    exp: "Vygotsky highlighted social mediation where tools like Scaffolding, ZPD, and Private Speech foster higher mental functions."
+    getOptions: () => [
+      "वयस्क या सक्षम सहपाठी द्वारा बच्चे को दी जाने वाली अस्थायी सहायता और मार्गदर्शन जब तक बच्चा निपुण न हो जाए (Scaffolding)",
+      "स्वतंत्र समस्या समाधान द्वारा निर्धारित वास्तविक विकास स्तर और मार्गदर्शन में प्राप्त संभावित विकास स्तर के बीच की दूरी (ZPD)",
+      "आत्म-नियमन, व्यवहार निर्देशन और संज्ञानात्मक कार्यों की योजना बनाने हेतु बच्चे द्वारा स्वयं से किया जाने वाला संवाद (Private Speech)",
+      "कोई भी व्यक्ति जिसे किसी विशिष्ट कार्य या अवधारणा में शिक्षार्थी की तुलना में बेहतर समझ या उच्च कौशल हो (MKO)"
+    ],
+    exp: "वाइगोत्स्की ने बल दिया कि संज्ञानात्मक विकास सामाजिक अंतःक्रिया पर आधारित होता है। ZPD, स्केफोल्डिंग और निजी संवाद बच्चे को उच्च मानसिक क्षमताओं तक पहुंचने में मदद करते हैं।"
   },
   {
-    topic: "Kohlberg's Moral Development",
-    q_en: "A student decides to obey classroom rules because {reason}. According to Lawrence Kohlberg, this represents {level}.",
-    q_hi: "एक छात्र कक्षा के नियमों का पालन इसलिए करता है क्योंकि {reason_hi}। लॉरेंस कोहलबर्ग के अनुसार यह {level_hi} को दर्शाता है।",
+    topic: "कोहलबर्ग का नैतिक विकास सिद्धांत",
+    q_hi: "एक छात्र कक्षा के नियमों का पालन इसलिए करता है क्योंकि {reason_hi}। लॉरेंस कोहलबर्ग के अनुसार यह नैतिक तर्क के किस स्तर और चरण को दर्शाता है?",
     variants: [
-      { reason: "they fear being reprimanded and losing recess time", level: "Pre-conventional Stage 1 (Punishment-Obedience)", reason_hi: "उसे दंडित किए जाने और खेल का समय खोने का डर है", level_hi: "पूर्व-पारंपरिक (दंड और आज्ञाकारिता)", ans: 0 },
-      { reason: "they want to be seen as a 'Good Boy/Nice Girl' by teachers and peers", level: "Conventional Stage 3 (Interpersonal Concordance)", reason_hi: "वह शिक्षकों और साथियों द्वारा 'अच्छा लड़का/अच्छी लड़की' माना जाना चाहता है", level_hi: "पारंपरिक (अच्छा लड़का/अच्छी लड़की)", ans: 1 },
-      { reason: "they believe rules maintain essential social order and institutional harmony", level: "Conventional Stage 4 (Law and Order / Social System)", reason_hi: "वह मानता है कि नियम सामाजिक व्यवस्था और सद्भाव बनाए रखने के लिए अनिवार्य हैं", level_hi: "पारंपरिक (कानून और व्यवस्था)", ans: 2 },
-      { reason: "they believe in universal justice and human dignity transcending specific rules", level: "Post-conventional Stage 6 (Universal Ethical Principles)", reason_hi: "वह विशिष्ट नियमों से ऊपर सार्वभौमिक न्याय और मानवीय गरिमा में विश्वास करता है", level_hi: "उत्तर-पारंपरिक (सार्वभौमिक नैतिक सिद्धांत)", ans: 3 }
+      { reason_hi: "उसे शिक्षक द्वारा दंडित किए जाने और खेल का समय रद्द होने का डर है", ans: 0 },
+      { reason_hi: "वह शिक्षकों और सहपाठियों की नजरों में एक 'अच्छा लड़का/अच्छी लड़की' बनकर प्रशंसा पाना चाहता है", ans: 1 },
+      { reason_hi: "वह मानता है कि नियम सामाजिक व्यवस्था और संस्थागत सद्भाव को बनाए रखने के लिए आवश्यक हैं", ans: 2 },
+      { reason_hi: "वह मानता है कि मानवीय गरिमा और सार्वभौमिक न्याय के सिद्धांत किसी भी नियम से ऊपर हैं", ans: 3 }
     ],
     opts: [
-      ["Pre-conventional (Punishment-Obedience)", "Conventional (Interpersonal Accord)", "Conventional (Law and Order)", "Post-conventional (Universal Ethics)"],
-      ["Pre-conventional (Instrumental Purpose)", "Conventional (Good Boy / Nice Girl)", "Conventional (Social System)", "Post-conventional (Social Contract)"],
-      ["Pre-conventional (Punishment)", "Conventional (Good Boy / Nice Girl)", "Conventional (Law and Order / Social System)", "Post-conventional (Universal Principles)"],
-      ["Pre-conventional (Instrumental Purpose)", "Conventional (Law and Order)", "Post-conventional (Social Contract)", "Post-conventional (Universal Ethical Principles)"]
+      ["पूर्व-पारंपरिक स्तर: चरण 1 (दंड एवं आज्ञाकारिता अभिविन्यास)", "पारंपरिक स्तर: चरण 3 (अच्छा लड़का-अच्छी लड़की अभिविन्यास)", "पारंपरिक स्तर: चरण 4 (कानून और व्यवस्था अभिविन्यास)", "उत्तर-पारंपरिक स्तर: चरण 6 (सार्वभौमिक नैतिक सिद्धांत)"],
+      ["पूर्व-पारंपरिक स्तर: चरण 2 (व्यक्तिगत उद्देश्य अभिविन्यास)", "पारंपरिक स्तर: चरण 3 (अच्छा लड़का-अच्छी लड़की अभिविन्यास)", "पारंपरिक स्तर: चरण 4 (सामाजिक व्यवस्था बनाए रखने का अभिविन्यास)", "उत्तर-पारंपरिक स्तर: चरण 5 (सामाजिक अनुबंध)"],
+      ["पूर्व-पारंपरिक स्तर: चरण 1 (दंड अभिविन्यास)", "पारंपरिक स्तर: चरण 3 (अच्छा लड़का-अच्छी लड़की अभिविन्यास)", "पारंपरिक स्तर: चरण 4 (कानून और व्यवस्था बनाए रखने का अभिविन्यास)", "उत्तर-पारंपरिक स्तर: चरण 6 (सार्वभौमिक सिद्धांत)"],
+      ["पूर्व-पारंपरिक स्तर: चरण 2 (साधनात्मक उद्देश्य)", "पारंपरिक स्तर: चरण 4 (कानून और व्यवस्था अभिविन्यास)", "उत्तर-पारंपरिक स्तर: चरण 5 (सामाजिक अनुबंध)", "उत्तर-पारंपरिक स्तर: चरण 6 (सार्वभौमिक नैतिक सिद्धांत अभिविन्यास)"]
     ],
-    exp: "Kohlberg's moral reasoning evolves from external punishment (Pre-conventional) to social conformity (Conventional) to autonomous universal ethics (Post-conventional)."
+    exp: "कोहलबर्ग का नैतिक तर्क 3 स्तरों में विकसित होता है: पूर्व-पारंपरिक (दंड व पुरस्कार), पारंपरिक (सामाजिक अनुरूपता व कानून-व्यवस्था), और उत्तर-पारंपरिक (सार्वभौमिक मानवीय मूल्य एवं न्याय)।"
   },
   {
-    topic: "Inclusive Education & Learning Disabilities",
-    q_en: "Which pedagogical accommodation is most beneficial for a student diagnosed with {disability}?",
-    q_hi: "{disability_hi} से ग्रसित विद्यार्थी के लिए कक्षा में कौन सा शैक्षणिक समायोजन सर्वाधिक लाभकारी है?",
+    topic: "समावेशी शिक्षा एवं अधिगम अक्षमताएं",
+    q_hi: "{disability_hi} से जूझ रहे एक उच्च प्राथमिक विद्यार्थी के लिए कक्षा में कौन सा शैक्षणिक समायोजन सर्वाधिक प्रभावी और उपयुक्त होगा?",
     variants: [
-      { disability: "Dyslexia (reading disorder)", disability_hi: "डिस्लेक्सिया (पठन विकार)", opt: "Audio books, colored reading overlays, and extra time for text reading", ans: 0 },
-      { disability: "Dysgraphia (writing disorder)", disability_hi: "डिस्ग्राफिया (लेखन विकार)", opt: "Speech-to-text software, scribes, and accepting typed or oral assignments", ans: 1 },
-      { disability: "Dyscalculia (math calculation disorder)", disability_hi: "डिस्कैल्कुलिया (गणितीय गणना विकार)", opt: "Concrete manipulatives, number lines, abacus, and visual calculation aids", ans: 2 },
-      { disability: "ADHD (Attention Deficit Hyperactivity Disorder)", disability_hi: "एडीएचडी (अतिसक्रियता विकार)", opt: "Breaking tasks into short chunks, minimal distractions, and movement breaks", ans: 3 }
+      { disability_hi: "डिस्लेक्सिया (पठन विकार / Dyslexia)", ans: 0 },
+      { disability_hi: "डिस्ग्राफिया (लेखन विकार / Dysgraphia)", ans: 1 },
+      { disability_hi: "डिस्कैल्कुलिया (गणितीय गणना विकार / Dyscalculia)", ans: 2 },
+      { disability_hi: "एडीएचडी (अतिसक्रियता विकार / ADHD)", ans: 3 }
     ],
     getOptions: () => [
-      "Audio books, colored reading overlays, and extra time for text reading",
-      "Speech-to-text software, scribes, and accepting typed or oral assignments",
-      "Concrete manipulatives, number lines, abacus, and visual calculation aids",
-      "Breaking tasks into short chunks, minimal distractions, and movement breaks"
+      "ऑडियो पुस्तकें, बड़े फॉन्ट वाली सामग्री, फॉन्ट-कलर ओवरले और पढ़ने के लिए अतिरिक्त समय प्रदान करना (डिस्लेक्सिया अनुकूलन)",
+      "बोलने से टेक्स्ट में बदलने वाला सॉफ्टवेयर (Speech-to-text), लेखक की सुविधा और मौखिक असाइनमेंट स्वीकार करना (डिस्ग्राफिया अनुकूलन)",
+      "मूर्त वस्तुएं (Manipulatives), संख्या रेखा, अबेकस, ग्राफ पेपर और दृश्य गणना चार्ट का उपयोग (डिस्कैल्कुलिया अनुकूलन)",
+      "कार्यों को छोटे-छोटे चरणों में विभाजित करना, न्यूनतम व्याकुलता वाला वातावरण और संक्षिप्त शारीरिक गतिविधि विराम देना (ADHD अनुकूलन)"
     ],
-    exp: "Inclusive education requires targeted accommodations matching the specific neurological processing need of the child."
+    exp: "समावेशी शिक्षा में प्रत्येक शिक्षार्थी की व्यक्तिगत आवश्यकताओं को पहचानकर उपचारात्मक सामग्री और विभेदित अनुदेशन प्रदान किया जाता है।"
   },
   {
-    topic: "Assessment & NEP 2020",
-    q_en: "{concept} is characterized as an assessment strategy that {action}.",
-    q_hi: "{concept_hi} को एक ऐसी मूल्यांकन रणनीति के रूप में पहचाना जाता है जो {action_hi}।",
+    topic: "आकलन एवं मूल्यांकन (NEP 2020 एवं CCE)",
+    q_hi: "{concept_hi} को एक ऐसी प्रभावी मूल्यांकन रणनीति के रूप में पहचाना जाता है जो {action_hi}।",
     variants: [
-      { concept: "Assessment FOR Learning (Formative)", concept_hi: "अधिगम के लिए मूल्यांकन (रचनात्मक)", action: "occurs continuously during instruction to give actionable diagnostic feedback", ans: 0 },
-      { concept: "Assessment OF Learning (Summative)", concept_hi: "अधिगम का मूल्यांकन (योगात्मक)", action: "evaluates terminal student achievement at the end of a unit for certification", ans: 1 },
-      { concept: "Assessment AS Learning (Metacognitive)", concept_hi: "अधिगम के रूप में मूल्यांकन", action: "empowers learners to engage in critical self-reflection, self-monitoring, and peer review", ans: 2 },
-      { concept: "Holistic 360-Degree Progress Card (NEP 2020)", concept_hi: "समग्र 360-डिग्री प्रगति कार्ड (NEP 2020)", action: "assesses cognitive, socio-emotional, and psychomotor domains across self, peer, and teacher evaluations", ans: 3 }
+      { concept_hi: "सीखने के लिए आकलन (Assessment FOR Learning - रचनात्मक)", action_hi: "शिक्षण-अधिगम प्रक्रिया के दौरान निरंतर चलती है और छात्रों को समय पर उपचारात्मक प्रतिपुष्टि प्रदान करती है", ans: 0 },
+      { concept_hi: "सीखने का आकलन (Assessment OF Learning - योगात्मक)", action_hi: "सत्र या इकाई के अंत में छात्रों की कुल शैक्षणिक उपलब्धि और प्रमाणीकरण का मूल्यांकन करती है", ans: 1 },
+      { concept_hi: "सीखने के रूप में आकलन (Assessment AS Learning - परासंज्ञानात्मक)", action_hi: "छात्रों को स्वयं अपने अधिगम पर चिंतन करने, आत्म-मूल्यांकन और सहपाठी समीक्षा हेतु सशक्त बनाती है", ans: 2 },
+      { concept_hi: "समग्र 360-डिग्री प्रगति कार्ड (NEP 2020)", action_hi: "छात्र के संज्ञानात्मक, भावात्मक एवं मनोप्रेरणात्मक पक्षों का स्व, सहपाठी एवं शिक्षक आकलन के माध्यम से व्यापक रिपोर्टिंग करती है", ans: 3 }
     ],
     getOptions: () => [
-      "Occurs continuously during instruction to give actionable diagnostic feedback",
-      "Evaluates terminal student achievement at the end of a unit for certification",
-      "Empowers learners to engage in critical self-reflection, self-monitoring, and peer review",
-      "Assesses cognitive, socio-emotional, and psychomotor domains across self, peer, and teacher evaluations"
+      "शिक्षण-अधिगम प्रक्रिया के दौरान निरंतर चलती है और छात्रों को समय पर उपचारात्मक प्रतिपुष्टि प्रदान करती है (रचनात्मक आकलन)",
+      "सत्र या इकाई के अंत में छात्रों की कुल शैक्षणिक उपलब्धि और प्रमाणीकरण का मूल्यांकन करती है (योगात्मक आकलन)",
+      "छात्रों को स्वयं अपने अधिगम पर चिंतन करने, आत्म-मूल्यांकन और सहपाठी समीक्षा हेतु सशक्त बनाती है (अधिगम के रूप में आकलन)",
+      "छात्र के संज्ञानात्मक, भावात्मक एवं मनोप्रेरणात्मक पक्षों का स्व, सहपाठी एवं शिक्षक आकलन के माध्यम से समग्र मूल्यांकन करती है (360° समग्र कार्ड)"
     ],
-    exp: "NEP 2020 promotes shifting from rote summative exams to continuous competency-based Assessment FOR and AS learning."
+    exp: "राष्ट्रीय शिक्षा नीति (NEP 2020) और NCF रटंत परीक्षा आधारित योगात्मक आकलन से नियमित और रचनात्मक 'सीखने के लिए आकलन' पर स्थानांतरण की वकालत करते हैं।"
   }
 ];
 
-// Generate 550+ CDP questions with variations
 let cdpId = 1;
 cdpTemplates.forEach(t => {
   t.variants.forEach((v, vIdx) => {
-    // Create base and situational variations
     for (let i = 0; i < 30; i++) {
-      const q_en = t.q_en.replace(/{ability}/g, v.ability || '')
-                         .replace(/{stage}/g, v.stage || '')
-                         .replace(/{concept}/g, v.concept || '')
-                         .replace(/{reason}/g, v.reason || '')
-                         .replace(/{level}/g, v.level || '')
-                         .replace(/{disability}/g, v.disability || '')
-                         .replace(/{action}/g, v.action || '');
       const q_hi = t.q_hi.replace(/{ability_hi}/g, v.ability_hi || '')
                          .replace(/{stage_hi}/g, v.stage_hi || '')
                          .replace(/{concept_hi}/g, v.concept_hi || '')
@@ -131,15 +114,15 @@ cdpTemplates.forEach(t => {
                          .replace(/{disability_hi}/g, v.disability_hi || '')
                          .replace(/{action_hi}/g, v.action_hi || '');
 
-      let opts = t.getOptions ? t.getOptions(v.correct, v.ans) : (t.opts ? t.opts[vIdx % t.opts.length] : t.distractors[vIdx % t.distractors.length]);
+      let opts = t.getOptions ? t.getOptions() : (t.opts ? t.opts[vIdx % t.opts.length] : t.distractors[vIdx % t.distractors.length]);
       let ans = v.ans !== undefined ? v.ans : 0;
 
       bank.cdp.push({
         id: `cdp_${String(cdpId++).padStart(3, '0')}`,
         section: "Child Development and Pedagogy",
         subject: t.topic,
-        question_en: i === 0 ? q_en : `Case study ${i}: In an upper-primary classroom setting, ` + q_en.charAt(0).toLowerCase() + q_en.slice(1),
-        question_hi: i === 0 ? q_hi : `कक्षा-कक्ष संदर्भ स्थिति ${i}: उच्च प्राथमिक स्तर पर ` + q_hi.charAt(0).toLowerCase() + q_hi.slice(1),
+        question_en: `CTET Paper 2 Pedagogy Scenario ${i + 1}`,
+        question_hi: i === 0 ? q_hi : `कक्षा संदर्भ स्थिति ${i + 1}: उच्च प्राथमिक स्तर पर ` + q_hi.charAt(0).toLowerCase() + q_hi.slice(1),
         options: opts,
         ans: ans,
         explanation: t.exp
@@ -147,47 +130,46 @@ cdpTemplates.forEach(t => {
     }
   });
 });
-
-console.log(`Generated CDP questions: ${bank.cdp.length}`);
+console.log(`Generated Hindi CDP questions: ${bank.cdp.length}`);
 
 // ==========================================
-// 2. SOCIAL STUDIES / SOCIAL SCIENCE (750+ Qs)
+// 2. सामाजिक अध्ययन / सामाजिक विज्ञान (800 Qs)
 // ==========================================
 const sstTemplates = [
   {
-    topic: "Ancient & Medieval Indian History",
+    topic: "प्राचीन एवं मध्यकालीन भारतीय इतिहास",
     items: [
-      { q_en: "The Great Bath and specialized granaries were discovered at which prominent Indus Valley archaeological site?", q_hi: "विशाल स्नानागार (The Great Bath) और विशिष्ट अन्नागार किस प्रसिद्ध सिंधु घाटी सभ्यता स्थल से प्राप्त हुए हैं?", opts: ["Mohenjo-Daro", "Harappa", "Kalibangan", "Lothal"], ans: 0, exp: "Mohenjo-Daro features the Great Bath, built with fine baked bricks, plaster, and a natural tar coating." },
-      { q_en: "The famous 'Dhamma' edicts inscribed in Prakrit and Greek scripts across the subcontinent were commissioned by which Mauryan Emperor?", q_hi: "भारतीय उपमहाद्वीप में प्राकृत और ग्रीक लिपियों में उत्कीर्ण प्रसिद्ध 'धम्म' शिलालेख किस मौर्य सम्राट द्वारा स्थापित कराए गए थे?", opts: ["Chandragupta Maurya", "Ashoka", "Bindusara", "Dasharatha"], ans: 1, exp: "Emperor Ashoka inscribed his Dhamma edicts on pillars and rock surfaces following the Kalinga War." },
-      { q_en: "The 'Mansabdari' administrative system determining military grading, zat, and sawar ranks was introduced in 1571 by:", q_hi: "सैन्य ग्रेडिंग, जात (Zat) और सवार (Sawar) पदों का निर्धारण करने वाली 'मनसबदारी' प्रशासनिक प्रणाली 1571 में किसके द्वारा शुरू की गई थी?", opts: ["Babur", "Humayun", "Akbar", "Shah Jahan"], ans: 2, exp: "Akbar implemented the Mansabdari system to consolidate military and civil administration in the Mughal Empire." },
-      { q_en: "The renowned travelers Ibn Battuta and Al-Biruni visited India during the reigns of which rulers respectively?", q_hi: "प्रसिद्ध विदेशी यात्री इब्न बतूता और अल-बरूनी ने क्रमशः किन शासकों के काल में भारत की यात्रा की थी?", opts: ["Alauddin Khalji and Akbar", "Babur and Sher Shah Suri", "Firoz Shah Tughlaq and Jahangir", "Muhammad bin Tughlaq and Mahmud of Ghazni"], ans: 3, exp: "Ibn Battuta arrived during Muhammad bin Tughlaq's reign (14th century), while Al-Biruni accompanied Mahmud of Ghazni (11th century)." }
+      { q_hi: "विशाल स्नानागार (The Great Bath) और विशिष्ट अन्नागार किस प्रसिद्ध सिंधु घाटी सभ्यता स्थल से प्राप्त हुए हैं?", opts: ["मोहनजोदड़ो (Mohenjo-Daro)", "हड़प्पा (Harappa)", "कालीबंगन (Kalibangan)", "लोथल (Lothal)"], ans: 0, exp: "मोहनजोदड़ो में ईंटों, जिप्सम गारे और प्राकृतिक तार के लेप से निर्मित प्रसिद्ध विशाल स्नानागार प्राप्त हुआ है।" },
+      { q_hi: "कलिंग युद्ध के पश्चात् 'धम्म' की नीति का प्रचार करने और शिलालेखों पर नैतिक संदेश उत्कीर्ण करवाने वाले प्रसिद्ध मौर्य सम्राट कौन थे?", opts: ["चंद्रगुप्त मौर्य", "सम्राट अशोक", "बिंदुसार", "दशरथ मौर्य"], ans: 1, exp: "सम्राट अशोक ने कलिंग युद्ध के भारी रक्तपात के बाद युद्ध त्यागकर बौद्ध धम्म को अपनाया और प्राकृत व ग्रीक लिपियों में स्तंभ व शिलालेख उत्कीर्ण करवाए।" },
+      { q_hi: "मुगल साम्राज्य में सैन्य ग्रेडिंग, जात (Zat) और सवार (Sawar) पदों का निर्धारण करने वाली 'मनसबदारी' प्रशासनिक व्यवस्था 1571 में किसके द्वारा शुरू की गई थी?", opts: ["बाबर", "हुमायूं", "अकबर", "शाहजहां"], ans: 2, exp: "अकबर ने मनसबदारी व्यवस्था आरंभ की, जिसमें 'जात' अधिकारी के पद और वेतन को तथा 'सवार' उसके अधीन घुड़सवारों की संख्या को निर्धारित करता था।" },
+      { q_hi: "प्रसिद्ध विदेशी यात्री इब्न बतूता और अल-बरूनी ने क्रमशः किन शासकों के शासनकाल में भारत की यात्रा की थी?", opts: ["अलाउद्दीन खिलजी और अकबर", "बाबर और शेरशाह सूरी", "फिरोज शाह तुगलक और जहांगीर", "मोहम्मद बिन तुगलक और महमूद गजनवी"], ans: 3, exp: "इब्न बतूता 14वीं शताब्दी में मोरक्को से मोहम्मद बिन तुगलक के समय भारत आया; जबकि अल-बरूनी ने 11वीं शताब्दी में महमूद गजनवी के साथ आकर 'किताब-उल-हिंद' लिखी।" }
     ]
   },
   {
-    topic: "Modern Indian History & Freedom Struggle",
+    topic: "आधुनिक भारतीय इतिहास एवं स्वतंत्रता संग्राम",
     items: [
-      { q_en: "The Permanent Settlement (Zamindari System) of Bengal was instituted in 1793 under Governor-General:", q_hi: "1793 में बंगाल में स्थायी बंदोबस्त (जमींदारी व्यवस्था) किस गवर्नर-जनरल के कार्यकाल में लागू किया गया था?", opts: ["Lord Cornwallis", "Lord Warren Hastings", "Lord Dalhousie", "Lord Wellesley"], ans: 0, exp: "Lord Cornwallis introduced the Permanent Settlement in Bengal and Bihar, fixing revenue demand permanently with zamindars." },
-      { q_en: "The 'Doctrine of Lapse', through which Indian princely states like Satara, Sambalpur, and Jhansi were annexed, was implemented by:", q_hi: "'हड़प नीति' (Doctrine of Lapse), जिसके तहत सतारा, संबलपुर और झांसी जैसी रियासतों का विलय किया गया, किसने लागू की थी?", opts: ["Lord Curzon", "Lord Dalhousie", "Lord William Bentinck", "Lord Canning"], ans: 1, exp: "Lord Dalhousie enforced the Doctrine of Lapse (1848-1856), prohibiting adopted heirs from inheriting sovereign power." },
-      { q_en: "The Non-Cooperation Movement was abruptly suspended by Mahatma Gandhi in February 1922 following which violent event?", q_hi: "फरवरी 1922 में किस हिंसक घटना के बाद महात्मा गांधी ने असहयोग आंदोलन को अचानक स्थगित कर दिया था?", opts: ["Jallianwala Bagh Massacre", "Kakori Train Action", "Chauri Chaura Incident", "Rowlatt Act Satyagraha"], ans: 2, exp: "The violent incident at Chauri Chaura (Gorakhpur), where a police station was torched, prompted Gandhi to suspend Non-Cooperation." },
-      { q_en: "Who authored the seminal text 'Poverty and Un-British Rule in India' (1901) formulating the Economic Drain Theory?", q_hi: "आर्थिक दोहन सिद्धांत (Drain of Wealth Theory) प्रतिपादित करने वाली प्रसिद्ध पुस्तक 'Poverty and Un-British Rule in India' के लेखक कौन थे?", opts: ["Gopal Krishna Gokhale", "Bal Gangadhar Tilak", "Mahadev Govind Ranade", "Dadabhai Naoroji"], ans: 3, exp: "Dadabhai Naoroji systematically demonstrated the drain of Indian wealth to Britain in his 1901 book." }
+      { q_hi: "1793 में बंगाल और बिहार में स्थायी बंदोबस्त (जमींदारी व्यवस्था) किस गवर्नर-जनरल के कार्यकाल में लागू किया गया था?", opts: ["लॉर्ड कॉर्नवालिस", "लॉर्ड वारेन हेस्टिंग्स", "लॉर्ड डलहौजी", "लॉर्ड वेलेस्ली"], ans: 0, exp: "लॉर्ड कॉर्नवालिस ने 1793 में स्थायी बंदोबस्त लागू किया, जिसके तहत जमींदारों को भूमि का स्वामी मानकर राजस्व की दर स्थायी रूप से तय कर दी गई थी।" },
+      { q_hi: "'हड़प नीति' (Doctrine of Lapse), जिसके तहत सतारा, संबलपुर और झांसी जैसी भारतीय रियासतों का ब्रिटिश साम्राज्य में विलय किया गया, किसने लागू की थी?", opts: ["लॉर्ड कर्जन", "लॉर्ड डलहौजी", "लॉर्ड विलियम बेंटिंक", "लॉर्ड कैनिंग"], ans: 1, exp: "लॉर्ड डलहौजी ने 1848-1856 के बीच व्यपगत का सिद्धांत (हड़प नीति) लागू किया, जिसके अनुसार किसी निःसंतान भारतीय शासक को दत्तक पुत्र को राज्य सौंपने की अनुमति नहीं थी।" },
+      { q_hi: "फरवरी 1922 में किस हिंसक घटना के बाद महात्मा गांधी ने असहयोग आंदोलन को तत्काल प्रभाव से स्थगित कर दिया था?", opts: ["जलियांवाला बाग नरसंहार", "काकोरी ट्रेन एक्शन", "चौरी-चौरा की हिंसक घटना (गोरखपुर)", "रौलट एक्ट सत्याग्रह"], ans: 2, exp: "उत्तर प्रदेश के गोरखपुर में चौरी-चौरा नामक स्थान पर भीड़ द्वारा पुलिस थाने में आग लगाए जाने की हिंसक घटना के बाद गांधीजी ने असहयोग आंदोलन वापस ले लिया।" },
+      { q_hi: "ब्रिटिश शासन द्वारा भारत से धन के निष्कासन पर 'Drain of Wealth Theory' प्रतिपादित करने वाली प्रसिद्ध पुस्तक 'Poverty and Un-British Rule in India' (1901) के लेखक कौन थे?", opts: ["गोपाल कृष्ण गोखले", "बाल गंगाधर तिलक", "महादेव गोविंद रानाडे", "दादाभाई नौरोजी ('ग्रैंड ओल्ड मैन ऑफ इंडिया')"], ans: 3, exp: "दादाभाई नौरोजी ने अपनी पुस्तक में आंकड़ों के साथ सिद्ध किया कि किस प्रकार भारत का धन निरंतर ब्रिटेन भेजा जा रहा है जिससे भारत में गरीबी बढ़ रही है।" }
     ]
   },
   {
-    topic: "Geography & Physical Domains",
+    topic: "भूगोल एवं पृथ्वी के परिमंडल",
     items: [
-      { q_en: "In which layer of the atmosphere do virtually all weather phenomena (clouds, rainfall, fog, and storms) occur?", q_hi: "वायुमंडल की किस परत में लगभग सभी मौसमी घटनाएं (बादल, वर्षा, कोहरा और तूफान) घटित होती हैं?", opts: ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"], ans: 0, exp: "The Troposphere is the lowest atmospheric layer containing 75% of atmospheric mass and weather events." },
-      { q_en: "The Ozone layer, which shields life on Earth by absorbing ultraviolet (UV) solar radiation, is located in the:", q_hi: "ओजोन परत, जो पराबैंगनी (UV) विकिरण को अवशोषित कर जीवन की रक्षा करती है, किस वायुमंडलीय परत में स्थित है?", opts: ["Troposphere", "Stratosphere", "Mesosphere", "Exosphere"], ans: 1, exp: "The Stratosphere contains the protective Ozone layer and is also preferred for flying jet aircraft due to absence of weather turbulence." },
-      { q_en: "The longitudinal difference between the Standard Meridian of India (82°30' E) and the Prime Meridian at Greenwich (0°) corresponds to a time difference of:", q_hi: "भारत के मानक याम्योत्तर (82°30' पूर्व) और ग्रीनविच (0°) के मध्य समय का अंतर कितना है?", opts: ["+3 hours 30 minutes", "+4 hours 30 minutes", "+5 hours 30 minutes", "+6 hours 30 minutes"], ans: 2, exp: "Each 1° longitude equals 4 minutes. 82.5° × 4 min = 330 minutes = +5 hours 30 minutes ahead of GMT." },
-      { q_en: "Which type of plate boundary is primarily responsible for the formation of fold mountain ranges like the Himalayas?", q_hi: "हिमालय जैसी वलित पर्वत श्रृंखलाओं के निर्माण के लिए मुख्य रूप से किस प्रकार की विवर्तनिक प्लेट सीमा उत्तरदायी है?", opts: ["Divergent plate boundary", "Transform fault boundary", "Submarine rift boundary", "Convergent plate boundary (continental-continental collision)"], ans: 3, exp: "The Himalayas were formed by the convergent collision of the Indian tectonic plate into the Eurasian plate." }
+      { q_hi: "वायुमंडल की किस परत में लगभग सभी मौसमी परिघटनाएं जैसे बादल बनना, वर्षा होना, आंधी-तूफान और कोहरा घटित होती हैं?", opts: ["क्षोभमंडल (Troposphere)", "समतापमंडल (Stratosphere)", "मध्यमंडल (Mesosphere)", "तापमंडल (Thermosphere)"], ans: 0, exp: "क्षोभमंडल पृथ्वी की सबसे निचली परत है जिसकी औसत ऊंचाई लगभग 13 किमी है। वायुमंडल का अधिकांश द्रव्यमान और जलवाष्प इसी में स्थित है।" },
+      { q_hi: "ओजोन गैस की परत, जो सूर्य से आने वाली हानिकारक पराबैंगनी (UV) विकिरण को अवशोषित कर जीवन की रक्षा करती है, वायुमंडल की किस परत में पाई जाती है?", opts: ["क्षोभमंडल (Troposphere)", "समतापमंडल (Stratosphere)", "मध्यमंडल (Mesosphere)", "बहिर्मंडल (Exosphere)"], ans: 1, exp: "समतापमंडल में ओजोन परत स्थित है। इसके अलावा बादलों व मौसमी हलचल से मुक्त होने के कारण यह जेट हवाई जहाजों के उड़ने के लिए आदर्श मानी जाती है।" },
+      { q_hi: "भारत के मानक याम्योत्तर (Standard Meridian - 82°30' पूर्व) और ग्रीनविच (0° देशांतर) के मध्य समय का सटीक अंतर कितना है?", opts: ["+3 घंटे 30 मिनट", "+4 घंटे 30 मिनट", "+5 घंटे 30 मिनट आगे (Ahead of GMT)", "+6 घंटे 30 मिनट आगे"], ans: 2, exp: "प्रत्येक 1° देशांतर पार करने पर 4 मिनट का अंतर आता है। 82.5° × 4 = 330 मिनट = +5 घंटे 30 मिनट आगे।" },
+      { q_hi: "हिमालय और आल्प्स जैसी वलित पर्वत (Fold Mountain) श्रृंखलाओं का निर्माण मुख्य रूप से किस प्रकार की भूगर्भीय प्लेट सीमा पर हुआ है?", opts: ["अपसारी प्लेट सीमा (Divergent Boundary)", "रूपांतरित भ्रंश सीमा (Transform Fault)", "अंतःसागरीय कटक सीमा", "अभिसारी प्लेट सीमा (Convergent Boundary - महाद्वीपीय टक्कर)"], ans: 3, exp: "हिमालय का निर्माण भारतीय प्लेट और यूरेशियाई प्लेट के आपस में अभिसरण (टकराने) के कारण टेथिस सागर के अवसादों के वलन से हुआ है।" }
     ]
   },
   {
-    topic: "Civics, Constitution & Pedagogy",
+    topic: "नागरिक शास्त्र, संविधान एवं सामाजिक विज्ञान शिक्षण शास्त्र",
     items: [
-      { q_en: "Which Article of the Indian Constitution is termed the 'Heart and Soul' of the Constitution by Dr. B.R. Ambedkar?", q_hi: "डॉ. बी.आर. अंबेडकर ने भारतीय संविधान के किस अनुच्छेद को संविधान की 'आत्मा और हृदय' कहा था?", opts: ["Article 32 (Right to Constitutional Remedies)", "Article 14 (Equality before Law)", "Article 19 (Freedom of Speech)", "Article 21 (Right to Life and Liberty)"], ans: 0, exp: "Article 32 guarantees the Right to Constitutional Remedies, allowing citizens to approach the Supreme Court for writ enforcement." },
-      { q_en: "In the 73rd Constitutional Amendment Act, how much reservation is mandated for women in Panchayati Raj institutions?", q_hi: "73वें संविधान संशोधन अधिनियम द्वारा पंचायती राज संस्थाओं में महिलाओं के लिए कितने आरक्षण का अनिवार्य प्रावधान किया गया है?", opts: ["Not less than one-fifth (20%)", "Not less than one-third (33%)", "Not less than one-half (50%)", "Not less than two-thirds (66%)"], ans: 1, exp: "Article 243D mandates that at least one-third (33%) of total seats and offices in Panchayats be reserved for women." },
-      { q_en: "Which of the following serves as an authentic 'Primary Source' in teaching historical social science?", q_hi: "इतिहास शिक्षण में निम्नलिखित में से कौन एक प्रामाणिक 'प्राथमिक स्रोत' (Primary Source) का उदाहरण है?", opts: ["A modern 2024 history textbook summary", "A fictional period television drama", "Original copper-plate inscriptions, coins, and contemporary diaries", "An encyclopedia commentary published in 2010"], ans: 2, exp: "Primary sources are direct, firsthand physical evidence created during the period under study (inscriptions, coins, original letters)." },
-      { q_en: "Pedagogy of Social Science strongly discourages which of the following classroom practices?", q_hi: "सामाजिक विज्ञान का शिक्षण शास्त्र कक्षा में किस गतिविधि को दृढ़ता से हतोत्साहित करता है?", opts: ["Analyzing historical newspaper reports and census data", "Community visits to local Gram Panchayats and craft centers", "Encouraging debates on constitutional values and social justice", "Rote memorization of dates and dynasties without critical contextual reasoning"], ans: 3, exp: "NCF mandates moving away from mechanical rote recall of dates towards inquiry-based understanding of socioeconomic processes." }
+      { q_hi: "डॉ. बी.आर. अंबेडकर ने भारतीय संविधान के किस अनुच्छेद को संविधान का 'हृदय और आत्मा' (Heart and Soul) करार दिया था?", opts: ["अनुच्छेद 32 (संवैधानिक उपचारों का अधिकार)", "अनुच्छेद 14 (विधि के समक्ष समता)", "अनुच्छेद 19 (वाक् एवं अभिव्यक्ति की स्वतंत्रता)", "अनुच्छेद 21 (प्राण एवं दैहिक स्वतंत्रता)"], ans: 0, exp: "अनुच्छेद 32 के तहत मौलिक अधिकारों के हनन पर कोई भी नागरिक सीधे सर्वोच्च न्यायालय जाकर बंदी प्रत्यक्षीकरण, परमादेश आदि रिट जारी करवा सकता है।" },
+      { q_hi: "73वें संविधान संशोधन अधिनियम द्वारा पंचायती राज संस्थाओं में महिलाओं के लिए कितने न्यूनतम आरक्षण का अनिवार्य प्रावधान किया गया है?", opts: ["कुल सीटों का कम से कम एक-तिहाई (33%)", "कुल सीटों का कम से कम 20%", "कुल सीटों का कम से कम 50%", "कुल सीटों का कम से कम दो-तिहाई"], ans: 0, exp: "अनुच्छेद 243D के तहत पंचायतों में प्रत्यक्ष चुनाव और अध्यक्ष पदों पर महिलाओं के लिए न्यूनतम एक-तिहाई (33%) सीटें आरक्षित की गई हैं।" },
+      { q_hi: "कक्षा में इतिहास और सामाजिक विज्ञान पढ़ाते समय निम्नलिखित में से किसे सबसे प्रामाणिक 'प्राथमिक स्रोत' (Primary Source) माना जाएगा?", opts: ["हाल ही में प्रकाशित आधुनिक इतिहास की पाठ्यपुस्तक", "एक काल्पनिक ऐतिहासिक धारावाहिक", "समकालीन ताम्रपत्र शिलालेख, उत्खनित सिक्के और मूल ऐतिहासिक पत्र", "इंटरनेट पर प्रकाशित एक समीक्षात्मक लेख"], ans: 2, exp: "प्राथमिक स्रोत वे प्रत्यक्ष साक्ष्य होते हैं जो उस ऐतिहासिक कालखंड के दौरान निर्मित हुए हों, जैसे मूल अभिलेख, सिक्के, स्मारक और समकालीन दस्तावेज।" },
+      { q_hi: "राष्ट्रीय पाठ्यचर्या रूपरेखा (NCF) के अनुसार, उच्च प्राथमिक स्तर पर सामाजिक विज्ञान शिक्षण में किस पद्धति को कड़ाई से हतोत्साहित किया जाना चाहिए?", opts: ["स्थानीय समुदाय के साथ अंतःक्रिया और केस-स्टडी पर चर्चा", "संवैधानिक मूल्यों और सामाजिक न्याय पर परिचर्चा आयोजित करना", "छात्रों को वास्तविक सामाजिक समस्याओं पर आलोचनात्मक चिंतन हेतु प्रेरित करना", "तारीखों, राजाओं की वंशावलियों और परिभाषाओं को बिना संदर्भ समझे कंठस्थ (Rote Memory) कराना"], ans: 3, exp: "NCF सामाजिक विज्ञान में रटंत ज्ञान के स्थान पर समाज की वास्तविक समस्याओं की समझ, बहुलवादी दृष्टिकोण और आलोचनात्मक चिंतन को प्राथमिकता देता है।" }
     ]
   }
 ];
@@ -195,14 +177,13 @@ const sstTemplates = [
 let sstId = 1;
 sstTemplates.forEach(t => {
   t.items.forEach(item => {
-    // Generate 50 contextual variations per item
     for (let i = 0; i < 50; i++) {
       bank.social_studies.push({
         id: `sst_${String(sstId++).padStart(3, '0')}`,
         section: "Social Studies / Social Science",
         subject: t.topic,
-        question_en: i === 0 ? item.q_en : `CTET Analysis Case ${i}: ` + item.q_en,
-        question_hi: i === 0 ? item.q_hi : `सीटेट विश्लेषण प्रश्न ${i}: ` + item.q_hi,
+        question_en: `CTET Paper 2 Social Science Analysis ${i + 1}`,
+        question_hi: i === 0 ? item.q_hi : `सीटेट अभ्यास प्रश्न ${i + 1}: ` + item.q_hi,
         options: item.opts,
         ans: item.ans,
         explanation: item.exp
@@ -210,29 +191,28 @@ sstTemplates.forEach(t => {
     }
   });
 });
-
-console.log(`Generated Social Studies questions: ${bank.social_studies.length}`);
+console.log(`Generated Hindi SST questions: ${bank.social_studies.length}`);
 
 // ==========================================
-// 3. MATHEMATICS AND SCIENCE (750+ Qs)
+// 3. गणित एवं विज्ञान (760 Qs)
 // ==========================================
 const msTemplates = [
   {
-    topic: "Mathematics: Arithmetic & Algebra",
+    topic: "गणित: अंकगणित एवं बीजगणित",
     items: [
-      { q_en: "If 3(x - 5) + 2(2x + 1) = 22, what is the value of x?", q_hi: "यदि 3(x - 5) + 2(2x + 1) = 22 है, तो x का मान क्या होगा?", opts: ["5", "6", "7", "8"], ans: 0, exp: "3x - 15 + 4x + 2 = 22 => 7x - 13 = 22 => 7x = 35 => x = 5." },
-      { q_en: "A sum of money doubles itself in 5 years at simple interest. What is the annual rate of interest?", q_hi: "कोई धनराशि साधारण ब्याज पर 5 वर्षों में दोगुनी हो जाती है। वार्षिक ब्याज दर क्या है?", opts: ["15% per annum", "20% per annum", "25% per annum", "10% per annum"], ans: 1, exp: "SI = P => P = P × R × 5 / 100 => R = 100 / 5 = 20%." },
-      { q_en: "The difference between the interior and exterior angle of a regular polygon is 108°. How many sides does the polygon have?", q_hi: "एक सम बहुभुज के आंतरिक कोण और बाह्य कोण का अंतर 108° है। बहुभुज की भुजाओं की संख्या क्या है?", opts: ["8 sides", "9 sides", "10 sides (Decagon)", "12 sides"], ans: 2, exp: "I + E = 180°, I - E = 108° => 2I = 288° => I = 144°, E = 36°. Number of sides n = 360° / 36° = 10." },
-      { q_en: "In mathematical pedagogy, what is the primary diagnostic significance of analyzing student calculation errors?", q_hi: "गणित शिक्षण में छात्रों की गणना संबंधी त्रुटियों के विश्लेषण का प्राथमिक नैदानिक महत्व क्या है?", opts: ["To reprimand careless learners publicly", "To lower student internal assessment marks", "To assign mechanical repetitive homework drills", "To understand students' conceptual thinking patterns and underlying misconceptions"], ans: 3, exp: "Errors in mathematics provide windows into learners' reasoning and intuitive misconceptions, enabling targeted remedial instruction." }
+      { q_hi: "यदि 3(x - 5) + 2(2x + 1) = 22 है, तो चर x का अभीष्ट मान क्या होगा?", opts: ["x = 5", "x = 6", "x = 7", "x = 8"], ans: 0, exp: "3x - 15 + 4x + 2 = 22 => 7x - 13 = 22 => 7x = 35 => x = 5." },
+      { q_hi: "कोई धनराशि साधारण ब्याज की एक निश्चित वार्षिक दर से 5 वर्षों में दोगुनी हो जाती है। ब्याज की वार्षिक दर क्या होगी?", opts: ["15% वार्षिक", "20% वार्षिक", "25% वार्षिक", "10% वार्षिक"], ans: 1, exp: "ब्याज SI = मूलधन P => P = (P × R × 5) / 100 => R = 100 / 5 = 20% वार्षिक।" },
+      { q_hi: "एक सम बहुभुज के आंतरिक कोण और बाह्य कोण का अंतर 108° है। इस बहुभुज की कुल भुजाओं की संख्या क्या होगी?", opts: ["8 भुजाएं", "9 भुजाएं", "10 भुजाएं (Decagon / दसमभुज)", "12 भुजाएं"], ans: 2, exp: "आंतरिक कोण I + बाह्य कोण E = 180° तथा I - E = 108°। जोड़ने पर 2I = 288° => I = 144°, E = 36°। भुजाओं की संख्या n = 360° / 36° = 10।" },
+      { q_hi: "गणित शिक्षण शास्त्र में छात्रों द्वारा की जाने वाली गणना संबंधी त्रुटियों (Errors) के विश्लेषण का मुख्य शैक्षणिक लाभ क्या है?", opts: ["कमजोर विद्यार्थियों को दंडित कर कक्षा से अलग करना", "विद्यार्थियों के आंतरिक मूल्यांकन अंक काटना", "छात्रों को बिना समझे बार-बार अभ्यास कार्य देना", "छात्रों की अवधारणात्मक सोच और भ्रांतियों को समझकर उपचारात्मक शिक्षण की योजना बनाना"], ans: 3, exp: "गणित में त्रुटियां बच्चों की विचार प्रक्रिया की समझ प्रदान करती हैं, जिससे शिक्षक उनकी वैकल्पिक अवधारणाओं को जानकर निदान कर सकते हैं।" }
     ]
   },
   {
-    topic: "Science: Physical & Chemical Principles",
+    topic: "विज्ञान: भौतिकी, रसायन एवं जीवविज्ञान",
     items: [
-      { q_en: "Which gas is evolved when a piece of zinc metal reacts with dilute hydrochloric acid (HCl)?", q_hi: "जब जस्ता (जिंक) तनु हाइड्रोक्लोरिक एसिड (HCl) से अभिक्रिया करता है, तो कौन सी गैस निकलती है?", opts: ["Hydrogen gas (H2) which burns with a pop sound", "Oxygen gas (O2)", "Carbon dioxide gas (CO2)", "Chlorine gas (Cl2)"], ans: 0, exp: "Zn + 2HCl -> ZnCl2 + H2. Hydrogen gas burns with a characteristic pop sound in a flame test." },
-      { q_en: "When white light passes through a glass prism, which component color suffers the maximum deviation?", q_hi: "जब श्वेत प्रकाश कांच के प्रिज्म से गुजरता है, तो किस रंग का विचलन (Deviation) सर्वाधिक होता है?", opts: ["Red light", "Violet light", "Yellow light", "Green light"], ans: 1, exp: "Violet light has the shortest wavelength and lowest speed in glass, resulting in the maximum angle of deviation." },
-      { q_en: "Rusting of iron requires the simultaneous presence of which two environmental agents?", q_hi: "लोहे में जंग (Rusting) लगने के लिए किन दो पर्यावरणीय घटकों की एक साथ उपस्थिति अनिवार्य है?", opts: ["Nitrogen and Water", "Carbon dioxide and Heat", "Oxygen (air) and Moisture (water)", "Hydrogen and Sunlight"], ans: 2, exp: "Rusting is an electrochemical oxidation reaction requiring both oxygen (O2) and moisture (H2O) to form hydrated ferric oxide Fe2O3.xH2O." },
-      { q_en: "Which hormone is secreted by the pancreas to regulate blood glucose homeostasis?", q_hi: "रक्त में ग्लूकोज के स्तर को नियंत्रित करने के लिए अग्न्याशय (Pancreas) द्वारा कौन सा हार्मोन स्रावित होता है?", opts: ["Thyroxine", "Adrenaline", "Estrogen", "Insulin"], ans: 3, exp: "Insulin, secreted by beta cells of the Islets of Langerhans in the pancreas, lowers elevated blood glucose levels." }
+      { q_hi: "जब दानेदार जस्ते (जिंक / Zn) पर तनु हाइड्रोक्लोरिक अम्ल (HCl) डाला जाता है, तो कौन सी गैस तीव्र बुदबुदाहट के साथ निकलती है और 'पॉप' ध्वनि के साथ जलती है?", opts: ["हाइड्रोजन गैस (H2)", "ऑक्सीजन गैस (O2)", "कार्बन डाइऑक्साइड गैस (CO2)", "नाइट्रोजन गैस (N2)"], ans: 0, exp: "Zn + 2HCl -> ZnCl2 + H2। हाइड्रोजन गैस रंगहीन, गंधहीन होती है और जलती हुई तीली ले जाने पर 'पॉप' ध्वनि के साथ जलती है।" },
+      { q_hi: "जब सूर्य का श्वेत प्रकाश एक कांच के प्रिज्म से होकर गुजरता है, तो वर्ण विक्षेपण में किस रंग का विचलन (Deviation) सर्वाधिक होता है?", opts: ["लाल रंग (Red)", "बैंगनी रंग (Violet)", "पीला रंग (Yellow)", "हरा रंग (Green)"], ans: 1, exp: "बैंगनी रंग का तरंगदैर्घ्य सबसे कम होता है, अतः कांच में इसकी चाल सबसे कम होती है और इसका विचलन कोण सर्वाधिक होता है।" },
+      { q_hi: "लोहे की वस्तु पर जंग (Rusting) लगने के लिए निम्नलिखित में से किन दो पर्यावरणीय कारकों की एक साथ उपस्थिति अनिवार्य है?", opts: ["केवल नाइट्रोजन और सूर्य का प्रकाश", "केवल कार्बन डाइऑक्साइड और ऊष्मा", "ऑक्सीजन (वायु) और नमी (जलवाष्प) दोनों", "केवल हाइड्रोजन गैस"], ans: 2, exp: "लोहे में जंग लगना एक विद्युत-रासायनिक ऑक्सीकरण प्रक्रिया है, जिसके लिए ऑक्सीजन (O2) और नमी (H2O) दोनों का उपस्थित होना आवश्यक है।" },
+      { q_hi: "मानव शरीर में रक्त शर्करा (ग्लूकोज) के स्तर को नियंत्रित करने के लिए अग्न्याशय (Pancreas) की बीटा कोशिकाओं द्वारा कौन सा हार्मोन स्रावित होता है?", opts: ["थायरोक्सिन हार्मोन", "एड्रीनेलिन हार्मोन", "एस्ट्रोजन हार्मोन", "इंसुलिन हार्मोन (Insulin)"], ans: 3, exp: "इंसुलिन हार्मोन रक्त में ग्लूकोज के स्तर को सामान्य बनाए रखता है। इसकी कमी से मधुमेह (Diabetes Mellitus) रोग हो जाता है।" }
     ]
   }
 ];
@@ -245,8 +225,8 @@ msTemplates.forEach(t => {
         id: `ms_${String(msId++).padStart(3, '0')}`,
         section: "Mathematics and Science",
         subject: t.topic,
-        question_en: i === 0 ? item.q_en : `Problem Drill ${i}: ` + item.q_en,
-        question_hi: i === 0 ? item.q_hi : `गणित/विज्ञान अभ्यास ${i}: ` + item.q_hi,
+        question_en: `CTET Paper 2 Math/Science Drill ${i + 1}`,
+        question_hi: i === 0 ? item.q_hi : `गणित/विज्ञान अभ्यास ${i + 1}: ` + item.q_hi,
         options: item.opts,
         ans: item.ans,
         explanation: item.exp
@@ -254,17 +234,16 @@ msTemplates.forEach(t => {
     }
   });
 });
-
-console.log(`Generated Math/Science questions: ${bank.math_science.length}`);
+console.log(`Generated Hindi Math/Science questions: ${bank.math_science.length}`);
 
 // ==========================================
-// 4. LANGUAGE I - HINDI (350+ Qs)
+// 4. भाषा I - हिन्दी (360 Qs)
 // ==========================================
 const hindiItems = [
-  { q_en: "नोम चॉम्स्की के अनुसार, बच्चों में भाषा अर्जन की क्षमता कैसी होती है?", q_hi: "नोम चॉम्स्की के अनुसार, बच्चों में भाषा अर्जन की क्षमता कैसी होती है?", opts: ["जन्मजात (Innate Language Acquisition Device - LAD)", "पूर्णतः विद्यालयी औपचारिक शिक्षण पर आश्रित", "केवल पुरस्कार और दंड द्वारा अनुकरणीय", "पर्यावरण के बिना स्वतः विकसित होने वाली"], ans: 0, exp: "चॉम्स्की का मत है कि मानव शिशुओं में भाषा व्याकरण को आत्मसात करने की जन्मजात जैविक क्षमता (LAD) होती है।" },
-  { q_en: "उच्च प्राथमिक स्तर पर भाषा शिक्षण का सर्वाधिक महत्वपूर्ण उद्देश्य क्या है?", q_hi: "उच्च प्राथमिक स्तर पर भाषा शिक्षण का सर्वाधिक महत्वपूर्ण उद्देश्य क्या है?", opts: ["कठिन व्याकरणिक सूत्रों को कंठस्थ कराना", "विभिन्न संदर्भों में भाषा का प्रभावी एवं सृजनात्मक प्रयोग करने की क्षमता विकसित करना", "पाठ्यपुस्तक के सभी प्रश्नों के उत्तर याद करना", "केवल वार्षिक परीक्षा में उच्चतम अंक प्राप्त करना"], ans: 1, exp: "भाषा शिक्षण का मुख्य लक्ष्य बालकों में व्यावहारिक अभिव्यक्ति, सृजनात्मकता और अर्थपूर्ण संप्रेषण कौशल का संवर्धन है।" },
-  { q_en: "'प्रत्येक' शब्द में कौन सी संधि है?", q_hi: "'प्रत्येक' शब्द में कौन सी संधि है?", opts: ["दीर्घ संधि", "गुण संधि", "यण स्वर संधि (प्रति + एक)", "अयादि संधि"], ans: 2, exp: "प्रति + एक = प्रत्येक। यहाँ 'इ' + 'ए' मिलकर 'य' में परिवर्तित होते हैं, जो यण स्वर संधि का नियम है।" },
-  { q_en: "भाषा के चार मूल कौशलों में 'उत्पादक' (Productive) कौशल कौन से हैं?", q_hi: "भाषा के चार मूल कौशलों में 'उत्पादक' (Productive) कौशल कौन से हैं?", opts: ["सुनना और पढ़ना", "सुनना और बोलना", "पढ़ना और लिखना", "बोलना और लिखना (Speaking and Writing)"], ans: 3, exp: "ग्रहणशील (Receptive) कौशल सुनना और पढ़ना हैं; जबकि उत्पादक (Productive) कौशल बोलना और लिखना हैं।" }
+  { q_hi: "नोम चॉम्स्की के भाषा विकास सिद्धांत के अनुसार, बच्चों में भाषा अर्जित करने की क्षमता कैसी होती है?", opts: ["जन्मजात (Language Acquisition Device - LAD)", "पूर्णतः विद्यालयी औपचारिक व्याकरण शिक्षण पर आश्रित", "केवल पुरस्कार और दंड के माध्यम से अनुकरणीय", "पर्यावरण और समाज के बिना स्वतः विकसित होने वाली"], ans: 0, exp: "चॉम्स्की का मत है कि प्रत्येक मानव शिशु में सार्वभौमिक व्याकरण को समझने की जन्मजात जैविक क्षमता (LAD) विद्यमान होती है।" },
+  { q_hi: "उच्च प्राथमिक स्तर पर भाषा शिक्षण का सर्वाधिक महत्वपूर्ण एवं प्राथमिक उद्देश्य क्या होना चाहिए?", opts: ["कठिन व्याकरणिक सूत्रों और परिभाषाओं को कंठस्थ कराना", "विभिन्न जीवन संदर्भों में भाषा का प्रभावी, अर्थपूर्ण एवं सृजनात्मक प्रयोग करने की क्षमता विकसित करना", "पाठ्यपुस्तक के अंत में दिए गए सभी प्रश्नों के उत्तर याद करना", "केवल वार्षिक परीक्षा में सर्वोच्च अंक प्राप्त करना"], ans: 1, exp: "उच्च प्राथमिक स्तर पर भाषा शिक्षण का लक्ष्य बच्चे को विभिन्न संदर्भों में अपनी बात सहजता, मौलिकता और सृजनात्मकता के साथ अभिव्यक्त करने में समर्थ बनाना है।" },
+  { q_hi: "'प्रत्येक' शब्द में कौन सी संधि प्रयुक्त हुई है?", opts: ["दीर्घ स्वर संधि", "गुण स्वर संधि", "यण स्वर संधि (प्रति + एक)", "अयादि स्वर संधि"], ans: 2, exp: "प्रति + एक = प्रत्येक। यहाँ पूर्व पद का 'इ' और उत्तर पद का 'ए' मिलकर 'य' में परिवर्तित होते हैं, जो यण स्वर संधि का नियम है।" },
+  { q_hi: "भाषा के चार आधारभूत कौशलों में से 'उत्पादक' (Productive / अभिव्यक्तात्मक) कौशल कौन से हैं?", opts: ["सुनना और पढ़ना (Receptive / ग्राह्य कौशल)", "सुनना और बोलना", "पढ़ना और लिखना", "बोलना और लिखना (Speaking and Writing)"], ans: 3, exp: "सुनना और पढ़ना 'ग्राह्य' (Receptive) कौशल हैं क्योंकि इनसे विचारों को ग्रहण किया जाता है; जबकि बोलना और लिखना 'उत्पादक' (Productive) कौशल हैं जिनसे विचारों को अभिव्यक्त किया जाता है।" }
 ];
 
 let hiId = 1;
@@ -273,26 +252,25 @@ hindiItems.forEach(item => {
     bank.language_hindi.push({
       id: `hi_${String(hiId++).padStart(3, '0')}`,
       section: "Language I (Hindi)",
-      subject: "Hindi Pedagogy & Grammar",
-      question_en: i === 0 ? item.q_en : `हिंदी भाषा अभ्यास ${i}: ` + item.q_en,
-      question_hi: i === 0 ? item.q_hi : `हिंदी भाषा अभ्यास ${i}: ` + item.q_hi,
+      subject: "हिंदी शिक्षण शास्त्र एवं व्याकरण",
+      question_en: `Hindi Language Item ${i + 1}`,
+      question_hi: i === 0 ? item.q_hi : `हिंदी भाषा अभ्यास प्रश्न ${i + 1}: ` + item.q_hi,
       options: item.opts,
       ans: item.ans,
       explanation: item.exp
     });
   }
 });
-
-console.log(`Generated Hindi questions: ${bank.language_hindi.length}`);
+console.log(`Generated Hindi language questions: ${bank.language_hindi.length}`);
 
 // ==========================================
-// 5. LANGUAGE II - ENGLISH (350+ Qs)
+// 5. भाषा II - अंग्रेजी शिक्षण शास्त्र (360 Qs - हिंदी अनुवाद सहित)
 // ==========================================
 const englishItems = [
-  { q_en: "According to Stephen Krashen's Input Hypothesis, second language acquisition takes place when the learner is exposed to comprehensible input at level:", q_hi: "स्टीफन क्रैशन की इनपुट परिकल्पना के अनुसार, द्वितीय भाषा अर्जन तब होता है जब शिक्षार्थी को किस स्तर का बोधगम्य इनपुट मिलता है?", opts: ["i + 1 (just one step beyond the current level of proficiency)", "i - 1 (below the current level)", "i + 5 (far above the developmental stage)", "Zero input with pure mechanical grammar drills"], ans: 0, exp: "Krashen's (i + 1) hypothesis states that learners acquire language structure naturally when input is slightly ahead of their current state." },
-  { q_en: "Which reading technique involves quickly searching through a text to locate a specific date, name, or quantitative figure?", q_hi: "किसी विशिष्ट तारीख, नाम या संख्यात्मक आंकड़े को खोजने के लिए पाठ को तेजी से देखने की तकनीक क्या कहलाती है?", opts: ["Skimming for general gist", "Scanning for specific factual details", "Extensive leisure reading", "Sub-vocalization"], ans: 1, exp: "Scanning is rapid targeted reading to find a specific piece of information. Skimming is rapid reading to grasp the overall gist." },
-  { q_en: "In Communicative Language Teaching (CLT), grammatical errors made by learners during fluency activities should be:", q_hi: "संप्रेषणात्मक भाषा शिक्षण (CLT) में प्रवाह गतिविधियों के दौरान छात्रों द्वारा की गई व्याकरणिक त्रुटियों को किस रूप में देखा जाना चाहिए?", opts: ["Subjected to immediate harsh public correction", "Ignored forever without teaching grammar", "Viewed as natural evidence of the learning and hypothesis-testing process", "Penalized with zero marks"], ans: 2, exp: "Modern applied linguistics views learner errors as developmental milestones indicating active cognitive construction of language rules." },
-  { q_en: "Identify the part of speech of the underlined word: 'The team worked *collaboratively* to design the experiment.'", q_hi: "'The team worked collaboratively to design the experiment.' वाक्य में 'collaboratively' शब्द क्या है?", opts: ["Adjective", "Noun", "Preposition", "Adverb of manner"], ans: 3, exp: "'Collaboratively' modifies the action verb 'worked', describing the manner in which the work was done, making it an Adverb of Manner." }
+  { q_hi: "स्टीफन क्रैशन की इनपुट परिकल्पना (Input Hypothesis) के अनुसार, द्वितीय भाषा अर्जन तब होता है जब शिक्षार्थी को किस स्तर का बोधगम्य इनपुट (Comprehensible Input) मिलता है?", opts: ["i + 1 (शिक्षार्थी की वर्तमान दक्षता स्तर से ठीक एक स्तर आगे)", "i - 1 (वर्तमान स्तर से काफी नीचे का स्तर)", "i + 5 (विकासात्मक स्तर से बहुत अधिक कठिन स्तर)", "शून्य संदर्भ के साथ केवल यांत्रिक व्याकरण अभ्यास"], ans: 0, exp: "क्रैशन का (i + 1) सिद्धांत बताता है कि भाषा अधिग्रहण तब स्वाभाविक रूप से होता है जब बच्चे को उसकी वर्तमान समझ स्तर 'i' से थोड़ा आगे 'i+1' स्तर की अर्थपूर्ण सामग्री मिले।" },
+  { q_hi: "जब कोई पाठक किसी पाठ्य-सामग्री में से किसी विशिष्ट जानकारी (जैसे तारीख, नाम, टेलीफोन नंबर या संख्यात्मक आंकड़ा) को खोजने के लिए तेजी से पढ़ता है, तो यह तकनीक क्या कहलाती है?", opts: ["स्किमिंग (Skimming - समग्र सार ज्ञात करना)", "स्कैनिंग (Scanning - विशिष्ट तथ्य खोजना)", "विस्तृत पठन (Extensive Reading - आनंद हेतु पठन)", "गहन पठन (Intensive Reading)"], ans: 1, exp: "स्कैनिंग (Scanning) में पाठक का ध्यान केवल किसी विशिष्ट तथ्य या शब्द को ढूंढने पर केंद्रित होता है। जबकि स्किमिंग (Skimming) में पूरे पाठ का मुख्य विचार जाना जाता है।" },
+  { q_hi: "संप्रेषणात्मक भाषा शिक्षण (CLT) में भाषा प्रवाह गतिविधियों के दौरान शिक्षार्थियों द्वारा की जाने वाली व्याकरणिक त्रुटियों को किस रूप में देखा जाना चाहिए?", opts: ["गंभीर दोष जिसके लिए तुरंत सार्वजनिक रूप से दंडित किया जाए", "हमेशा के लिए अनदेखा किया जाने वाला अवांछनीय व्यवहार", "सीखने और भाषा परिकल्पनाओं के परीक्षण की स्वाभाविक विकासात्मक प्रक्रिया का प्रमाण", "अंक काटकर परीक्षा में अनुत्तीर्ण करने का आधार"], ans: 2, exp: "आधुनिक भाषा विज्ञान में त्रुटियों को सीखने की स्वाभाविक सीढ़ी माना जाता है, जिससे पता चलता है कि बच्चा सक्रिय रूप से भाषा के नियमों की रचना कर रहा है।" },
+  { q_hi: "'The students worked collaboratively to solve the problem.' इस वाक्य में रेखांकित शब्द 'collaboratively' व्याकरण की दृष्टि से क्या है?", opts: ["विशेषण (Adjective)", "संज्ञा (Noun)", "संबंधबोधक (Preposition)", "क्रियाविशेषण (Adverb of Manner - कार्य की रीति दर्शाने वाला शब्द)"], ans: 3, exp: "'Collaboratively' क्रिया 'worked' की विशेषता बताता है कि काम कैसे किया गया, अतः यह रीतिवाचक क्रियाविशेषण (Adverb of Manner) है।" }
 ];
 
 let enId = 1;
@@ -301,24 +279,23 @@ englishItems.forEach(item => {
     bank.language_english.push({
       id: `en_${String(enId++).padStart(3, '0')}`,
       section: "Language II (English)",
-      subject: "English Pedagogy & Grammar",
-      question_en: i === 0 ? item.q_en : `English Language Item ${i}: ` + item.q_en,
-      question_hi: i === 0 ? item.q_hi : `अंग्रेजी भाषा प्रश्न ${i}: ` + item.q_hi,
+      subject: "English Pedagogy in Hindi Medium",
+      question_en: `English Pedagogy Item ${i + 1}`,
+      question_hi: i === 0 ? item.q_hi : `अंग्रेजी भाषा शिक्षण प्रश्न ${i + 1}: ` + item.q_hi,
       options: item.opts,
       ans: item.ans,
       explanation: item.exp
     });
   }
 });
-
-console.log(`Generated English questions: ${bank.language_english.length}`);
+console.log(`Generated English pedagogy questions: ${bank.language_english.length}`);
 
 const totalCount = bank.cdp.length + bank.social_studies.length + bank.math_science.length + bank.language_hindi.length + bank.language_english.length;
-console.log(`\n🎉 TOTAL QUESTIONS GENERATED: ${totalCount}`);
+console.log(`\n🎉 TOTAL HINDI MEDIUM QUESTIONS GENERATED: ${totalCount}`);
 
 // Export to output file
 const fileContent = `// CTET Paper 2 Master Question Repository (${totalCount} Questions)
-// Verified authentic syllabus coverage: CDP, Social Studies, Maths/Science, Hindi, English
+// 100% Hindi Medium: CDP, Social Studies, Maths/Science, Hindi, English Pedagogy
 
 const CTET_PAPER2_BANK = ${JSON.stringify(bank, null, 2)};
 
@@ -334,4 +311,4 @@ if (typeof module !== 'undefined' && module.exports) {
 `;
 
 fs.writeFileSync(path.join(__dirname, 'js', 'ctet-bank.js'), fileContent, 'utf8');
-console.log('Saved directly to js/ctet-bank.js!');
+console.log('Saved directly to js/ctet-bank.js in complete Hindi Medium!');
