@@ -67,10 +67,24 @@
     attemptsContainer: document.getElementById('recent-attempts-list'),
     emptyAttemptsMsg: document.getElementById('empty-attempts-msg'),
 
-    // AI Controls
+    // Coverage Dashboard
+    coveragePct: document.getElementById('coverage-percentage'),
+    coverageBar: document.getElementById('coverage-progress-bar'),
+    covCdp: document.getElementById('cov-cdp'),
+    covSst: document.getElementById('cov-sst'),
+    covMs: document.getElementById('cov-ms'),
+    covHi: document.getElementById('cov-hi'),
+    covEn: document.getElementById('cov-en'),
+    covAlertBox: document.getElementById('coverage-alert-box'),
+    covAlertText: document.getElementById('coverage-alert-text'),
+    btnScrollReplenish: document.getElementById('btn-scroll-replenish'),
+
+    // AI Replenisher Controls
     apiKeyInput: document.getElementById('gemini-api-key'),
     saveKeyBtn: document.getElementById('btn-save-key'),
-    generateBtn: document.getElementById('btn-ai-generate'),
+    replenishSectionSelect: document.getElementById('replenish-section-select'),
+    replenishCountSelect: document.getElementById('replenish-count-select'),
+    btnReplenishBank: document.getElementById('btn-replenish-bank'),
     genStatus: document.getElementById('ai-gen-status'),
 
     // Exam Top Bar
@@ -125,6 +139,7 @@
     setupRefreshLock();
     loadRecentAttempts();
     setStream('social_studies'); // DEFAULT: Social Studies
+    updateCoverageUI();
   }
 
   // Dark Mode is Default
@@ -213,8 +228,14 @@
       showToast(val ? '✅ Gemini API Key saved!' : 'API Key cleared.');
     });
 
-    // AI Generate Button
-    el.generateBtn.addEventListener('click', handleAiGeneration);
+    // AI Storage Replenisher
+    el.btnReplenishBank.addEventListener('click', handleReplenishBank);
+    if (el.btnScrollReplenish) {
+      el.btnScrollReplenish.addEventListener('click', () => {
+        const target = document.getElementById('replenish-section');
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
 
     // Pre-test Countdown modal buttons
     el.btnCancelCountdown.addEventListener('click', cancelTestCountdown);
@@ -250,6 +271,7 @@
       el.resultScreen.classList.remove('active');
       el.landingScreen.style.display = 'block';
       loadRecentAttempts();
+      updateCoverageUI();
     });
   }
 
@@ -632,6 +654,9 @@
       date: new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })
     });
 
+    // Update Question Bank Coverage
+    updateCoverageUI();
+
     el.resultScreen.classList.add('active');
   }
 
@@ -776,44 +801,59 @@
     });
   }
 
-  // AI Generation Handler
-  async function handleAiGeneration() {
+  // Update Question Bank Coverage UI
+  function updateCoverageUI() {
+    if (!window.ctetGenerator) return;
+    const stats = window.ctetGenerator.getCoverageStats();
+
+    el.coveragePct.textContent = stats.percentage + '%';
+    el.coverageBar.style.width = stats.percentage + '%';
+
+    const sub = stats.subjectStats;
+    if (sub.cdp) el.covCdp.textContent = `${sub.cdp.attempted}/${sub.cdp.total} (${sub.cdp.percentage}%)`;
+    if (sub.social_studies) el.covSst.textContent = `${sub.social_studies.attempted}/${sub.social_studies.total} (${sub.social_studies.percentage}%)`;
+    if (sub.math_science) el.covMs.textContent = `${sub.math_science.attempted}/${sub.math_science.total} (${sub.math_science.percentage}%)`;
+    if (sub.language_hindi) el.covHi.textContent = `${sub.language_hindi.attempted}/${sub.language_hindi.total} (${sub.language_hindi.percentage}%)`;
+    if (sub.language_english) el.covEn.textContent = `${sub.language_english.attempted}/${sub.language_english.total} (${sub.language_english.percentage}%)`;
+
+    if (stats.percentage >= 70) {
+      el.covAlertBox.style.display = 'flex';
+      el.covAlertText.innerHTML = `🏆 <strong>Exceptional coverage!</strong> You have practiced <strong>${stats.percentage}%</strong> (${stats.attemptedCount} / ${stats.totalQuestions}) of the entire question repository. If you want fresh questions, expand your storage pool below with your Gemini API key.`;
+    } else if (stats.percentage >= 30) {
+      el.covAlertBox.style.display = 'flex';
+      el.covAlertText.innerHTML = `💪 <strong>Strong Progress!</strong> You have covered <strong>${stats.percentage}%</strong> (${stats.attemptedCount} / ${stats.totalQuestions}) of the question bank.`;
+    } else {
+      el.covAlertBox.style.display = 'none';
+    }
+  }
+
+  // AI Bank Storage Replenisher (Stores in DB, NO Live Quiz, Saves Tokens!)
+  async function handleReplenishBank() {
     const key = el.apiKeyInput.value.trim();
     if (!key) {
-      alert('Please enter your Gemini API key in the field to generate questions.');
+      alert('Please enter your Gemini API key in the field to replenish questions.');
       el.apiKeyInput.focus();
       return;
     }
 
-    el.genStatus.textContent = '🤖 Calling Gemini 3.8 Flash to synthesize authentic CTET questions...';
-    el.generateBtn.disabled = true;
+    const sectionKey = el.replenishSectionSelect.value;
+    const count = parseInt(el.replenishCountSelect.value, 10) || 10;
+
+    el.genStatus.textContent = `🤖 Asking Gemini 3.8 Flash to synthesize ${count} new questions into storage...`;
+    el.btnReplenishBank.disabled = true;
 
     try {
-      const sectionToGen = state.currentStream === 'social_studies' ? 'Social Studies / Social Science' : 'Mathematics & Science';
-      const newQuestions = await window.ctetGenerator.generateWithGemini(key, sectionToGen, 5);
+      const res = await window.ctetGenerator.replenishStorageWithGemini(key, sectionKey, count);
       
-      el.genStatus.textContent = `✅ Successfully synthesized ${newQuestions.length} new questions!`;
-      showToast(`✨ Generated ${newQuestions.length} CTET questions via Gemini!`);
+      el.genStatus.textContent = `✅ Successfully added ${res.addedCount} questions into ${res.sectionLabel}! Total bank in storage is now ${res.newTotalPool} questions.`;
+      showToast(`📥 Saved ${res.addedCount} new questions into storage!`);
       
-      const customPaper = {
-        id: 'ai_' + Date.now(),
-        title: `AI Synthesized CTET Sprint (${sectionToGen})`,
-        stream: state.currentStream,
-        mode: 'sprint',
-        duration: 15,
-        totalQuestions: newQuestions.length,
-        questions: newQuestions
-      };
-
-      state.pendingTestPaper = customPaper;
-      setTimeout(() => {
-        openPreTestCountdown(customPaper);
-      }, 1000);
+      updateCoverageUI();
 
     } catch (err) {
-      el.genStatus.textContent = '❌ Generation error: ' + err.message;
+      el.genStatus.textContent = '❌ Replenishment error: ' + err.message;
     } finally {
-      el.generateBtn.disabled = false;
+      el.btnReplenishBank.disabled = false;
     }
   }
 

@@ -59,7 +59,43 @@
       </div>
     </section>
 
-    <!-- Controls: Stream Selector (Default: Social Studies) & AI Engine -->
+    <!-- Question Bank Coverage & Mastery Dashboard -->
+    <section class="coverage-card">
+      <div class="coverage-header">
+        <div class="coverage-title">
+          <span>📈 Your Question Bank Practice Coverage</span>
+        </div>
+        <div class="coverage-pct-badge">
+          <span id="coverage-percentage">0%</span> <small style="font-size:12px; color:var(--mt); font-weight:600;">Covered</small>
+        </div>
+      </div>
+
+      <!-- Animated Progress Bar -->
+      <div class="progress-bar-bg">
+        <div id="coverage-progress-bar" class="progress-bar-fill" style="width: 0%;"></div>
+      </div>
+
+      <!-- Subject-Wise Progress Pills -->
+      <div class="coverage-pill-row">
+        <div class="coverage-pill">🧠 CDP: <strong id="cov-cdp">0/600 (0%)</strong></div>
+        <div class="coverage-pill">🌍 SST: <strong id="cov-sst">0/800 (0%)</strong></div>
+        <div class="coverage-pill">📐 Math & Science: <strong id="cov-ms">0/760 (0%)</strong></div>
+        <div class="coverage-pill">📖 Hindi: <strong id="cov-hi">0/360 (0%)</strong></div>
+        <div class="coverage-pill">🔤 English: <strong id="cov-en">0/360 (0%)</strong></div>
+      </div>
+
+      <!-- Milestone / High Coverage Alert -->
+      <div id="coverage-alert-box" class="coverage-alert-box" style="display: none;">
+        <div>
+          <span id="coverage-alert-text">🎉 <strong>Great job!</strong> You have practiced a significant portion of this question bank.</span>
+        </div>
+        <button id="btn-scroll-replenish" class="btn-icon" style="background:var(--sf); color:#fff; border-color:var(--sf);">
+          🔄 Refresh & Expand Bank via AI
+        </button>
+      </div>
+    </section>
+
+    <!-- Controls: Stream Selector (Default: Social Studies) & AI Storage Replenisher -->
     <div class="control-bar">
       <!-- Stream Switcher -->
       <div class="control-card">
@@ -82,19 +118,33 @@
         </div>
       </div>
 
-      <!-- AI Question Synthesizer (Gemini Integration) -->
-      <div class="control-card">
+      <!-- AI Question Bank Replenisher (Stores in DB, NO Live Quiz, Saves Tokens!) -->
+      <div id="replenish-section" class="control-card">
         <div class="control-title">
-          <span>🤖 Gemini AI Live Question Generator</span>
-          <span style="font-size:11px; color:var(--sf); font-weight:700;">Optional</span>
+          <span>🔄 AI Question Bank Replenisher</span>
+          <span style="font-size:11px; color:var(--sf); font-weight:700;">Storage Update</span>
         </div>
         <div class="ai-controls">
           <div class="api-key-row">
-            <input type="password" id="gemini-api-key" placeholder="Enter Gemini API Key (optional)" />
-            <button id="btn-save-key" class="btn-icon">Save</button>
+            <input type="password" id="gemini-api-key" placeholder="Enter Gemini API Key" />
+            <button id="btn-save-key" class="btn-icon">Save Key</button>
           </div>
-          <button id="btn-ai-generate" class="btn-generate">
-            ⚡ Generate Fresh Questions with AI
+          <div style="display:flex; gap:8px;">
+            <select id="replenish-section-select" style="flex:2; padding:8px 10px; border-radius:8px; border:1.5px solid var(--bd); background:var(--bg); color:var(--tx); font-size:12px; outline:none;">
+              <option value="social_studies">🌍 Social Studies / Social Science</option>
+              <option value="cdp">🧠 Child Development & Pedagogy</option>
+              <option value="math_science">📐 Mathematics & Science</option>
+              <option value="language_hindi">📖 Language I (Hindi)</option>
+              <option value="language_english">🔤 Language II (English)</option>
+            </select>
+            <select id="replenish-count-select" style="flex:1; padding:8px 10px; border-radius:8px; border:1.5px solid var(--bd); background:var(--bg); color:var(--tx); font-size:12px; outline:none;">
+              <option value="10">10 Qs</option>
+              <option value="20">20 Qs</option>
+              <option value="30">30 Qs</option>
+            </select>
+          </div>
+          <button id="btn-replenish-bank" class="btn-generate">
+            📥 Generate & Inject Fresh Questions into Storage
           </button>
           <div id="ai-gen-status" style="font-size: 11px; color: var(--mt); min-height: 14px;"></div>
         </div>

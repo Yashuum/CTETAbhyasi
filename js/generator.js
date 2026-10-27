@@ -5,8 +5,10 @@
  * 1. Automatic Paper Assembly from 2,800+ Master CTET Bank
  * 2. Daily Deduplication: Ensures questions are NEVER repeated in the same test
  *    or across multiple attempts in a single day.
- * 3. Gemini 2.0 Flash AI live question synthesizer with structured JSON schema.
- * 4. Dual Stream Balancing: Social Studies (Default) vs Mathematics & Science.
+ * 3. Question Bank Coverage Tracker (% practiced across CDP, SST, Maths, Hindi, English).
+ * 4. Token-Efficient Storage Replenisher: Uses Gemini AI to inject fresh questions
+ *    into the persistent storage pool, WITHOUT initiating expensive live quizzes.
+ * 5. Dual Stream Balancing: Social Studies (Default) vs Mathematics & Science.
  */
 
 class CTETQuestionGenerator {
@@ -14,6 +16,28 @@ class CTETQuestionGenerator {
     this.STORAGE_KEY = 'ctet_generated_tests_v2';
     this.API_KEY_STORAGE = 'ctet_gemini_api_key';
     this.ATTEMPTED_PREFIX = 'ctet_daily_attempted_';
+    this.LIFETIME_ATTEMPTED_KEY = 'ctet_lifetime_attempted_v1';
+    this.CUSTOM_BANK_KEY = 'ctet_custom_bank_v2';
+
+    this.initCustomBank();
+  }
+
+  initCustomBank() {
+    if (typeof window === 'undefined' || !window.CTET_PAPER2_BANK) return;
+    try {
+      const custom = JSON.parse(localStorage.getItem(this.CUSTOM_BANK_KEY) || '{}');
+      Object.keys(custom).forEach(secKey => {
+        if (Array.isArray(custom[secKey]) && window.CTET_PAPER2_BANK[secKey]) {
+          custom[secKey].forEach(q => {
+            if (!window.CTET_PAPER2_BANK[secKey].some(existing => existing.id === q.id)) {
+              window.CTET_PAPER2_BANK[secKey].push(q);
+            }
+          });
+        }
+      });
+    } catch (e) {
+      console.warn('Failed to merge custom bank:', e);
+    }
   }
 
   getTodayKey() {
@@ -30,13 +54,28 @@ class CTETQuestionGenerator {
     }
   }
 
+  getLifetimeAttemptedIds() {
+    try {
+      const raw = localStorage.getItem(this.LIFETIME_ATTEMPTED_KEY);
+      return raw ? new Set(JSON.parse(raw)) : new Set();
+    } catch (e) {
+      return new Set();
+    }
+  }
+
   markQuestionsAttempted(ids) {
     try {
-      const current = this.getAttemptedIdsToday();
-      ids.forEach(id => current.add(id));
-      localStorage.setItem(this.getTodayKey(), JSON.stringify([...current]));
+      // Mark daily
+      const daily = this.getAttemptedIdsToday();
+      ids.forEach(id => daily.add(id));
+      localStorage.setItem(this.getTodayKey(), JSON.stringify([...daily]));
+
+      // Mark lifetime coverage
+      const lifetime = this.getLifetimeAttemptedIds();
+      ids.forEach(id => lifetime.add(id));
+      localStorage.setItem(this.LIFETIME_ATTEMPTED_KEY, JSON.stringify([...lifetime]));
     } catch (e) {
-      console.warn('Failed to save daily attempted IDs:', e);
+      console.warn('Failed to save attempted IDs:', e);
     }
   }
 
@@ -50,6 +89,65 @@ class CTETQuestionGenerator {
     } else {
       localStorage.removeItem(this.API_KEY_STORAGE);
     }
+  }
+
+  /**
+   * Calculate % coverage of the question bank practiced so far
+   */
+  getCoverageStats() {
+    const bank = window.CTET_PAPER2_BANK;
+    if (!bank) return { totalQuestions: 0, attemptedCount: 0, percentage: 0, subjectStats: {} };
+
+    const lifetime = this.getLifetimeAttemptedIds();
+
+    const sections = {
+      cdp: { name: 'Child Development & Pedagogy', pool: bank.cdp || [] },
+      social_studies: { name: 'Social Studies / Science', pool: bank.social_studies || [] },
+      math_science: { name: 'Mathematics & Science', pool: bank.math_science || [] },
+      language_hindi: { name: 'Language I (Hindi)', pool: bank.language_hindi || [] },
+      language_english: { name: 'Language II (English)', pool: bank.language_english || [] }
+    };
+
+    let totalPoolCount = 0;
+    let totalAttemptedInPool = 0;
+    const subjectStats = {};
+
+    Object.keys(sections).forEach(key => {
+      const sec = sections[key];
+      const poolTotal = sec.pool.length;
+      let secAttempted = 0;
+
+      sec.pool.forEach(q => {
+        if (lifetime.has(q.id)) secAttempted++;
+      });
+
+      totalPoolCount += poolTotal;
+      totalAttemptedInPool += secAttempted;
+
+      const pct = poolTotal > 0 ? Math.round((secAttempted / poolTotal) * 100) : 0;
+      subjectStats[key] = {
+        name: sec.name,
+        attempted: secAttempted,
+        total: poolTotal,
+        percentage: pct
+      };
+    });
+
+    const overallPct = totalPoolCount > 0 ? Math.round((totalAttemptedInPool / totalPoolCount) * 100) : 0;
+
+    return {
+      totalQuestions: totalPoolCount,
+      attemptedCount: totalAttemptedInPool,
+      percentage: overallPct,
+      subjectStats: subjectStats
+    };
+  }
+
+  /**
+   * Reset lifetime coverage so user can re-practice the bank
+   */
+  resetLifetimeCoverage() {
+    localStorage.removeItem(this.LIFETIME_ATTEMPTED_KEY);
   }
 
   /**
@@ -91,8 +189,6 @@ class CTETQuestionGenerator {
         : 'CTET Paper 2 Full Mock (Mathematics & Science Stream)';
       durationMinutes = 150;
 
-      // Official 150-question blueprint:
-      // CDP: 30, Stream: 60, Language I (Hindi): 30, Language II (English): 30
       const cdpPart = this.sampleUnattempted(bank.cdp, 30, attemptedToday);
       const streamPart = stream === 'social_studies'
         ? this.sampleUnattempted(bank.social_studies, 60, attemptedToday)
@@ -110,7 +206,7 @@ class CTETQuestionGenerator {
     });
     const finalQuestions = Array.from(uniqueMap.values());
 
-    // Mark these questions as attempted today so they never repeat in subsequent attempts today!
+    // Mark questions as attempted (both daily deduplication and lifetime coverage)
     this.markQuestionsAttempted(finalQuestions.map(q => q.id));
 
     const testId = 'test_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
@@ -128,25 +224,17 @@ class CTETQuestionGenerator {
     return testPaper;
   }
 
-  /**
-   * Sample unique questions that have NOT been attempted today
-   */
   sampleUnattempted(pool, count, attemptedToday) {
     if (!pool || !pool.length) return [];
 
-    // Filter unattempted questions
     let candidates = pool.filter(q => !attemptedToday.has(q.id));
-
-    // If pool is exhausted for today, reset rollover
     if (candidates.length < count) {
       candidates = [...pool];
     }
 
-    // Shuffle candidates
     const shuffled = this.shuffleArray(candidates);
     const selected = shuffled.slice(0, count);
 
-    // If still less than count, fill with distinct duplicates using unique surrogate keys
     if (selected.length < count) {
       let idx = 0;
       while (selected.length < count) {
@@ -160,36 +248,47 @@ class CTETQuestionGenerator {
   }
 
   /**
-   * Generate brand-new unseen questions directly using Gemini API
+   * REPLENISH STORAGE: Generates new questions via Gemini AI and saves them directly
+   * into persistent browser DB/storage so users can practice without live token burning.
    */
-  async generateWithGemini(apiKey, section = 'Social Studies', count = 5) {
+  async replenishStorageWithGemini(apiKey, sectionKey = 'social_studies', count = 10) {
     if (!apiKey) throw new Error('Gemini API key is required');
 
-    const prompt = `You are a CBSE CTET (Central Teacher Eligibility Test) Paper 2 examination setter.
-Generate exactly ${count} multiple choice questions strictly aligned with CTET Paper 2 (Upper Primary Classes VI-VIII) syllabus.
-Focus section: ${section}.
+    const sectionNames = {
+      cdp: 'Child Development & Pedagogy',
+      social_studies: 'Social Studies / Social Science (History, Geography, Civics, Pedagogy)',
+      math_science: 'Mathematics & Science',
+      language_hindi: 'Language I (Hindi Comprehension & Pedagogy)',
+      language_english: 'Language II (English Comprehension & Pedagogy)'
+    };
 
-Guidelines:
-- Authentic pedagogical and conceptual depth (NCF 2005, NCF-FS & NEP 2020 focus).
-- Bilingual question text: question in English ("question_en") and accurate Hindi translation ("question_hi").
-- Exactly 4 unambiguous options in "options" array.
-- Correct answer index ("ans": 0, 1, 2, or 3).
-- Detailed pedagogical rationale explanation ("explanation").
+    const sectionLabel = sectionNames[sectionKey] || 'Social Studies / Social Science';
 
-Respond with STRICT JSON format matching this schema:
+    const prompt = `You are a senior CBSE CTET Paper 2 examination creator.
+Generate exactly ${count} completely new, authentic multiple-choice questions aligned with CTET Paper 2 (Classes VI-VIII).
+Section: ${sectionLabel}.
+
+Rules:
+- High pedagogical rigor (NCF 2005 / NEP 2020).
+- Bilingual: English text in "question_en", accurate Hindi translation in "question_hi".
+- 4 clear options in "options" array.
+- "ans": 0, 1, 2, or 3.
+- "explanation": In-depth pedagogical rationale.
+
+STRICT JSON schema:
 [
   {
-    "id": "gen_q_${Date.now()}_1",
-    "section": "${section}",
-    "subject": "${section}",
-    "question_en": "Question text in English...",
-    "question_hi": "हिंदी में प्रश्न अनुवाद...",
+    "id": "custom_${sectionKey}_${Date.now()}_1",
+    "section": "${sectionLabel}",
+    "subject": "${sectionLabel}",
+    "question_en": "Question in English...",
+    "question_hi": "हिंदी में प्रश्न...",
     "options": ["Option A", "Option B", "Option C", "Option D"],
     "ans": 0,
-    "explanation": "Detailed pedagogical explanation..."
+    "explanation": "Detailed explanation..."
   }
 ]
-Do NOT wrap in markdown code blocks. Output valid raw JSON only.`;
+Do not output markdown codeblocks. Output valid, raw JSON only.`;
 
     const modelsToTry = ['gemini-3.8-flash', 'gemini-2.5-flash', 'gemini-1.5-flash'];
     let lastError = null;
@@ -213,7 +312,6 @@ Do NOT wrap in markdown code blocks. Output valid raw JSON only.`;
         if (!response.ok) {
           const err = await response.json();
           const msg = err.error?.message || `HTTP ${response.status}`;
-          // If model is deprecated or not found, try next model in fallback list
           if (msg.includes('no longer available') || msg.includes('not found') || response.status === 404) {
             lastError = new Error(msg);
             continue;
@@ -225,22 +323,49 @@ Do NOT wrap in markdown code blocks. Output valid raw JSON only.`;
         const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text;
         if (!rawText) throw new Error('No question content received from Gemini');
 
+        let newQuestions = [];
         try {
-          return JSON.parse(rawText);
+          newQuestions = JSON.parse(rawText);
         } catch (e) {
           const cleaned = rawText.replace(/```json/g, '').replace(/```/g, '').trim();
-          return JSON.parse(cleaned);
+          newQuestions = JSON.parse(cleaned);
         }
+
+        if (!Array.isArray(newQuestions) || !newQuestions.length) {
+          throw new Error('Invalid questions structure generated');
+        }
+
+        // Store into persistent custom bank in localStorage
+        const customBank = JSON.parse(localStorage.getItem(this.CUSTOM_BANK_KEY) || '{}');
+        if (!customBank[sectionKey]) customBank[sectionKey] = [];
+
+        newQuestions.forEach((q, idx) => {
+          q.id = `custom_${sectionKey}_${Date.now()}_${idx + 1}`;
+          customBank[sectionKey].push(q);
+          if (window.CTET_PAPER2_BANK && window.CTET_PAPER2_BANK[sectionKey]) {
+            window.CTET_PAPER2_BANK[sectionKey].push(q);
+          }
+        });
+
+        localStorage.setItem(this.CUSTOM_BANK_KEY, JSON.stringify(customBank));
+
+        const totalInBank = this.getCoverageStats().totalQuestions;
+        return {
+          addedCount: newQuestions.length,
+          sectionKey: sectionKey,
+          sectionLabel: sectionLabel,
+          newTotalPool: totalInBank
+        };
+
       } catch (err) {
         lastError = err;
-        // If not a model availability error, throw immediately
         if (!err.message.includes('no longer available') && !err.message.includes('not found')) {
           throw err;
         }
       }
     }
 
-    throw lastError || new Error('Failed to generate questions with available Gemini models');
+    throw lastError || new Error('Failed to replenish question bank with available Gemini models');
   }
 
   shuffleArray(arr) {
