@@ -200,12 +200,20 @@ class CTETQuestionGenerator {
       questions = [...cdpPart, ...streamPart, ...lang1Part, ...lang2Part];
     }
 
-    // Deduplicate within the single test
+    // Deduplicate within the single test by BOTH unique ID and normalized question stem
+    const getStem = (q) => (q.question_hi || q.question_en || q.question || '').trim().replace(/\s+/g, ' ');
     const uniqueMap = new Map();
+    const uniqueStems = new Set();
+    const finalQuestions = [];
+
     questions.forEach(q => {
-      if (!uniqueMap.has(q.id)) uniqueMap.set(q.id, q);
+      const stem = getStem(q);
+      if (!uniqueMap.has(q.id) && !uniqueStems.has(stem)) {
+        uniqueMap.set(q.id, q);
+        uniqueStems.add(stem);
+        finalQuestions.push(q);
+      }
     });
-    const finalQuestions = Array.from(uniqueMap.values());
 
     // Mark questions as attempted (both daily deduplication and lifetime coverage)
     this.markQuestionsAttempted(finalQuestions.map(q => q.id));
@@ -228,20 +236,43 @@ class CTETQuestionGenerator {
   sampleUnattempted(pool, count, attemptedToday) {
     if (!pool || !pool.length) return [];
 
+    const getStem = (q) => (q.question_hi || q.question_en || q.question || '').trim().replace(/\s+/g, ' ');
+
+    // 1. Filter pool for candidates not yet attempted today
     let candidates = pool.filter(q => !attemptedToday.has(q.id));
+
+    // If unattempted candidate pool has fewer than count (e.g. user took many tests today),
+    // fallback to full pool so user can still practice, but strictly maintain 0 duplicates in this test
     if (candidates.length < count) {
       candidates = [...pool];
     }
 
     const shuffled = this.shuffleArray(candidates);
-    const selected = shuffled.slice(0, count);
+    const selected = [];
+    const seenIds = new Set();
+    const seenStems = new Set();
 
+    for (const q of shuffled) {
+      const stem = getStem(q);
+      if (!seenIds.has(q.id) && !seenStems.has(stem)) {
+        selected.push(q);
+        seenIds.add(q.id);
+        seenStems.add(stem);
+        if (selected.length === count) break;
+      }
+    }
+
+    // If still short of count (e.g. candidates had some duplicate stems), fill from remaining pool
     if (selected.length < count) {
-      let idx = 0;
-      while (selected.length < count) {
-        const item = pool[idx % pool.length];
-        selected.push({ ...item, id: `${item.id}_alt_${selected.length}` });
-        idx++;
+      const fullShuffled = this.shuffleArray(pool);
+      for (const q of fullShuffled) {
+        const stem = getStem(q);
+        if (!seenIds.has(q.id) && !seenStems.has(stem)) {
+          selected.push(q);
+          seenIds.add(q.id);
+          seenStems.add(stem);
+          if (selected.length === count) break;
+        }
       }
     }
 
