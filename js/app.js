@@ -2,12 +2,15 @@
  * CTET Paper 2 Abhyasi - Core Application Logic
  * 
  * Includes:
+ * - Exclusively Tailored for CTET Paper 2 (Social Science Stream)
+ * - Screen Wake Lock API (keeps device screen awake only during active test)
  * - Persistent Candidate Name Locking & 3D Welcome Screen
  * - Pre-Test Countdown Modal with Safe Cancel Button
  * - Last 5 Attempts Dashboard with Subject-Wise Breakdown
- * - Exam Refresh Lock & Crash Recovery (restores mid-exam on refresh)
+ * - Exam Refresh Lock & Crash Recovery (restores mid-exam on reload)
  * - Expand Fullscreen Toggle (Desktop, Tablet & Mobile)
- * - 100% Hindi Medium Question & Option Presentation
+ * - 100% Hindi Medium Question & Option Presentation on Exam Screen
+ * - Clean English UI Shell, Topbar, Palette & Navigation
  * - 5-State Question Palette & Real-Time Warning Timer
  * - Chart.js Scorecard & Detailed Solution Review
  */
@@ -17,7 +20,7 @@
 
   // Application State
   let state = {
-    currentStream: 'social_studies', // DEFAULT: Social Studies
+    currentStream: 'social_studies', // Exclusively Social Studies
     currentTest: null,
     currentIndex: 0,
     answers: {},       // { [qIndex]: optionIndex }
@@ -31,6 +34,9 @@
     pendingTestPaper: null,
     cdTimer: null
   };
+
+  // Screen Wake Lock Sentinel
+  let wakeLockSentinel = null;
 
   // DOM Elements
   const el = {
@@ -50,10 +56,7 @@
     userNameSpan: document.getElementById('user-name-span'),
     btnEditName: document.getElementById('btn-edit-name'),
 
-    // Stream & Theme
-    streamSstBtn: document.getElementById('stream-sst'),
-    streamMathBtn: document.getElementById('stream-math'),
-    streamDisplayTitle: document.getElementById('stream-display-title'),
+    // Theme Toggle
     themeToggle: document.getElementById('theme-toggle'),
 
     // Pre-test countdown modal
@@ -73,7 +76,6 @@
     coverageBar: document.getElementById('coverage-progress-bar'),
     covCdp: document.getElementById('cov-cdp'),
     covSst: document.getElementById('cov-sst'),
-    covMs: document.getElementById('cov-ms'),
     covHi: document.getElementById('cov-hi'),
     covEn: document.getElementById('cov-en'),
     covAlertBox: document.getElementById('coverage-alert-box'),
@@ -143,15 +145,55 @@
     loadCandidateName();
     setupEventListeners();
     setupRefreshLock();
+    setupVisibilityWakeLock();
     loadRecentAttempts();
-    setStream('social_studies'); // DEFAULT: Social Studies
     updateCoverageUI();
 
     // Check and restore active test session if user refreshed mid-exam!
     checkAndRestoreActiveSession();
   }
 
+  // ==========================================
+  // Screen Wake Lock API (Keep Screen Awake during Test)
+  // ==========================================
+  async function requestWakeLock() {
+    if (!('wakeLock' in navigator)) {
+      return;
+    }
+    try {
+      if (wakeLockSentinel === null && state.inExam) {
+        wakeLockSentinel = await navigator.wakeLock.request('screen');
+        wakeLockSentinel.addEventListener('release', () => {
+          wakeLockSentinel = null;
+        });
+      }
+    } catch (err) {
+      console.warn('Screen Wake Lock request notice:', err.name, err.message);
+    }
+  }
+
+  async function releaseWakeLock() {
+    if (wakeLockSentinel !== null) {
+      try {
+        await wakeLockSentinel.release();
+        wakeLockSentinel = null;
+      } catch (err) {
+        console.warn('Screen Wake Lock release notice:', err);
+      }
+    }
+  }
+
+  function setupVisibilityWakeLock() {
+    document.addEventListener('visibilitychange', async () => {
+      if (document.visibilityState === 'visible' && state.inExam) {
+        await requestWakeLock();
+      }
+    });
+  }
+
+  // ==========================================
   // Fullscreen Management
+  // ==========================================
   function toggleFullscreen() {
     const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement);
     if (!isFs) {
@@ -184,17 +226,19 @@
     if (el.fsIcon && el.fsText) {
       if (isFs) {
         el.fsIcon.textContent = '🗗';
-        el.fsText.textContent = 'सामान्य स्क्रीन';
-        if (el.btnFullscreen) el.btnFullscreen.title = 'पूर्ण स्क्रीन से बाहर निकलें';
+        el.fsText.textContent = 'Exit Fullscreen';
+        if (el.btnFullscreen) el.btnFullscreen.title = 'Exit Fullscreen';
       } else {
         el.fsIcon.textContent = '⛶';
-        el.fsText.textContent = 'पूर्ण स्क्रीन';
-        if (el.btnFullscreen) el.btnFullscreen.title = 'पूर्ण स्क्रीन में बदलें';
+        el.fsText.textContent = 'Fullscreen';
+        if (el.btnFullscreen) el.btnFullscreen.title = 'Enter Fullscreen';
       }
     }
   }
 
-  // Persistent Active Session (Refresh Lock & Automatic Crash Recovery)
+  // ==========================================
+  // Persistent Active Session (Refresh Lock & Crash Recovery)
+  // ==========================================
   function persistActiveSession() {
     if (!state.inExam || !state.currentTest) return;
     try {
@@ -205,7 +249,7 @@
         marked: state.marked,
         visited: state.visited,
         timeRemaining: state.timeRemaining,
-        currentStream: state.currentStream,
+        currentStream: 'social_studies',
         lastSavedTimestamp: Date.now(),
         inExam: true
       };
@@ -239,11 +283,11 @@
       state.marked = session.marked || {};
       state.visited = session.visited || { 0: true };
       state.timeRemaining = remainingTime;
-      state.currentStream = session.currentStream || 'social_studies';
+      state.currentStream = 'social_studies';
 
       // Setup Exam Top Bar
       el.examPaperTitle.textContent = state.currentTest.title;
-      el.examPaperMeta.textContent = `${state.currentTest.totalQuestions} प्रश्न • ${state.currentTest.duration} मिनट • 1 अंक प्रत्येक`;
+      el.examPaperMeta.textContent = `${state.currentTest.totalQuestions} Questions • ${state.currentTest.duration} Minutes • 1 Mark Each`;
 
       // Hide landing and activate exam screen directly
       el.landingScreen.style.display = 'none';
@@ -257,7 +301,10 @@
       // Start / resume live timer
       startTimer();
 
-      showToast('⚡ परीक्षा सत्र सफलतापूर्वक पुनः स्थापित! आपके उत्तर व समय सुरक्षित हैं।');
+      // Acquire screen wake lock
+      requestWakeLock();
+
+      showToast('⚡ Exam session restored! Your answers, time, and progress are intact.');
       return true;
     } catch (e) {
       console.warn('Failed to restore active exam session:', e);
@@ -311,7 +358,7 @@
   function promptSaveName() {
     const name = el.candidateNameInput.value.trim();
     if (!name) {
-      alert('कृपया अपना नाम दर्ज करें (Please enter your name).');
+      alert('Please enter your full name to personalize your CTET Paper 2 portal.');
       return;
     }
     state.candidateName = name;
@@ -339,10 +386,6 @@
       el.namePromptModal.classList.add('active');
       el.candidateNameInput.focus();
     });
-
-    // Stream Selection
-    el.streamSstBtn.addEventListener('click', () => setStream('social_studies'));
-    el.streamMathBtn.addEventListener('click', () => setStream('math_science'));
 
     // Save API key
     el.saveKeyBtn.addEventListener('click', () => {
@@ -393,6 +436,7 @@
 
     // Back to Home from Results
     el.btnBackHome.addEventListener('click', () => {
+      releaseWakeLock();
       el.resultScreen.classList.remove('active');
       el.landingScreen.style.display = 'block';
       loadRecentAttempts();
@@ -412,25 +456,11 @@
     });
   }
 
-  // Stream Switcher
-  function setStream(stream) {
-    state.currentStream = stream;
-    if (stream === 'social_studies') {
-      el.streamSstBtn.classList.add('active');
-      el.streamMathBtn.classList.remove('active');
-      el.streamDisplayTitle.textContent = 'Social Studies / Social Science';
-    } else {
-      el.streamMathBtn.classList.add('active');
-      el.streamSstBtn.classList.remove('active');
-      el.streamDisplayTitle.textContent = 'Mathematics & Science';
-    }
-  }
-
   // Global launcher with 5-second countdown & cancel protection
   window.startMockTest = async function (mode) {
-    showToast('⏳ Fetching unique, unattempted CTET questions...');
+    showToast('⏳ Fetching unique, unattempted CTET Social Science questions...');
     try {
-      const testPaper = await window.ctetGenerator.fetchPaper(state.currentStream, mode);
+      const testPaper = await window.ctetGenerator.fetchPaper('social_studies', mode);
       state.pendingTestPaper = testPaper;
       openPreTestCountdown(testPaper);
     } catch (err) {
@@ -441,8 +471,7 @@
   // Pre-test countdown modal
   function openPreTestCountdown(testPaper) {
     el.cdTestTitle.textContent = testPaper.title;
-    const streamLabel = testPaper.stream === 'social_studies' ? 'Social Studies Stream' : 'Mathematics & Science Stream';
-    el.cdTestMeta.textContent = `${testPaper.totalQuestions} प्रश्न • ${testPaper.duration} मिनट • ${streamLabel}`;
+    el.cdTestMeta.textContent = `${testPaper.totalQuestions} Questions • ${testPaper.duration} Minutes • Social Science`;
 
     el.countdownModal.classList.add('active');
 
@@ -471,6 +500,7 @@
     clearInterval(state.cdTimer);
     state.pendingTestPaper = null;
     clearActiveSession();
+    releaseWakeLock();
     el.countdownModal.classList.remove('active');
     showToast('Test cancelled. No attempt recorded.');
   }
@@ -485,13 +515,16 @@
     state.visited = { 0: true };
     state.timeRemaining = testPaper.duration * 60;
 
-    // Populate Top Bar
+    // Populate Top Bar (In English)
     el.examPaperTitle.textContent = testPaper.title;
-    el.examPaperMeta.textContent = `${testPaper.totalQuestions} प्रश्न • ${testPaper.duration} मिनट • 1 अंक प्रत्येक`;
+    el.examPaperMeta.textContent = `${testPaper.totalQuestions} Questions • ${testPaper.duration} Minutes • 1 Mark Each`;
 
     // Switch Screens
     el.landingScreen.style.display = 'none';
     el.examScreen.classList.add('active');
+
+    // Acquire Screen Wake Lock so screen never goes to sleep during exam
+    requestWakeLock();
 
     // Build Tabs & Palette
     buildSectionTabs();
@@ -521,7 +554,7 @@
 
       if (state.timeRemaining <= 0) {
         clearInterval(state.timerInterval);
-        showToast('⏰ समय समाप्त! परीक्षा स्वतः सबमिट की जा रही है...');
+        showToast('⏰ Time expired! Submitting test automatically...');
         finalizeTest();
       }
     }, 1000);
@@ -574,14 +607,17 @@
     });
   }
 
-  // Render Question (100% Hindi Medium First)
+  // Render Question (Question text & options in Hindi medium)
   function renderCurrentQuestion() {
     const q = state.currentTest.questions[state.currentIndex];
     if (!q) return;
 
     state.visited[state.currentIndex] = true;
 
-    el.qNumberBadge.textContent = `प्रश्न ${state.currentIndex + 1} / ${state.currentTest.totalQuestions}`;
+    // English label for badge
+    el.qNumberBadge.textContent = `Question ${state.currentIndex + 1} of ${state.currentTest.totalQuestions}`;
+    
+    // Question text in Hindi
     if (el.qTextHi) {
       el.qTextHi.textContent = q.question_hi || q.question_en;
       el.qTextHi.style.display = 'block';
@@ -696,7 +732,7 @@
       renderCurrentQuestion();
       persistActiveSession();
     } else {
-      showToast('आप अंतिम प्रश्न पर पहुँच गए हैं। जब तैयार हों "सबमिट करें" पर क्लिक करें।');
+      showToast('You have reached the final question. Click "Submit Exam" when ready.');
     }
   }
 
@@ -727,6 +763,7 @@
   function finalizeTest() {
     state.inExam = false; // Turn off refresh lock
     clearActiveSession();
+    releaseWakeLock(); // Release screen wake lock
     clearInterval(state.timerInterval);
     el.examScreen.classList.remove('active');
 
@@ -795,7 +832,7 @@
     // Save Attempt to localStorage (Keep last 5 attempts)
     saveAttemptRecord({
       testTitle: state.currentTest.title,
-      stream: state.currentStream,
+      stream: 'social_studies',
       score: score,
       total: totalQ,
       accuracy: accuracy,
@@ -848,7 +885,7 @@
         let subTagsHtml = '';
         if (att.sectionStats) {
           Object.keys(att.sectionStats).forEach(sName => {
-            const shortName = sName.includes('Child') ? 'CDP' : (sName.includes('Social') ? 'SST' : (sName.includes('Math') ? 'Math/Sci' : (sName.includes('Hindi') ? 'Hindi' : 'English')));
+            const shortName = sName.includes('Child') ? 'CDP' : (sName.includes('Social') ? 'Social Studies' : (sName.includes('Hindi') ? 'Hindi' : 'English'));
             const s = att.sectionStats[sName];
             subTagsHtml += `<span class="sub-tag">${shortName}: <strong>${s.correct}/${s.total}</strong></span>`;
           });
@@ -857,7 +894,7 @@
         row.innerHTML = `
           <div class="attempt-meta">
             <h4>${att.testTitle}</h4>
-            <span>📅 ${att.date} • ${att.stream === 'social_studies' ? 'Social Studies' : 'Maths & Science'}</span>
+            <span>📅 ${att.date} • Social Studies Stream</span>
             <div class="subject-breakdown-tags" style="margin-top:6px;">
               ${subTagsHtml}
             </div>
@@ -908,7 +945,7 @@
     });
   }
 
-  // Render Solutions Review (100% Hindi Medium First)
+  // Render Solutions Review (Hindi Questions & Explanations)
   function renderSolutionsReview(questions) {
     el.solutionsContainer.innerHTML = '';
 
@@ -922,13 +959,13 @@
       card.className = `solution-card ${statusClass}`;
 
       const badgeText = isUnanswered 
-        ? '⚠️ अनुत्तरित (Unattempted)' 
-        : (isCorrect ? '✅ सही (Correct)' : '❌ गलत (Incorrect)');
+        ? '⚠️ Unattempted' 
+        : (isCorrect ? '✅ Correct' : '❌ Incorrect');
 
       const userOptChar = userAns !== undefined ? String.fromCharCode(65 + userAns) : 'None';
       const correctOptChar = String.fromCharCode(65 + q.ans);
 
-      const userOptText = (userAns !== undefined && q.options && q.options[userAns]) ? q.options[userAns] : 'कोई विकल्प नहीं चुना गया';
+      const userOptText = (userAns !== undefined && q.options && q.options[userAns]) ? q.options[userAns] : 'No option selected';
       const correctOptText = (q.options && q.options[q.ans]) ? q.options[q.ans] : '';
 
       card.innerHTML = `
@@ -937,17 +974,17 @@
           <span style="font-size:12px;color:var(--mt);font-weight:600;">${q.section} • ${q.subject || ''}</span>
         </div>
         <div style="font-weight:700;margin:10px 0;line-height:1.6;font-size:15px;">
-          प्रश्न ${idx + 1}. ${q.question_hi || q.question_en}
+          Question ${idx + 1}. ${q.question_hi || q.question_en}
         </div>
         
         <div style="font-size:13px;display:flex;flex-direction:column;gap:6px;margin-bottom:12px;background:var(--bg);padding:10px 12px;border-radius:8px;">
-          <div>आपका उत्तर: <strong style="${isCorrect ? 'color:#4ADE80;' : (isUnanswered ? 'color:var(--mt);' : 'color:#EF4444;')}">(${userOptChar}) ${userOptText}</strong></div>
-          <div style="color:#4ADE80;">सही उत्तर: <strong>(${correctOptChar}) ${correctOptText}</strong></div>
+          <div>Your Answer: <strong style="${isCorrect ? 'color:#4ADE80;' : (isUnanswered ? 'color:var(--mt);' : 'color:#EF4444;')}">(${userOptChar}) ${userOptText}</strong></div>
+          <div style="color:#4ADE80;">Correct Answer: <strong>(${correctOptChar}) ${correctOptText}</strong></div>
         </div>
 
         <div class="sol-explanation">
-          <strong>💡 शैक्षणिक व्याख्या (Pedagogical Explanation):</strong><br/>
-          ${q.explanation || 'सीबीएसई सीटीईटी पाठ्यक्रम मानकों और एनसीएफ/एनईपी 2020 के अनुसार।'}
+          <strong>💡 Pedagogical Explanation (शैक्षणिक व्याख्या):</strong><br/>
+          ${q.explanation || 'Based on CBSE CTET curriculum standards and NEP 2020 guidelines.'}
         </div>
       `;
 
@@ -955,7 +992,7 @@
     });
   }
 
-  // Update Question Bank Coverage UI
+  // Update Question Bank Coverage UI (Social Science Pool)
   function updateCoverageUI() {
     if (!window.ctetGenerator) return;
     const stats = window.ctetGenerator.getCoverageStats();
@@ -966,16 +1003,15 @@
     const sub = stats.subjectStats;
     if (sub.cdp) el.covCdp.textContent = `${sub.cdp.attempted}/${sub.cdp.total} (${sub.cdp.percentage}%)`;
     if (sub.social_studies) el.covSst.textContent = `${sub.social_studies.attempted}/${sub.social_studies.total} (${sub.social_studies.percentage}%)`;
-    if (sub.math_science) el.covMs.textContent = `${sub.math_science.attempted}/${sub.math_science.total} (${sub.math_science.percentage}%)`;
     if (sub.language_hindi) el.covHi.textContent = `${sub.language_hindi.attempted}/${sub.language_hindi.total} (${sub.language_hindi.percentage}%)`;
     if (sub.language_english) el.covEn.textContent = `${sub.language_english.attempted}/${sub.language_english.total} (${sub.language_english.percentage}%)`;
 
     if (stats.percentage >= 70) {
       el.covAlertBox.style.display = 'flex';
-      el.covAlertText.innerHTML = `🏆 <strong>असाधारण तैयारी!</strong> आपने कुल प्रश्न बैंक का <strong>${stats.percentage}%</strong> (${stats.attemptedCount} / ${stats.totalQuestions}) अभ्यास कर लिया है। यदि आप नए प्रश्न चाहते हैं, तो नीचे अपने Gemini API key से बैंक को रीफ्रेश कर सकते हैं।`;
+      el.covAlertText.innerHTML = `🏆 <strong>Outstanding Coverage!</strong> You have practiced <strong>${stats.percentage}%</strong> (${stats.attemptedCount} / ${stats.totalQuestions}) of the entire Social Science question bank.`;
     } else if (stats.percentage >= 30) {
       el.covAlertBox.style.display = 'flex';
-      el.covAlertText.innerHTML = `💪 <strong>शानदार प्रगति!</strong> आपने प्रश्न बैंक का <strong>${stats.percentage}%</strong> (${stats.attemptedCount} / ${stats.totalQuestions}) कवर कर लिया है।`;
+      el.covAlertText.innerHTML = `💪 <strong>Strong Progress!</strong> You have covered <strong>${stats.percentage}%</strong> (${stats.attemptedCount} / ${stats.totalQuestions}) of the question bank.`;
     } else {
       el.covAlertBox.style.display = 'none';
     }

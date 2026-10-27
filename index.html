@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>CTET Abhyasi 2.0 – CTET Paper 2 Mock Test Portal</title>
-  <meta name="description" content="AI-Powered Practice Mock Test Portal for CTET Paper 2 with 2800+ questions, automated deduplication, and authentic CBT exam simulation." />
+  <title>CTET Abhyasi 2.0 – CTET Paper 2 (Social Science) Mock Test Portal</title>
+  <meta name="description" content="AI-Powered Practice Mock Test Portal for CTET Paper 2 Social Science with 2,100+ questions, automated deduplication, screen wake lock, and authentic CBT exam simulation." />
   
   <!-- Google Fonts & Chart.js -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
       <div class="brand-logo">📖</div>
       <div class="brand-text">
         <h1>CTET <span>Abhyasi 2.0</span></h1>
-        <p>Paper 2 (Elementary Stage VI–VIII) • 2,800+ Question Engine</p>
+        <p>Paper 2 (Social Science / Elementary Stage VI–VIII) • 2,100+ Question Engine</p>
       </div>
     </div>
     <div class="header-actions">
@@ -44,26 +44,26 @@
     <!-- Hero Banner (Background Text: YASH) -->
     <section class="hero-card">
       <div class="hero-text">
-        <h2>Ace CTET Paper 2 with <em>Automated Mock Tests</em></h2>
+        <h2>Ace CTET Paper 2 (Social Science) with <em>Automated Mock Tests</em></h2>
         <p>
-          Simulate the real CBSE/CTET Computer-Based Test (150 Mins, 150 Questions).
-          Questions are automatically fetched from a 2,800+ verified master bank with zero duplicate questions in the same test or across multiple attempts today.
+          Simulate the real CBSE/CTET Computer-Based Test for Social Science candidates (150 Mins, 150 Questions).
+          Questions are automatically assembled from a 2,100+ verified master bank with zero duplicate questions in the same test or across multiple attempts today.
         </p>
         <div class="hero-badges">
-          <span class="badge-tag highlight">2,800+ Verified Questions</span>
+          <span class="badge-tag highlight">2,100+ Verified Questions</span>
           <span class="badge-tag">Zero-Duplicate Daily Engine</span>
-          <span class="badge-tag">Elementary Stage (Classes 6–8)</span>
+          <span class="badge-tag">Social Studies / Social Science Focus</span>
           <span class="badge-tag">NEP 2020 Aligned</span>
-          <span class="badge-tag">🇮🇳 100% हिंदी माध्यम</span>
+          <span class="badge-tag">🇮🇳 Hindi Medium Questions</span>
         </div>
       </div>
     </section>
 
-    <!-- Hindi Medium Notice Banner -->
+    <!-- Notice Banner -->
     <div class="lang-notice-banner">
       <div class="lang-notice-icon">📢</div>
       <div class="lang-notice-content">
-        <strong>महत्वपूर्ण सूचना:</strong> वर्तमान में यह CTET मॉक टेस्ट पोर्टल विशेष रूप से <strong>हिंदी माध्यम (Hindi Medium)</strong> के विद्यार्थियों के लिए तैयार किया गया है। सभी प्रश्न, विकल्प और व्याख्याएं पूर्णतः हिंदी में उपलब्ध हैं।
+        <strong>Notice for Candidates:</strong> This portal is tailored specifically for <strong>CTET Paper 2 (Social Science / सामाजिक अध्ययन)</strong> candidates. Question stems, options, and explanations are presented in <strong>Hindi Medium</strong>.
         <span class="lang-notice-sub">Note: We are actively developing the complete English version and it will be updated soon!</span>
       </div>
     </div>
@@ -84,11 +84,10 @@
         <div id="coverage-progress-bar" class="progress-bar-fill" style="width: 0%;"></div>
       </div>
 
-      <!-- Subject-Wise Progress Pills -->
+      <!-- Subject-Wise Progress Pills (Social Science Focus) -->
       <div class="coverage-pill-row">
         <div class="coverage-pill">🧠 CDP: <strong id="cov-cdp">0/600 (0%)</strong></div>
-        <div class="coverage-pill">🌍 SST: <strong id="cov-sst">0/800 (0%)</strong></div>
-        <div class="coverage-pill">📐 Math & Science: <strong id="cov-ms">0/760 (0%)</strong></div>
+        <div class="coverage-pill">🌍 Social Studies: <strong id="cov-sst">0/800 (0%)</strong></div>
         <div class="coverage-pill">📖 Hindi: <strong id="cov-hi">0/360 (0%)</strong></div>
         <div class="coverage-pill">🔤 English: <strong id="cov-en">0/360 (0%)</strong></div>
       </div>
@@ -104,30 +103,29 @@
       </div>
     </section>
 
-    <!-- Controls: Stream Selector (Default: Social Studies) & AI Storage Replenisher -->
+    <!-- Controls: AI Storage Replenisher (FIFO Rolling Replacement - Zero Device Bloat) -->
     <div class="control-bar">
-      <!-- Stream Switcher -->
+      <!-- Social Science Stream Highlights Card -->
       <div class="control-card">
         <div class="control-title">
-          <span>🎯 Select Your Teaching Stream</span>
-          <span style="font-size:11px; color:#38BDF8; font-weight:700;">Default: SST</span>
+          <span>🎯 CTET Paper 2 Social Science Focus</span>
+          <span style="font-size:11px; color:#38BDF8; font-weight:700;">60 Marks Core</span>
         </div>
-        <div class="stream-picker">
-          <button id="stream-sst" class="stream-btn active">
-            🌍 Social Studies / Science<br/>
-            <small style="opacity:0.75; font-size:10px;">History • Geography • Civics • Pedagogy (60 Qs)</small>
-          </button>
-          <button id="stream-math" class="stream-btn">
-            📐 Mathematics & Science<br/>
-            <small style="opacity:0.75; font-size:10px;">Maths (30 Qs) • Science (30 Qs)</small>
-          </button>
-        </div>
+        <p style="font-size: 12.5px; color: var(--mt); line-height: 1.5; margin-bottom: 10px;">
+          This mock portal is specifically streamlined for <strong>Social Science / Social Studies</strong> candidates:
+        </p>
+        <ul style="font-size: 12px; color: var(--tx); line-height: 1.6; padding-left: 18px; margin-bottom: 10px;">
+          <li><strong>History:</strong> Indus Valley, Mauryas, Mughals, 1857 Revolt & Freedom Struggle</li>
+          <li><strong>Geography:</strong> Solar System, Lithosphere, Atmosphere, Indian Climate & Resources</li>
+          <li><strong>Social & Political Life:</strong> Constitution, Fundamental Rights, Judiciary & Panchayati Raj</li>
+          <li><strong>Pedagogical Issues:</strong> Critical Thinking, Primary Sources, Inquiry & NEP 2020</li>
+        </ul>
         <div class="stream-info-pill">
-          💡 <strong>Why this choice matters:</strong> CTET Paper 2 candidates pick either Social Studies (for SST teachers) or Math & Science (for Science/Math teachers). All 60 middle-section questions are generated strictly according to your selected stream.
+          💡 Math & Science content has been completely removed to provide a focused, lightweight, and clutter-free experience for Social Science teachers.
         </div>
       </div>
 
-      <!-- AI Question Bank Replenisher (FIFO Rolling Replacement - Zero Device Bloat) -->
+      <!-- AI Question Bank Replenisher -->
       <div id="replenish-section" class="control-card">
         <div class="control-title">
           <span>🔄 AI Question Replenisher</span>
@@ -135,14 +133,13 @@
         </div>
         <div class="ai-controls">
           <div class="api-key-row">
-            <input type="password" id="gemini-api-key" placeholder="Enter Gemini API Key" />
+            <input type="password" id="gemini-api-key" placeholder="Enter Gemini API Key (Optional)" />
             <button id="btn-save-key" class="btn-icon">Save Key</button>
           </div>
           <div style="display:flex; gap:8px;">
             <select id="replenish-section-select" style="flex:2; padding:8px 10px; border-radius:8px; border:1.5px solid var(--bd); background:var(--bg); color:var(--tx); font-size:12px; outline:none;">
               <option value="social_studies">🌍 Social Studies / Social Science</option>
               <option value="cdp">🧠 Child Development & Pedagogy</option>
-              <option value="math_science">📐 Mathematics & Science</option>
               <option value="language_hindi">📖 Language I (Hindi)</option>
               <option value="language_english">🔤 Language II (English)</option>
             </select>
@@ -181,7 +178,7 @@
 
     <!-- Mock Papers List -->
     <div class="section-heading">
-      <span>Available Mock Papers for <span id="stream-display-title" style="color:var(--sf)">Social Studies / Social Science</span></span>
+      <span>Available Mock Papers (Social Science Stream)</span>
     </div>
 
     <div class="cards-grid">
@@ -192,14 +189,14 @@
             <span class="card-tag">Full 150-Q Exam</span>
             <span style="font-size: 11px; color: var(--mt); font-weight: 700;">150 Marks</span>
           </div>
-          <div class="card-title">CTET Paper 2 Comprehensive Mock Test</div>
+          <div class="card-title">CTET Paper 2 Full Mock (Social Science)</div>
           <div class="card-desc">
-            Official format covering CDP (30 Qs), Stream Subject (60 Qs), Language I Hindi (30 Qs), and Language II English (30 Qs).
+            Official format covering CDP (30 Qs), Social Science (60 Qs), Language I Hindi (30 Qs), and Language II English (30 Qs).
           </div>
           <div class="card-meta">
             <span>⏱️ 150 Minutes</span>
             <span>📝 150 MCQs</span>
-            <span>🌐 Bilingual</span>
+            <span>🇮🇳 Hindi Questions</span>
           </div>
         </div>
         <div class="card-footer">
@@ -215,9 +212,9 @@
             <span class="card-tag">Rapid Sprint</span>
             <span style="font-size: 11px; color: var(--mt); font-weight: 700;">High Yield</span>
           </div>
-          <div class="card-title">Subject & Pedagogy Rapid Power Test</div>
+          <div class="card-title">Social Science Rapid Power Sprint</div>
           <div class="card-desc">
-            Quick 45-minute timed sprint featuring mixed questions from CDP (10), Stream Content (15), and Language Pedagogy (10).
+            Quick 45-minute timed sprint featuring mixed questions from CDP (10), Social Science (15), and Language Pedagogy (10).
           </div>
           <div class="card-meta">
             <span>⏱️ 45 Minutes</span>
@@ -294,7 +291,7 @@
         </div>
       </div>
       <p style="font-size: 12px; color: var(--mt); text-align: center; margin-bottom: 16px;">
-        ✅ Your device profile is locked and ready. All 2,800+ authentic questions and your recent 5 scorecard histories will be preserved here.
+        ✅ Your device profile is locked and ready. All authentic questions and your recent 5 scorecard histories will be preserved here.
       </p>
       <button id="btn-dismiss-3d" class="btn-generate" style="width: 100%;">Continue to Dashboard 🚀</button>
     </div>
@@ -314,7 +311,7 @@
           <div id="cd-num" class="cd-number">5</div>
         </div>
         <div id="cd-test-title" style="font-weight: 800; font-size: 15px; margin-bottom: 4px;">CTET Paper 2 Full Mock</div>
-        <div id="cd-test-meta" style="font-size: 12px; color: var(--mt); margin-bottom: 18px;">150 Questions • 150 Minutes</div>
+        <div id="cd-test-meta" style="font-size: 12px; color: var(--mt); margin-bottom: 18px;">150 Questions • 150 Minutes • Social Science</div>
       </div>
 
       <div style="display: flex; gap: 10px;">
@@ -338,38 +335,39 @@
     <!-- Top Bar -->
     <div class="exam-topbar">
       <div class="exam-paper-info">
-        <h2 id="exam-paper-title">CTET Paper 2 Mock Test</h2>
-        <p id="exam-paper-meta">150 प्रश्न • 150 मिनट</p>
+        <h2 id="exam-paper-title">CTET Paper 2 (Social Science) Mock Test</h2>
+        <p id="exam-paper-meta">150 Questions • 150 Minutes • 1 Mark Each</p>
       </div>
       <div class="exam-timer-wrap">
         <!-- Fullscreen Toggle Button -->
-        <button id="btn-fullscreen" class="btn-fullscreen-toggle" title="पूर्ण स्क्रीन में बदलें">
-          <span id="fs-icon">⛶</span> <span id="fs-text">पूर्ण स्क्रीन</span>
+        <button id="btn-fullscreen" class="btn-fullscreen-toggle" title="Toggle Fullscreen">
+          <span id="fs-icon">⛶</span> <span id="fs-text">Fullscreen</span>
         </button>
-        <div style="font-size: 12px; font-weight: 700; color: var(--mt);">शेष समय:</div>
+        <div style="font-size: 12px; font-weight: 700; color: var(--mt);">Time Left:</div>
         <div id="timer-display" class="timer-box">150:00</div>
       </div>
     </div>
 
     <!-- Section Tabs -->
     <div id="section-tabs" class="exam-section-tabs">
-      <!-- Injected dynamically: CDP, SST / Math-Sci, Language I, Language II -->
+      <!-- Injected dynamically: CDP, Social Studies, Language I, Language II -->
     </div>
 
     <!-- Exam Body: Question + Sidebar Palette -->
     <div class="exam-body">
-      <!-- Main Question Container -->
+      <!-- Main Question Container (Questions & Options in Hindi Medium) -->
       <div class="question-container">
         <div class="q-header">
-          <div id="q-number-badge" class="q-number-badge">प्रश्न 1 / 150</div>
+          <div id="q-number-badge" class="q-number-badge">Question 1 / 150</div>
           <div class="q-tools">
-            <span class="q-badge-hindi">🇮🇳 हिंदी माध्यम</span>
+            <span class="q-badge-hindi">🇮🇳 Hindi Medium</span>
             <span class="q-marks-badge">+1.0 / -0.0</span>
           </div>
         </div>
 
         <div class="q-content">
           <div class="q-bilingual-block">
+            <!-- Question stem strictly in Hindi -->
             <div id="q-text-hi" class="q-primary-text">प्रश्न लोड हो रहा है...</div>
             <div id="q-text-en" style="font-size: 12px; color: var(--mt); display: none;"></div>
           </div>
@@ -377,19 +375,19 @@
 
         <!-- Options List (In Hindi) -->
         <div id="options-list" class="options-list">
-          <!-- Dynamically populated options A, B, C, D -->
+          <!-- Dynamically populated options A, B, C, D in Hindi -->
         </div>
       </div>
 
       <!-- Palette Sidebar -->
       <aside id="palette-sidebar" class="palette-sidebar">
-        <!-- Palette Legend -->
+        <!-- Palette Legend (In English) -->
         <div class="palette-legend">
-          <div class="legend-item"><span class="legend-dot dot-ans"></span> उत्तर दिया</div>
-          <div class="legend-item"><span class="legend-dot dot-no"></span> अनुत्तरित</div>
-          <div class="legend-item"><span class="legend-dot dot-mk"></span> समीक्षा हेतु</div>
-          <div class="legend-item"><span class="legend-dot dot-mka"></span> उत्तर + समीक्षा</div>
-          <div class="legend-item"><span class="legend-dot dot-nv"></span> नहीं देखा</div>
+          <div class="legend-item"><span class="legend-dot dot-ans"></span> Answered</div>
+          <div class="legend-item"><span class="legend-dot dot-no"></span> Not Answered</div>
+          <div class="legend-item"><span class="legend-dot dot-mk"></span> Marked for Review</div>
+          <div class="legend-item"><span class="legend-dot dot-mka"></span> Ans & Marked</div>
+          <div class="legend-item"><span class="legend-dot dot-nv"></span> Not Visited</div>
         </div>
 
         <!-- Palette Grid -->
@@ -401,16 +399,16 @@
       </aside>
     </div>
 
-    <!-- Exam Bottom Action Bar -->
+    <!-- Exam Bottom Action Bar (In English) -->
     <footer class="exam-footer">
       <div class="footer-left">
-        <button id="btn-mark-review" class="btn-cbt btn-mark">समीक्षा हेतु चिह्नित करें (Review)</button>
-        <button id="btn-clear" class="btn-cbt btn-clear">उत्तर साफ़ करें (Clear)</button>
+        <button id="btn-mark-review" class="btn-cbt btn-mark">Mark for Review</button>
+        <button id="btn-clear" class="btn-cbt btn-clear">Clear Response</button>
       </div>
       <div class="footer-right">
-        <button id="btn-prev" class="btn-cbt btn-prev">◀ पिछला (Prev)</button>
-        <button id="btn-save-next" class="btn-cbt btn-save-next">सेव और अगला ▶ (Save & Next)</button>
-        <button id="btn-submit-exam" class="btn-cbt btn-submit">सबमिट करें (Submit)</button>
+        <button id="btn-prev" class="btn-cbt btn-prev">◀ Previous</button>
+        <button id="btn-save-next" class="btn-cbt btn-save-next">Save & Next ▶</button>
+        <button id="btn-submit-exam" class="btn-cbt btn-submit">Submit Exam</button>
       </div>
     </footer>
   </section>

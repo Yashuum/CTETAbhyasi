@@ -113,7 +113,6 @@ class CTETQuestionGenerator {
     const sections = {
       cdp: { name: 'Child Development & Pedagogy', pool: bank.cdp || [] },
       social_studies: { name: 'Social Studies / Science', pool: bank.social_studies || [] },
-      math_science: { name: 'Mathematics & Science', pool: bank.math_science || [] },
       language_hindi: { name: 'Language I (Hindi)', pool: bank.language_hindi || [] },
       language_english: { name: 'Language II (English)', pool: bank.language_english || [] }
     };
@@ -161,8 +160,8 @@ class CTETQuestionGenerator {
   }
 
   /**
-   * Automatically generate or fetch a balanced CTET Paper 2 Mock Paper
-   * @param {'social_studies' | 'math_science'} stream 
+   * Automatically generate or fetch a balanced CTET Paper 2 (Social Science) Mock Paper
+   * @param {'social_studies'} stream 
    * @param {'full' | 'sprint' | 'cdp'} mode 
    */
   async fetchPaper(stream = 'social_studies', mode = 'full') {
@@ -179,30 +178,22 @@ class CTETQuestionGenerator {
       durationMinutes = 30;
       questions = this.sampleUnattempted(bank.cdp, 30, attemptedToday);
     } else if (mode === 'sprint') {
-      title = stream === 'social_studies' 
-        ? 'Paper 2 (Social Studies) High-Yield Sprint' 
-        : 'Paper 2 (Maths & Science) High-Yield Sprint';
+      title = 'Paper 2 (Social Science) High-Yield Rapid Sprint';
       durationMinutes = 45;
 
       const cdpPart = this.sampleUnattempted(bank.cdp, 10, attemptedToday);
-      const streamPart = stream === 'social_studies'
-        ? this.sampleUnattempted(bank.social_studies, 15, attemptedToday)
-        : this.sampleUnattempted(bank.math_science, 15, attemptedToday);
+      const streamPart = this.sampleUnattempted(bank.social_studies, 15, attemptedToday);
       const lang1Part = this.sampleUnattempted(bank.language_hindi, 5, attemptedToday);
       const lang2Part = this.sampleUnattempted(bank.language_english, 5, attemptedToday);
 
       questions = [...cdpPart, ...streamPart, ...lang1Part, ...lang2Part];
     } else {
-      // Full 150-Question CTET Paper 2 Official Exam Simulation
-      title = stream === 'social_studies'
-        ? 'CTET Paper 2 Full Mock (Social Studies / Social Science Stream)'
-        : 'CTET Paper 2 Full Mock (Mathematics & Science Stream)';
+      // Full 150-Question CTET Paper 2 Social Science Official Simulation
+      title = 'CTET Paper 2 Full Mock (Social Studies / Social Science)';
       durationMinutes = 150;
 
       const cdpPart = this.sampleUnattempted(bank.cdp, 30, attemptedToday);
-      const streamPart = stream === 'social_studies'
-        ? this.sampleUnattempted(bank.social_studies, 60, attemptedToday)
-        : this.sampleUnattempted(bank.math_science, 60, attemptedToday);
+      const streamPart = this.sampleUnattempted(bank.social_studies, 60, attemptedToday);
       const lang1Part = this.sampleUnattempted(bank.language_hindi, 30, attemptedToday);
       const lang2Part = this.sampleUnattempted(bank.language_english, 30, attemptedToday);
 
@@ -268,7 +259,6 @@ class CTETQuestionGenerator {
     const sectionNames = {
       cdp: 'Child Development & Pedagogy',
       social_studies: 'Social Studies / Social Science (History, Geography, Civics, Pedagogy)',
-      math_science: 'Mathematics & Science',
       language_hindi: 'Language I (Hindi Comprehension & Pedagogy)',
       language_english: 'Language II (English Comprehension & Pedagogy)'
     };
