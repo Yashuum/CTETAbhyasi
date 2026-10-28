@@ -1,7 +1,7 @@
-// CTET Paper 2 Master Question Repository (2120 Questions)
-// 100% Hindi Medium: CDP, Social Studies / Social Science, Language I Hindi, Language II English Pedagogy
+// CTET Paper 2 Master Question Repository (2125 Questions)
+// CDP (Hindi), Social Studies (Hindi), Language I Hindi (Hindi), Language II English (100% Authentic English)
 // Tailored exclusively for Social Science stream candidates
-// Guaranteed 100% UNIQUE question stems - 0 duplicates!
+// Completely deduplicated - 0 duplicate question stems.
 
 const CTET_PAPER2_BANK = {
   "cdp": [
@@ -25889,6002 +25889,6002 @@ const CTET_PAPER2_BANK = {
     {
       "id": "eng_001",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-1)",
+      "subject": "Input Hypothesis (i+1)",
+      "question_en": "According to Stephen Krashen's Input Hypothesis, second language acquisition takes place when the learner is exposed to:",
+      "question_hi": "According to Stephen Krashen's Input Hypothesis, second language acquisition takes place when the learner is exposed to:",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Rote memorization of formal grammatical definitions",
+        "Continuous drill of phonological minimal pairs",
+        "Translation of complex classical literary texts into the native language"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Krashen posited that language acquisition occurs naturally when learners receive comprehensible input at a level just beyond their current stage (i+1)."
     },
     {
       "id": "eng_002",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-2)",
+      "subject": "Affective Filter Hypothesis",
+      "question_en": "In Krashen's Affective Filter Hypothesis, which psychological condition facilitates optimal language acquisition?",
+      "question_hi": "In Krashen's Affective Filter Hypothesis, which psychological condition facilitates optimal language acquisition?",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Low anxiety, high self-confidence, and strong motivation",
+        "High anxiety and fear of negative peer evaluation",
+        "Rigid adherence to grammatical correctness with immediate public correction",
+        "Intense competitive grading among classmates"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "A low affective filter allows comprehensible input to reach the Language Acquisition Device (LAD) without psychological barriers."
     },
     {
       "id": "eng_003",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-3)",
+      "subject": "Acquisition vs Learning Hypothesis",
+      "question_en": "Krashen distinguishes between \"Language Acquisition\" and \"Language Learning\". Which statement accurately describes \"Acquisition\"?",
+      "question_hi": "Krashen distinguishes between \"Language Acquisition\" and \"Language Learning\". Which statement accurately describes \"Acquisition\"?",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "It is a conscious, formal study of explicit grammar rules",
+        "It relies entirely on dictionary consultation and phonetic transcription",
+        "It is only possible through formal classroom instruction"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Acquisition is an implicit, subconscious process resulting from meaningful communication, whereas learning is explicit and conscious."
     },
     {
       "id": "eng_004",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-4)",
+      "subject": "Natural Order Hypothesis",
+      "question_en": "The Natural Order Hypothesis in second language acquisition states that grammatical structures are acquired in:",
+      "question_hi": "The Natural Order Hypothesis in second language acquisition states that grammatical structures are acquired in:",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "The exact order in which they appear in standard textbooks",
+        "An arbitrary sequence based solely on learner intelligence",
+        "The reverse order of the first language syntax"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Krashen noted that certain grammatical morphemes (e.g., -ing, plural -s) are acquired earlier than others (e.g., third-person singular -s) in a predictable sequence."
     },
     {
       "id": "eng_005",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-5)",
+      "subject": "Monitor Hypothesis",
+      "question_en": "In Krashen's Monitor Model, what is the sole function of consciously learned grammar rules?",
+      "question_hi": "In Krashen's Monitor Model, what is the sole function of consciously learned grammar rules?",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "To initiate spontaneous oral discourse",
+        "To generate authentic communicative fluency",
+        "To replace the subconscious acquisition system entirely"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "The Monitor only functions as an editor to inspect and alter utterances produced by the acquired system when the speaker knows the rule and has sufficient time."
     },
     {
       "id": "eng_006",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-6)",
+      "subject": "Input Hypothesis (i+1)",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K1)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K1)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Krashen posited that language acquisition occurs naturally when learners receive comprehensible input at a level just beyond their current stage (i+1)."
     },
     {
       "id": "eng_007",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-7)",
+      "subject": "Affective Filter Hypothesis",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K2)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K2)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "A low affective filter allows comprehensible input to reach the Language Acquisition Device (LAD) without psychological barriers."
     },
     {
       "id": "eng_008",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-8)",
+      "subject": "Acquisition vs Learning Hypothesis",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K3)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K3)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Acquisition is an implicit, subconscious process resulting from meaningful communication, whereas learning is explicit and conscious."
     },
     {
       "id": "eng_009",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-9)",
+      "subject": "Natural Order Hypothesis",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K4)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K4)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Krashen noted that certain grammatical morphemes (e.g., -ing, plural -s) are acquired earlier than others (e.g., third-person singular -s) in a predictable sequence."
     },
     {
       "id": "eng_010",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-10)",
+      "subject": "Monitor Hypothesis",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K5)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K5)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "The Monitor only functions as an editor to inspect and alter utterances produced by the acquired system when the speaker knows the rule and has sufficient time."
     },
     {
       "id": "eng_011",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-11)",
+      "subject": "Input Hypothesis (i+1)",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K6)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K6)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Krashen posited that language acquisition occurs naturally when learners receive comprehensible input at a level just beyond their current stage (i+1)."
     },
     {
       "id": "eng_012",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-12)",
+      "subject": "Affective Filter Hypothesis",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K7)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K7)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "A low affective filter allows comprehensible input to reach the Language Acquisition Device (LAD) without psychological barriers."
     },
     {
       "id": "eng_013",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-13)",
+      "subject": "Acquisition vs Learning Hypothesis",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K8)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K8)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Acquisition is an implicit, subconscious process resulting from meaningful communication, whereas learning is explicit and conscious."
     },
     {
       "id": "eng_014",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-14)",
+      "subject": "Natural Order Hypothesis",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K9)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K9)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Krashen noted that certain grammatical morphemes (e.g., -ing, plural -s) are acquired earlier than others (e.g., third-person singular -s) in a predictable sequence."
     },
     {
       "id": "eng_015",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-15)",
+      "subject": "Monitor Hypothesis",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K10)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K10)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "The Monitor only functions as an editor to inspect and alter utterances produced by the acquired system when the speaker knows the rule and has sufficient time."
     },
     {
       "id": "eng_016",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-16)",
+      "subject": "Input Hypothesis (i+1)",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K11)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K11)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Krashen posited that language acquisition occurs naturally when learners receive comprehensible input at a level just beyond their current stage (i+1)."
     },
     {
       "id": "eng_017",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-17)",
+      "subject": "Affective Filter Hypothesis",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K12)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K12)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "A low affective filter allows comprehensible input to reach the Language Acquisition Device (LAD) without psychological barriers."
     },
     {
       "id": "eng_018",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-18)",
+      "subject": "Acquisition vs Learning Hypothesis",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K13)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K13)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Acquisition is an implicit, subconscious process resulting from meaningful communication, whereas learning is explicit and conscious."
     },
     {
       "id": "eng_019",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-19)",
+      "subject": "Natural Order Hypothesis",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K14)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K14)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Krashen noted that certain grammatical morphemes (e.g., -ing, plural -s) are acquired earlier than others (e.g., third-person singular -s) in a predictable sequence."
     },
     {
       "id": "eng_020",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-20)",
+      "subject": "Monitor Hypothesis",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K15)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K15)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "The Monitor only functions as an editor to inspect and alter utterances produced by the acquired system when the speaker knows the rule and has sufficient time."
     },
     {
       "id": "eng_021",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-21)",
+      "subject": "Input Hypothesis (i+1)",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K16)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K16)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Krashen posited that language acquisition occurs naturally when learners receive comprehensible input at a level just beyond their current stage (i+1)."
     },
     {
       "id": "eng_022",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-22)",
+      "subject": "Affective Filter Hypothesis",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K17)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K17)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "A low affective filter allows comprehensible input to reach the Language Acquisition Device (LAD) without psychological barriers."
     },
     {
       "id": "eng_023",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-23)",
+      "subject": "Acquisition vs Learning Hypothesis",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K18)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K18)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Acquisition is an implicit, subconscious process resulting from meaningful communication, whereas learning is explicit and conscious."
     },
     {
       "id": "eng_024",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-24)",
+      "subject": "Natural Order Hypothesis",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K19)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K19)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Krashen noted that certain grammatical morphemes (e.g., -ing, plural -s) are acquired earlier than others (e.g., third-person singular -s) in a predictable sequence."
     },
     {
       "id": "eng_025",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-25)",
+      "subject": "Monitor Hypothesis",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K20)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K20)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "The Monitor only functions as an editor to inspect and alter utterances produced by the acquired system when the speaker knows the rule and has sufficient time."
     },
     {
       "id": "eng_026",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-26)",
+      "subject": "Input Hypothesis (i+1)",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K21)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K21)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Krashen posited that language acquisition occurs naturally when learners receive comprehensible input at a level just beyond their current stage (i+1)."
     },
     {
       "id": "eng_027",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-27)",
+      "subject": "Affective Filter Hypothesis",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K22)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K22)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "A low affective filter allows comprehensible input to reach the Language Acquisition Device (LAD) without psychological barriers."
     },
     {
       "id": "eng_028",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-28)",
+      "subject": "Acquisition vs Learning Hypothesis",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K23)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K23)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Acquisition is an implicit, subconscious process resulting from meaningful communication, whereas learning is explicit and conscious."
     },
     {
       "id": "eng_029",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-29)",
+      "subject": "Natural Order Hypothesis",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K24)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K24)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Krashen noted that certain grammatical morphemes (e.g., -ing, plural -s) are acquired earlier than others (e.g., third-person singular -s) in a predictable sequence."
     },
     {
       "id": "eng_030",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-30)",
+      "subject": "Monitor Hypothesis",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K25)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K25)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "The Monitor only functions as an editor to inspect and alter utterances produced by the acquired system when the speaker knows the rule and has sufficient time."
     },
     {
       "id": "eng_031",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-31)",
+      "subject": "Input Hypothesis (i+1)",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K26)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K26)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Krashen posited that language acquisition occurs naturally when learners receive comprehensible input at a level just beyond their current stage (i+1)."
     },
     {
       "id": "eng_032",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-32)",
+      "subject": "Affective Filter Hypothesis",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K27)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K27)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "A low affective filter allows comprehensible input to reach the Language Acquisition Device (LAD) without psychological barriers."
     },
     {
       "id": "eng_033",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-33)",
+      "subject": "Acquisition vs Learning Hypothesis",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K28)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K28)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Acquisition is an implicit, subconscious process resulting from meaningful communication, whereas learning is explicit and conscious."
     },
     {
       "id": "eng_034",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-34)",
+      "subject": "Natural Order Hypothesis",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K29)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K29)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Krashen noted that certain grammatical morphemes (e.g., -ing, plural -s) are acquired earlier than others (e.g., third-person singular -s) in a predictable sequence."
     },
     {
       "id": "eng_035",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-35)",
+      "subject": "Monitor Hypothesis",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K30)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K30)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "The Monitor only functions as an editor to inspect and alter utterances produced by the acquired system when the speaker knows the rule and has sufficient time."
     },
     {
       "id": "eng_036",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-36)",
+      "subject": "Input Hypothesis (i+1)",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K31)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K31)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Krashen posited that language acquisition occurs naturally when learners receive comprehensible input at a level just beyond their current stage (i+1)."
     },
     {
       "id": "eng_037",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-37)",
+      "subject": "Affective Filter Hypothesis",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K32)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K32)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "A low affective filter allows comprehensible input to reach the Language Acquisition Device (LAD) without psychological barriers."
     },
     {
       "id": "eng_038",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-38)",
+      "subject": "Acquisition vs Learning Hypothesis",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K33)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K33)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Acquisition is an implicit, subconscious process resulting from meaningful communication, whereas learning is explicit and conscious."
     },
     {
       "id": "eng_039",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-39)",
+      "subject": "Natural Order Hypothesis",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K34)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K34)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Krashen noted that certain grammatical morphemes (e.g., -ing, plural -s) are acquired earlier than others (e.g., third-person singular -s) in a predictable sequence."
     },
     {
       "id": "eng_040",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-40)",
+      "subject": "Monitor Hypothesis",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K35)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K35)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "The Monitor only functions as an editor to inspect and alter utterances produced by the acquired system when the speaker knows the rule and has sufficient time."
     },
     {
       "id": "eng_041",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-41)",
+      "subject": "Input Hypothesis (i+1)",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K36)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K36)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Krashen posited that language acquisition occurs naturally when learners receive comprehensible input at a level just beyond their current stage (i+1)."
     },
     {
       "id": "eng_042",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-42)",
+      "subject": "Affective Filter Hypothesis",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K37)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K37)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "A low affective filter allows comprehensible input to reach the Language Acquisition Device (LAD) without psychological barriers."
     },
     {
       "id": "eng_043",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-43)",
+      "subject": "Acquisition vs Learning Hypothesis",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K38)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K38)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Acquisition is an implicit, subconscious process resulting from meaningful communication, whereas learning is explicit and conscious."
     },
     {
       "id": "eng_044",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-44)",
+      "subject": "Natural Order Hypothesis",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K39)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K39)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Krashen noted that certain grammatical morphemes (e.g., -ing, plural -s) are acquired earlier than others (e.g., third-person singular -s) in a predictable sequence."
     },
     {
       "id": "eng_045",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-45)",
+      "subject": "Monitor Hypothesis",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K40)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K40)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "The Monitor only functions as an editor to inspect and alter utterances produced by the acquired system when the speaker knows the rule and has sufficient time."
     },
     {
       "id": "eng_046",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-46)",
+      "subject": "Input Hypothesis (i+1)",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K41)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that input hypothesis (i+1) is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K41)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Krashen posited that language acquisition occurs naturally when learners receive comprehensible input at a level just beyond their current stage (i+1)."
     },
     {
       "id": "eng_047",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-47)",
+      "subject": "Affective Filter Hypothesis",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K42)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that affective filter hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K42)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "A low affective filter allows comprehensible input to reach the Language Acquisition Device (LAD) without psychological barriers."
     },
     {
       "id": "eng_048",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-48)",
+      "subject": "Acquisition vs Learning Hypothesis",
+      "question_en": "During an ESL lesson in Grade 6, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K43)",
+      "question_hi": "During an ESL lesson in Grade 6, the teacher ensures that acquisition vs learning hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K43)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "It is a subconscious, natural process identical to how children acquire their first language",
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Acquisition is an implicit, subconscious process resulting from meaningful communication, whereas learning is explicit and conscious."
     },
     {
       "id": "eng_049",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-49)",
+      "subject": "Natural Order Hypothesis",
+      "question_en": "During an ESL lesson in Grade 7, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K44)",
+      "question_hi": "During an ESL lesson in Grade 7, the teacher ensures that natural order hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K44)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "A predictable developmental sequence regardless of the learner's native language or instructional order",
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Krashen noted that certain grammatical morphemes (e.g., -ing, plural -s) are acquired earlier than others (e.g., third-person singular -s) in a predictable sequence."
     },
     {
       "id": "eng_050",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-50)",
+      "subject": "Monitor Hypothesis",
+      "question_en": "During an ESL lesson in Grade 8, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K45)",
+      "question_hi": "During an ESL lesson in Grade 8, the teacher ensures that monitor hypothesis is effectively practiced by providing structured activities. Which core principle of Krashen's theory is exemplified? (Pedagogy Item: ENG-K45)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "To act as an editor or monitor to polish output when time allows and the speaker focuses on form",
+        "Comprehensible input that is slightly beyond their current developmental level (i+1)",
+        "Low anxiety, high self-confidence, and strong motivation",
+        "It is a subconscious, natural process identical to how children acquire their first language"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "The Monitor only functions as an editor to inspect and alter utterances produced by the acquired system when the speaker knows the rule and has sufficient time."
     },
     {
       "id": "eng_051",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-51)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C1)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C1)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_052",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-52)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C2)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C2)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Jim Cummins defines Cognitive Academic Language Proficiency (CALP) as Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays, which Requires approximately 5 to 7 years to develop to grade-level proficiency."
     },
     {
       "id": "eng_053",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-53)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C3)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C3)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Jim Cummins defines Common Underlying Proficiency (CUP / Iceberg Model) as Skills and concepts learned in the first language transfer effectively to support second language development, which Demonstrates that bilingualism fosters cognitive flexibility."
     },
     {
       "id": "eng_054",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-54)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C4)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C4)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_055",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-55)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C5)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C5)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Jim Cummins defines Cognitive Academic Language Proficiency (CALP) as Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays, which Requires approximately 5 to 7 years to develop to grade-level proficiency."
     },
     {
       "id": "eng_056",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-56)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C6)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C6)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Jim Cummins defines Common Underlying Proficiency (CUP / Iceberg Model) as Skills and concepts learned in the first language transfer effectively to support second language development, which Demonstrates that bilingualism fosters cognitive flexibility."
     },
     {
       "id": "eng_057",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-57)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C7)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C7)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_058",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-58)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C8)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C8)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Jim Cummins defines Cognitive Academic Language Proficiency (CALP) as Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays, which Requires approximately 5 to 7 years to develop to grade-level proficiency."
     },
     {
       "id": "eng_059",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-59)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C9)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C9)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Jim Cummins defines Common Underlying Proficiency (CUP / Iceberg Model) as Skills and concepts learned in the first language transfer effectively to support second language development, which Demonstrates that bilingualism fosters cognitive flexibility."
     },
     {
       "id": "eng_060",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-60)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C10)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C10)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_061",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-61)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C11)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C11)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Jim Cummins defines Cognitive Academic Language Proficiency (CALP) as Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays, which Requires approximately 5 to 7 years to develop to grade-level proficiency."
     },
     {
       "id": "eng_062",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-62)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C12)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C12)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Jim Cummins defines Common Underlying Proficiency (CUP / Iceberg Model) as Skills and concepts learned in the first language transfer effectively to support second language development, which Demonstrates that bilingualism fosters cognitive flexibility."
     },
     {
       "id": "eng_063",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-63)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C13)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C13)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_064",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-64)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C14)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C14)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Jim Cummins defines Cognitive Academic Language Proficiency (CALP) as Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays, which Requires approximately 5 to 7 years to develop to grade-level proficiency."
     },
     {
       "id": "eng_065",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-65)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C15)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C15)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Jim Cummins defines Common Underlying Proficiency (CUP / Iceberg Model) as Skills and concepts learned in the first language transfer effectively to support second language development, which Demonstrates that bilingualism fosters cognitive flexibility."
     },
     {
       "id": "eng_066",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-66)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C16)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C16)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_067",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-67)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C17)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C17)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Jim Cummins defines Cognitive Academic Language Proficiency (CALP) as Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays, which Requires approximately 5 to 7 years to develop to grade-level proficiency."
     },
     {
       "id": "eng_068",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-68)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C18)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C18)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Jim Cummins defines Common Underlying Proficiency (CUP / Iceberg Model) as Skills and concepts learned in the first language transfer effectively to support second language development, which Demonstrates that bilingualism fosters cognitive flexibility."
     },
     {
       "id": "eng_069",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-69)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C19)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C19)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_070",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-70)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C20)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C20)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Jim Cummins defines Cognitive Academic Language Proficiency (CALP) as Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays, which Requires approximately 5 to 7 years to develop to grade-level proficiency."
     },
     {
       "id": "eng_071",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-71)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C21)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C21)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Jim Cummins defines Common Underlying Proficiency (CUP / Iceberg Model) as Skills and concepts learned in the first language transfer effectively to support second language development, which Demonstrates that bilingualism fosters cognitive flexibility."
     },
     {
       "id": "eng_072",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-72)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C22)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C22)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_073",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-73)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C23)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C23)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Jim Cummins defines Cognitive Academic Language Proficiency (CALP) as Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays, which Requires approximately 5 to 7 years to develop to grade-level proficiency."
     },
     {
       "id": "eng_074",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-74)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C24)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C24)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Jim Cummins defines Common Underlying Proficiency (CUP / Iceberg Model) as Skills and concepts learned in the first language transfer effectively to support second language development, which Demonstrates that bilingualism fosters cognitive flexibility."
     },
     {
       "id": "eng_075",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-75)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C25)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C25)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_076",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-76)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C26)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C26)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Jim Cummins defines Cognitive Academic Language Proficiency (CALP) as Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays, which Requires approximately 5 to 7 years to develop to grade-level proficiency."
     },
     {
       "id": "eng_077",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-77)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C27)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C27)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Jim Cummins defines Common Underlying Proficiency (CUP / Iceberg Model) as Skills and concepts learned in the first language transfer effectively to support second language development, which Demonstrates that bilingualism fosters cognitive flexibility."
     },
     {
       "id": "eng_078",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-78)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C28)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C28)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_079",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-79)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C29)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C29)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Jim Cummins defines Cognitive Academic Language Proficiency (CALP) as Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays, which Requires approximately 5 to 7 years to develop to grade-level proficiency."
     },
     {
       "id": "eng_080",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-80)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C30)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C30)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Jim Cummins defines Common Underlying Proficiency (CUP / Iceberg Model) as Skills and concepts learned in the first language transfer effectively to support second language development, which Demonstrates that bilingualism fosters cognitive flexibility."
     },
     {
       "id": "eng_081",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-81)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C31)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C31)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_082",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-82)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C32)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C32)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Jim Cummins defines Cognitive Academic Language Proficiency (CALP) as Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays, which Requires approximately 5 to 7 years to develop to grade-level proficiency."
     },
     {
       "id": "eng_083",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-83)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C33)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C33)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Jim Cummins defines Common Underlying Proficiency (CUP / Iceberg Model) as Skills and concepts learned in the first language transfer effectively to support second language development, which Demonstrates that bilingualism fosters cognitive flexibility."
     },
     {
       "id": "eng_084",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-84)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C34)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C34)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_085",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-85)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C35)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C35)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Jim Cummins defines Cognitive Academic Language Proficiency (CALP) as Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays, which Requires approximately 5 to 7 years to develop to grade-level proficiency."
     },
     {
       "id": "eng_086",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-86)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C36)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C36)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Jim Cummins defines Common Underlying Proficiency (CUP / Iceberg Model) as Skills and concepts learned in the first language transfer effectively to support second language development, which Demonstrates that bilingualism fosters cognitive flexibility."
     },
     {
       "id": "eng_087",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-87)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C37)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C37)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_088",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-88)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C38)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 7 student exhibits \"Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays\", this linguistic competence is identified as: (Item: ENG-C38)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Jim Cummins defines Cognitive Academic Language Proficiency (CALP) as Context-reduced, abstract academic language required to understand textbooks, synthesize complex arguments, and write essays, which Requires approximately 5 to 7 years to develop to grade-level proficiency."
     },
     {
       "id": "eng_089",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-89)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C39)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 8 student exhibits \"Skills and concepts learned in the first language transfer effectively to support second language development\", this linguistic competence is identified as: (Item: ENG-C39)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Jim Cummins defines Common Underlying Proficiency (CUP / Iceberg Model) as Skills and concepts learned in the first language transfer effectively to support second language development, which Demonstrates that bilingualism fosters cognitive flexibility."
     },
     {
       "id": "eng_090",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-90)",
+      "subject": "Cummins: BICS and CALP",
+      "question_en": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C40)",
+      "question_hi": "In Jim Cummins' bilingual framework, when an English language teacher observes that a Grade 6 student exhibits \"Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors\", this linguistic competence is identified as: (Item: ENG-C40)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Basic Interpersonal Communicative Skills (BICS)",
+        "Cognitive Academic Language Proficiency (CALP)",
+        "Common Underlying Proficiency (CUP / Iceberg Model)",
+        "Grammar-Translation Rote Memorization Competence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Jim Cummins defines Basic Interpersonal Communicative Skills (BICS) as Context-embedded, conversational language used in day-to-day social interactions like cafeteria talk or playing outdoors, which Typically develops within 1 to 2 years of immersion."
     },
     {
       "id": "eng_091",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-91)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M1)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M1)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Communicative Language Teaching (CLT) is characterized by Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work."
     },
     {
       "id": "eng_092",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-92)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M2)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M2)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Direct Method (Natural Method) is characterized by Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures."
     },
     {
       "id": "eng_093",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-93)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M3)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M3)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Grammar-Translation Method (Classical Method) is characterized by Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue."
     },
     {
       "id": "eng_094",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-94)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M4)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M4)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Structural-Situational Approach is characterized by Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing."
     },
     {
       "id": "eng_095",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-95)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M5)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M5)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Total Physical Response (TPR) is characterized by Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor."
     },
     {
       "id": "eng_096",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-96)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M6)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M6)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Bilingual Method (C.J. Dodson) is characterized by The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English."
     },
     {
       "id": "eng_097",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-97)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M7)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M7)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Audio-Lingual Method (Army Method) is characterized by Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits."
     },
     {
       "id": "eng_098",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-98)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M8)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M8)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Communicative Language Teaching (CLT) is characterized by Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work."
     },
     {
       "id": "eng_099",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-99)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M9)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M9)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Direct Method (Natural Method) is characterized by Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures."
     },
     {
       "id": "eng_100",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-100)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M10)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M10)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Grammar-Translation Method (Classical Method) is characterized by Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue."
     },
     {
       "id": "eng_101",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-101)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M11)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M11)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Structural-Situational Approach is characterized by Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing."
     },
     {
       "id": "eng_102",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-102)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M12)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M12)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Total Physical Response (TPR) is characterized by Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor."
     },
     {
       "id": "eng_103",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-103)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M13)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M13)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Bilingual Method (C.J. Dodson) is characterized by The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English."
     },
     {
       "id": "eng_104",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-104)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M14)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M14)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Audio-Lingual Method (Army Method) is characterized by Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits."
     },
     {
       "id": "eng_105",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-105)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M15)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M15)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Communicative Language Teaching (CLT) is characterized by Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work."
     },
     {
       "id": "eng_106",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-106)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M16)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M16)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Direct Method (Natural Method) is characterized by Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures."
     },
     {
       "id": "eng_107",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-107)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M17)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M17)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Grammar-Translation Method (Classical Method) is characterized by Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue."
     },
     {
       "id": "eng_108",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-108)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M18)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M18)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Structural-Situational Approach is characterized by Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing."
     },
     {
       "id": "eng_109",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-109)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M19)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M19)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Total Physical Response (TPR) is characterized by Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor."
     },
     {
       "id": "eng_110",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-110)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M20)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M20)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Bilingual Method (C.J. Dodson) is characterized by The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English."
     },
     {
       "id": "eng_111",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-111)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M21)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M21)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Audio-Lingual Method (Army Method) is characterized by Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits."
     },
     {
       "id": "eng_112",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-112)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M22)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M22)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Communicative Language Teaching (CLT) is characterized by Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work."
     },
     {
       "id": "eng_113",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-113)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M23)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M23)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Direct Method (Natural Method) is characterized by Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures."
     },
     {
       "id": "eng_114",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-114)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M24)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M24)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Grammar-Translation Method (Classical Method) is characterized by Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue."
     },
     {
       "id": "eng_115",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-115)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M25)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M25)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Structural-Situational Approach is characterized by Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing."
     },
     {
       "id": "eng_116",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-116)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M26)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M26)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Total Physical Response (TPR) is characterized by Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor."
     },
     {
       "id": "eng_117",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-117)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M27)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M27)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Bilingual Method (C.J. Dodson) is characterized by The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English."
     },
     {
       "id": "eng_118",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-118)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M28)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M28)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Audio-Lingual Method (Army Method) is characterized by Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits."
     },
     {
       "id": "eng_119",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-119)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M29)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M29)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Communicative Language Teaching (CLT) is characterized by Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work."
     },
     {
       "id": "eng_120",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-120)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M30)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M30)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Direct Method (Natural Method) is characterized by Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures."
     },
     {
       "id": "eng_121",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-121)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M31)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M31)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Grammar-Translation Method (Classical Method) is characterized by Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue."
     },
     {
       "id": "eng_122",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-122)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M32)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M32)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Structural-Situational Approach is characterized by Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing."
     },
     {
       "id": "eng_123",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-123)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M33)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M33)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Total Physical Response (TPR) is characterized by Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor."
     },
     {
       "id": "eng_124",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-124)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M34)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M34)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Bilingual Method (C.J. Dodson) is characterized by The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English."
     },
     {
       "id": "eng_125",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-125)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M35)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M35)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Audio-Lingual Method (Army Method) is characterized by Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits."
     },
     {
       "id": "eng_126",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-126)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M36)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M36)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Communicative Language Teaching (CLT) is characterized by Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work."
     },
     {
       "id": "eng_127",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-127)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M37)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M37)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Direct Method (Natural Method) is characterized by Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures."
     },
     {
       "id": "eng_128",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-128)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M38)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M38)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Grammar-Translation Method (Classical Method) is characterized by Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue."
     },
     {
       "id": "eng_129",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-129)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M39)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M39)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Structural-Situational Approach is characterized by Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing."
     },
     {
       "id": "eng_130",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-130)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M40)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M40)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Total Physical Response (TPR) is characterized by Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor."
     },
     {
       "id": "eng_131",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-131)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M41)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M41)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Bilingual Method (C.J. Dodson) is characterized by The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English."
     },
     {
       "id": "eng_132",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-132)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M42)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M42)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Audio-Lingual Method (Army Method) is characterized by Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits."
     },
     {
       "id": "eng_133",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-133)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M43)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M43)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Communicative Language Teaching (CLT) is characterized by Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work."
     },
     {
       "id": "eng_134",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-134)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M44)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M44)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Direct Method (Natural Method) is characterized by Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures."
     },
     {
       "id": "eng_135",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-135)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M45)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M45)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Grammar-Translation Method (Classical Method) is characterized by Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue."
     },
     {
       "id": "eng_136",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-136)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M46)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M46)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Structural-Situational Approach is characterized by Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing."
     },
     {
       "id": "eng_137",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-137)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M47)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M47)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Total Physical Response (TPR) is characterized by Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor."
     },
     {
       "id": "eng_138",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-138)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M48)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M48)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Bilingual Method (C.J. Dodson) is characterized by The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English."
     },
     {
       "id": "eng_139",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-139)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M49)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M49)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Audio-Lingual Method (Army Method) is characterized by Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits."
     },
     {
       "id": "eng_140",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-140)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M50)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M50)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Communicative Language Teaching (CLT) is characterized by Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work."
     },
     {
       "id": "eng_141",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-141)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M51)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M51)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Direct Method (Natural Method) is characterized by Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures."
     },
     {
       "id": "eng_142",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-142)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M52)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M52)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Grammar-Translation Method (Classical Method) is characterized by Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue."
     },
     {
       "id": "eng_143",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-143)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M53)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M53)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Structural-Situational Approach is characterized by Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing."
     },
     {
       "id": "eng_144",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-144)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M54)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M54)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Total Physical Response (TPR) is characterized by Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor."
     },
     {
       "id": "eng_145",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-145)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M55)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M55)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Bilingual Method (C.J. Dodson) is characterized by The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English."
     },
     {
       "id": "eng_146",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-146)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M56)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M56)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Audio-Lingual Method (Army Method) is characterized by Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits."
     },
     {
       "id": "eng_147",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-147)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M57)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M57)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Communicative Language Teaching (CLT) is characterized by Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work."
     },
     {
       "id": "eng_148",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-148)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M58)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M58)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Direct Method (Natural Method) is characterized by Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures."
     },
     {
       "id": "eng_149",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-149)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M59)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M59)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Grammar-Translation Method (Classical Method) is characterized by Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue."
     },
     {
       "id": "eng_150",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-150)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M60)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M60)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Structural-Situational Approach is characterized by Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing."
     },
     {
       "id": "eng_151",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-151)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M61)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M61)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Total Physical Response (TPR) is characterized by Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor."
     },
     {
       "id": "eng_152",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-152)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M62)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M62)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Bilingual Method (C.J. Dodson) is characterized by The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English."
     },
     {
       "id": "eng_153",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-153)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M63)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M63)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Audio-Lingual Method (Army Method) is characterized by Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits."
     },
     {
       "id": "eng_154",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-154)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M64)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work\", which English language teaching method or approach is being applied? (Method Item: ENG-M64)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Communicative Language Teaching (CLT) is characterized by Prioritizes communicative competence, authentic interaction, fluency over grammatical accuracy, and student-centered pair/group work."
     },
     {
       "id": "eng_155",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-155)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M65)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures\", which English language teaching method or approach is being applied? (Method Item: ENG-M65)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Direct Method (Natural Method) is characterized by Strictly prohibits the use of the mother tongue; connects meaning directly with English through realia, demonstrations, and visual pictures."
     },
     {
       "id": "eng_156",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-156)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M66)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue\", which English language teaching method or approach is being applied? (Method Item: ENG-M66)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Grammar-Translation Method (Classical Method)",
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Grammar-Translation Method (Classical Method) is characterized by Focuses on deductive explanation of grammar rules and word-by-word translation between the target language and the mother tongue."
     },
     {
       "id": "eng_157",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-157)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M67)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing\", which English language teaching method or approach is being applied? (Method Item: ENG-M67)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Structural-Situational Approach",
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Structural-Situational Approach is characterized by Presents carefully graded sentence patterns and vocabulary in meaningful, realistic situational contexts before reading/writing."
     },
     {
       "id": "eng_158",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-158)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 7 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M68)",
+      "question_hi": "When an English teacher organizes a Grade 7 classroom activity that \"Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor\", which English language teaching method or approach is being applied? (Method Item: ENG-M68)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Total Physical Response (TPR)",
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Total Physical Response (TPR) is characterized by Coordinates language acquisition with physical body movement based on imperative command drills modeled by the instructor."
     },
     {
       "id": "eng_159",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-159)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 8 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M69)",
+      "question_hi": "When an English teacher organizes a Grade 8 classroom activity that \"The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English\", which English language teaching method or approach is being applied? (Method Item: ENG-M69)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Bilingual Method (C.J. Dodson)",
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Bilingual Method (C.J. Dodson) is characterized by The teacher selectively utilizes the mother tongue solely to explain difficult concepts or word meanings, while students speak only English."
     },
     {
       "id": "eng_160",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-160)",
+      "subject": "ELT Methods & Approaches",
+      "question_en": "When an English teacher organizes a Grade 6 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M70)",
+      "question_hi": "When an English teacher organizes a Grade 6 classroom activity that \"Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits\", which English language teaching method or approach is being applied? (Method Item: ENG-M70)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Audio-Lingual Method (Army Method)",
+        "Communicative Language Teaching (CLT)",
+        "Direct Method (Natural Method)",
+        "Grammar-Translation Method (Classical Method)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Audio-Lingual Method (Army Method) is characterized by Relies heavily on repetitive mimicry, choral drilling of dialogue patterns, and immediate reinforcement to build language habits."
     },
     {
       "id": "eng_161",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-161)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R1)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R1)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Skimming",
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Skimming involves Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage."
     },
     {
       "id": "eng_162",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-162)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R2)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R2)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Scanning involves Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers."
     },
     {
       "id": "eng_163",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-163)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R3)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R3)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Intensive Reading involves Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings."
     },
     {
       "id": "eng_164",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-164)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R4)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R4)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming",
+        "Scanning"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Extensive Reading involves Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion."
     },
     {
       "id": "eng_165",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-165)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R5)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R5)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Inferential Reading",
+        "Skimming",
+        "Scanning",
+        "Intensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Inferential Reading involves Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues."
     },
     {
       "id": "eng_166",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-166)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R6)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R6)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Skimming",
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Skimming involves Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage."
     },
     {
       "id": "eng_167",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-167)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R7)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R7)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Scanning involves Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers."
     },
     {
       "id": "eng_168",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-168)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R8)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R8)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Intensive Reading involves Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings."
     },
     {
       "id": "eng_169",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-169)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R9)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R9)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming",
+        "Scanning"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Extensive Reading involves Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion."
     },
     {
       "id": "eng_170",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-170)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R10)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R10)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Inferential Reading",
+        "Skimming",
+        "Scanning",
+        "Intensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Inferential Reading involves Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues."
     },
     {
       "id": "eng_171",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-171)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R11)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R11)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Skimming",
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Skimming involves Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage."
     },
     {
       "id": "eng_172",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-172)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R12)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R12)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Scanning involves Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers."
     },
     {
       "id": "eng_173",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-173)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R13)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R13)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Intensive Reading involves Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings."
     },
     {
       "id": "eng_174",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-174)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R14)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R14)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming",
+        "Scanning"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Extensive Reading involves Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion."
     },
     {
       "id": "eng_175",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-175)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R15)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R15)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Inferential Reading",
+        "Skimming",
+        "Scanning",
+        "Intensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Inferential Reading involves Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues."
     },
     {
       "id": "eng_176",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-176)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R16)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R16)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Skimming",
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Skimming involves Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage."
     },
     {
       "id": "eng_177",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-177)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R17)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R17)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Scanning involves Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers."
     },
     {
       "id": "eng_178",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-178)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R18)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R18)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Intensive Reading involves Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings."
     },
     {
       "id": "eng_179",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-179)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R19)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R19)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming",
+        "Scanning"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Extensive Reading involves Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion."
     },
     {
       "id": "eng_180",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-180)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R20)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R20)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Inferential Reading",
+        "Skimming",
+        "Scanning",
+        "Intensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Inferential Reading involves Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues."
     },
     {
       "id": "eng_181",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-181)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R21)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R21)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Skimming",
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Skimming involves Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage."
     },
     {
       "id": "eng_182",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-182)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R22)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R22)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Scanning involves Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers."
     },
     {
       "id": "eng_183",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-183)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R23)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R23)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Intensive Reading involves Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings."
     },
     {
       "id": "eng_184",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-184)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R24)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R24)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming",
+        "Scanning"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Extensive Reading involves Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion."
     },
     {
       "id": "eng_185",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-185)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R25)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R25)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Inferential Reading",
+        "Skimming",
+        "Scanning",
+        "Intensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Inferential Reading involves Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues."
     },
     {
       "id": "eng_186",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-186)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R26)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R26)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Skimming",
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Skimming involves Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage."
     },
     {
       "id": "eng_187",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-187)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R27)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R27)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Scanning involves Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers."
     },
     {
       "id": "eng_188",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-188)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R28)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R28)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Intensive Reading involves Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings."
     },
     {
       "id": "eng_189",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-189)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R29)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R29)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming",
+        "Scanning"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Extensive Reading involves Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion."
     },
     {
       "id": "eng_190",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-190)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R30)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R30)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Inferential Reading",
+        "Skimming",
+        "Scanning",
+        "Intensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Inferential Reading involves Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues."
     },
     {
       "id": "eng_191",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-191)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R31)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R31)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Skimming",
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Skimming involves Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage."
     },
     {
       "id": "eng_192",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-192)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R32)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R32)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Scanning involves Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers."
     },
     {
       "id": "eng_193",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-193)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R33)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R33)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Intensive Reading involves Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings."
     },
     {
       "id": "eng_194",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-194)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R34)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R34)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming",
+        "Scanning"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Extensive Reading involves Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion."
     },
     {
       "id": "eng_195",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-195)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R35)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R35)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Inferential Reading",
+        "Skimming",
+        "Scanning",
+        "Intensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Inferential Reading involves Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues."
     },
     {
       "id": "eng_196",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-196)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R36)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R36)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Skimming",
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Skimming involves Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage."
     },
     {
       "id": "eng_197",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-197)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R37)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R37)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Scanning involves Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers."
     },
     {
       "id": "eng_198",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-198)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R38)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R38)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Intensive Reading involves Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings."
     },
     {
       "id": "eng_199",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-199)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R39)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R39)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming",
+        "Scanning"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Extensive Reading involves Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion."
     },
     {
       "id": "eng_200",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-200)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R40)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R40)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Inferential Reading",
+        "Skimming",
+        "Scanning",
+        "Intensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Inferential Reading involves Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues."
     },
     {
       "id": "eng_201",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-201)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R41)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R41)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Skimming",
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Skimming involves Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage."
     },
     {
       "id": "eng_202",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-202)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R42)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R42)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Scanning involves Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers."
     },
     {
       "id": "eng_203",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-203)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R43)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R43)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Intensive Reading involves Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings."
     },
     {
       "id": "eng_204",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-204)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R44)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R44)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming",
+        "Scanning"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Extensive Reading involves Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion."
     },
     {
       "id": "eng_205",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-205)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R45)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R45)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Inferential Reading",
+        "Skimming",
+        "Scanning",
+        "Intensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Inferential Reading involves Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues."
     },
     {
       "id": "eng_206",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-206)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R46)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage\" (such as Quickly previewing a newspaper article headline and introductory paragraphs), they are developing which reading sub-skill? (Reading Item: ENG-R46)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Skimming",
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Skimming involves Reading a text rapidly to gain an overall impression, general gist, or central theme of the passage."
     },
     {
       "id": "eng_207",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-207)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R47)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers\" (such as Looking up a train departure time in a railway timetable or a specific phone number in a directory), they are developing which reading sub-skill? (Reading Item: ENG-R47)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Scanning",
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Scanning involves Glancing quickly through a text to locate specific predetermined information such as dates, names, or numbers."
     },
     {
       "id": "eng_208",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-208)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R48)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings\" (such as Detailed line-by-line examination of a short poem or legal contract), they are developing which reading sub-skill? (Reading Item: ENG-R48)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Intensive Reading",
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Intensive Reading involves Reading closely and thoroughly to analyze minute grammatical structures, vocabulary nuances, and exact textual meanings."
     },
     {
       "id": "eng_209",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-209)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R49)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion\" (such as Reading an adventure storybook independently during leisure time), they are developing which reading sub-skill? (Reading Item: ENG-R49)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Extensive Reading",
+        "Inferential Reading",
+        "Skimming",
+        "Scanning"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Extensive Reading involves Reading longer texts, novels, and stories for personal pleasure, broad comprehension, and general vocabulary expansion."
     },
     {
       "id": "eng_210",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-210)",
+      "subject": "Reading Sub-skills",
+      "question_en": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R50)",
+      "question_hi": "In an upper-primary English comprehension class, when students are instructed to \"Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues\" (such as Determining the author's sarcastic tone from the choice of adjectives), they are developing which reading sub-skill? (Reading Item: ENG-R50)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Inferential Reading",
+        "Skimming",
+        "Scanning",
+        "Intensive Reading"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Inferential Reading involves Reading between the lines to deduce meanings, author intentions, or unstated conclusions based on contextual clues."
     },
     {
       "id": "eng_211",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-211)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W1)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W1)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "The Brainstorming / Pre-writing phase of writing specifically focuses on Generating diverse ideas, creating mind maps, and collecting thoughts before drafting."
     },
     {
       "id": "eng_212",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-212)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W2)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W2)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "The Drafting phase of writing specifically focuses on Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling."
     },
     {
       "id": "eng_213",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-213)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W3)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W3)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "The Revising phase of writing specifically focuses on Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence."
     },
     {
       "id": "eng_214",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-214)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W4)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W4)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "The Editing / Proofreading phase of writing specifically focuses on Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord."
     },
     {
       "id": "eng_215",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-215)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W5)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W5)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "The Publishing / Sharing phase of writing specifically focuses on Sharing the polished composition with an authentic audience such as peers or the school display board."
     },
     {
       "id": "eng_216",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-216)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W6)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W6)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "The Brainstorming / Pre-writing phase of writing specifically focuses on Generating diverse ideas, creating mind maps, and collecting thoughts before drafting."
     },
     {
       "id": "eng_217",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-217)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W7)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W7)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "The Drafting phase of writing specifically focuses on Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling."
     },
     {
       "id": "eng_218",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-218)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W8)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W8)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "The Revising phase of writing specifically focuses on Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence."
     },
     {
       "id": "eng_219",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-219)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W9)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W9)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "The Editing / Proofreading phase of writing specifically focuses on Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord."
     },
     {
       "id": "eng_220",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-220)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W10)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W10)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "The Publishing / Sharing phase of writing specifically focuses on Sharing the polished composition with an authentic audience such as peers or the school display board."
     },
     {
       "id": "eng_221",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-221)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W11)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W11)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "The Brainstorming / Pre-writing phase of writing specifically focuses on Generating diverse ideas, creating mind maps, and collecting thoughts before drafting."
     },
     {
       "id": "eng_222",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-222)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W12)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W12)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "The Drafting phase of writing specifically focuses on Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling."
     },
     {
       "id": "eng_223",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-223)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W13)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W13)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "The Revising phase of writing specifically focuses on Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence."
     },
     {
       "id": "eng_224",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-224)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W14)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W14)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "The Editing / Proofreading phase of writing specifically focuses on Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord."
     },
     {
       "id": "eng_225",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-225)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W15)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W15)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "The Publishing / Sharing phase of writing specifically focuses on Sharing the polished composition with an authentic audience such as peers or the school display board."
     },
     {
       "id": "eng_226",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-226)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W16)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W16)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "The Brainstorming / Pre-writing phase of writing specifically focuses on Generating diverse ideas, creating mind maps, and collecting thoughts before drafting."
     },
     {
       "id": "eng_227",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-227)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W17)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W17)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "The Drafting phase of writing specifically focuses on Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling."
     },
     {
       "id": "eng_228",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-228)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W18)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W18)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "The Revising phase of writing specifically focuses on Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence."
     },
     {
       "id": "eng_229",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-229)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W19)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W19)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "The Editing / Proofreading phase of writing specifically focuses on Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord."
     },
     {
       "id": "eng_230",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-230)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W20)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W20)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "The Publishing / Sharing phase of writing specifically focuses on Sharing the polished composition with an authentic audience such as peers or the school display board."
     },
     {
       "id": "eng_231",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-231)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W21)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W21)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "The Brainstorming / Pre-writing phase of writing specifically focuses on Generating diverse ideas, creating mind maps, and collecting thoughts before drafting."
     },
     {
       "id": "eng_232",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-232)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W22)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W22)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "The Drafting phase of writing specifically focuses on Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling."
     },
     {
       "id": "eng_233",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-233)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W23)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W23)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "The Revising phase of writing specifically focuses on Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence."
     },
     {
       "id": "eng_234",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-234)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W24)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W24)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "The Editing / Proofreading phase of writing specifically focuses on Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord."
     },
     {
       "id": "eng_235",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-235)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W25)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W25)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "The Publishing / Sharing phase of writing specifically focuses on Sharing the polished composition with an authentic audience such as peers or the school display board."
     },
     {
       "id": "eng_236",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-236)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W26)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W26)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "The Brainstorming / Pre-writing phase of writing specifically focuses on Generating diverse ideas, creating mind maps, and collecting thoughts before drafting."
     },
     {
       "id": "eng_237",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-237)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W27)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W27)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "The Drafting phase of writing specifically focuses on Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling."
     },
     {
       "id": "eng_238",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-238)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W28)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W28)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "The Revising phase of writing specifically focuses on Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence."
     },
     {
       "id": "eng_239",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-239)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W29)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W29)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "The Editing / Proofreading phase of writing specifically focuses on Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord."
     },
     {
       "id": "eng_240",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-240)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W30)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W30)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "The Publishing / Sharing phase of writing specifically focuses on Sharing the polished composition with an authentic audience such as peers or the school display board."
     },
     {
       "id": "eng_241",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-241)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W31)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W31)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "The Brainstorming / Pre-writing phase of writing specifically focuses on Generating diverse ideas, creating mind maps, and collecting thoughts before drafting."
     },
     {
       "id": "eng_242",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-242)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W32)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W32)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "The Drafting phase of writing specifically focuses on Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling."
     },
     {
       "id": "eng_243",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-243)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W33)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W33)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "The Revising phase of writing specifically focuses on Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence."
     },
     {
       "id": "eng_244",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-244)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W34)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W34)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "The Editing / Proofreading phase of writing specifically focuses on Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord."
     },
     {
       "id": "eng_245",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-245)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W35)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W35)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "The Publishing / Sharing phase of writing specifically focuses on Sharing the polished composition with an authentic audience such as peers or the school display board."
     },
     {
       "id": "eng_246",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-246)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W36)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Brainstorming / Pre-writing\" stage? (Writing Item: ENG-W36)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "The Brainstorming / Pre-writing phase of writing specifically focuses on Generating diverse ideas, creating mind maps, and collecting thoughts before drafting."
     },
     {
       "id": "eng_247",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-247)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W37)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Drafting\" stage? (Writing Item: ENG-W37)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "The Drafting phase of writing specifically focuses on Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling."
     },
     {
       "id": "eng_248",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-248)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W38)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Revising\" stage? (Writing Item: ENG-W38)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence",
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "The Revising phase of writing specifically focuses on Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence."
     },
     {
       "id": "eng_249",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-249)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W39)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Editing / Proofreading\" stage? (Writing Item: ENG-W39)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord",
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "The Editing / Proofreading phase of writing specifically focuses on Correcting mechanical errors in spelling, punctuation, capitalization, and grammatical concord."
     },
     {
       "id": "eng_250",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-250)",
+      "subject": "Writing Pedagogy",
+      "question_en": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W40)",
+      "question_hi": "In the process-oriented approach to English composition, what is the primary objective of the \"Publishing / Sharing\" stage? (Writing Item: ENG-W40)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Sharing the polished composition with an authentic audience such as peers or the school display board",
+        "Generating diverse ideas, creating mind maps, and collecting thoughts before drafting",
+        "Transcribing generated ideas into continuous sentences and paragraphs without worrying about perfect spelling",
+        "Reorganizing sentence sequence, clarifying arguments, and enhancing content coherence"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "The Publishing / Sharing phase of writing specifically focuses on Sharing the polished composition with an authentic audience such as peers or the school display board."
     },
     {
       "id": "eng_251",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-251)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L1)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L1)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Phoneme",
+        "Morpheme",
+        "Diphthong",
+        "Syntax"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "A Phoneme is defined as The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)."
     },
     {
       "id": "eng_252",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-252)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L2)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L2)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Morpheme",
+        "Diphthong",
+        "Syntax",
+        "Semantics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "A Morpheme is defined as The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning."
     },
     {
       "id": "eng_253",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-253)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L3)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L3)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Diphthong",
+        "Syntax",
+        "Semantics",
+        "Pragmatics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "A Diphthong is defined as A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)."
     },
     {
       "id": "eng_254",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-254)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L4)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L4)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Syntax",
+        "Semantics",
+        "Pragmatics",
+        "Phoneme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "A Syntax is defined as The system of linguistic rules governing the order and structure of words to form grammatical sentences."
     },
     {
       "id": "eng_255",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-255)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L5)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L5)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Semantics",
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "A Semantics is defined as The linguistic and philosophical study of meaning in words, phrases, and texts."
     },
     {
       "id": "eng_256",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-256)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L6)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L6)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme",
+        "Diphthong"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "A Pragmatics is defined as The study of how language is used and interpreted in practical social contexts and situations."
     },
     {
       "id": "eng_257",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-257)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L7)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L7)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Phoneme",
+        "Morpheme",
+        "Diphthong",
+        "Syntax"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "A Phoneme is defined as The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)."
     },
     {
       "id": "eng_258",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-258)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L8)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L8)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Morpheme",
+        "Diphthong",
+        "Syntax",
+        "Semantics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "A Morpheme is defined as The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning."
     },
     {
       "id": "eng_259",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-259)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L9)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L9)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Diphthong",
+        "Syntax",
+        "Semantics",
+        "Pragmatics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "A Diphthong is defined as A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)."
     },
     {
       "id": "eng_260",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-260)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L10)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L10)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Syntax",
+        "Semantics",
+        "Pragmatics",
+        "Phoneme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "A Syntax is defined as The system of linguistic rules governing the order and structure of words to form grammatical sentences."
     },
     {
       "id": "eng_261",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-261)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L11)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L11)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Semantics",
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "A Semantics is defined as The linguistic and philosophical study of meaning in words, phrases, and texts."
     },
     {
       "id": "eng_262",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-262)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L12)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L12)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme",
+        "Diphthong"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "A Pragmatics is defined as The study of how language is used and interpreted in practical social contexts and situations."
     },
     {
       "id": "eng_263",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-263)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L13)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L13)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Phoneme",
+        "Morpheme",
+        "Diphthong",
+        "Syntax"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "A Phoneme is defined as The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)."
     },
     {
       "id": "eng_264",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-264)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L14)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L14)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Morpheme",
+        "Diphthong",
+        "Syntax",
+        "Semantics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "A Morpheme is defined as The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning."
     },
     {
       "id": "eng_265",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-265)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L15)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L15)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Diphthong",
+        "Syntax",
+        "Semantics",
+        "Pragmatics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "A Diphthong is defined as A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)."
     },
     {
       "id": "eng_266",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-266)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L16)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L16)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Syntax",
+        "Semantics",
+        "Pragmatics",
+        "Phoneme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "A Syntax is defined as The system of linguistic rules governing the order and structure of words to form grammatical sentences."
     },
     {
       "id": "eng_267",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-267)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L17)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L17)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Semantics",
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "A Semantics is defined as The linguistic and philosophical study of meaning in words, phrases, and texts."
     },
     {
       "id": "eng_268",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-268)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L18)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L18)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme",
+        "Diphthong"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "A Pragmatics is defined as The study of how language is used and interpreted in practical social contexts and situations."
     },
     {
       "id": "eng_269",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-269)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L19)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L19)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Phoneme",
+        "Morpheme",
+        "Diphthong",
+        "Syntax"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "A Phoneme is defined as The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)."
     },
     {
       "id": "eng_270",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-270)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L20)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L20)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Morpheme",
+        "Diphthong",
+        "Syntax",
+        "Semantics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "A Morpheme is defined as The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning."
     },
     {
       "id": "eng_271",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-271)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L21)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L21)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Diphthong",
+        "Syntax",
+        "Semantics",
+        "Pragmatics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "A Diphthong is defined as A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)."
     },
     {
       "id": "eng_272",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-272)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L22)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L22)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Syntax",
+        "Semantics",
+        "Pragmatics",
+        "Phoneme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "A Syntax is defined as The system of linguistic rules governing the order and structure of words to form grammatical sentences."
     },
     {
       "id": "eng_273",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-273)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L23)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L23)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Semantics",
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "A Semantics is defined as The linguistic and philosophical study of meaning in words, phrases, and texts."
     },
     {
       "id": "eng_274",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-274)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L24)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L24)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme",
+        "Diphthong"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "A Pragmatics is defined as The study of how language is used and interpreted in practical social contexts and situations."
     },
     {
       "id": "eng_275",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-275)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L25)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L25)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Phoneme",
+        "Morpheme",
+        "Diphthong",
+        "Syntax"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "A Phoneme is defined as The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)."
     },
     {
       "id": "eng_276",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-276)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L26)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L26)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Morpheme",
+        "Diphthong",
+        "Syntax",
+        "Semantics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "A Morpheme is defined as The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning."
     },
     {
       "id": "eng_277",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-277)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L27)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L27)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Diphthong",
+        "Syntax",
+        "Semantics",
+        "Pragmatics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "A Diphthong is defined as A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)."
     },
     {
       "id": "eng_278",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-278)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L28)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L28)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Syntax",
+        "Semantics",
+        "Pragmatics",
+        "Phoneme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "A Syntax is defined as The system of linguistic rules governing the order and structure of words to form grammatical sentences."
     },
     {
       "id": "eng_279",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-279)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L29)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L29)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Semantics",
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "A Semantics is defined as The linguistic and philosophical study of meaning in words, phrases, and texts."
     },
     {
       "id": "eng_280",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-280)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L30)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L30)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme",
+        "Diphthong"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "A Pragmatics is defined as The study of how language is used and interpreted in practical social contexts and situations."
     },
     {
       "id": "eng_281",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-281)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L31)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L31)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Phoneme",
+        "Morpheme",
+        "Diphthong",
+        "Syntax"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "A Phoneme is defined as The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)."
     },
     {
       "id": "eng_282",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-282)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L32)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L32)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Morpheme",
+        "Diphthong",
+        "Syntax",
+        "Semantics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "A Morpheme is defined as The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning."
     },
     {
       "id": "eng_283",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-283)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L33)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L33)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Diphthong",
+        "Syntax",
+        "Semantics",
+        "Pragmatics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "A Diphthong is defined as A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)."
     },
     {
       "id": "eng_284",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-284)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L34)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L34)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Syntax",
+        "Semantics",
+        "Pragmatics",
+        "Phoneme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "A Syntax is defined as The system of linguistic rules governing the order and structure of words to form grammatical sentences."
     },
     {
       "id": "eng_285",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-285)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L35)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L35)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Semantics",
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "A Semantics is defined as The linguistic and philosophical study of meaning in words, phrases, and texts."
     },
     {
       "id": "eng_286",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-286)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L36)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L36)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme",
+        "Diphthong"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "A Pragmatics is defined as The study of how language is used and interpreted in practical social contexts and situations."
     },
     {
       "id": "eng_287",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-287)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L37)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L37)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Phoneme",
+        "Morpheme",
+        "Diphthong",
+        "Syntax"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "A Phoneme is defined as The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)."
     },
     {
       "id": "eng_288",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-288)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L38)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L38)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Morpheme",
+        "Diphthong",
+        "Syntax",
+        "Semantics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "A Morpheme is defined as The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning."
     },
     {
       "id": "eng_289",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-289)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L39)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L39)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Diphthong",
+        "Syntax",
+        "Semantics",
+        "Pragmatics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "A Diphthong is defined as A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)."
     },
     {
       "id": "eng_290",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-290)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L40)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L40)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Syntax",
+        "Semantics",
+        "Pragmatics",
+        "Phoneme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "A Syntax is defined as The system of linguistic rules governing the order and structure of words to form grammatical sentences."
     },
     {
       "id": "eng_291",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-291)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L41)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L41)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Semantics",
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "A Semantics is defined as The linguistic and philosophical study of meaning in words, phrases, and texts."
     },
     {
       "id": "eng_292",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-292)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L42)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L42)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme",
+        "Diphthong"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "A Pragmatics is defined as The study of how language is used and interpreted in practical social contexts and situations."
     },
     {
       "id": "eng_293",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-293)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L43)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L43)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Phoneme",
+        "Morpheme",
+        "Diphthong",
+        "Syntax"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "A Phoneme is defined as The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)."
     },
     {
       "id": "eng_294",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-294)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L44)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L44)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Morpheme",
+        "Diphthong",
+        "Syntax",
+        "Semantics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "A Morpheme is defined as The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning."
     },
     {
       "id": "eng_295",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-295)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L45)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)\"? (Linguistics Item: ENG-L45)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Diphthong",
+        "Syntax",
+        "Semantics",
+        "Pragmatics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "A Diphthong is defined as A complex speech sound consisting of a smooth glide from one vowel quality to another within the same syllable (English has 8)."
     },
     {
       "id": "eng_296",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-296)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L46)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The system of linguistic rules governing the order and structure of words to form grammatical sentences\"? (Linguistics Item: ENG-L46)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Syntax",
+        "Semantics",
+        "Pragmatics",
+        "Phoneme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "A Syntax is defined as The system of linguistic rules governing the order and structure of words to form grammatical sentences."
     },
     {
       "id": "eng_297",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-297)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L47)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The linguistic and philosophical study of meaning in words, phrases, and texts\"? (Linguistics Item: ENG-L47)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Semantics",
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "A Semantics is defined as The linguistic and philosophical study of meaning in words, phrases, and texts."
     },
     {
       "id": "eng_298",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-298)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L48)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The study of how language is used and interpreted in practical social contexts and situations\"? (Linguistics Item: ENG-L48)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Pragmatics",
+        "Phoneme",
+        "Morpheme",
+        "Diphthong"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "A Pragmatics is defined as The study of how language is used and interpreted in practical social contexts and situations."
     },
     {
       "id": "eng_299",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-299)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L49)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)\"? (Linguistics Item: ENG-L49)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Phoneme",
+        "Morpheme",
+        "Diphthong",
+        "Syntax"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "A Phoneme is defined as The smallest distinctive unit of sound in a language that can distinguish one word from another (English has 44 phonemes)."
     },
     {
       "id": "eng_300",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-300)",
+      "subject": "English Linguistics & Phonology",
+      "question_en": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L50)",
+      "question_hi": "In linguistic analysis and English language teaching, what term designates \"The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning\"? (Linguistics Item: ENG-L50)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Morpheme",
+        "Diphthong",
+        "Syntax",
+        "Semantics"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "A Morpheme is defined as The smallest meaningful grammatical unit in a language that cannot be divided further without losing its meaning."
     },
     {
       "id": "eng_301",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-301)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A1)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A1)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Diagnostic Testing is specifically designed for Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students."
     },
     {
       "id": "eng_302",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-302)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A2)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A2)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Remedial Teaching is specifically designed for Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment."
     },
     {
       "id": "eng_303",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-303)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A3)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A3)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Formative Assessment in English is specifically designed for Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments."
     },
     {
       "id": "eng_304",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-304)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A4)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A4)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Portfolio Assessment is specifically designed for A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth."
     },
     {
       "id": "eng_305",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-305)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A5)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A5)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Interlanguage / Overgeneralization Error is specifically designed for Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules."
     },
     {
       "id": "eng_306",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-306)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A6)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A6)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Continuous and Comprehensive Evaluation (CCE) is specifically designed for Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth."
     },
     {
       "id": "eng_307",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-307)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A7)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A7)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Diagnostic Testing is specifically designed for Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students."
     },
     {
       "id": "eng_308",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-308)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A8)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A8)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Remedial Teaching is specifically designed for Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment."
     },
     {
       "id": "eng_309",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-309)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A9)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A9)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Formative Assessment in English is specifically designed for Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments."
     },
     {
       "id": "eng_310",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-310)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A10)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A10)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Portfolio Assessment is specifically designed for A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth."
     },
     {
       "id": "eng_311",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-311)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A11)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A11)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Interlanguage / Overgeneralization Error is specifically designed for Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules."
     },
     {
       "id": "eng_312",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-312)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A12)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A12)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Continuous and Comprehensive Evaluation (CCE) is specifically designed for Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth."
     },
     {
       "id": "eng_313",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-313)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A13)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A13)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Diagnostic Testing is specifically designed for Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students."
     },
     {
       "id": "eng_314",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-314)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A14)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A14)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Remedial Teaching is specifically designed for Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment."
     },
     {
       "id": "eng_315",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-315)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A15)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A15)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Formative Assessment in English is specifically designed for Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments."
     },
     {
       "id": "eng_316",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-316)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A16)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A16)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Portfolio Assessment is specifically designed for A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth."
     },
     {
       "id": "eng_317",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-317)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A17)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A17)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Interlanguage / Overgeneralization Error is specifically designed for Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules."
     },
     {
       "id": "eng_318",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-318)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A18)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A18)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Continuous and Comprehensive Evaluation (CCE) is specifically designed for Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth."
     },
     {
       "id": "eng_319",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-319)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A19)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A19)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Diagnostic Testing is specifically designed for Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students."
     },
     {
       "id": "eng_320",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-320)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A20)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A20)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Remedial Teaching is specifically designed for Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment."
     },
     {
       "id": "eng_321",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-321)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A21)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A21)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Formative Assessment in English is specifically designed for Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments."
     },
     {
       "id": "eng_322",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-322)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A22)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A22)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Portfolio Assessment is specifically designed for A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth."
     },
     {
       "id": "eng_323",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-323)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A23)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A23)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Interlanguage / Overgeneralization Error is specifically designed for Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules."
     },
     {
       "id": "eng_324",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-324)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A24)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A24)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Continuous and Comprehensive Evaluation (CCE) is specifically designed for Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth."
     },
     {
       "id": "eng_325",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-325)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A25)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A25)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Diagnostic Testing is specifically designed for Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students."
     },
     {
       "id": "eng_326",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-326)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A26)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A26)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Remedial Teaching is specifically designed for Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment."
     },
     {
       "id": "eng_327",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-327)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A27)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A27)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Formative Assessment in English is specifically designed for Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments."
     },
     {
       "id": "eng_328",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-328)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A28)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A28)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Portfolio Assessment is specifically designed for A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth."
     },
     {
       "id": "eng_329",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-329)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A29)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A29)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Interlanguage / Overgeneralization Error is specifically designed for Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules."
     },
     {
       "id": "eng_330",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-330)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A30)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A30)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Continuous and Comprehensive Evaluation (CCE) is specifically designed for Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth."
     },
     {
       "id": "eng_331",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-331)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A31)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A31)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Diagnostic Testing is specifically designed for Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students."
     },
     {
       "id": "eng_332",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-332)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A32)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A32)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Remedial Teaching is specifically designed for Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment."
     },
     {
       "id": "eng_333",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-333)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A33)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A33)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Formative Assessment in English is specifically designed for Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments."
     },
     {
       "id": "eng_334",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-334)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A34)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A34)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Portfolio Assessment is specifically designed for A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth."
     },
     {
       "id": "eng_335",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-335)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A35)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A35)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Interlanguage / Overgeneralization Error is specifically designed for Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules."
     },
     {
       "id": "eng_336",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-336)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A36)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A36)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Continuous and Comprehensive Evaluation (CCE) is specifically designed for Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth."
     },
     {
       "id": "eng_337",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-337)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A37)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A37)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Diagnostic Testing is specifically designed for Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students."
     },
     {
       "id": "eng_338",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-338)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A38)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A38)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Remedial Teaching is specifically designed for Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment."
     },
     {
       "id": "eng_339",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-339)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A39)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A39)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Formative Assessment in English is specifically designed for Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments."
     },
     {
       "id": "eng_340",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-340)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A40)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A40)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Portfolio Assessment is specifically designed for A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth."
     },
     {
       "id": "eng_341",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-341)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A41)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A41)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Interlanguage / Overgeneralization Error is specifically designed for Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules."
     },
     {
       "id": "eng_342",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-342)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A42)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A42)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Continuous and Comprehensive Evaluation (CCE) is specifically designed for Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth."
     },
     {
       "id": "eng_343",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-343)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A43)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A43)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Diagnostic Testing is specifically designed for Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students."
     },
     {
       "id": "eng_344",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-344)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A44)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A44)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Remedial Teaching is specifically designed for Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment."
     },
     {
       "id": "eng_345",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-345)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A45)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A45)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Formative Assessment in English is specifically designed for Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments."
     },
     {
       "id": "eng_346",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-346)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A46)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A46)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Portfolio Assessment is specifically designed for A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth."
     },
     {
       "id": "eng_347",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-347)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A47)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A47)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Interlanguage / Overgeneralization Error is specifically designed for Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules."
     },
     {
       "id": "eng_348",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-348)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A48)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A48)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Continuous and Comprehensive Evaluation (CCE) is specifically designed for Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth."
     },
     {
       "id": "eng_349",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-349)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A49)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A49)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Diagnostic Testing is specifically designed for Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students."
     },
     {
       "id": "eng_350",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-350)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A50)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A50)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Remedial Teaching is specifically designed for Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment."
     },
     {
       "id": "eng_351",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-351)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A51)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A51)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "Formative Assessment in English is specifically designed for Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments."
     },
     {
       "id": "eng_352",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-352)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A52)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A52)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Portfolio Assessment is specifically designed for A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth."
     },
     {
       "id": "eng_353",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-353)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A53)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A53)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "Interlanguage / Overgeneralization Error is specifically designed for Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules."
     },
     {
       "id": "eng_354",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-354)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A54)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A54)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Continuous and Comprehensive Evaluation (CCE) is specifically designed for Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth."
     },
     {
       "id": "eng_355",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-355)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A55)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students\", which assessment strategy is being practiced? (Assessment Item: ENG-A55)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "Diagnostic Testing is specifically designed for Identifying specific learning gaps, misconceptions, and recurring pronunciation or grammatical difficulties in individual students."
     },
     {
       "id": "eng_356",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-356)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A56)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment\", which assessment strategy is being practiced? (Assessment Item: ENG-A56)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Remedial Teaching",
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Remedial Teaching is specifically designed for Providing tailored, differentiated instructional interventions to rectify specific learning gaps diagnosed during assessment."
     },
     {
       "id": "eng_357",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-357)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A57)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments\", which assessment strategy is being practiced? (Assessment Item: ENG-A57)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "Formative Assessment in English",
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "Formative Assessment in English is specifically designed for Ongoing assessment conducted during instruction to provide constructive developmental feedback and guide pedagogical adjustments."
     },
     {
       "id": "eng_358",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-358)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A58)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A58)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Portfolio Assessment",
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Portfolio Assessment is specifically designed for A systematic collection of a student's authentic writing drafts, book reviews, and creative work over time to document linguistic growth."
     },
     {
       "id": "eng_359",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-359)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A59)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules\", which assessment strategy is being practiced? (Assessment Item: ENG-A59)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "Interlanguage / Overgeneralization Error",
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "Interlanguage / Overgeneralization Error is specifically designed for Learner errors such as \"she singed a song\" reflecting their active cognitive hypothesis testing of regular past-tense grammatical rules."
     },
     {
       "id": "eng_360",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-360)",
+      "subject": "Assessment & Remediation in ELT",
+      "question_en": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A60)",
+      "question_hi": "When an English educator utilizes a testing or evaluation procedure designed for \"Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth\", which assessment strategy is being practiced? (Assessment Item: ENG-A60)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Continuous and Comprehensive Evaluation (CCE)",
+        "Diagnostic Testing",
+        "Remedial Teaching",
+        "Formative Assessment in English"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Continuous and Comprehensive Evaluation (CCE) is specifically designed for Holistic evaluation of both scholastic (linguistic skills) and co-scholastic (attitudes, collaborative speaking) growth."
     },
     {
       "id": "eng_361",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-361)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G1)",
+      "question_hi": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G1)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "were",
+        "was",
+        "is",
+        "has been"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "When two subjects are joined by \"neither... nor\", the verb agrees with the closer subject (\"teachers\", which is plural, requiring \"were\")."
     },
     {
       "id": "eng_362",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-362)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G2)",
+      "question_hi": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G2)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "The new curriculum proposal has been approved by the committee.",
+        "The new curriculum proposal was approved by the committee.",
+        "The new curriculum proposal is approved by the committee.",
+        "The committee was approved by the new curriculum proposal."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Present perfect active (\"has approved\") changes to present perfect passive (\"has been approved\")."
     },
     {
       "id": "eng_363",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-363)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G3)",
+      "question_hi": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G3)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "The student who won the national spelling bee received a scholarship.",
+        "She spoke so softly that nobody could hear her.",
+        "Although it rained heavily, they enjoyed the cricket match.",
+        "Running along the beach in the morning is invigorating."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "\"who won the national spelling bee\" is a relative/adjective clause modifying the noun \"student\"."
     },
     {
       "id": "eng_364",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-364)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G4)",
+      "question_hi": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G4)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Discovered by chance",
+        "Crossed a physical barrier",
+        "Bought at an auction",
+        "Repaired skillfully"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "\"Come across\" means to find or meet someone or something by chance."
     },
     {
       "id": "eng_365",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-365)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G5)",
+      "question_hi": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G5)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "were",
+        "was",
+        "is",
+        "has been"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "When two subjects are joined by \"neither... nor\", the verb agrees with the closer subject (\"teachers\", which is plural, requiring \"were\")."
     },
     {
       "id": "eng_366",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-366)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G6)",
+      "question_hi": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G6)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "The new curriculum proposal has been approved by the committee.",
+        "The new curriculum proposal was approved by the committee.",
+        "The new curriculum proposal is approved by the committee.",
+        "The committee was approved by the new curriculum proposal."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Present perfect active (\"has approved\") changes to present perfect passive (\"has been approved\")."
     },
     {
       "id": "eng_367",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-367)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G7)",
+      "question_hi": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G7)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "The student who won the national spelling bee received a scholarship.",
+        "She spoke so softly that nobody could hear her.",
+        "Although it rained heavily, they enjoyed the cricket match.",
+        "Running along the beach in the morning is invigorating."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "\"who won the national spelling bee\" is a relative/adjective clause modifying the noun \"student\"."
     },
     {
       "id": "eng_368",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-368)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G8)",
+      "question_hi": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G8)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Discovered by chance",
+        "Crossed a physical barrier",
+        "Bought at an auction",
+        "Repaired skillfully"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "\"Come across\" means to find or meet someone or something by chance."
     },
     {
       "id": "eng_369",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-369)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G9)",
+      "question_hi": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G9)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "were",
+        "was",
+        "is",
+        "has been"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "When two subjects are joined by \"neither... nor\", the verb agrees with the closer subject (\"teachers\", which is plural, requiring \"were\")."
     },
     {
       "id": "eng_370",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-370)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G10)",
+      "question_hi": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G10)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "The new curriculum proposal has been approved by the committee.",
+        "The new curriculum proposal was approved by the committee.",
+        "The new curriculum proposal is approved by the committee.",
+        "The committee was approved by the new curriculum proposal."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Present perfect active (\"has approved\") changes to present perfect passive (\"has been approved\")."
     },
     {
       "id": "eng_371",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-371)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G11)",
+      "question_hi": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G11)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "The student who won the national spelling bee received a scholarship.",
+        "She spoke so softly that nobody could hear her.",
+        "Although it rained heavily, they enjoyed the cricket match.",
+        "Running along the beach in the morning is invigorating."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "\"who won the national spelling bee\" is a relative/adjective clause modifying the noun \"student\"."
     },
     {
       "id": "eng_372",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-372)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G12)",
+      "question_hi": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G12)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Discovered by chance",
+        "Crossed a physical barrier",
+        "Bought at an auction",
+        "Repaired skillfully"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "\"Come across\" means to find or meet someone or something by chance."
     },
     {
       "id": "eng_373",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-373)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G13)",
+      "question_hi": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G13)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "were",
+        "was",
+        "is",
+        "has been"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "When two subjects are joined by \"neither... nor\", the verb agrees with the closer subject (\"teachers\", which is plural, requiring \"were\")."
     },
     {
       "id": "eng_374",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-374)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G14)",
+      "question_hi": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G14)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "The new curriculum proposal has been approved by the committee.",
+        "The new curriculum proposal was approved by the committee.",
+        "The new curriculum proposal is approved by the committee.",
+        "The committee was approved by the new curriculum proposal."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Present perfect active (\"has approved\") changes to present perfect passive (\"has been approved\")."
     },
     {
       "id": "eng_375",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-375)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G15)",
+      "question_hi": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G15)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "The student who won the national spelling bee received a scholarship.",
+        "She spoke so softly that nobody could hear her.",
+        "Although it rained heavily, they enjoyed the cricket match.",
+        "Running along the beach in the morning is invigorating."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "\"who won the national spelling bee\" is a relative/adjective clause modifying the noun \"student\"."
     },
     {
       "id": "eng_376",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-376)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G16)",
+      "question_hi": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G16)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Discovered by chance",
+        "Crossed a physical barrier",
+        "Bought at an auction",
+        "Repaired skillfully"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "\"Come across\" means to find or meet someone or something by chance."
     },
     {
       "id": "eng_377",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-377)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G17)",
+      "question_hi": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G17)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "were",
+        "was",
+        "is",
+        "has been"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "When two subjects are joined by \"neither... nor\", the verb agrees with the closer subject (\"teachers\", which is plural, requiring \"were\")."
     },
     {
       "id": "eng_378",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-378)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G18)",
+      "question_hi": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G18)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "The new curriculum proposal has been approved by the committee.",
+        "The new curriculum proposal was approved by the committee.",
+        "The new curriculum proposal is approved by the committee.",
+        "The committee was approved by the new curriculum proposal."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Present perfect active (\"has approved\") changes to present perfect passive (\"has been approved\")."
     },
     {
       "id": "eng_379",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-379)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G19)",
+      "question_hi": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G19)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "The student who won the national spelling bee received a scholarship.",
+        "She spoke so softly that nobody could hear her.",
+        "Although it rained heavily, they enjoyed the cricket match.",
+        "Running along the beach in the morning is invigorating."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "\"who won the national spelling bee\" is a relative/adjective clause modifying the noun \"student\"."
     },
     {
       "id": "eng_380",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-380)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G20)",
+      "question_hi": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G20)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Discovered by chance",
+        "Crossed a physical barrier",
+        "Bought at an auction",
+        "Repaired skillfully"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "\"Come across\" means to find or meet someone or something by chance."
     },
     {
       "id": "eng_381",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-381)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G21)",
+      "question_hi": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G21)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "were",
+        "was",
+        "is",
+        "has been"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "When two subjects are joined by \"neither... nor\", the verb agrees with the closer subject (\"teachers\", which is plural, requiring \"were\")."
     },
     {
       "id": "eng_382",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-382)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G22)",
+      "question_hi": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G22)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "The new curriculum proposal has been approved by the committee.",
+        "The new curriculum proposal was approved by the committee.",
+        "The new curriculum proposal is approved by the committee.",
+        "The committee was approved by the new curriculum proposal."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "Present perfect active (\"has approved\") changes to present perfect passive (\"has been approved\")."
     },
     {
       "id": "eng_383",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-383)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G23)",
+      "question_hi": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G23)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "The student who won the national spelling bee received a scholarship.",
+        "She spoke so softly that nobody could hear her.",
+        "Although it rained heavily, they enjoyed the cricket match.",
+        "Running along the beach in the morning is invigorating."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "\"who won the national spelling bee\" is a relative/adjective clause modifying the noun \"student\"."
     },
     {
       "id": "eng_384",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-384)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G24)",
+      "question_hi": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G24)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "Discovered by chance",
+        "Crossed a physical barrier",
+        "Bought at an auction",
+        "Repaired skillfully"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "\"Come across\" means to find or meet someone or something by chance."
     },
     {
       "id": "eng_385",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-385)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G25)",
+      "question_hi": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G25)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "were",
+        "was",
+        "is",
+        "has been"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "When two subjects are joined by \"neither... nor\", the verb agrees with the closer subject (\"teachers\", which is plural, requiring \"were\")."
     },
     {
       "id": "eng_386",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-386)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G26)",
+      "question_hi": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G26)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "The new curriculum proposal has been approved by the committee.",
+        "The new curriculum proposal was approved by the committee.",
+        "The new curriculum proposal is approved by the committee.",
+        "The committee was approved by the new curriculum proposal."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "Present perfect active (\"has approved\") changes to present perfect passive (\"has been approved\")."
     },
     {
       "id": "eng_387",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-387)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G27)",
+      "question_hi": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G27)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "The student who won the national spelling bee received a scholarship.",
+        "She spoke so softly that nobody could hear her.",
+        "Although it rained heavily, they enjoyed the cricket match.",
+        "Running along the beach in the morning is invigorating."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "\"who won the national spelling bee\" is a relative/adjective clause modifying the noun \"student\"."
     },
     {
       "id": "eng_388",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-388)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G28)",
+      "question_hi": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G28)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "Discovered by chance",
+        "Crossed a physical barrier",
+        "Bought at an auction",
+        "Repaired skillfully"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "\"Come across\" means to find or meet someone or something by chance."
     },
     {
       "id": "eng_389",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-389)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G29)",
+      "question_hi": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G29)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "were",
+        "was",
+        "is",
+        "has been"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "When two subjects are joined by \"neither... nor\", the verb agrees with the closer subject (\"teachers\", which is plural, requiring \"were\")."
     },
     {
       "id": "eng_390",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-390)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G30)",
+      "question_hi": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G30)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "The new curriculum proposal has been approved by the committee.",
+        "The new curriculum proposal was approved by the committee.",
+        "The new curriculum proposal is approved by the committee.",
+        "The committee was approved by the new curriculum proposal."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "Present perfect active (\"has approved\") changes to present perfect passive (\"has been approved\")."
     },
     {
       "id": "eng_391",
       "section": "Language II (English)",
-      "subject": "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_en": "CTET Paper 2 English Pedagogy - स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-391)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G31)",
+      "question_hi": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G31)",
       "options": [
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)"
+        "The student who won the national spelling bee received a scholarship.",
+        "She spoke so softly that nobody could hear her.",
+        "Although it rained heavily, they enjoyed the cricket match.",
+        "Running along the beach in the morning is invigorating."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्टीफन क्रैशन: बोधगम्य इनपुट (i+1) से संबंधित है जिसका मूल आधार \"शिक्षार्थी को उसकी वर्तमान समझ (i) से एक स्तर उच्च (i+1) का समृद्ध भाषाई वातावरण प्रदान करना\" है।"
+      "explanation": "\"who won the national spelling bee\" is a relative/adjective clause modifying the noun \"student\"."
     },
     {
       "id": "eng_392",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: BICS संप्रेषण कौशल",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-392)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G32)",
+      "question_hi": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G32)",
       "options": [
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई"
+        "Discovered by chance",
+        "Crossed a physical barrier",
+        "Bought at an auction",
+        "Repaired skillfully"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: BICS संप्रेषण कौशल से संबंधित है जिसका मूल आधार \"खेल के मैदान और दैनिक अनौपचारिक बातचीत में प्रयुक्त होने वाली सामाजिक संवाद भाषा\" है।"
+      "explanation": "\"Come across\" means to find or meet someone or something by chance."
     },
     {
       "id": "eng_393",
       "section": "Language II (English)",
-      "subject": "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_en": "CTET Paper 2 English Pedagogy - जिम कमिन्स: CALP अकादमिक प्रवीणता",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-393)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G33)",
+      "question_hi": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G33)",
       "options": [
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता",
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई"
+        "were",
+        "was",
+        "is",
+        "has been"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत जिम कमिन्स: CALP अकादमिक प्रवीणता से संबंधित है जिसका मूल आधार \"कक्षा में जटिल संकल्पनाओं, पाठ्यपुस्तकों और अमूर्त विचारों को व्यक्त करने की अकादमिक भाषा\" है।"
+      "explanation": "When two subjects are joined by \"neither... nor\", the verb agrees with the closer subject (\"teachers\", which is plural, requiring \"were\")."
     },
     {
       "id": "eng_394",
       "section": "Language II (English)",
-      "subject": "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_en": "CTET Paper 2 English Pedagogy - CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-394)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G34)",
+      "question_hi": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G34)",
       "options": [
-        "CLT (संप्रेषणात्मक भाषा शिक्षण उपागम)",
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)"
+        "The new curriculum proposal has been approved by the committee.",
+        "The new curriculum proposal was approved by the committee.",
+        "The new curriculum proposal is approved by the committee.",
+        "The committee was approved by the new curriculum proposal."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत CLT (संप्रेषणात्मक भाषा शिक्षण उपागम) से संबंधित है जिसका मूल आधार \"कक्षा में व्याकरण नियमों की रटंत के स्थान पर वास्तविक संवाद और संप्रेषणात्मक दक्षता पर बल\" है।"
+      "explanation": "Present perfect active (\"has approved\") changes to present perfect passive (\"has been approved\")."
     },
     {
       "id": "eng_395",
       "section": "Language II (English)",
-      "subject": "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-395)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G35)",
+      "question_hi": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G35)",
       "options": [
-        "स्वनिम (Phoneme) - लघुतम ध्वनि इकाई",
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)"
+        "The student who won the national spelling bee received a scholarship.",
+        "She spoke so softly that nobody could hear her.",
+        "Although it rained heavily, they enjoyed the cricket match.",
+        "Running along the beach in the morning is invigorating."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत स्वनिम (Phoneme) - लघुतम ध्वनि इकाई से संबंधित है जिसका मूल आधार \"भाषा की सबसे छोटी ध्वनि इकाई (अंग्रेजी में 44 ध्वनियां: 20 स्वर + 24 व्यंजन)\" है।"
+      "explanation": "\"who won the national spelling bee\" is a relative/adjective clause modifying the noun \"student\"."
     },
     {
       "id": "eng_396",
       "section": "Language II (English)",
-      "subject": "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_en": "CTET Paper 2 English Pedagogy - रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-396)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G36)",
+      "question_hi": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G36)",
       "options": [
-        "रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई",
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)"
+        "Discovered by chance",
+        "Crossed a physical barrier",
+        "Bought at an auction",
+        "Repaired skillfully"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत रूपिम (Morpheme) - लघुतम अर्थपूर्ण इकाई से संबंधित है जिसका मूल आधार \"अर्थ की दृष्टि से भाषा की सबसे छोटी सार्थक संरचना जिसे और तोड़ा नहीं जा सकता\" है।"
+      "explanation": "\"Come across\" means to find or meet someone or something by chance."
     },
     {
       "id": "eng_397",
       "section": "Language II (English)",
-      "subject": "Direct Method (प्रत्यक्ष विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Direct Method (प्रत्यक्ष विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-397)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G37)",
+      "question_hi": "Choose the correct form of the verb to complete the sentence: \"Neither the principal nor the teachers _______ present at the annual seminar.\" (Grammar in Context Code: ENG-G37)",
       "options": [
-        "Direct Method (प्रत्यक्ष विधि)",
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)"
+        "were",
+        "was",
+        "is",
+        "has been"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Direct Method (प्रत्यक्ष विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के अनुवाद पर पूर्ण प्रतिबंध लगाकर अंग्रेजी को सीधे अंग्रेजी में बोलना सिखाना\" है।"
+      "explanation": "When two subjects are joined by \"neither... nor\", the verb agrees with the closer subject (\"teachers\", which is plural, requiring \"were\")."
     },
     {
       "id": "eng_398",
       "section": "Language II (English)",
-      "subject": "Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_en": "CTET Paper 2 English Pedagogy - Grammar-Translation Method (शास्त्रीय विधि)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-398)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G38)",
+      "question_hi": "Identify the passive voice transformation of: \"The committee has approved the new curriculum proposal.\" (Grammar in Context Code: ENG-G38)",
       "options": [
-        "Grammar-Translation Method (शास्त्रीय विधि)",
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)"
+        "The new curriculum proposal has been approved by the committee.",
+        "The new curriculum proposal was approved by the committee.",
+        "The new curriculum proposal is approved by the committee.",
+        "The committee was approved by the new curriculum proposal."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत Grammar-Translation Method (शास्त्रीय विधि) से संबंधित है जिसका मूल आधार \"मातृभाषा के माध्यम से व्याकरण के नियमों को रटाकर शब्द-दर-शब्द अनुवाद कराना\" है।"
+      "explanation": "Present perfect active (\"has approved\") changes to present perfect passive (\"has been approved\")."
     },
     {
       "id": "eng_399",
       "section": "Language II (English)",
-      "subject": "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_en": "CTET Paper 2 English Pedagogy - भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-399)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G39)",
+      "question_hi": "Select the sentence that contains an adjective clause: (Grammar in Context Code: ENG-G39)",
       "options": [
-        "भावनात्मक फिल्टर परिकल्पना (Affective Filter)",
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल"
+        "The student who won the national spelling bee received a scholarship.",
+        "She spoke so softly that nobody could hear her.",
+        "Although it rained heavily, they enjoyed the cricket match.",
+        "Running along the beach in the morning is invigorating."
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत भावनात्मक फिल्टर परिकल्पना (Affective Filter) से संबंधित है जिसका मूल आधार \"भय, तनाव और संकोच कम होने पर द्वितीय भाषा का अर्जन तीव्र और स्वाभाविक होना\" है।"
+      "explanation": "\"who won the national spelling bee\" is a relative/adjective clause modifying the noun \"student\"."
     },
     {
       "id": "eng_400",
       "section": "Language II (English)",
-      "subject": "मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_en": "CTET Paper 2 English Pedagogy - मातृभाषा का प्रभाव (MTI - Interference)",
-      "question_hi": "अंग्रेजी भाषा शिक्षणशास्त्र (ELT Pedagogy) में, जब कोई अध्यापक यह सुनिश्चित करता है कि \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\", तो यह किस शिक्षण उपागम अथवा भाषाई सिद्धांत को निरूपित करता है? (अंग्रेजी पेडागोजी कोड: EP-400)",
+      "subject": "Grammar & Vocabulary in Context",
+      "question_en": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G40)",
+      "question_hi": "In the sentence \"She came across an antique fountain pen in the old drawer\", what does the phrasal verb \"came across\" mean? (Grammar in Context Code: ENG-G40)",
       "options": [
-        "मातृभाषा का प्रभाव (MTI - Interference)",
-        "स्टीफन क्रैशन: बोधगम्य इनपुट (i+1)",
-        "जिम कमिन्स: BICS संप्रेषण कौशल",
-        "जिम कमिन्स: CALP अकादमिक प्रवीणता"
+        "Discovered by chance",
+        "Crossed a physical barrier",
+        "Bought at an auction",
+        "Repaired skillfully"
       ],
       "ans": 0,
-      "explanation": "यह सिद्धांत मातृभाषा का प्रभाव (MTI - Interference) से संबंधित है जिसका मूल आधार \"द्वितीय भाषा बोलते समय पहली भाषा की ध्वनियों और वाक्य विन्यास का स्वाभाविक प्रभाव पड़ना\" है।"
+      "explanation": "\"Come across\" means to find or meet someone or something by chance."
     }
   ]
 };

@@ -506,6 +506,19 @@
     if (el.btnClosePalette) el.btnClosePalette.addEventListener('click', () => togglePalette(false));
     if (el.paletteBackdrop) el.paletteBackdrop.addEventListener('click', () => togglePalette(false));
 
+    // Delegated click handler on palette grid for instantaneous, reliable response
+    if (el.paletteGrid) {
+      el.paletteGrid.addEventListener('click', (e) => {
+        const btn = e.target.closest('.pal-btn');
+        if (!btn) return;
+        const idx = parseInt(btn.dataset.idx, 10);
+        if (!isNaN(idx)) {
+          jumpToQuestion(idx);
+          togglePalette(false);
+        }
+      });
+    }
+
     // Exam footer navigation buttons
     if (el.btnSaveNext) el.btnSaveNext.addEventListener('click', onSaveAndNext);
     if (el.btnMarkReview) el.btnMarkReview.addEventListener('click', onMarkForReview);
@@ -730,7 +743,7 @@
     });
   }
 
-  // Render Question (Question text & options in Hindi medium)
+  // Render Question (English format for English subject; Hindi for CDP, SST, Hindi)
   function renderCurrentQuestion() {
     if (!state.currentTest || !state.currentTest.questions) return;
     const q = state.currentTest.questions[state.currentIndex];
@@ -738,22 +751,40 @@
 
     state.visited[state.currentIndex] = true;
 
-    // English label for badge
+    // Badge question number
     if (el.qNumberBadge) {
       el.qNumberBadge.textContent = `Question ${state.currentIndex + 1} of ${state.currentTest.totalQuestions}`;
     }
     
-    // Question text in Hindi
+    // Check if current question is Language II (English)
+    const isEnglishSection = q.section === 'Language II (English)' || q.section === 'Language II' || (state.currentTest.mode === 'full' && state.currentIndex >= 120);
+
+    // Medium Badge update
+    const badgeEl = document.querySelector('.q-badge-hindi');
+    if (badgeEl) {
+      if (isEnglishSection) {
+        badgeEl.textContent = '🇬🇧 English Language & Pedagogy';
+        badgeEl.style.background = 'rgba(56, 189, 248, 0.15)';
+        badgeEl.style.borderColor = 'rgba(56, 189, 248, 0.4)';
+        badgeEl.style.color = '#38BDF8';
+      } else {
+        badgeEl.textContent = '🇮🇳 Hindi Medium';
+        badgeEl.style.background = 'rgba(239, 68, 68, 0.15)';
+        badgeEl.style.borderColor = 'rgba(239, 68, 68, 0.35)';
+        badgeEl.style.color = '#FCA5A5';
+      }
+    }
+
+    // Question stem: English for English subject, Hindi for others
     if (el.qTextHi) {
-      el.qTextHi.textContent = q.question_hi || q.question_en;
+      el.qTextHi.textContent = (isEnglishSection ? (q.question_en || q.question_hi || q.question) : (q.question_hi || q.question_en || q.question)) || '';
       el.qTextHi.style.display = 'block';
     }
     if (el.qTextEn) {
-      el.qTextEn.textContent = q.question_en || '';
       el.qTextEn.style.display = 'none';
     }
 
-    // Render Options in Hindi
+    // Render Options
     if (el.optionsList) {
       el.optionsList.innerHTML = '';
       const selectedAns = state.answers[state.currentIndex];
@@ -780,7 +811,7 @@
     }
 
     updateActiveSectionTab();
-    renderPalette();
+    updatePaletteCurrent();
     persistActiveSession();
   }
 
@@ -790,17 +821,27 @@
     el.paletteGrid.innerHTML = '';
     const total = state.currentTest.questions.length;
 
+    const frag = document.createDocumentFragment();
     for (let i = 0; i < total; i++) {
       const btn = document.createElement('button');
       btn.className = `pal-btn ${getPaletteStatusClass(i)} ${i === state.currentIndex ? 'current' : ''}`;
       btn.type = 'button';
       btn.textContent = i + 1;
-      btn.addEventListener('click', () => {
-        jumpToQuestion(i);
-        // Auto-close palette drawer on mobile/tablet when question selected
-        togglePalette(false);
-      });
-      el.paletteGrid.appendChild(btn);
+      btn.dataset.idx = String(i);
+      frag.appendChild(btn);
+    }
+    el.paletteGrid.appendChild(frag);
+  }
+
+  function updatePaletteCurrent() {
+    if (!el.paletteGrid) return;
+    const btns = el.paletteGrid.children;
+    for (let i = 0; i < btns.length; i++) {
+      if (i === state.currentIndex) {
+        btns[i].classList.add('current');
+      } else {
+        btns[i].classList.remove('current');
+      }
     }
   }
 
@@ -825,22 +866,39 @@
   }
 
   function jumpToQuestion(idx) {
+    if (idx < 0 || !state.currentTest || idx >= state.currentTest.totalQuestions) return;
+    const prevIdx = state.currentIndex;
     state.currentIndex = idx;
+    updatePaletteItem(prevIdx);
     renderCurrentQuestion();
+    updatePaletteItem(idx);
     persistActiveSession();
+  }
+
+  // Navigation Debounce Guard (prevents double skipping e.g. 4 -> 6)
+  let lastNavTimestamp = 0;
+  function isDebounced() {
+    const now = Date.now();
+    if (now - lastNavTimestamp < 260) return true;
+    lastNavTimestamp = now;
+    return false;
   }
 
   // Footer Actions
   function onSaveAndNext() {
+    if (isDebounced()) return;
     if (state.marked[state.currentIndex] && state.answers[state.currentIndex] !== undefined) {
       delete state.marked[state.currentIndex];
     }
+    updatePaletteItem(state.currentIndex);
     persistActiveSession();
     nextQuestion();
   }
 
   function onMarkForReview() {
+    if (isDebounced()) return;
     state.marked[state.currentIndex] = true;
+    updatePaletteItem(state.currentIndex);
     persistActiveSession();
     nextQuestion();
   }
@@ -854,17 +912,24 @@
   }
 
   function onPrevQuestion() {
+    if (isDebounced()) return;
     if (state.currentIndex > 0) {
+      const prevIdx = state.currentIndex;
       state.currentIndex--;
+      updatePaletteItem(prevIdx);
       renderCurrentQuestion();
+      updatePaletteItem(state.currentIndex);
       persistActiveSession();
     }
   }
 
   function nextQuestion() {
     if (state.currentIndex < state.currentTest.totalQuestions - 1) {
+      const prevIdx = state.currentIndex;
       state.currentIndex++;
+      updatePaletteItem(prevIdx);
       renderCurrentQuestion();
+      updatePaletteItem(state.currentIndex);
       persistActiveSession();
     } else {
       showToast('You have reached the final question. Click "Submit Exam" when ready.');

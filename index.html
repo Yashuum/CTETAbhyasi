@@ -360,12 +360,9 @@
       <!-- Injected dynamically: CDP, Social Studies, Language I, Language II -->
     </div>
 
-    <!-- Backdrop for Drawer Palette on Tablets/Mobile -->
-    <div id="palette-backdrop" class="palette-backdrop" onclick="window.togglePalette && window.togglePalette(false)"></div>
-
     <!-- Exam Body: Question + Sidebar Palette -->
     <div class="exam-body">
-      <!-- Main Question Container (Questions & Options in Hindi Medium) -->
+      <!-- Main Question Container (Questions & Options in CBT Exam Format) -->
       <div class="question-container">
         <div class="q-header">
           <div id="q-number-badge" class="q-number-badge">Question 1 / 150</div>
@@ -377,17 +374,20 @@
 
         <div class="q-content">
           <div class="q-bilingual-block">
-            <!-- Question stem strictly in Hindi -->
-            <div id="q-text-hi" class="q-primary-text">प्रश्न लोड हो रहा है...</div>
+            <!-- Question stem: Hindi for CDP/SST/Hindi, English for English section -->
+            <div id="q-text-hi" class="q-primary-text">Question Loading...</div>
             <div id="q-text-en" style="font-size: 12px; color: var(--mt); display: none;"></div>
           </div>
         </div>
 
-        <!-- Options List (In Hindi, 100% visible on tablets without scrolling) -->
+        <!-- Options List (100% visible on tablets without scrolling) -->
         <div id="options-list" class="options-list">
-          <!-- Dynamically populated options A, B, C, D in Hindi -->
+          <!-- Dynamically populated options A, B, C, D -->
         </div>
       </div>
+
+      <!-- Backdrop for Drawer Palette on Tablets/Mobile (Inside exam-body so stacking context matches sidebar) -->
+      <div id="palette-backdrop" class="palette-backdrop" onclick="window.togglePalette && window.togglePalette(false)"></div>
 
       <!-- Palette Sidebar (Side Column on Desktop, Slide-in Drawer on Tablets/Mobile) -->
       <aside id="palette-sidebar" class="palette-sidebar">
@@ -417,16 +417,16 @@
       </aside>
     </div>
 
-    <!-- Exam Bottom Action Bar (In English, with Guaranteed Click Handlers) -->
+    <!-- Exam Bottom Action Bar (CBT Navigation) -->
     <footer class="exam-footer">
       <div class="footer-left">
-        <button id="btn-mark-review" class="btn-cbt btn-mark" onclick="window.onMarkForReview && window.onMarkForReview()" type="button">Mark for Review</button>
-        <button id="btn-clear" class="btn-cbt btn-clear" onclick="window.onClearResponse && window.onClearResponse()" type="button">Clear Response</button>
+        <button id="btn-mark-review" class="btn-cbt btn-mark" type="button">Mark for Review</button>
+        <button id="btn-clear" class="btn-cbt btn-clear" type="button">Clear Response</button>
       </div>
       <div class="footer-right">
-        <button id="btn-prev" class="btn-cbt btn-prev" onclick="window.onPrevQuestion && window.onPrevQuestion()" type="button">◀ Previous</button>
-        <button id="btn-save-next" class="btn-cbt btn-save-next" onclick="window.onSaveAndNext && window.onSaveAndNext()" type="button">Save & Next ▶</button>
-        <button id="btn-submit-exam" class="btn-cbt btn-submit" onclick="window.showSubmitModal && window.showSubmitModal()" type="button">Submit Exam 🚀</button>
+        <button id="btn-prev" class="btn-cbt btn-prev" type="button">◀ Previous</button>
+        <button id="btn-save-next" class="btn-cbt btn-save-next" type="button">Save & Next ▶</button>
+        <button id="btn-submit-exam" class="btn-cbt btn-submit" type="button">Submit Exam 🚀</button>
       </div>
     </footer>
   </section>
