@@ -296,8 +296,8 @@ class CTETQuestionGenerator {
 
     const sectionLabel = sectionNames[sectionKey] || 'Social Studies / Social Science';
 
-    // Break count into manageable chunks of up to 15 questions to avoid Gemini token limit truncation
-    const chunkSize = 15;
+    // Break count into manageable small batches of 5 questions for rapid response and live feedback
+    const chunkSize = 5;
     const chunks = [];
     let remaining = count;
     while (remaining > 0) {
@@ -310,9 +310,18 @@ class CTETQuestionGenerator {
 
     for (let cIdx = 0; cIdx < chunks.length; cIdx++) {
       const chunkCount = chunks[cIdx];
+      let elapsedSeconds = 0;
+      
       if (onProgress) {
-        onProgress(`Synthesizing batch ${cIdx + 1}/${chunks.length} (${allGenerated.length}/${count} questions)...`);
+        onProgress(`Synthesizing batch ${cIdx + 1}/${chunks.length} (${allGenerated.length}/${count} questions completed)...`);
       }
+
+      const timer = setInterval(() => {
+        elapsedSeconds++;
+        if (onProgress) {
+          onProgress(`Synthesizing batch ${cIdx + 1}/${chunks.length} (${allGenerated.length}/${count} completed) • ${elapsedSeconds}s elapsed...`);
+        }
+      }, 1000);
 
       const prompt = `You are a senior CBSE CTET Paper 2 examination creator.
 Generate exactly ${chunkCount} completely new, authentic multiple-choice questions aligned with CTET Paper 2 (Classes VI-VIII).
@@ -340,59 +349,91 @@ STRICT JSON schema:
 ]
 Do not output markdown codeblocks. Output valid, raw JSON only.`;
 
-      const modelsToTry = ['gemini-3.8-flash', 'gemini-2.5-flash', 'gemini-1.5-flash'];
+      // Active production models from Google Gemini API
+      const modelsToTry = ['gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-1.5-pro'];
       let chunkSuccess = false;
       let lastError = null;
 
-      for (const model of modelsToTry) {
-        try {
-          const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+      try {
+        for (const model of modelsToTry) {
+          try {
+            const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey.trim()}`;
 
-          const response = await fetch(endpoint, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              contents: [{ parts: [{ text: prompt }] }],
-              generationConfig: {
-                temperature: 0.7,
-                responseMimeType: 'application/json'
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 30000); // 30s timeout guard
+
+            const response = await fetch(endpoint, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              signal: controller.signal,
+              body: JSON.stringify({
+                contents: [{ parts: [{ text: prompt }] }],
+                generationConfig: {
+                  temperature: 0.7,
+                  responseMimeType: 'application/json'
+                }
+              })
+            });
+
+            clearTimeout(timeoutId);
+
+            if (!response.ok) {
+              let msg = `HTTP ${response.status}`;
+              try {
+                const errData = await response.json();
+                msg = errData.error?.message || msg;
+              } catch (e) {}
+
+              if (response.status === 404 || msg.includes('not found') || msg.includes('no longer available')) {
+                lastError = new Error(msg);
+                continue; // Try next model in modelsToTry
               }
-            })
-          });
+              if (response.status === 400 && (msg.includes('API key not valid') || msg.includes('API_KEY_INVALID'))) {
+                throw new Error('Invalid Gemini API Key. Please verify your API key in Google AI Studio.');
+              }
+              if (response.status === 429) {
+                throw new Error('Gemini API rate limit reached (Quota Exceeded). Please wait 30 seconds and try again.');
+              }
+              throw new Error(`Gemini API Error: ${msg}`);
+            }
 
-          if (!response.ok) {
-            const err = await response.json();
-            const msg = err.error?.message || `HTTP ${response.status}`;
-            if (msg.includes('no longer available') || msg.includes('not found') || response.status === 404) {
-              lastError = new Error(msg);
+            const data = await response.json();
+            const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+            if (!rawText) throw new Error('No question content received from Gemini');
+
+            let newQuestions = null;
+            // Robust JSON extraction matching array brackets
+            const jsonArrayMatch = rawText.match(/\[\s*\{[\s\S]*\}\s*\]/);
+            if (jsonArrayMatch) {
+              try {
+                newQuestions = JSON.parse(jsonArrayMatch[0]);
+              } catch (e) {}
+            }
+
+            if (!newQuestions) {
+              const cleaned = rawText.replace(/```(?:json)?/gi, '').trim();
+              newQuestions = JSON.parse(cleaned);
+            }
+
+            if (Array.isArray(newQuestions) && newQuestions.length) {
+              allGenerated.push(...newQuestions);
+              chunkSuccess = true;
+              break;
+            }
+          } catch (err) {
+            lastError = err;
+            if (err.name === 'AbortError') {
+              lastError = new Error(`Request to ${model} timed out after 30s`);
               continue;
             }
-            throw new Error(msg);
-          }
-
-          const data = await response.json();
-          const rawText = data.candidates?.[0]?.content?.parts?.[0]?.text;
-          if (!rawText) throw new Error('No question content received from Gemini');
-
-          let newQuestions = [];
-          try {
-            newQuestions = JSON.parse(rawText);
-          } catch (e) {
-            const cleaned = rawText.replace(/```json/g, '').replace(/```/g, '').trim();
-            newQuestions = JSON.parse(cleaned);
-          }
-
-          if (Array.isArray(newQuestions) && newQuestions.length) {
-            allGenerated.push(...newQuestions);
-            chunkSuccess = true;
-            break;
-          }
-        } catch (err) {
-          lastError = err;
-          if (!err.message.includes('no longer available') && !err.message.includes('not found')) {
+            if (err.message && (err.message.includes('not found') || err.message.includes('no longer available') || err.message.includes('timed out'))) {
+              continue;
+            }
             throw err;
           }
         }
+      } finally {
+        clearInterval(timer);
       }
 
       if (!chunkSuccess) {

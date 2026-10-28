@@ -1784,7 +1784,7 @@
     const sectionKey = el.replenishSectionSelect ? el.replenishSectionSelect.value : 'social_studies';
     const count = el.replenishCountSelect ? parseInt(el.replenishCountSelect.value, 10) : 10;
 
-    if (el.genStatus) el.genStatus.textContent = `🤖 Asking Gemini 3.8 Flash to synthesize ${count} new questions...`;
+    if (el.genStatus) el.genStatus.textContent = `🤖 Contacting Gemini 2.0 Flash to synthesize ${count} new questions...`;
     if (el.btnReplenishBank) el.btnReplenishBank.disabled = true;
 
     try {
