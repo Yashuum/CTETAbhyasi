@@ -1066,6 +1066,43 @@ body.simulated-fullscreen #exam-screen {
   background: #0B1320;
 }
 
+/* Palette Status Filter Tabs (Point 1 Upgrade) */
+.palette-filter-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  padding: 8px 10px;
+  background: #080E1A;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pal-filter-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #94A3B8;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 6px 2px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.pal-filter-btn:hover {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38BDF8;
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.pal-filter-btn.active {
+  background: #0284C7;
+  color: #FFFFFF;
+  border-color: #38BDF8;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
+}
+
 .legend-item {
   display: flex;
   align-items: center;
@@ -1636,4 +1673,337 @@ body.simulated-fullscreen #exam-screen {
     font-size: 10.5px;
     font-weight: 700;
   }
+}
+
+/* =========================================================
+   POINT 1 & POINT 2 UPGRADES & POLISHED CBT UI/UX STYLING
+   ========================================================= */
+
+/* Font Size Zoom Controller (Point 1 Upgrade) */
+.font-zoom-ctrl {
+  display: flex;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 2px;
+  gap: 2px;
+}
+
+.btn-zoom-btn {
+  background: transparent;
+  border: none;
+  color: #94A3B8;
+  font-weight: 800;
+  font-size: 11px;
+  padding: 4px 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: 1;
+}
+
+.btn-zoom-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+}
+
+.btn-zoom-btn.btn-zoom-active {
+  background: rgba(56, 189, 248, 0.25);
+  color: #38BDF8;
+  font-weight: 900;
+}
+
+/* Dynamic Font Zoom Classes applied to Question Container */
+.question-container.font-zoom-small .q-primary-text { font-size: 14px !important; }
+.question-container.font-zoom-small .option-text { font-size: 13.5px !important; }
+
+.question-container.font-zoom-normal .q-primary-text { font-size: 16px !important; }
+.question-container.font-zoom-normal .option-text { font-size: 14.5px !important; }
+
+.question-container.font-zoom-large .q-primary-text { font-size: 18.5px !important; }
+.question-container.font-zoom-large .option-text { font-size: 16.5px !important; }
+
+/* Star / Bookmark Question Button (Point 2 Upgrade) */
+.btn-star-question {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #CBD5E1;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.15s ease;
+}
+
+.btn-star-question:hover {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: #F59E0B;
+  color: #FBBF24;
+}
+
+.btn-star-question.starred {
+  background: rgba(245, 158, 11, 0.22);
+  border-color: #F59E0B;
+  color: #FBBF24;
+}
+
+.btn-starred-pill {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1.5px solid rgba(245, 158, 11, 0.35);
+  color: #FBBF24;
+  font-size: 12.5px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.btn-starred-pill:hover {
+  background: rgba(245, 158, 11, 0.22);
+  transform: translateY(-1px);
+}
+
+/* CBSE CTET Official Qualifying Cutoff Meter (Point 2 Upgrade) */
+.ctet-cutoff-card {
+  background: linear-gradient(135deg, #131E32 0%, #0F172A 100%);
+  border: 1.5px solid rgba(56, 189, 248, 0.25);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cutoff-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.cutoff-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cutoff-icon {
+  font-size: 26px;
+}
+
+.cutoff-status-pill {
+  font-size: 12.5px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.cutoff-status-pill.qualified-gen {
+  background: rgba(34, 197, 94, 0.18);
+  color: #4ADE80;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+}
+
+.cutoff-status-pill.qualified-obc {
+  background: rgba(56, 189, 248, 0.18);
+  color: #38BDF8;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+}
+
+.cutoff-status-pill.not-qualified {
+  background: rgba(239, 68, 68, 0.18);
+  color: #F87171;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.cutoff-track-wrap {
+  margin: 20px 0 32px;
+  position: relative;
+}
+
+.cutoff-track {
+  height: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  position: relative;
+  overflow: visible;
+}
+
+.cutoff-fill {
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #0284C7 0%, #38BDF8 60%, #22C55E 100%);
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cutoff-pin {
+  position: absolute;
+  top: -6px;
+  width: 2px;
+  height: 24px;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.cutoff-pin.pin-obc { background: #38BDF8; }
+.cutoff-pin.pin-gen { background: #22C55E; }
+
+.pin-lbl {
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10.5px;
+  font-weight: 800;
+  white-space: nowrap;
+  color: #CBD5E1;
+  background: rgba(15, 23, 42, 0.95);
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cutoff-verdict-msg {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #E2E8F0;
+  padding-top: 6px;
+}
+
+/* "Re-Test My Mistakes" Action Button (Point 2 Upgrade) */
+.btn-retest-mistakes {
+  background: linear-gradient(135deg, #DC2626 0%, #991B1B 100%);
+  color: #FFFFFF;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  font-weight: 800;
+  font-size: 13.5px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-retest-mistakes:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.5);
+  background: linear-gradient(135deg, #EF4444 0%, #B91C1C 100%);
+}
+
+/* Polished Option Selected State */
+.option-item:active {
+  transform: scale(0.995);
+}
+
+/* Starred Item in Solutions Card */
+.sol-card-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-sol-star {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #94A3B8;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-sol-star:hover, .btn-sol-star.starred {
+  color: #FBBF24;
+  border-color: #F59E0B;
+  background: rgba(245, 158, 11, 0.1);
+}
+
+/* Light Mode Polish for Point 1 & Point 2 UI Components */
+body.light-mode .ctet-cutoff-card {
+  background: #FFFFFF;
+  border-color: #CBD5E1;
+  color: #1E293B;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+body.light-mode .cutoff-verdict-msg {
+  color: #334155;
+}
+
+body.light-mode .palette-filter-bar {
+  background: #F1F5F9;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+body.light-mode .pal-filter-btn {
+  background: #FFFFFF;
+  color: #475569;
+  border-color: #CBD5E1;
+}
+
+body.light-mode .pal-filter-btn:hover {
+  background: rgba(2, 132, 199, 0.1);
+  color: #0284C7;
+  border-color: #0284C7;
+}
+
+body.light-mode .pal-filter-btn.active {
+  background: #0284C7;
+  color: #FFFFFF;
+  border-color: #0284C7;
+}
+
+body.light-mode .font-zoom-ctrl {
+  background: #FFFFFF;
+  border-color: #CBD5E1;
+}
+
+body.light-mode .btn-zoom-btn {
+  color: #475569;
+}
+
+body.light-mode .btn-zoom-btn:hover {
+  background: #F1F5F9;
+  color: #0F172A;
+}
+
+body.light-mode .btn-zoom-btn.btn-zoom-active {
+  background: rgba(2, 132, 199, 0.12);
+  color: #0284C7;
+}
+
+body.light-mode .btn-star-question {
+  background: #F8FAFC;
+  border-color: #CBD5E1;
+  color: #334155;
+}
+
+body.light-mode .btn-star-question:hover,
+body.light-mode .btn-star-question.starred {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: #F59E0B;
+  color: #D97706;
+}
+
+body.light-mode .pin-lbl {
+  background: #FFFFFF;
+  color: #334155;
+  border-color: #CBD5E1;
 }

@@ -36,7 +36,10 @@
     candidateName: '',
     userAttempts: [],
     pendingTestPaper: null,
-    cdTimer: null
+    cdTimer: null,
+    paletteFilter: 'all', // 'all' | 'ans' | 'no' | 'mk'
+    fontZoom: 'normal',   // 'small' | 'normal' | 'large'
+    lastMistakes: []      // array of questions missed in last submitted test
   };
 
   // Screen Wake Lock Sentinel
@@ -144,6 +147,41 @@
     el.solutionsContainer = document.getElementById('solutions-container');
     el.btnBackHome = document.getElementById('btn-back-home');
     el.toast = document.getElementById('toast');
+
+    // Palette Filters (Point 1 Upgrade)
+    el.palFltAll = document.getElementById('pal-flt-all');
+    el.palFltAns = document.getElementById('pal-flt-ans');
+    el.palFltNo = document.getElementById('pal-flt-no');
+    el.palFltMk = document.getElementById('pal-flt-mk');
+    el.cntFilterAll = document.getElementById('cnt-filter-all');
+    el.cntFilterAns = document.getElementById('cnt-filter-ans');
+    el.cntFilterNo = document.getElementById('cnt-filter-no');
+    el.cntFilterMk = document.getElementById('cnt-filter-mk');
+
+    // Font Zoom Controls (Point 1 Upgrade)
+    el.btnZoomOut = document.getElementById('btn-zoom-out');
+    el.btnZoomReset = document.getElementById('btn-zoom-reset');
+    el.btnZoomIn = document.getElementById('btn-zoom-in');
+    el.questionContainer = document.querySelector('.question-container');
+
+    // Star Question (Point 2 Upgrade)
+    el.btnStarQuestion = document.getElementById('btn-star-question');
+    el.starIcon = document.getElementById('star-icon');
+    el.starText = document.getElementById('star-text');
+    el.btnOpenStarredModal = document.getElementById('btn-open-starred-modal');
+    el.cntStarredTotal = document.getElementById('cnt-starred-total');
+    el.starredModal = document.getElementById('starred-modal');
+    el.starredListContainer = document.getElementById('starred-list-container');
+    el.btnClearStarred = document.getElementById('btn-clear-starred');
+    el.btnPracticeStarred = document.getElementById('btn-practice-starred');
+    el.btnCloseStarredModal = document.getElementById('btn-close-starred-modal');
+
+    // CTET Qualifying Cutoff Benchmark & Re-Test Mistakes (Point 2 Upgrade)
+    el.cutoffStatusPill = document.getElementById('cutoff-status-pill');
+    el.cutoffProgressFill = document.getElementById('cutoff-progress-fill');
+    el.cutoffVerdictMsg = document.getElementById('cutoff-verdict-msg');
+    el.btnRetestMistakes = document.getElementById('btn-retest-mistakes');
+    el.mistakesCountBadge = document.getElementById('mistakes-count-badge');
   }
 
   // Active Exam Session Key for Refresh Lock & Crash Recovery
@@ -157,6 +195,9 @@
     cacheDomElements();
     setupTheme();
     loadCandidateName();
+    initFontZoom();
+    initPaletteFilters();
+    updateStarredUI();
     setupEventListeners();
     setupRefreshLock();
     setupVisibilityWakeLock();
@@ -301,6 +342,312 @@
     } else {
       el.examScreen.classList.toggle('palette-open');
     }
+  }
+
+  // ==========================================
+  // Font Size Zoom Controller (Point 1 Upgrade)
+  // ==========================================
+  function initFontZoom() {
+    const saved = localStorage.getItem('ctet_font_zoom') || 'normal';
+    setFontZoom(saved, false);
+
+    if (el.btnZoomOut) el.btnZoomOut.addEventListener('click', () => setFontZoom('small'));
+    if (el.btnZoomReset) el.btnZoomReset.addEventListener('click', () => setFontZoom('normal'));
+    if (el.btnZoomIn) el.btnZoomIn.addEventListener('click', () => setFontZoom('large'));
+  }
+
+  function setFontZoom(level, notify = true) {
+    state.fontZoom = level;
+    try { localStorage.setItem('ctet_font_zoom', level); } catch (e) {}
+
+    const qc = el.questionContainer || document.querySelector('.question-container');
+    if (qc) {
+      qc.classList.remove('font-zoom-small', 'font-zoom-normal', 'font-zoom-large');
+      qc.classList.add(`font-zoom-${level}`);
+    }
+
+    [el.btnZoomOut, el.btnZoomReset, el.btnZoomIn].forEach(btn => {
+      if (btn) btn.classList.remove('btn-zoom-active');
+    });
+
+    if (level === 'small' && el.btnZoomOut) el.btnZoomOut.classList.add('btn-zoom-active');
+    if (level === 'normal' && el.btnZoomReset) el.btnZoomReset.classList.add('btn-zoom-active');
+    if (level === 'large' && el.btnZoomIn) el.btnZoomIn.classList.add('btn-zoom-active');
+
+    if (notify) {
+      const lbl = level === 'small' ? 'Compact (90%)' : (level === 'large' ? 'Large (115%)' : 'Normal (100%)');
+      showToast(`🔍 Font zoom set to ${lbl}`);
+    }
+  }
+
+  // ==========================================
+  // Question Palette Status Filters (Point 1 Upgrade)
+  // ==========================================
+  function initPaletteFilters() {
+    const filterBtns = [
+      { btn: el.palFltAll, type: 'all' },
+      { btn: el.palFltAns, type: 'ans' },
+      { btn: el.palFltNo, type: 'no' },
+      { btn: el.palFltMk, type: 'mk' }
+    ];
+
+    filterBtns.forEach(({ btn, type }) => {
+      if (btn) {
+        btn.addEventListener('click', () => applyPaletteFilter(type));
+      }
+    });
+  }
+
+  function applyPaletteFilter(filterType) {
+    state.paletteFilter = filterType;
+
+    const btns = [
+      { btn: el.palFltAll, type: 'all' },
+      { btn: el.palFltAns, type: 'ans' },
+      { btn: el.palFltNo, type: 'no' },
+      { btn: el.palFltMk, type: 'mk' }
+    ];
+    btns.forEach(({ btn, type }) => {
+      if (btn) {
+        if (type === filterType) btn.classList.add('active');
+        else btn.classList.remove('active');
+      }
+    });
+
+    if (!el.paletteGrid) return;
+    const palButtons = el.paletteGrid.children;
+    for (let i = 0; i < palButtons.length; i++) {
+      const btn = palButtons[i];
+      const isAnswered = state.answers[i] !== undefined;
+      const isMarked = !!state.marked[i];
+      let visible = true;
+
+      if (filterType === 'ans') {
+        visible = isAnswered;
+      } else if (filterType === 'no') {
+        visible = !isAnswered;
+      } else if (filterType === 'mk') {
+        visible = isMarked;
+      } else {
+        visible = true; // 'all'
+      }
+
+      btn.style.display = visible ? '' : 'none';
+    }
+  }
+
+  function updatePaletteCounts() {
+    if (!state.currentTest) return;
+    const total = state.currentTest.totalQuestions;
+    let ansCount = 0;
+    let markedCount = 0;
+
+    for (let i = 0; i < total; i++) {
+      if (state.answers[i] !== undefined) ansCount++;
+      if (state.marked[i]) markedCount++;
+    }
+    const notAnsCount = total - ansCount;
+
+    if (el.cntFilterAll) el.cntFilterAll.textContent = total;
+    if (el.cntFilterAns) el.cntFilterAns.textContent = ansCount;
+    if (el.cntFilterNo) el.cntFilterNo.textContent = Math.max(0, notAnsCount);
+    if (el.cntFilterMk) el.cntFilterMk.textContent = markedCount;
+  }
+
+  // ==========================================
+  // Starred / Bookmarked Questions (Point 2 Upgrade)
+  // ==========================================
+  const STARRED_STORAGE_KEY = 'ctet_starred_questions_v1';
+
+  function getStarredQuestions() {
+    try {
+      return JSON.parse(localStorage.getItem(STARRED_STORAGE_KEY) || '[]');
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function saveStarredQuestions(list) {
+    try {
+      localStorage.setItem(STARRED_STORAGE_KEY, JSON.stringify(list));
+    } catch (e) {
+      console.warn('Failed to save starred questions:', e);
+    }
+  }
+
+  function getQuestionKey(q) {
+    if (!q) return '';
+    if (q.id) return String(q.id);
+    return (q.section || '') + '::' + (q.question_hi || q.question_en || q.question || '').slice(0, 60);
+  }
+
+  function isQuestionStarred(q) {
+    if (!q) return false;
+    const key = getQuestionKey(q);
+    const starred = getStarredQuestions();
+    return starred.some(item => getQuestionKey(item) === key);
+  }
+
+  function toggleStarQuestion(q, notify = true) {
+    if (!q) return false;
+    const key = getQuestionKey(q);
+    let starred = getStarredQuestions();
+    const exists = starred.some(item => getQuestionKey(item) === key);
+    let isNowStarred = false;
+
+    if (exists) {
+      starred = starred.filter(item => getQuestionKey(item) !== key);
+      isNowStarred = false;
+      if (notify) showToast('☆ Question removed from Starred bookmarks');
+    } else {
+      starred.unshift({
+        id: q.id || `q_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
+        section: q.section || 'General',
+        subject: q.subject || '',
+        question_hi: q.question_hi || q.question || '',
+        question_en: q.question_en || q.question || '',
+        question: q.question || q.question_hi || '',
+        options: q.options || [],
+        ans: q.ans,
+        explanation: q.explanation || '',
+        starredAt: Date.now()
+      });
+      isNowStarred = true;
+      if (notify) showToast('⭐ Question added to Starred bookmarks!');
+    }
+
+    saveStarredQuestions(starred);
+    updateStarredUI();
+    updateStarQuestionBtn();
+    return isNowStarred;
+  }
+
+  function updateStarQuestionBtn() {
+    if (!el.btnStarQuestion || !state.currentTest) return;
+    const curQ = state.currentTest.questions[state.currentIndex];
+    if (!curQ) return;
+    const starred = isQuestionStarred(curQ);
+
+    if (starred) {
+      el.btnStarQuestion.classList.add('starred');
+      if (el.starIcon) el.starIcon.textContent = '⭐';
+      if (el.starText) el.starText.textContent = 'Starred';
+    } else {
+      el.btnStarQuestion.classList.remove('starred');
+      if (el.starIcon) el.starIcon.textContent = '☆';
+      if (el.starText) el.starText.textContent = 'Star';
+    }
+  }
+
+  function updateStarredUI() {
+    const count = getStarredQuestions().length;
+    if (el.cntStarredTotal) el.cntStarredTotal.textContent = count;
+  }
+
+  function openStarredModal() {
+    updateStarredUI();
+    renderStarredList();
+    if (el.starredModal) el.starredModal.classList.add('active');
+  }
+
+  function closeStarredModal() {
+    if (el.starredModal) el.starredModal.classList.remove('active');
+  }
+
+  function clearAllStarred() {
+    const starred = getStarredQuestions();
+    if (!starred.length) {
+      showToast('Starred list is already empty.');
+      return;
+    }
+    if (confirm('Are you sure you want to clear all starred questions?')) {
+      saveStarredQuestions([]);
+      updateStarredUI();
+      renderStarredList();
+      updateStarQuestionBtn();
+      showToast('🗑️ All starred questions cleared.');
+    }
+  }
+
+  function practiceStarredQuestions() {
+    const starred = getStarredQuestions();
+    if (!starred.length) {
+      alert('You have no starred questions yet! Click the "⭐ Star" button during mock tests or solutions review to save questions for focused practice.');
+      return;
+    }
+    closeStarredModal();
+
+    const testPaper = {
+      title: `⭐ Starred Questions Practice Drill (${starred.length} Qs)`,
+      totalQuestions: starred.length,
+      duration: Math.max(5, Math.ceil(starred.length * 1)),
+      questions: JSON.parse(JSON.stringify(starred)),
+      mode: 'starred'
+    };
+
+    launchExam(testPaper);
+    showToast(`🎯 Launching Starred Questions Drill with ${starred.length} questions!`);
+  }
+
+  function renderStarredList() {
+    if (!el.starredListContainer) return;
+    const list = getStarredQuestions();
+
+    if (!list.length) {
+      el.starredListContainer.innerHTML = `
+        <div style="text-align: center; color: var(--mt); padding: 36px 16px;">
+          <div style="font-size: 32px; margin-bottom: 8px;">⭐</div>
+          <div style="font-weight: 700; margin-bottom: 4px;">No Starred Questions Yet</div>
+          <p style="font-size: 13px;">Click the <strong>"☆ Star"</strong> button on any question during test practice or inside the solution review to save questions you want to revise later.</p>
+        </div>
+      `;
+      if (el.btnPracticeStarred) el.btnPracticeStarred.disabled = true;
+      return;
+    }
+
+    if (el.btnPracticeStarred) el.btnPracticeStarred.disabled = false;
+    el.starredListContainer.innerHTML = '';
+
+    list.forEach((q, idx) => {
+      const card = document.createElement('div');
+      card.className = 'solution-card';
+      card.style.background = 'rgba(255, 255, 255, 0.03)';
+      card.style.border = '1px solid rgba(255, 255, 255, 0.08)';
+      card.style.padding = '14px';
+
+      const optChar = String.fromCharCode(65 + q.ans);
+      const correctOptText = (q.options && q.options[q.ans]) ? q.options[q.ans] : '';
+
+      card.innerHTML = `
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+          <span style="font-size:11.5px; font-weight:800; color: #38BDF8; background: rgba(56, 189, 248, 0.12); padding: 3px 8px; border-radius: 4px;">
+            ${q.section || 'General'}
+          </span>
+          <button class="btn-sol-star starred" data-key="${getQuestionKey(q)}" type="button" title="Remove from Starred">
+            ✕ Remove
+          </button>
+        </div>
+        <div style="font-weight:700; margin:10px 0 8px; font-size:14px; line-height: 1.5;">
+          ${idx + 1}. ${q.question_hi || q.question_en}
+        </div>
+        <div style="font-size:12.5px; color:#4ADE80; background:rgba(34, 197, 94, 0.1); padding:8px 10px; border-radius:6px; margin-bottom:8px;">
+          Correct Answer: <strong>(${optChar}) ${correctOptText}</strong>
+        </div>
+        <div style="font-size:12px; color:var(--mt); line-height:1.45;">
+          <strong>Explanation:</strong> ${q.explanation || 'CTET Paper 2 Standard question.'}
+        </div>
+      `;
+
+      const rmBtn = card.querySelector('.btn-sol-star');
+      if (rmBtn) {
+        rmBtn.addEventListener('click', () => {
+          toggleStarQuestion(q, true);
+          renderStarredList();
+        });
+      }
+
+      el.starredListContainer.appendChild(card);
+    });
   }
 
   // ==========================================
@@ -519,6 +866,30 @@
       });
     }
 
+    // Star Question in CBT Toolbar
+    if (el.btnStarQuestion) {
+      el.btnStarQuestion.addEventListener('click', () => {
+        if (state.currentTest && state.currentTest.questions) {
+          const curQ = state.currentTest.questions[state.currentIndex];
+          if (curQ) toggleStarQuestion(curQ, true);
+        }
+      });
+    }
+
+    // Starred Modal Controls
+    if (el.btnOpenStarredModal) el.btnOpenStarredModal.addEventListener('click', openStarredModal);
+    if (el.btnCloseStarredModal) el.btnCloseStarredModal.addEventListener('click', closeStarredModal);
+    if (el.btnClearStarred) el.btnClearStarred.addEventListener('click', clearAllStarred);
+    if (el.btnPracticeStarred) el.btnPracticeStarred.addEventListener('click', practiceStarredQuestions);
+    if (el.starredModal) {
+      el.starredModal.addEventListener('click', (e) => {
+        if (e.target === el.starredModal) closeStarredModal();
+      });
+    }
+
+    // Re-Test Mistakes Drill
+    if (el.btnRetestMistakes) el.btnRetestMistakes.addEventListener('click', retestMistakes);
+
     // Exam footer navigation buttons
     if (el.btnSaveNext) el.btnSaveNext.addEventListener('click', onSaveAndNext);
     if (el.btnMarkReview) el.btnMarkReview.addEventListener('click', onMarkForReview);
@@ -662,6 +1033,8 @@
     buildSectionTabs();
     renderPalette();
     renderCurrentQuestion();
+    applyPaletteFilter('all');
+    updatePaletteCounts();
 
     // Start Real-Time Timer
     startTimer();
@@ -812,6 +1185,7 @@
 
     updateActiveSectionTab();
     updatePaletteCurrent();
+    updateStarQuestionBtn();
     persistActiveSession();
   }
 
@@ -831,6 +1205,8 @@
       frag.appendChild(btn);
     }
     el.paletteGrid.appendChild(frag);
+    applyPaletteFilter(state.paletteFilter || 'all');
+    updatePaletteCounts();
   }
 
   function updatePaletteCurrent() {
@@ -850,7 +1226,18 @@
     const btns = el.paletteGrid.children;
     if (btns[idx]) {
       btns[idx].className = `pal-btn ${getPaletteStatusClass(idx)} ${idx === state.currentIndex ? 'current' : ''}`;
+      // Respect active palette filter
+      if (state.paletteFilter && state.paletteFilter !== 'all') {
+        const isAns = state.answers[idx] !== undefined;
+        const isMk = !!state.marked[idx];
+        let visible = true;
+        if (state.paletteFilter === 'ans') visible = isAns;
+        else if (state.paletteFilter === 'no') visible = !isAns;
+        else if (state.paletteFilter === 'mk') visible = isMk;
+        btns[idx].style.display = visible ? '' : 'none';
+      }
     }
+    updatePaletteCounts();
   }
 
   function getPaletteStatusClass(idx) {
@@ -1041,6 +1428,29 @@
     // Render Solutions
     renderSolutionsReview(questions);
 
+    // Extract Mistakes for Focused Re-Test Drill (Point 2 Upgrade)
+    const mistakes = [];
+    questions.forEach((q, idx) => {
+      const userAns = state.answers[idx];
+      if (userAns !== q.ans) {
+        mistakes.push(q);
+      }
+    });
+    state.lastMistakes = mistakes;
+
+    if (el.mistakesCountBadge) el.mistakesCountBadge.textContent = mistakes.length;
+    if (el.btnRetestMistakes) {
+      if (mistakes.length > 0) {
+        el.btnRetestMistakes.style.display = 'inline-flex';
+        el.btnRetestMistakes.disabled = false;
+      } else {
+        el.btnRetestMistakes.style.display = 'none';
+      }
+    }
+
+    // Render Official CTET Cutoff Benchmark Meter (Point 2 Upgrade)
+    renderCutoffBenchmark(score, totalQ);
+
     // Save Attempt to localStorage (Keep last 5 attempts)
     saveAttemptRecord({
       testTitle: state.currentTest.title,
@@ -1159,7 +1569,7 @@
     });
   }
 
-  // Render Solutions Review (Hindi Questions & Explanations)
+  // Render Solutions Review (Hindi for CDP, SST, Hindi; authentic English for Language II)
   function renderSolutionsReview(questions) {
     if (!el.solutionsContainer) return;
     el.solutionsContainer.innerHTML = '';
@@ -1183,13 +1593,22 @@
       const userOptText = (userAns !== undefined && q.options && q.options[userAns]) ? q.options[userAns] : 'No option selected';
       const correctOptText = (q.options && q.options[q.ans]) ? q.options[q.ans] : '';
 
+      const isStarred = isQuestionStarred(q);
+      const isEnglishSec = q.section === 'Language II (English)' || q.section === 'Language II';
+      const questionText = (isEnglishSec ? (q.question_en || q.question_hi || q.question) : (q.question_hi || q.question_en || q.question)) || '';
+
       card.innerHTML = `
         <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
-          <span class="sol-badge ${statusClass}">${badgeText}</span>
-          <span style="font-size:12px;color:var(--mt);font-weight:600;">${q.section} • ${q.subject || ''}</span>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span class="sol-badge ${statusClass}">${badgeText}</span>
+            <span style="font-size:12px;color:var(--mt);font-weight:600;">${q.section} • ${q.subject || ''}</span>
+          </div>
+          <button class="btn-sol-star ${isStarred ? 'starred' : ''}" type="button" title="Bookmark / Star this question for later practice">
+            ${isStarred ? '⭐ Starred' : '☆ Star'}
+          </button>
         </div>
         <div style="font-weight:700;margin:10px 0;line-height:1.6;font-size:15px;">
-          Question ${idx + 1}. ${q.question_hi || q.question_en}
+          Question ${idx + 1}. ${questionText}
         </div>
         
         <div style="font-size:13px;display:flex;flex-direction:column;gap:6px;margin-bottom:12px;background:var(--bg);padding:10px 12px;border-radius:8px;">
@@ -1203,8 +1622,87 @@
         </div>
       `;
 
+      const starBtn = card.querySelector('.btn-sol-star');
+      if (starBtn) {
+        starBtn.addEventListener('click', () => {
+          const nowStarred = toggleStarQuestion(q, true);
+          if (nowStarred) {
+            starBtn.classList.add('starred');
+            starBtn.textContent = '⭐ Starred';
+          } else {
+            starBtn.classList.remove('starred');
+            starBtn.textContent = '☆ Star';
+          }
+        });
+      }
+
       el.solutionsContainer.appendChild(card);
     });
+  }
+
+  // ==========================================
+  // Re-Test Mistakes Drill (Point 2 Upgrade)
+  // ==========================================
+  function retestMistakes() {
+    if (!state.lastMistakes || state.lastMistakes.length === 0) {
+      showToast('🎉 Outstanding! You had no mistakes to re-test.');
+      return;
+    }
+
+    const count = state.lastMistakes.length;
+    const testPaper = {
+      title: `🔁 Mistakes Re-Test Drill (${count} Qs)`,
+      totalQuestions: count,
+      duration: Math.max(5, Math.ceil(count * 1)),
+      questions: JSON.parse(JSON.stringify(state.lastMistakes)),
+      mode: 'mistakes'
+    };
+
+    if (el.resultScreen) el.resultScreen.classList.remove('active');
+    launchExam(testPaper);
+    showToast(`🎯 Launching Re-Test Drill with ${count} missed questions! Master them now.`);
+  }
+
+  // ==========================================
+  // CBSE CTET Official Qualifying Benchmark Meter (Point 2 Upgrade)
+  // ==========================================
+  function renderCutoffBenchmark(score, totalQ) {
+    if (!el.cutoffStatusPill || !el.cutoffProgressFill || !el.cutoffVerdictMsg) return;
+
+    const pct = totalQ > 0 ? Math.round((score / totalQ) * 100) : 0;
+    const widthPct = Math.min(100, Math.max(0, pct));
+    el.cutoffProgressFill.style.width = widthPct + '%';
+
+    // Benchmark criteria:
+    // Full mock is 150 marks:
+    // General: 60% = 90 marks
+    // Reserved (OBC / SC / ST / PwD): 55% = 82 marks
+    const obcCutoffMarks = totalQ === 150 ? 82 : Math.ceil(Math.round(totalQ * 55) / 100);
+    const genCutoffMarks = totalQ === 150 ? 90 : Math.ceil(Math.round(totalQ * 60) / 100);
+
+    el.cutoffStatusPill.className = 'cutoff-status-pill';
+
+    if (score >= genCutoffMarks) {
+      el.cutoffStatusPill.classList.add('qualified-gen');
+      el.cutoffStatusPill.textContent = '✅ QUALIFIED (General & Reserved)';
+      el.cutoffVerdictMsg.innerHTML = `
+        🎉 <strong>Outstanding Achievement!</strong> You scored <strong>${score} / ${totalQ} (${pct}%)</strong>, safely surpassing both the <strong>General Cutoff (${genCutoffMarks} marks / 60%)</strong> and <strong>Reserved Cutoff (${obcCutoffMarks} marks / 55%)</strong>. You are in prime condition for the official CBSE CTET Paper 2 examination!
+      `;
+    } else if (score >= obcCutoffMarks) {
+      el.cutoffStatusPill.classList.add('qualified-obc');
+      el.cutoffStatusPill.textContent = '👍 QUALIFIED (OBC / SC / ST)';
+      el.cutoffVerdictMsg.innerHTML = `
+        👍 <strong>Qualified for Reserved Categories!</strong> You scored <strong>${score} / ${totalQ} (${pct}%)</strong>, clearing the qualifying cutoff for OBC / SC / ST / PwD (minimum <strong>${obcCutoffMarks} marks / 55%</strong>). Push for <strong>${genCutoffMarks - score} more marks</strong> to clear the General category cutoff (${genCutoffMarks} marks) as well!
+      `;
+    } else {
+      el.cutoffStatusPill.classList.add('not-qualified');
+      el.cutoffStatusPill.textContent = '❌ NOT QUALIFIED (< 55%)';
+      const neededForObc = obcCutoffMarks - score;
+      const neededForGen = genCutoffMarks - score;
+      el.cutoffVerdictMsg.innerHTML = `
+        📚 <strong>Needs Revision.</strong> You scored <strong>${score} / ${totalQ} (${pct}%)</strong>. CTET qualification requires minimum <strong>${obcCutoffMarks} marks (55%)</strong> for OBC/SC/ST (${neededForObc} marks away) or <strong>${genCutoffMarks} marks (60%)</strong> for General (${neededForGen} marks away). Use the <strong>"Re-Test My Mistakes"</strong> drill below to master the questions you missed!
+      `;
+    }
   }
 
   // Update Question Bank Coverage UI (Social Science Pool)
@@ -1306,6 +1804,13 @@
   window.togglePalette = togglePalette;
   window.backToHome = backToHome;
   window.jumpToQuestion = jumpToQuestion;
+  window.openStarredModal = openStarredModal;
+  window.closeStarredModal = closeStarredModal;
+  window.clearAllStarred = clearAllStarred;
+  window.practiceStarredQuestions = practiceStarredQuestions;
+  window.retestMistakes = retestMistakes;
+  window.setFontZoom = setFontZoom;
+  window.applyPaletteFilter = applyPaletteFilter;
 
   // Safe Multi-Environment Bootloader
   if (document.readyState === 'loading') {

@@ -54,7 +54,7 @@
           <span class="badge-tag">Zero-Duplicate Daily Engine</span>
           <span class="badge-tag">Social Studies / Social Science Focus</span>
           <span class="badge-tag">NEP 2020 Aligned</span>
-          <span class="badge-tag">🇮🇳 Hindi Medium Questions</span>
+          <span class="badge-tag">🇮🇳 Hindi Medium (Bilingual English)</span>
         </div>
       </div>
     </section>
@@ -63,8 +63,7 @@
     <div class="lang-notice-banner">
       <div class="lang-notice-icon">📢</div>
       <div class="lang-notice-content">
-        <strong>Notice for Candidates:</strong> This portal is tailored specifically for <strong>CTET Paper 2 (Social Science / सामाजिक अध्ययन)</strong> candidates. Question stems, options, and explanations are presented in <strong>Hindi Medium</strong>.
-        <span class="lang-notice-sub">Note: We are actively developing the complete English version and it will be updated soon!</span>
+        <strong>Notice for Candidates:</strong> This portal is tailored specifically for <strong>CTET Paper 2 (Social Science / सामाजिक अध्ययन)</strong> candidates. Question stems and options are presented in <strong>Hindi Medium</strong> for CDP, Social Science, and Hindi, and in <strong>authentic English format</strong> for Language II (English) matching the official CBSE CTET examination.
       </div>
     </div>
 
@@ -167,6 +166,9 @@
         <div class="history-title">
           <span>📊 Last 5 Mock Test Attempts & Subject Scorecards</span>
         </div>
+        <button id="btn-open-starred-modal" class="btn-starred-pill" onclick="window.openStarredModal && window.openStarredModal()" type="button" title="View Bookmarked Questions">
+          ⭐ Starred Questions (<strong id="cnt-starred-total">0</strong>)
+        </button>
       </div>
       <div id="empty-attempts-msg" style="text-align: center; color: var(--mt); font-size: 13px; padding: 18px 0;">
         No attempts recorded yet on this browser. Start a mock test below to track your performance!
@@ -339,6 +341,12 @@
         <p id="exam-paper-meta">150 Questions • 150 Minutes • 1 Mark Each</p>
       </div>
       <div class="exam-topbar-actions">
+        <!-- Font Zoom Controller (A- / A / A+) -->
+        <div class="font-zoom-ctrl" title="Adjust Question Text Size">
+          <button id="btn-zoom-out" class="btn-zoom-btn" type="button" title="Smaller Font Size (90%)">A−</button>
+          <button id="btn-zoom-reset" class="btn-zoom-btn btn-zoom-active" type="button" title="Default Font Size (100%)">A</button>
+          <button id="btn-zoom-in" class="btn-zoom-btn" type="button" title="Larger Font Size (115%)">A+</button>
+        </div>
         <!-- Palette Toggle (Particularly Useful for Tablets & Mobiles) -->
         <button id="btn-toggle-palette" class="btn-palette-toggle" onclick="window.togglePalette && window.togglePalette()" title="View Question Palette" type="button">
           <span>📊</span> <span id="pal-btn-text">Palette (150)</span>
@@ -368,6 +376,9 @@
           <div id="q-number-badge" class="q-number-badge">Question 1 / 150</div>
           <div class="q-tools">
             <span class="q-badge-hindi">🇮🇳 Hindi Medium</span>
+            <button id="btn-star-question" class="btn-star-question" type="button" title="Bookmark / Star this question for later review">
+              <span id="star-icon">☆</span> <span id="star-text">Star</span>
+            </button>
             <span id="q-marks-badge" class="q-marks-badge">+1.0 / -0.0</span>
           </div>
         </div>
@@ -406,6 +417,14 @@
           <div class="legend-item"><span class="legend-dot dot-mk"></span> Marked for Review</div>
           <div class="legend-item"><span class="legend-dot dot-mka"></span> Ans & Marked</div>
           <div class="legend-item"><span class="legend-dot dot-nv"></span> Not Visited</div>
+        </div>
+
+        <!-- Palette Status Filters (Point 1 Upgrade) -->
+        <div class="palette-filter-bar">
+          <button id="pal-flt-all" class="pal-filter-btn active" data-filter="all" type="button">All (<span id="cnt-filter-all">150</span>)</button>
+          <button id="pal-flt-ans" class="pal-filter-btn" data-filter="ans" type="button">Ans (<span id="cnt-filter-ans">0</span>)</button>
+          <button id="pal-flt-no" class="pal-filter-btn" data-filter="no" type="button">Not Ans (<span id="cnt-filter-no">0</span>)</button>
+          <button id="pal-flt-mk" class="pal-filter-btn" data-filter="mk" type="button">Review (<span id="cnt-filter-mk">0</span>)</button>
         </div>
 
         <!-- Palette Grid -->
@@ -482,6 +501,35 @@
       </div>
     </div>
 
+    <!-- Official CBSE CTET Qualifying Cutoff Benchmark Card (Point 2 Upgrade) -->
+    <div class="ctet-cutoff-card">
+      <div class="cutoff-header">
+        <div class="cutoff-title">
+          <span class="cutoff-icon">🎯</span>
+          <div>
+            <div style="font-weight: 800; font-size: 15px;">CBSE CTET Paper 2 Qualifying Benchmark</div>
+            <div style="font-size: 12px; color: var(--mt);">Minimum 60% (90/150) for General • 55% (82/150) for Reserved (OBC / SC / ST)</div>
+          </div>
+        </div>
+        <div id="cutoff-status-pill" class="cutoff-status-pill">Calculating...</div>
+      </div>
+
+      <!-- Visual Benchmark Bar -->
+      <div class="cutoff-track-wrap">
+        <div class="cutoff-track">
+          <div id="cutoff-progress-fill" class="cutoff-fill" style="width: 0%;"></div>
+          <!-- Benchmark Pins -->
+          <div class="cutoff-pin pin-obc" style="left: 54.67%;" title="OBC/SC/ST Qualifying: 82 Marks">
+            <span class="pin-lbl">82 (55%)</span>
+          </div>
+          <div class="cutoff-pin pin-gen" style="left: 60%;" title="General Qualifying: 90 Marks">
+            <span class="pin-lbl">90 (60%)</span>
+          </div>
+        </div>
+      </div>
+      <div id="cutoff-verdict-msg" class="cutoff-verdict-msg"></div>
+    </div>
+
     <!-- Analytics Cards -->
     <div class="analytics-grid">
       <!-- Accuracy Card -->
@@ -523,7 +571,12 @@
         <div style="font-family: var(--font-h); font-size: 18px; font-weight: 800;">
           Detailed Solutions & Pedagogical Explanations
         </div>
-        <button id="btn-back-home" class="btn-start" onclick="window.backToHome && window.backToHome()" type="button">◀ Back to Dashboard</button>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button id="btn-retest-mistakes" class="btn-retest-mistakes" onclick="window.retestMistakes && window.retestMistakes()" type="button" style="display: none;">
+            <span>🔁</span> Re-Test My Mistakes (<strong id="mistakes-count-badge">0</strong>)
+          </button>
+          <button id="btn-back-home" class="btn-start" onclick="window.backToHome && window.backToHome()" type="button">◀ Back to Dashboard</button>
+        </div>
       </div>
 
       <div id="solutions-container">
@@ -531,6 +584,30 @@
       </div>
     </div>
   </section>
+
+  <!-- ==========================================
+       MODAL 4: STARRED / BOOKMARKED QUESTIONS
+       ========================================== -->
+  <div id="starred-modal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 680px; max-height: 85vh; display: flex; flex-direction: column;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px;">
+        <div class="modal-title" style="margin-bottom:0;">⭐ My Starred Questions</div>
+        <button id="btn-close-starred-modal" class="btn-close-palette" onclick="window.closeStarredModal && window.closeStarredModal()" type="button" title="Close">✕</button>
+      </div>
+      <p style="font-size: 12px; color: var(--mt); margin-bottom: 14px;">
+        Questions you starred during mock tests or solution reviews are preserved here on your device.
+      </p>
+
+      <div id="starred-list-container" style="flex:1; overflow-y:auto; padding-right:6px; display:flex; flex-direction:column; gap:12px;">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-top: 14px; pt-2; border-top: 1px solid var(--bd);">
+        <button id="btn-clear-starred" class="btn-cbt btn-clear" onclick="window.clearAllStarred && window.clearAllStarred()" type="button" style="font-size: 12px;">Clear All Starred</button>
+        <button id="btn-practice-starred" class="btn-generate" onclick="window.practiceStarredQuestions && window.practiceStarredQuestions()" type="button" style="padding: 8px 16px; font-size: 13px;">Practice Starred Quiz ▶</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Global Toast -->
   <div id="toast" class="toast-notice"></div>
