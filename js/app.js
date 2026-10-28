@@ -1008,6 +1008,9 @@
   function launchExam(testPaper) {
     init(); // Guard
     state.inExam = true;
+    state.isFinalized = false;
+    state.isSubmitting = false;
+    if (el.btnConfirmSubmit) el.btnConfirmSubmit.disabled = false;
     state.currentTest = testPaper;
     state.currentIndex = 0;
     state.answers = {};
@@ -1352,12 +1355,18 @@
   }
 
   function confirmSubmitExam() {
+    if (state.isSubmitting) return;
+    state.isSubmitting = true;
+    if (el.btnConfirmSubmit) el.btnConfirmSubmit.disabled = true;
     if (el.submitModal) el.submitModal.classList.remove('active');
     finalizeTest();
   }
 
   // Finalize & Calculate Results
   function finalizeTest() {
+    if (state.isFinalized) return;
+    state.isFinalized = true;
+    state.isSubmitting = true;
     state.inExam = false; // Turn off refresh lock
     clearActiveSession();
     releaseWakeLock(); // Release screen wake lock
@@ -1468,10 +1477,25 @@
     if (el.resultScreen) el.resultScreen.classList.add('active');
   }
 
-  // Save Attempt to localStorage (Max 5 items)
+  // Save Attempt to localStorage (Max 5 items, zero duplicate guarantee)
   function saveAttemptRecord(record) {
     try {
       const current = JSON.parse(localStorage.getItem('ctet_attempts_v2') || '[]');
+      const now = Date.now();
+      record.timestamp = now;
+
+      // Duplicate protection: prevent saving consecutive duplicate submissions
+      if (current.length > 0) {
+        const top = current[0];
+        if (top.testTitle === record.testTitle && top.score === record.score && top.total === record.total) {
+          const timeDiff = Math.abs(now - (top.timestamp || 0));
+          if (timeDiff < 15000 || top.date === record.date) {
+            console.warn('Skipping duplicate attempt record submission');
+            return;
+          }
+        }
+      }
+
       current.unshift(record);
       // Retain strictly the last 5 attempts
       const trimmed = current.slice(0, 5);
@@ -1481,16 +1505,31 @@
     }
   }
 
-  // Load and Render Last 5 Attempts on Homepage
+  // Load and Render Last 5 Attempts on Homepage (with self-healing deduplication)
   function loadRecentAttempts() {
     try {
-      const attempts = JSON.parse(localStorage.getItem('ctet_attempts_v2') || '[]');
+      let attempts = JSON.parse(localStorage.getItem('ctet_attempts_v2') || '[]');
       if (!el.attemptsContainer || !el.emptyAttemptsMsg) return;
 
       if (!attempts.length) {
         el.attemptsContainer.innerHTML = '';
         el.emptyAttemptsMsg.style.display = 'block';
         return;
+      }
+
+      // Self-healing: Deduplicate existing identical reports from storage
+      const cleaned = [];
+      for (let i = 0; i < attempts.length; i++) {
+        const cur = attempts[i];
+        const prev = cleaned[cleaned.length - 1];
+        if (prev && prev.testTitle === cur.testTitle && prev.score === cur.score && prev.total === cur.total && prev.date === cur.date) {
+          continue; // skip duplicate
+        }
+        cleaned.push(cur);
+      }
+      if (cleaned.length !== attempts.length) {
+        attempts = cleaned;
+        localStorage.setItem('ctet_attempts_v2', JSON.stringify(attempts.slice(0, 5)));
       }
 
       el.emptyAttemptsMsg.style.display = 'none';
