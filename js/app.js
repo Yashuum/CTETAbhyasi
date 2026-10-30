@@ -193,6 +193,18 @@
     el.chkAutoNextFooter = document.getElementById('chk-autonext');
     el.autoNextFooterBtn = document.getElementById('autonext-footer-btn');
     el.palBtnText = document.getElementById('pal-btn-text');
+
+    // 10-Min Pure Mistakes Challenge Vault Controls
+    el.cardMistakesChallenge = document.getElementById('card-mistakes-challenge');
+    el.mistakesVaultCounter = document.getElementById('mistakes-vault-counter');
+    el.vaultProgressStatusText = document.getElementById('vault-progress-status-text');
+    el.vaultProgressPct = document.getElementById('vault-progress-pct');
+    el.vaultProgressFill = document.getElementById('vault-progress-fill');
+    el.vaultStatusIndicator = document.getElementById('vault-status-indicator');
+    el.vaultFooterNotice = document.getElementById('vault-footer-notice');
+    el.btnStartMistakesChallenge = document.getElementById('btn-start-mistakes-challenge');
+    el.btnChallengeFromResult = document.getElementById('btn-challenge-from-result');
+    el.resVaultCountBadge = document.getElementById('res-vault-count-badge');
   }
 
   // Active Exam Session Key for Refresh Lock & Crash Recovery
@@ -215,6 +227,7 @@
     setupVisibilityWakeLock();
     loadRecentAttempts();
     updateCoverageUI();
+    updateMistakesVaultUI();
 
     // Check and restore active test session if user refreshed mid-exam!
     checkAndRestoreActiveSession();
@@ -908,6 +921,8 @@
 
     // Re-Test Mistakes Drill
     if (el.btnRetestMistakes) el.btnRetestMistakes.addEventListener('click', retestMistakes);
+    if (el.btnStartMistakesChallenge) el.btnStartMistakesChallenge.addEventListener('click', startMistakesChallenge);
+    if (el.btnChallengeFromResult) el.btnChallengeFromResult.addEventListener('click', startMistakesChallenge);
 
     // Auto-Next Controls
     if (el.btnToggleAutoNext) el.btnToggleAutoNext.addEventListener('click', () => toggleAutoNext());
@@ -1583,6 +1598,25 @@
     });
     state.lastMistakes = mistakes;
 
+    // Process Mistakes Vault Storage & Mastery
+    if (state.currentTest && state.currentTest.mode === 'wrong_challenge') {
+      const masteredKeys = new Set();
+      questions.forEach((q, idx) => {
+        if (state.answers[idx] === q.ans) {
+          masteredKeys.add(getQuestionKey(q));
+          if (q.id) masteredKeys.add(q.id);
+        }
+      });
+      if (masteredKeys.size > 0) {
+        removeMasteredFromVault(masteredKeys);
+      }
+    } else {
+      if (mistakes.length > 0) {
+        addMistakesToVault(mistakes);
+      }
+    }
+    updateMistakesVaultUI();
+
     if (el.mistakesCountBadge) el.mistakesCountBadge.textContent = mistakes.length;
     if (el.btnRetestMistakes) {
       if (mistakes.length > 0) {
@@ -1965,6 +1999,202 @@
   }
 
   // ==========================================
+  // Persistent Mistakes Vault & 10-Min Pure Challenge System (20 Qs)
+  // ==========================================
+  const MISTAKES_VAULT_KEY = 'ctet_mistakes_vault_v1';
+  const MISTAKES_CHALLENGE_THRESHOLD = 20;
+
+  function getQuestionKey(q) {
+    if (!q) return '';
+    return q.id || ((q.section || '') + '_' + (q.question_hi || q.question || q.question_en || '')).trim().replace(/\s+/g, ' ').slice(0, 100);
+  }
+
+  function getMistakesVault() {
+    try {
+      const raw = localStorage.getItem(MISTAKES_VAULT_KEY);
+      if (!raw) return [];
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (e) {
+      console.warn('Failed to parse mistakes vault:', e);
+      return [];
+    }
+  }
+
+  function saveMistakesVault(vault) {
+    try {
+      localStorage.setItem(MISTAKES_VAULT_KEY, JSON.stringify(vault));
+    } catch (e) {
+      console.warn('Failed to save mistakes vault:', e);
+    }
+  }
+
+  function addMistakesToVault(newMistakes) {
+    if (!newMistakes || !newMistakes.length) return 0;
+    try {
+      const vault = getMistakesVault();
+      const existingKeys = new Set(vault.map(q => getQuestionKey(q)));
+      let added = 0;
+
+      newMistakes.forEach(q => {
+        const key = getQuestionKey(q);
+        if (!existingKeys.has(key)) {
+          existingKeys.add(key);
+          vault.push({
+            ...q,
+            addedAt: Date.now()
+          });
+          added++;
+        }
+      });
+
+      if (added > 0) {
+        saveMistakesVault(vault);
+      }
+      updateMistakesVaultUI();
+      return vault.length;
+    } catch (e) {
+      console.warn('Failed to add mistakes to vault:', e);
+      return 0;
+    }
+  }
+
+  function removeMasteredFromVault(masteredKeysSet) {
+    if (!masteredKeysSet || !masteredKeysSet.size) return;
+    try {
+      const vault = getMistakesVault();
+      const initialCount = vault.length;
+      const filtered = vault.filter(q => !masteredKeysSet.has(getQuestionKey(q)) && !masteredKeysSet.has(q.id));
+      saveMistakesVault(filtered);
+      updateMistakesVaultUI();
+      const masteredCount = initialCount - filtered.length;
+      if (masteredCount > 0) {
+        showToast(`🎉 Mastered ${masteredCount} question${masteredCount > 1 ? 's' : ''}! Remaining in Mistakes Vault: ${filtered.length}.`);
+      }
+    } catch (e) {
+      console.warn('Failed to remove mastered questions:', e);
+    }
+  }
+
+  function clearMistakesVault() {
+    try {
+      localStorage.removeItem(MISTAKES_VAULT_KEY);
+      updateMistakesVaultUI();
+      showToast('🗑️ Mistakes Vault has been cleared.');
+    } catch (e) {}
+  }
+
+  function updateMistakesVaultUI() {
+    const vault = getMistakesVault();
+    const count = vault.length;
+    const isUnlocked = count >= MISTAKES_CHALLENGE_THRESHOLD;
+    const pct = Math.min(100, Math.round((count / MISTAKES_CHALLENGE_THRESHOLD) * 100));
+
+    if (el.mistakesVaultCounter) {
+      el.mistakesVaultCounter.textContent = `${count} / ${MISTAKES_CHALLENGE_THRESHOLD} Mistakes`;
+    }
+    if (el.vaultProgressPct) {
+      el.vaultProgressPct.textContent = `${pct}%`;
+    }
+    if (el.vaultProgressFill) {
+      el.vaultProgressFill.style.width = `${pct}%`;
+      if (isUnlocked) {
+        el.vaultProgressFill.classList.add('unlocked');
+      } else {
+        el.vaultProgressFill.classList.remove('unlocked');
+      }
+    }
+    if (el.cardMistakesChallenge) {
+      if (isUnlocked) {
+        el.cardMistakesChallenge.classList.add('unlocked');
+      } else {
+        el.cardMistakesChallenge.classList.remove('unlocked');
+      }
+    }
+
+    if (el.vaultProgressStatusText) {
+      if (isUnlocked) {
+        el.vaultProgressStatusText.textContent = `🎉 Unlocked! ${count} pure mistakes ready for 10-min drill`;
+        el.vaultProgressStatusText.style.color = '#4ADE80';
+      } else {
+        const needed = MISTAKES_CHALLENGE_THRESHOLD - count;
+        el.vaultProgressStatusText.textContent = `Collect ${needed} more wrong question${needed > 1 ? 's' : ''} to unlock`;
+        el.vaultProgressStatusText.style.color = 'var(--mt)';
+      }
+    }
+
+    if (el.vaultStatusIndicator) {
+      if (isUnlocked) {
+        el.vaultStatusIndicator.textContent = '🔥 Unlocked & Ready';
+        el.vaultStatusIndicator.style.color = '#4ADE80';
+      } else {
+        el.vaultStatusIndicator.textContent = `🔒 Locked (${count}/${MISTAKES_CHALLENGE_THRESHOLD})`;
+        el.vaultStatusIndicator.style.color = 'var(--mt)';
+      }
+    }
+
+    if (el.vaultFooterNotice) {
+      if (isUnlocked) {
+        el.vaultFooterNotice.textContent = '🔥 Pure Challenge';
+        el.vaultFooterNotice.style.color = '#FB923C';
+      } else {
+        const needed = MISTAKES_CHALLENGE_THRESHOLD - count;
+        el.vaultFooterNotice.textContent = `Need ${needed} Qs`;
+        el.vaultFooterNotice.style.color = 'var(--mt)';
+      }
+    }
+
+    if (el.btnStartMistakesChallenge) {
+      if (isUnlocked) {
+        el.btnStartMistakesChallenge.disabled = false;
+        el.btnStartMistakesChallenge.className = 'btn-start btn-challenge-action unlocked';
+        el.btnStartMistakesChallenge.innerHTML = '🔥 Start 10-Min Challenge ▶';
+      } else {
+        el.btnStartMistakesChallenge.disabled = true;
+        el.btnStartMistakesChallenge.className = 'btn-start btn-challenge-action';
+        el.btnStartMistakesChallenge.textContent = `🔒 Locked (${count}/${MISTAKES_CHALLENGE_THRESHOLD})`;
+      }
+    }
+
+    if (el.btnChallengeFromResult && el.resVaultCountBadge) {
+      el.resVaultCountBadge.textContent = count;
+      if (isUnlocked) {
+        el.btnChallengeFromResult.style.display = 'inline-flex';
+      } else {
+        el.btnChallengeFromResult.style.display = 'none';
+      }
+    }
+  }
+
+  function startMistakesChallenge() {
+    init();
+    const vault = getMistakesVault();
+    if (vault.length < MISTAKES_CHALLENGE_THRESHOLD) {
+      const remaining = MISTAKES_CHALLENGE_THRESHOLD - vault.length;
+      showToast(`🔒 Mistakes Challenge requires 20 collected incorrect questions (Current: ${vault.length}/20). Need ${remaining} more from mock tests.`);
+      return;
+    }
+
+    // Pick 20 questions from the vault
+    const shuffled = [...vault].sort(() => 0.5 - Math.random());
+    const selected20 = shuffled.slice(0, MISTAKES_CHALLENGE_THRESHOLD);
+
+    const testPaper = {
+      id: 'challenge_' + Date.now(),
+      title: '🔥 10-Minute Pure Mistakes Challenge Drill (20 Qs)',
+      totalQuestions: 20,
+      duration: 10, // Exactly 10 minutes
+      questions: JSON.parse(JSON.stringify(selected20)),
+      mode: 'wrong_challenge'
+    };
+
+    if (el.resultScreen) el.resultScreen.classList.remove('active');
+    state.pendingTestPaper = testPaper;
+    openPreTestCountdown(testPaper);
+    showToast('🔥 Assembling 20-Question Pure Mistakes Challenge Set! 10 Minutes on the clock.');
+  }
+
+  // ==========================================
   // CBSE CTET Official Qualifying Benchmark Meter (Point 2 Upgrade)
   // ==========================================
   function renderCutoffBenchmark(score, totalQ) {
@@ -2081,6 +2311,7 @@
     if (el.landingScreen) el.landingScreen.style.display = 'block';
     loadRecentAttempts();
     updateCoverageUI();
+    updateMistakesVaultUI();
   }
 
   // Toast Notification
@@ -2116,6 +2347,9 @@
   window.clearAllStarred = clearAllStarred;
   window.practiceStarredQuestions = practiceStarredQuestions;
   window.retestMistakes = retestMistakes;
+  window.startMistakesChallenge = startMistakesChallenge;
+  window.getMistakesVault = getMistakesVault;
+  window.clearMistakesVault = clearMistakesVault;
   window.setFontZoom = setFontZoom;
   window.applyPaletteFilter = applyPaletteFilter;
 

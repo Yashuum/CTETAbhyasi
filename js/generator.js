@@ -173,7 +173,17 @@ class CTETQuestionGenerator {
     let title = '';
     let durationMinutes = 150;
 
-    if (mode === 'cdp') {
+    if (mode === 'wrong_challenge') {
+      title = '🔥 10-Minute Pure Mistakes Challenge Drill (20 Qs)';
+      durationMinutes = 10;
+      const vaultRaw = localStorage.getItem('ctet_mistakes_vault_v1');
+      const vault = vaultRaw ? JSON.parse(vaultRaw) : [];
+      if (vault.length < 20) {
+        throw new Error(`Mistakes Challenge requires at least 20 collected incorrect questions (Current: ${vault.length}/20)`);
+      }
+      const shuffled = [...vault].sort(() => 0.5 - Math.random());
+      questions = shuffled.slice(0, 20);
+    } else if (mode === 'cdp') {
       title = 'Child Development & Pedagogy Core Drill';
       durationMinutes = 30;
       questions = this.sampleUnattempted(bank.cdp, 30, attemptedToday);

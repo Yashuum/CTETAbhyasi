@@ -252,6 +252,47 @@
           <button class="btn-start" onclick="startMockTest('cdp')">▶ Start CDP Drill</button>
         </div>
       </div>
+
+      <!-- Card 4: 10-Min Mistakes Challenge (Unlocks at 20 Wrong Questions) -->
+      <div id="card-mistakes-challenge" class="test-card challenge-card">
+        <div>
+          <div class="card-top">
+            <span class="card-tag challenge-tag">🔥 Pure Challenge</span>
+            <span id="mistakes-vault-counter" class="vault-counter-badge">0 / 20 Mistakes</span>
+          </div>
+          <div class="card-title">10-Min Pure Mistakes Challenge</div>
+          <div class="card-desc">
+            Automatically stores every question you answer incorrectly. Once 20 mistakes accumulate, unlock a 10-minute speed drill to master your weak spots.
+          </div>
+
+          <div class="vault-progress-wrap">
+            <div class="vault-progress-labels">
+              <span id="vault-progress-status-text">Collect 20 wrong questions to unlock</span>
+              <span id="vault-progress-pct" style="font-weight: 700; color: #FB923C;">0%</span>
+            </div>
+            <div class="vault-progress-track">
+              <div id="vault-progress-fill" class="vault-progress-fill" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <div class="card-meta">
+            <span>⏱️ 10 Minutes</span>
+            <span>🎯 20 Pure Mistakes</span>
+            <span id="vault-status-indicator">🔒 Locked</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span id="vault-footer-notice" class="score-badge" style="font-size: 11px;">Need 20 Qs</span>
+          <button 
+            id="btn-start-mistakes-challenge" 
+            class="btn-start btn-challenge-action" 
+            onclick="window.startMistakesChallenge && window.startMistakesChallenge()" 
+            disabled
+          >
+            🔒 Locked (0/20)
+          </button>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -587,6 +628,9 @@
         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
           <button id="btn-retest-mistakes" class="btn-retest-mistakes" type="button" style="display: none;">
             <span>🔁</span> Re-Test My Mistakes (<strong id="mistakes-count-badge">0</strong>)
+          </button>
+          <button id="btn-challenge-from-result" class="btn-challenge-pill" type="button" style="display: none;" onclick="window.startMistakesChallenge && window.startMistakesChallenge()">
+            <span>🔥</span> 10-Min Challenge (<strong id="res-vault-count-badge">20</strong> Qs)
           </button>
           <button id="btn-back-home" class="btn-start" type="button">◀ Back to Dashboard</button>
         </div>
