@@ -166,7 +166,7 @@
         <div class="history-title">
           <span>📊 Last 5 Mock Test Attempts & Subject Scorecards</span>
         </div>
-        <button id="btn-open-starred-modal" class="btn-starred-pill" onclick="window.openStarredModal && window.openStarredModal()" type="button" title="View Bookmarked Questions">
+        <button id="btn-open-starred-modal" class="btn-starred-pill" type="button" title="View Bookmarked Questions">
           ⭐ Starred Questions (<strong id="cnt-starred-total">0</strong>)
         </button>
       </div>
@@ -341,15 +341,21 @@
         <p id="exam-paper-meta">150 Questions • 150 Minutes • 1 Mark Each</p>
       </div>
       <div class="exam-topbar-actions">
+        <!-- Auto-Next Toggle Button (New Feature) -->
+        <button id="btn-toggle-autonext" class="btn-autonext-toggle" type="button" title="Auto-Next: Advance to next question automatically when you select an option">
+          <span class="autonext-icon">⚡</span>
+          <span class="autonext-label">Auto-Next:</span>
+          <span id="autonext-status-badge" class="autonext-status off">OFF</span>
+        </button>
         <!-- Font Zoom Controller (A- / A / A+) -->
         <div class="font-zoom-ctrl" title="Adjust Question Text Size">
           <button id="btn-zoom-out" class="btn-zoom-btn" type="button" title="Smaller Font Size (90%)">A−</button>
           <button id="btn-zoom-reset" class="btn-zoom-btn btn-zoom-active" type="button" title="Default Font Size (100%)">A</button>
           <button id="btn-zoom-in" class="btn-zoom-btn" type="button" title="Larger Font Size (115%)">A+</button>
         </div>
-        <!-- Palette Toggle (Particularly Useful for Tablets & Mobiles) -->
-        <button id="btn-toggle-palette" class="btn-palette-toggle" onclick="window.togglePalette && window.togglePalette()" title="View Question Palette" type="button">
-          <span>📊</span> <span id="pal-btn-text">Palette (150)</span>
+        <!-- Question Grid Toggle (Clarified from 'Palette') -->
+        <button id="btn-toggle-palette" class="btn-palette-toggle" onclick="window.togglePalette && window.togglePalette()" title="View Question Grid (1-150)" type="button">
+          <span>📋</span> <span id="pal-btn-text">Questions (1-150)</span>
         </button>
         <!-- Fullscreen Toggle Button -->
         <button id="btn-fullscreen" class="btn-fullscreen-toggle" onclick="window.toggleFullscreen && window.toggleFullscreen()" title="Toggle Fullscreen" type="button">
@@ -405,9 +411,12 @@
         <!-- Palette Header (with close button for tablets/mobile) -->
         <div class="palette-header">
           <div style="font-weight: 800; font-size: 14px; display: flex; align-items: center; gap: 6px; color: #F8FAFC;">
-            <span>📊</span> Question Palette (150)
+            <span>📋</span> Question Grid (1-150) / प्रश्न ग्रिड
           </div>
-          <button id="btn-close-palette" class="btn-close-palette" onclick="window.togglePalette && window.togglePalette(false)" title="Close Palette" type="button">✕</button>
+          <button id="btn-close-palette" class="btn-close-palette" onclick="window.togglePalette && window.togglePalette(false)" title="Close" type="button">✕</button>
+        </div>
+        <div class="grid-sub-notice">
+          Tap any question number to jump directly to it
         </div>
 
         <!-- Palette Legend (In English) -->
@@ -443,6 +452,10 @@
         <button id="btn-clear" class="btn-cbt btn-clear" type="button">Clear Response</button>
       </div>
       <div class="footer-right">
+        <label class="autonext-footer-wrap" title="Auto-advance to next question when you tap an option">
+          <input type="checkbox" id="chk-autonext" style="display:none;" />
+          <span id="autonext-footer-btn" class="autonext-footer-btn">⚡ Auto-Next: OFF</span>
+        </label>
         <button id="btn-prev" class="btn-cbt btn-prev" type="button">◀ Previous</button>
         <button id="btn-save-next" class="btn-cbt btn-save-next" type="button">Save & Next ▶</button>
         <button id="btn-submit-exam" class="btn-cbt btn-submit" type="button">Submit Exam 🚀</button>
@@ -572,10 +585,10 @@
           Detailed Solutions & Pedagogical Explanations
         </div>
         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-          <button id="btn-retest-mistakes" class="btn-retest-mistakes" onclick="window.retestMistakes && window.retestMistakes()" type="button" style="display: none;">
+          <button id="btn-retest-mistakes" class="btn-retest-mistakes" type="button" style="display: none;">
             <span>🔁</span> Re-Test My Mistakes (<strong id="mistakes-count-badge">0</strong>)
           </button>
-          <button id="btn-back-home" class="btn-start" onclick="window.backToHome && window.backToHome()" type="button">◀ Back to Dashboard</button>
+          <button id="btn-back-home" class="btn-start" type="button">◀ Back to Dashboard</button>
         </div>
       </div>
 
@@ -592,7 +605,7 @@
     <div class="modal-card" style="max-width: 680px; max-height: 85vh; display: flex; flex-direction: column;">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px;">
         <div class="modal-title" style="margin-bottom:0;">⭐ My Starred Questions</div>
-        <button id="btn-close-starred-modal" class="btn-close-palette" onclick="window.closeStarredModal && window.closeStarredModal()" type="button" title="Close">✕</button>
+        <button id="btn-close-starred-modal" class="btn-close-palette" type="button" title="Close">✕</button>
       </div>
       <p style="font-size: 12px; color: var(--mt); margin-bottom: 14px;">
         Questions you starred during mock tests or solution reviews are preserved here on your device.
@@ -603,8 +616,8 @@
       </div>
 
       <div style="display:flex; justify-content:space-between; align-items:center; margin-top: 14px; pt-2; border-top: 1px solid var(--bd);">
-        <button id="btn-clear-starred" class="btn-cbt btn-clear" onclick="window.clearAllStarred && window.clearAllStarred()" type="button" style="font-size: 12px;">Clear All Starred</button>
-        <button id="btn-practice-starred" class="btn-generate" onclick="window.practiceStarredQuestions && window.practiceStarredQuestions()" type="button" style="padding: 8px 16px; font-size: 13px;">Practice Starred Quiz ▶</button>
+        <button id="btn-clear-starred" class="btn-cbt btn-clear" type="button" style="font-size: 12px;">Clear All Starred</button>
+        <button id="btn-practice-starred" class="btn-generate" type="button" style="padding: 8px 16px; font-size: 13px;">Practice Starred Quiz ▶</button>
       </div>
     </div>
   </div>

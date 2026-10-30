@@ -39,7 +39,11 @@
     cdTimer: null,
     paletteFilter: 'all', // 'all' | 'ans' | 'no' | 'mk'
     fontZoom: 'normal',   // 'small' | 'normal' | 'large'
-    lastMistakes: []      // array of questions missed in last submitted test
+    lastMistakes: [],     // array of questions missed in last submitted test
+    autoNext: false,
+    hasSavedAttemptForTest: false,
+    isSubmitting: false,
+    isFinalized: false
   };
 
   // Screen Wake Lock Sentinel
@@ -182,6 +186,13 @@
     el.cutoffVerdictMsg = document.getElementById('cutoff-verdict-msg');
     el.btnRetestMistakes = document.getElementById('btn-retest-mistakes');
     el.mistakesCountBadge = document.getElementById('mistakes-count-badge');
+
+    // Auto-Next & Question Grid Controls
+    el.btnToggleAutoNext = document.getElementById('btn-toggle-autonext');
+    el.autoNextStatusBadge = document.getElementById('autonext-status-badge');
+    el.chkAutoNextFooter = document.getElementById('chk-autonext');
+    el.autoNextFooterBtn = document.getElementById('autonext-footer-btn');
+    el.palBtnText = document.getElementById('pal-btn-text');
   }
 
   // Active Exam Session Key for Refresh Lock & Crash Recovery
@@ -197,6 +208,7 @@
     loadCandidateName();
     initFontZoom();
     initPaletteFilters();
+    initAutoNext();
     updateStarredUI();
     setupEventListeners();
     setupRefreshLock();
@@ -702,6 +714,13 @@
       // Setup Exam Top Bar
       if (el.examPaperTitle) el.examPaperTitle.textContent = state.currentTest.title;
       if (el.examPaperMeta) el.examPaperMeta.textContent = `${state.currentTest.totalQuestions} Questions • ${state.currentTest.duration} Minutes • 1 Mark Each`;
+      if (el.palBtnText && state.currentTest) {
+        el.palBtnText.textContent = `Questions (1-${state.currentTest.totalQuestions})`;
+      }
+
+      state.hasSavedAttemptForTest = false;
+      state.isFinalized = false;
+      state.isSubmitting = false;
 
       // Hide landing and activate exam screen directly
       if (el.landingScreen) el.landingScreen.style.display = 'none';
@@ -890,6 +909,13 @@
     // Re-Test Mistakes Drill
     if (el.btnRetestMistakes) el.btnRetestMistakes.addEventListener('click', retestMistakes);
 
+    // Auto-Next Controls
+    if (el.btnToggleAutoNext) el.btnToggleAutoNext.addEventListener('click', () => toggleAutoNext());
+    if (el.autoNextFooterBtn) el.autoNextFooterBtn.addEventListener('click', () => toggleAutoNext());
+    if (el.chkAutoNextFooter) {
+      el.chkAutoNextFooter.addEventListener('change', (e) => toggleAutoNext(e.target.checked));
+    }
+
     // Exam footer navigation buttons
     if (el.btnSaveNext) el.btnSaveNext.addEventListener('click', onSaveAndNext);
     if (el.btnMarkReview) el.btnMarkReview.addEventListener('click', onMarkForReview);
@@ -917,17 +943,11 @@
         onMarkForReview();
       } else if (['1', '2', '3', '4'].includes(e.key)) {
         const optIdx = parseInt(e.key, 10) - 1;
-        state.answers[state.currentIndex] = optIdx;
-        renderCurrentQuestion();
-        updatePaletteItem(state.currentIndex);
-        persistActiveSession();
+        handleOptionSelect(optIdx);
       } else if (['a', 'b', 'c', 'd', 'A', 'B', 'C', 'D'].includes(e.key)) {
         const charCode = e.key.toUpperCase().charCodeAt(0);
         const optIdx = charCode - 65;
-        state.answers[state.currentIndex] = optIdx;
-        renderCurrentQuestion();
-        updatePaletteItem(state.currentIndex);
-        persistActiveSession();
+        handleOptionSelect(optIdx);
       }
     });
   }
@@ -1010,6 +1030,10 @@
     state.inExam = true;
     state.isFinalized = false;
     state.isSubmitting = false;
+    state.hasSavedAttemptForTest = false;
+    if (!testPaper.id) {
+      testPaper.id = 'test_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6);
+    }
     if (el.btnConfirmSubmit) el.btnConfirmSubmit.disabled = false;
     state.currentTest = testPaper;
     state.currentIndex = 0;
@@ -1021,6 +1045,7 @@
     // Populate Top Bar (In English)
     if (el.examPaperTitle) el.examPaperTitle.textContent = testPaper.title;
     if (el.examPaperMeta) el.examPaperMeta.textContent = `${testPaper.totalQuestions} Questions • ${testPaper.duration} Minutes • 1 Mark Each`;
+    if (el.palBtnText) el.palBtnText.textContent = `Questions (1-${testPaper.totalQuestions})`;
 
     // Switch Screens
     if (el.landingScreen) el.landingScreen.style.display = 'none';
@@ -1119,6 +1144,92 @@
     });
   }
 
+  // ==========================================
+  // Auto-Next Feature Logic
+  // ==========================================
+  let autoNextTimer = null;
+
+  function initAutoNext() {
+    try {
+      const saved = localStorage.getItem('ctet_autonext_enabled');
+      state.autoNext = saved === 'true';
+    } catch (e) {
+      state.autoNext = false;
+    }
+    updateAutoNextUI();
+  }
+
+  function toggleAutoNext(forceState) {
+    state.autoNext = typeof forceState === 'boolean' ? forceState : !state.autoNext;
+    try {
+      localStorage.setItem('ctet_autonext_enabled', String(state.autoNext));
+    } catch (e) {}
+    updateAutoNextUI();
+    if (state.autoNext) {
+      showToast('⚡ Auto-Next ON: Selecting an option will automatically advance to the next question');
+    } else {
+      showToast('⏸️ Auto-Next OFF: Click "Save & Next" to advance questions');
+    }
+  }
+
+  function updateAutoNextUI() {
+    if (el.btnToggleAutoNext) {
+      if (state.autoNext) {
+        el.btnToggleAutoNext.classList.add('active');
+      } else {
+        el.btnToggleAutoNext.classList.remove('active');
+      }
+    }
+    if (el.autoNextStatusBadge) {
+      if (state.autoNext) {
+        el.autoNextStatusBadge.textContent = 'ON';
+        el.autoNextStatusBadge.className = 'autonext-status on';
+      } else {
+        el.autoNextStatusBadge.textContent = 'OFF';
+        el.autoNextStatusBadge.className = 'autonext-status off';
+      }
+    }
+    if (el.chkAutoNextFooter) {
+      el.chkAutoNextFooter.checked = state.autoNext;
+    }
+    if (el.autoNextFooterBtn) {
+      if (state.autoNext) {
+        el.autoNextFooterBtn.textContent = '⚡ Auto-Next: ON';
+        el.autoNextFooterBtn.classList.add('active');
+      } else {
+        el.autoNextFooterBtn.textContent = '⚡ Auto-Next: OFF';
+        el.autoNextFooterBtn.classList.remove('active');
+      }
+    }
+  }
+
+  function handleOptionSelect(optIdx) {
+    if (!state.currentTest || !state.currentTest.questions) return;
+    
+    if (autoNextTimer) {
+      clearTimeout(autoNextTimer);
+      autoNextTimer = null;
+    }
+
+    state.answers[state.currentIndex] = optIdx;
+    if (state.marked[state.currentIndex]) {
+      delete state.marked[state.currentIndex];
+    }
+    renderCurrentQuestion();
+    updatePaletteItem(state.currentIndex);
+    persistActiveSession();
+
+    if (state.autoNext) {
+      if (state.currentIndex < state.currentTest.totalQuestions - 1) {
+        autoNextTimer = setTimeout(() => {
+          nextQuestion();
+        }, 280);
+      } else {
+        showToast('Final question answered! Review question grid or click "Submit Exam".');
+      }
+    }
+  }
+
   // Render Question (English format for English subject; Hindi for CDP, SST, Hindi)
   function renderCurrentQuestion() {
     if (!state.currentTest || !state.currentTest.questions) return;
@@ -1176,10 +1287,7 @@
         `;
 
         optItem.addEventListener('click', () => {
-          state.answers[state.currentIndex] = optIdx;
-          renderCurrentQuestion();
-          updatePaletteItem(state.currentIndex);
-          persistActiveSession();
+          handleOptionSelect(optIdx);
         });
 
         el.optionsList.appendChild(optItem);
@@ -1256,6 +1364,10 @@
   }
 
   function jumpToQuestion(idx) {
+    if (autoNextTimer) {
+      clearTimeout(autoNextTimer);
+      autoNextTimer = null;
+    }
     if (idx < 0 || !state.currentTest || idx >= state.currentTest.totalQuestions) return;
     const prevIdx = state.currentIndex;
     state.currentIndex = idx;
@@ -1276,6 +1388,10 @@
 
   // Footer Actions
   function onSaveAndNext() {
+    if (autoNextTimer) {
+      clearTimeout(autoNextTimer);
+      autoNextTimer = null;
+    }
     if (isDebounced()) return;
     if (state.marked[state.currentIndex] && state.answers[state.currentIndex] !== undefined) {
       delete state.marked[state.currentIndex];
@@ -1286,6 +1402,10 @@
   }
 
   function onMarkForReview() {
+    if (autoNextTimer) {
+      clearTimeout(autoNextTimer);
+      autoNextTimer = null;
+    }
     if (isDebounced()) return;
     state.marked[state.currentIndex] = true;
     updatePaletteItem(state.currentIndex);
@@ -1294,6 +1414,10 @@
   }
 
   function onClearResponse() {
+    if (autoNextTimer) {
+      clearTimeout(autoNextTimer);
+      autoNextTimer = null;
+    }
     delete state.answers[state.currentIndex];
     delete state.marked[state.currentIndex];
     renderCurrentQuestion();
@@ -1302,6 +1426,10 @@
   }
 
   function onPrevQuestion() {
+    if (autoNextTimer) {
+      clearTimeout(autoNextTimer);
+      autoNextTimer = null;
+    }
     if (isDebounced()) return;
     if (state.currentIndex > 0) {
       const prevIdx = state.currentIndex;
@@ -1314,6 +1442,10 @@
   }
 
   function nextQuestion() {
+    if (autoNextTimer) {
+      clearTimeout(autoNextTimer);
+      autoNextTimer = null;
+    }
     if (state.currentIndex < state.currentTest.totalQuestions - 1) {
       const prevIdx = state.currentIndex;
       state.currentIndex++;
@@ -1355,7 +1487,7 @@
   }
 
   function confirmSubmitExam() {
-    if (state.isSubmitting) return;
+    if (state.isSubmitting || state.isFinalized) return;
     state.isSubmitting = true;
     if (el.btnConfirmSubmit) el.btnConfirmSubmit.disabled = true;
     if (el.submitModal) el.submitModal.classList.remove('active');
@@ -1371,6 +1503,10 @@
     clearActiveSession();
     releaseWakeLock(); // Release screen wake lock
     clearInterval(state.timerInterval);
+    if (autoNextTimer) {
+      clearTimeout(autoNextTimer);
+      autoNextTimer = null;
+    }
     if (el.examScreen) el.examScreen.classList.remove('active');
 
     const questions = state.currentTest.questions;
@@ -1462,6 +1598,7 @@
 
     // Save Attempt to localStorage (Keep last 5 attempts)
     saveAttemptRecord({
+      testId: state.currentTest.id || ('att_' + Date.now()),
       testTitle: state.currentTest.title,
       stream: 'social_studies',
       score: score,
@@ -1479,23 +1616,38 @@
 
   // Save Attempt to localStorage (Max 5 items, zero duplicate guarantee)
   function saveAttemptRecord(record) {
+    if (state.hasSavedAttemptForTest) {
+      console.warn('Attempt already recorded for current test instance');
+      return;
+    }
     try {
       const current = JSON.parse(localStorage.getItem('ctet_attempts_v2') || '[]');
       const now = Date.now();
       record.timestamp = now;
+      record.testId = record.testId || state.currentTest?.id || ('att_' + now);
 
-      // Duplicate protection: prevent saving consecutive duplicate submissions
+      // Check if this testId was already saved
+      const idExists = current.some(item => item.testId && item.testId === record.testId);
+      if (idExists) {
+        console.warn('Skipping duplicate attempt: testId already exists', record.testId);
+        state.hasSavedAttemptForTest = true;
+        return;
+      }
+
+      // Check if duplicate submission within 3 minutes (180,000 ms) with identical score and total
       if (current.length > 0) {
         const top = current[0];
         if (top.testTitle === record.testTitle && top.score === record.score && top.total === record.total) {
           const timeDiff = Math.abs(now - (top.timestamp || 0));
-          if (timeDiff < 15000 || top.date === record.date) {
-            console.warn('Skipping duplicate attempt record submission');
+          if (timeDiff < 180000 || top.date === record.date) {
+            console.warn('Skipping duplicate attempt record submission (identical score within window)');
+            state.hasSavedAttemptForTest = true;
             return;
           }
         }
       }
 
+      state.hasSavedAttemptForTest = true;
       current.unshift(record);
       // Retain strictly the last 5 attempts
       const trimmed = current.slice(0, 5);
@@ -1519,11 +1671,22 @@
 
       // Self-healing: Deduplicate existing identical reports from storage
       const cleaned = [];
+      const seenIds = new Set();
       for (let i = 0; i < attempts.length; i++) {
         const cur = attempts[i];
+        if (cur.testId && seenIds.has(cur.testId)) {
+          continue; // skip duplicate by ID
+        }
+        if (cur.testId) {
+          seenIds.add(cur.testId);
+        }
+
         const prev = cleaned[cleaned.length - 1];
-        if (prev && prev.testTitle === cur.testTitle && prev.score === cur.score && prev.total === cur.total && prev.date === cur.date) {
-          continue; // skip duplicate
+        if (prev && prev.testTitle === cur.testTitle && prev.score === cur.score && prev.total === cur.total) {
+          const timeDiff = Math.abs((cur.timestamp || 0) - (prev.timestamp || 0));
+          if (cur.date === prev.date || (cur.timestamp && prev.timestamp && timeDiff < 180000)) {
+            continue; // skip duplicate
+          }
         }
         cleaned.push(cur);
       }
@@ -1608,75 +1771,174 @@
     });
   }
 
-  // Render Solutions Review (Hindi for CDP, SST, Hindi; authentic English for Language II)
+  // Helper to construct a single Solution Card
+  function createSolutionCard(q, idx, userAns) {
+    const isCorrect = userAns === q.ans;
+    const isUnanswered = userAns === undefined;
+
+    const card = document.createElement('div');
+    const statusClass = isUnanswered ? 'unanswered' : (isCorrect ? 'correct' : 'wrong');
+    card.className = `solution-card ${statusClass}`;
+
+    const badgeText = isUnanswered 
+      ? '⚠️ Unattempted' 
+      : (isCorrect ? '✅ Correct' : '❌ Incorrect');
+
+    const userOptChar = userAns !== undefined ? String.fromCharCode(65 + userAns) : 'None';
+    const correctOptChar = String.fromCharCode(65 + q.ans);
+
+    const userOptText = (userAns !== undefined && q.options && q.options[userAns]) ? q.options[userAns] : 'No option selected';
+    const correctOptText = (q.options && q.options[q.ans]) ? q.options[q.ans] : '';
+
+    const isStarred = isQuestionStarred(q);
+    const isEnglishSec = q.section === 'Language II (English)' || q.section === 'Language II';
+    const questionText = (isEnglishSec ? (q.question_en || q.question_hi || q.question) : (q.question_hi || q.question_en || q.question)) || '';
+
+    card.innerHTML = `
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span class="sol-badge ${statusClass}">${badgeText}</span>
+          <span style="font-size:12px;color:var(--mt);font-weight:600;">${q.section} • ${q.subject || ''}</span>
+        </div>
+        <button class="btn-sol-star ${isStarred ? 'starred' : ''}" type="button" title="Bookmark / Star this question for later practice">
+          ${isStarred ? '⭐ Starred' : '☆ Star'}
+        </button>
+      </div>
+      <div style="font-weight:700;margin:10px 0;line-height:1.6;font-size:15px;">
+        Question ${idx + 1}. ${questionText}
+      </div>
+      
+      <div style="font-size:13px;display:flex;flex-direction:column;gap:6px;margin-bottom:12px;background:var(--bg);padding:10px 12px;border-radius:8px;">
+        <div>Your Answer: <strong style="${isCorrect ? 'color:#4ADE80;' : (isUnanswered ? 'color:var(--mt);' : 'color:#EF4444;')}">(${userOptChar}) ${userOptText}</strong></div>
+        <div style="color:#4ADE80;">Correct Answer: <strong>(${correctOptChar}) ${correctOptText}</strong></div>
+      </div>
+
+      <div class="sol-explanation">
+        <strong>💡 Pedagogical Explanation (शैक्षणिक व्याख्या):</strong><br/>
+        ${q.explanation || 'Based on CBSE CTET curriculum standards and NEP 2020 guidelines.'}
+      </div>
+    `;
+
+    const starBtn = card.querySelector('.btn-sol-star');
+    if (starBtn) {
+      starBtn.addEventListener('click', () => {
+        const nowStarred = toggleStarQuestion(q, true);
+        if (nowStarred) {
+          starBtn.classList.add('starred');
+          starBtn.textContent = '⭐ Starred';
+        } else {
+          starBtn.classList.remove('starred');
+          starBtn.textContent = '☆ Star';
+        }
+      });
+    }
+
+    return card;
+  }
+
+  // Render Solutions Review (Club correct answers into slim expandable card; show mistakes prominently)
   function renderSolutionsReview(questions) {
     if (!el.solutionsContainer) return;
     el.solutionsContainer.innerHTML = '';
 
+    const mistakesList = [];
+    const correctList = [];
+
     questions.forEach((q, idx) => {
       const userAns = state.answers[idx];
-      const isCorrect = userAns === q.ans;
-      const isUnanswered = userAns === undefined;
+      if (userAns === q.ans) {
+        correctList.push({ question: q, index: idx, userAns: userAns });
+      } else {
+        mistakesList.push({ question: q, index: idx, userAns: userAns });
+      }
+    });
 
-      const card = document.createElement('div');
-      const statusClass = isUnanswered ? 'unanswered' : (isCorrect ? 'correct' : 'wrong');
-      card.className = `solution-card ${statusClass}`;
-
-      const badgeText = isUnanswered 
-        ? '⚠️ Unattempted' 
-        : (isCorrect ? '✅ Correct' : '❌ Incorrect');
-
-      const userOptChar = userAns !== undefined ? String.fromCharCode(65 + userAns) : 'None';
-      const correctOptChar = String.fromCharCode(65 + q.ans);
-
-      const userOptText = (userAns !== undefined && q.options && q.options[userAns]) ? q.options[userAns] : 'No option selected';
-      const correctOptText = (q.options && q.options[q.ans]) ? q.options[q.ans] : '';
-
-      const isStarred = isQuestionStarred(q);
-      const isEnglishSec = q.section === 'Language II (English)' || q.section === 'Language II';
-      const questionText = (isEnglishSec ? (q.question_en || q.question_hi || q.question) : (q.question_hi || q.question_en || q.question)) || '';
-
-      card.innerHTML = `
-        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
-          <div style="display:flex;align-items:center;gap:8px;">
-            <span class="sol-badge ${statusClass}">${badgeText}</span>
-            <span style="font-size:12px;color:var(--mt);font-weight:600;">${q.section} • ${q.subject || ''}</span>
+    // 1. Prominently display Incorrect & Unattempted Questions on screen
+    if (mistakesList.length > 0) {
+      const header = document.createElement('div');
+      header.className = 'mistakes-review-header';
+      header.innerHTML = `
+        <div class="mistakes-review-title">
+          <span class="mistakes-review-icon">⚠️</span>
+          <div>
+            <div style="font-weight:800; font-size:15px; color:#F87171;">
+              Incorrect & Unattempted Questions (${mistakesList.length}) / गलत और छोड़े गए प्रश्न
+            </div>
+            <div style="font-size:12px; color:var(--mt);">
+              Carefully review pedagogical explanations below to master these concepts
+            </div>
           </div>
-          <button class="btn-sol-star ${isStarred ? 'starred' : ''}" type="button" title="Bookmark / Star this question for later practice">
-            ${isStarred ? '⭐ Starred' : '☆ Star'}
-          </button>
-        </div>
-        <div style="font-weight:700;margin:10px 0;line-height:1.6;font-size:15px;">
-          Question ${idx + 1}. ${questionText}
-        </div>
-        
-        <div style="font-size:13px;display:flex;flex-direction:column;gap:6px;margin-bottom:12px;background:var(--bg);padding:10px 12px;border-radius:8px;">
-          <div>Your Answer: <strong style="${isCorrect ? 'color:#4ADE80;' : (isUnanswered ? 'color:var(--mt);' : 'color:#EF4444;')}">(${userOptChar}) ${userOptText}</strong></div>
-          <div style="color:#4ADE80;">Correct Answer: <strong>(${correctOptChar}) ${correctOptText}</strong></div>
-        </div>
-
-        <div class="sol-explanation">
-          <strong>💡 Pedagogical Explanation (शैक्षणिक व्याख्या):</strong><br/>
-          ${q.explanation || 'Based on CBSE CTET curriculum standards and NEP 2020 guidelines.'}
         </div>
       `;
+      el.solutionsContainer.appendChild(header);
 
-      const starBtn = card.querySelector('.btn-sol-star');
-      if (starBtn) {
-        starBtn.addEventListener('click', () => {
-          const nowStarred = toggleStarQuestion(q, true);
-          if (nowStarred) {
-            starBtn.classList.add('starred');
-            starBtn.textContent = '⭐ Starred';
-          } else {
-            starBtn.classList.remove('starred');
-            starBtn.textContent = '☆ Star';
-          }
-        });
-      }
+      mistakesList.forEach(item => {
+        const card = createSolutionCard(item.question, item.index, item.userAns);
+        el.solutionsContainer.appendChild(card);
+      });
+    } else {
+      // Perfect Score (100% Correct) Banner
+      const perfectBanner = document.createElement('div');
+      perfectBanner.className = 'perfect-score-banner';
+      perfectBanner.innerHTML = `
+        🎉 <strong>Outstanding Performance! Perfect Score (100% Correct)!</strong><br/>
+        You answered every single question correctly with zero mistakes. Tap the card below if you wish to review questions and explanations.
+      `;
+      el.solutionsContainer.appendChild(perfectBanner);
+    }
 
-      el.solutionsContainer.appendChild(card);
-    });
+    // 2. Club all Correct Answers together in a slim, collapsible accordion card
+    if (correctList.length > 0) {
+      const accCard = document.createElement('div');
+      accCard.className = 'correct-accordion-card';
+
+      accCard.innerHTML = `
+        <button id="btn-toggle-correct-accordion" class="correct-accordion-btn" type="button" aria-expanded="false">
+          <div class="acc-title-left">
+            <span class="acc-check-icon">✅</span>
+            <div>
+              <span class="acc-title-text">Correct Answers (${correctList.length} Questions) / सही उत्तर</span>
+              <span class="acc-sub-text"> • Tap to expand and review all correct solutions</span>
+            </div>
+          </div>
+          <span class="acc-toggle-action">
+            <span id="correct-acc-label">View ${correctList.length} Answers</span>
+            <span id="correct-acc-chevron" class="acc-chevron">▼</span>
+          </span>
+        </button>
+        <div id="correct-answers-panel" class="correct-answers-panel"></div>
+      `;
+
+      const toggleBtn = accCard.querySelector('#btn-toggle-correct-accordion');
+      const panel = accCard.querySelector('#correct-answers-panel');
+      const label = accCard.querySelector('#correct-acc-label');
+      const chevron = accCard.querySelector('#correct-acc-chevron');
+
+      // Populate correct question cards inside the panel
+      correctList.forEach(item => {
+        const card = createSolutionCard(item.question, item.index, item.userAns);
+        panel.appendChild(card);
+      });
+
+      let isExpanded = false;
+      toggleBtn.addEventListener('click', () => {
+        isExpanded = !isExpanded;
+        toggleBtn.setAttribute('aria-expanded', String(isExpanded));
+        if (isExpanded) {
+          panel.style.display = 'flex';
+          label.textContent = `Hide ${correctList.length} Answers`;
+          chevron.textContent = '▲';
+          chevron.style.transform = 'rotate(180deg)';
+        } else {
+          panel.style.display = 'none';
+          label.textContent = `View ${correctList.length} Answers`;
+          chevron.textContent = '▼';
+          chevron.style.transform = 'none';
+        }
+      });
+
+      el.solutionsContainer.appendChild(accCard);
+    }
   }
 
   // ==========================================
@@ -1811,6 +2073,10 @@
 
   function backToHome() {
     releaseWakeLock();
+    if (autoNextTimer) {
+      clearTimeout(autoNextTimer);
+      autoNextTimer = null;
+    }
     if (el.resultScreen) el.resultScreen.classList.remove('active');
     if (el.landingScreen) el.landingScreen.style.display = 'block';
     loadRecentAttempts();
@@ -1841,6 +2107,8 @@
   window.cancelTestCountdown = cancelTestCountdown;
   window.toggleFullscreen = toggleFullscreen;
   window.togglePalette = togglePalette;
+  window.toggleAutoNext = toggleAutoNext;
+  window.handleOptionSelect = handleOptionSelect;
   window.backToHome = backToHome;
   window.jumpToQuestion = jumpToQuestion;
   window.openStarredModal = openStarredModal;
